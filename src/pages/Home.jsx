@@ -6,7 +6,14 @@ const Home = () => {
     <div class="overflow-hidden">
         <div class="relative">
             <div id="certify-shipment"
-                class="absolute inset-2 bottom-0 rounded-3xl ring-1 ring-inset ring-black/5 bg-[linear-gradient(115deg,var(--tw-gradient-stops))] from-[#b0c4de] from-[10%] via-[#c0c0c0] via-[20%] via-[#8b4513] via-[50%] via-[#b87333] via-[70%] to-[#b8860b] to-[100%] sm:bg-[linear-gradient(145deg,var(--tw-gradient-stops))]">
+                class="absolute inset-2 bottom-0 rounded-3xl ring-1 ring-inset ring-black/5 bg-[linear-gradient(115deg,var(--tw-gradient-stops))] 
+                    from-[#00FFAB] from-[10%] 
+                    via-[#00FFF0] via-[30%] 
+                    via-[#9B5DE5] via-[50%] 
+                    via-[#28A583] via-[70%] 
+                    to-[#00C0FF] to-[100%] 
+                    sm:bg-[linear-gradient(145deg,var(--tw-gradient-stops))]
+                ">
                 
             </div>
             <div class="relative px-6 lg:px-8">

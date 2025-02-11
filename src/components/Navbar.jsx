@@ -22,19 +22,19 @@ const Navbar = () => {
   return (
     <>
       <header className="bg-white shadow-lg sticky top-0 z-50">
-        <div className="bg-zinc-950 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 rounded-3xl">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 rounded-3xl">
           <div className="flex justify-between items-center py-4">
-            <a href="index.html" className="text-3xl font-bold text-gray-800">
+            <a href="./" className="text-3xl font-bold text-gray-800">
               <span className="bg-gradient-to-r from-[#b0c4de] from-[10%] via-[#c0c0c0] via-[20%] via-[#8b4513] via-[50%] via-[#b87333] via-[70%] to-[#b8860b] to-[100%] bg-clip-text text-transparent text-3xl">
                 New Company
               </span>
             </a>
             <nav className={`space-x-6 text-zinc-400 ${isLargeScreen ? 'flex' : 'hidden'}`}>
-              <a href="#home" data-page="home" className="hover:text-yellow-600">Home</a>
-              <a href="#about" data-page="about" className="hover:text-yellow-600">About</a>
-              <a href="#services" data-page="services" className="hover:text-yellow-600">Services</a>
-              <a href="#responsibilities" data-page="responsibilities" className="hover:text-yellow-600">Responsibilities</a>
-              <a href="#metal-inspection" data-page="metalinspection" className="hover:text-yellow-600">Metal Inspection</a>
+              <a href="./" data-page="home" className="hover:text-yellow-600">Home</a>
+              <a href="./about-us" data-page="about" className="hover:text-yellow-600">About Us</a>
+              <a href="./services" data-page="services" className="hover:text-yellow-600">Services</a>
+              <a href="./responsibilities" data-page="responsibilities" className="hover:text-yellow-600">Responsibilities</a>
+              <a href="./metal-inspection" data-page="metalinspection" className="hover:text-yellow-600">Metal Inspection</a>
               <a href="#metal-import" data-page="metalimport" className="hover:text-yellow-600">Metal Import</a>
               <a href="#clients" data-page="clients" className="hover:text-yellow-600">Clients</a>
               <a href="#contactUs" data-page="contactUs" className="hover:text-yellow-600">Contact Us</a>
