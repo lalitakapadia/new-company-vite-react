@@ -40,9 +40,9 @@ const Navbar = () => {
               <a href="./services" data-page="services" className="hover:text-yellow-600">Services</a>
               <a href="./responsibilities" data-page="responsibilities" className="hover:text-yellow-600">Responsibilities</a>
               <a href="./metal-inspection" data-page="metalinspection" className="hover:text-yellow-600">Metal Inspection</a>
-              <a href="#metal-import" data-page="metalimport" className="hover:text-yellow-600">Metal Import</a>
-              <a href="#clients" data-page="clients" className="hover:text-yellow-600">Clients</a>
-              <a href="#contactUs" data-page="contactUs" className="hover:text-yellow-600">Contact Us</a>
+              <a href="./metal-import" data-page="metalimport" className="hover:text-yellow-600">Metal Import</a>
+              <a href="./clients" data-page="clients" className="hover:text-yellow-600">Clients</a>
+              <a href="./contactUs" data-page="contactUs" className="hover:text-yellow-600">Contact Us</a>
             </nav>
             <button className="md:hidden text-gray-600" id="mobile-menu-button" onClick={toggleMobileMenu}>
               <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -54,14 +54,14 @@ const Navbar = () => {
 
         <div id="mobile-menu" className={`md:hidden  shadow-lg ${isMobileMenuOpen ? 'block' : 'hidden'}`}>
           <nav className="flex flex-col space-y-4 p-4">
-            <a href="#home" data-page="home" className="text-zinc-400 hover:text-yellow-600">Home</a>
-            <a href="#about" data-page="about" className="text-zinc-400 hover:text-yellow-600">About</a>
-            <a href="#services" data-page="services" className="text-zinc-400 hover:text-yellow-600">Services</a>
-            <a href="#responsibilities" data-page="responsibilities" className="text-zinc-400 hover:text-yellow-600">Responsibilities</a>
-            <a href="#metal-inspection" data-page="metalinspection" className="text-zinc-400 hover:text-yellow-600">Metal Inspection</a>
-            <a href="#metal-import" data-page="metalimport" className="text-zinc-400 hover:text-yellow-600">Metal Import</a>
-            <a href="#clients" data-page="clients" className="text-zinc-400 hover:text-yellow-600">Clients</a>
-            <a href="#contactUs" data-page="contactUs" className="text-zinc-400 hover:text-yellow-600">Contact Us</a>
+            <a href="./" data-page="home" className="hover:text-yellow-600">Home</a>
+              <a href="./about-us" data-page="about" className="hover:text-yellow-600">About Us</a>
+              <a href="./services" data-page="services" className="hover:text-yellow-600">Services</a>
+              <a href="./responsibilities" data-page="responsibilities" className="hover:text-yellow-600">Responsibilities</a>
+              <a href="./metal-inspection" data-page="metalinspection" className="hover:text-yellow-600">Metal Inspection</a>
+              <a href="./metal-import" data-page="metalimport" className="hover:text-yellow-600">Metal Import</a>
+              <a href="./clients" data-page="clients" className="hover:text-yellow-600">Clients</a>
+              <a href="./contactUs" data-page="contactUs" className="hover:text-yellow-600">Contact Us</a>
           </nav>
         </div>
       </header>

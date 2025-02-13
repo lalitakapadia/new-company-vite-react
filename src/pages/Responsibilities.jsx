@@ -5,6 +5,16 @@ const Responsibilities = () => {
     return (
         <body class="bg-gray-100 text-gray-800">
     <div class="overflow-hidden">
+        <div
+            class="absolute -right-60 -top-44 h-60 w-[36rem] transform-gpu md:right-0 
+            bg-[linear-gradient(115deg,var(--tw-gradient-stops))] 
+            from-[#fff1be] from-[28%]   
+            via-[#4fd1c5] via-[55%]    
+            via-[#4a90e2] via-[70%]    
+            to-[#5e60ff] to-[100%]
+            rotate-[-10deg] 
+            rounded-full blur-3xl">
+        </div>
         <Navbar />
         <div class="mt-16 px-6 lg:px-8">
             <div class="grid grid-cols-1 gap-8 lg:grid-cols-1">
