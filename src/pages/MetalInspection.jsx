@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Navbar from '../components/Navbar';
 
 <script src="/_next/static/chunks/polyfills-78c92fac7aa8fdd8.js" nomodule=""></script>
 
@@ -8,8 +9,11 @@ const MetalInspection = () => {
   return (
 
     <>
+    <div class="overflow-hidden">
+        <Navbar /></div>
     <div class="mt-16 px-6 lg:px-8">
         <div class="mx-auto max-w-2xl lg:max-w-7xl">
+            
             <h1
                 class="text-pretty text-3xl font-medium tracking-tighter text-gray-950 data-[dark]:text-white sm:text-6xl">
                 Metal Inspection</h1>
@@ -18,7 +22,12 @@ const MetalInspection = () => {
         </div>
     </div>
     
-    <div class="mx-2 my-24 rounded-4xl bg-gray-900 bg-[url(/dot-texture.svg)] pb-24 pt-72 lg:pt-36">
+    <div class="mx-2 my-30 rounded-4xl bg-[linear-gradient(115deg,var(--tw-gradient-stops))]
+                    from-[#fff1be] from-[28%]   
+                    via-[#4fd1c5] via-[55%]    
+                    via-[#4a90e2] via-[70%]    
+                    to-[#5e60ff] to-[100%]  
+                    sm:bg-[linear-gradient(145deg,var(--tw-gradient-stops))] pb-24 pt-72 lg:pt-36">
         <div class="px-6 lg:px-8">
             <div class="mx-auto max-w-2xl lg:max-w-7xl">
                 <div class="grid grid-cols-1 lg:grid-cols-[384px_1fr_1fr]">
@@ -28,7 +37,7 @@ const MetalInspection = () => {
                             <div class="rounded-4xl p-2 shadow-md shadow-black/5">
                                 <div
                                     class="overflow-hidden rounded-3xl shadow-2xl outline outline-1 -outline-offset-1 outline-black/10">
-                                    <img alt="" src="./public/images/inspection2.jpg"
+                                    <img alt="" src="./public/images/MetalInspection2.jpg"
                                         class="aspect-[3/4] w-full object-cover">
                                             </img>
                                 </div>
@@ -39,7 +48,7 @@ const MetalInspection = () => {
                         <figure class="mx-auto flex max-w-xl flex-col gap-16 max-lg:text-center">
                             <blockquote>
                                 <p
-                                    class="relative text-3xl tracking-tight text-white before:absolute before:-translate-x-full before:content-['“'] after:absolute after:content-['”'] lg:text-xl">
+                                    class="relative text-l tracking-tight text-gray-800 before:absolute before:-translate-x-full  lg:text-xl">
                                     Metal scrap inspection and testing for composition, grade, and purity, is an important process undertaken before any cargo is imported into the country. The DGFT approved Pre-shipment inspection agency must certify that the cargo being imported is free of any unwanted material such as explosives or radioactive elements. But, metal scrap inspection in itself is more than just a visual inspection on site. During metal scrap inspection, many aspects regarding quality checks need to be considered when dealing with ferrous or non-ferrous metals. Scrap metals are complicated materials to inspect out of recyclables since we need to take into account the impurities, corrosion, and fatigue. Not to mention there needs to be a thorough investigation on toxicities, such as oil and chemical residue that can harm the scrap metal.
                                 </p>
                             </blockquote>
@@ -50,7 +59,12 @@ const MetalInspection = () => {
         </div>
     </div>
 
-    <div class="mx-2 my-24 rounded-4xl bg-gray-900 bg-[url(/dot-texture.svg)] pb-24 pt-72 lg:pt-36">
+    <div class="mx-2 my-24 rounded-4xl bg-[linear-gradient(115deg,var(--tw-gradient-stops))]
+                    from-[#fff1be] from-[28%]   
+                    via-[#4fd1c5] via-[55%]    
+                    via-[#4a90e2] via-[70%]    
+                    to-[#5e60ff] to-[100%]  
+                    sm:bg-[linear-gradient(145deg,var(--tw-gradient-stops))] pb-24 pt-72 lg:pt-36">
         <div class="px-6 lg:px-8">
             <div class="mx-auto max-w-2xl lg:max-w-7xl">
                 <div class="grid grid-cols-1 lg:grid-cols-[384px_1fr_1fr]">
@@ -60,7 +74,7 @@ const MetalInspection = () => {
                             <div class="rounded-4xl p-2 shadow-md shadow-black/5">
                                 <div
                                     class="overflow-hidden rounded-3xl shadow-2xl outline outline-1 -outline-offset-1 outline-black/10">
-                                    <img alt="" src="./public/images/inspection2.jpg"
+                                    <img alt="" src="./public/images/MetalInspection5.jpg"
                                         class="aspect-[3/4] w-full object-cover">
                                             </img>
                                 </div>
@@ -71,8 +85,8 @@ const MetalInspection = () => {
                         <figure class="mx-auto flex max-w-xl flex-col gap-16 max-lg:text-center">
                             <blockquote>
                                 <p
-                                    class="relative text-3xl tracking-tight text-white before:absolute before:-translate-x-full before:content-['“'] after:absolute after:content-['”'] lg:text-xl">
-                                    MELT Enterprise is a DGFT approved Pre-shipment inspection agency authorized to conduct a metal scrap inspection. We inspect the cargo at the time of loading and ensure that the containers destined for India and free from any hazards. We have our own testing facilities and are authorized to provide Pre-shipment Inspection Certification in 60+ countries. This means we are authorized to check for the presence of arms and ammunition, mines, shells, cartridges, or any other explosive in any form along with radiation (Gamma & Neutron) level and subsequently should carry a Pre-Shipment inspection certificate upon arriving in India.
+                                    class="relative text-l tracking-tight  text-gray-800 before:absolute before:-translate-x-full lg:text-xl">
+                                    New Company is a DGFT approved Pre-shipment inspection agency authorized to conduct a metal scrap inspection. We inspect the cargo at the time of loading and ensure that the containers destined for India and free from any hazards. We have our own testing facilities and are authorized to provide Pre-shipment Inspection Certification in 60+ countries. This means we are authorized to check for the presence of arms and ammunition, mines, shells, cartridges, or any other explosive in any form along with radiation (Gamma & Neutron) level and subsequently should carry a Pre-Shipment inspection certificate upon arriving in India.
                                 </p>
                             </blockquote>
                         </figure>

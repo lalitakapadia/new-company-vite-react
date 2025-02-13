@@ -10,11 +10,11 @@ import AboutUs from './pages/AboutUs';
 import Services from './pages/Services';
 import Responsibilities from './pages/Responsibilities';
 import MetalInspection from './pages/MetalInspection';
+import MetalImport from './pages/MetalImport';
 
 function App() {
   return (
     <Router>
-      <Navbar />
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -23,6 +23,7 @@ function App() {
           <Route path="/services" element={<Services />} />
           <Route path="/responsibilities" element={<Responsibilities />} />
           <Route path="/metal-inspection" element={<MetalInspection />} />
+          <Route path="/metal-import" element={<MetalImport />} />
         </Routes>
       </main>
     </Router>

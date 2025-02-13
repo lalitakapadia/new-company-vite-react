@@ -71,6 +71,6 @@ button:focus-visible {
 
 
 .card:hover {
-  background-color: rgb(243, 229, 216);
+  background-color: #fff1be;
   transition: background-color 0.3s ease;
 }

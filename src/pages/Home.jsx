@@ -1,21 +1,24 @@
 import React from 'react';
+import Navbar from '../components/Navbar';
 
 const Home = () => {
   return (
     <body class="bg-gray-100 text-gray-800 ">
-    <div class="overflow-hidden">
-        <div class="relative">
-            <div id="certify-shipment"
-                class="absolute inset-2 bottom-0 rounded-3xl ring-1 ring-inset ring-black/5 bg-[linear-gradient(115deg,var(--tw-gradient-stops))] 
-                    from-[#00FFAB] from-[10%] 
-                    via-[#00FFF0] via-[30%] 
-                    via-[#9B5DE5] via-[50%] 
-                    via-[#28A583] via-[70%] 
-                    to-[#00C0FF] to-[100%] 
+        <div class="overflow-hidden">
+            <div class="relative">
+                <div id="certify-shipment"
+                    class="absolute inset-2 bottom-0 rounded-3xl ring-1 ring-inset ring-black/5 
+                    bg-[linear-gradient(115deg,var(--tw-gradient-stops))]
+                    from-[#fff1be] from-[28%]   
+                    via-[#4fd1c5] via-[55%]    
+                    via-[#4a90e2] via-[70%]    
+                    to-[#5e60ff] to-[100%]  
                     sm:bg-[linear-gradient(145deg,var(--tw-gradient-stops))]
                 ">
-                
+                    
             </div>
+
+            <Navbar></Navbar>
             <div class="relative px-6 lg:px-8">
                 <div class="mx-auto max-w-2xl lg:max-w-7xl">
 
@@ -39,7 +42,7 @@ const Home = () => {
 
         </div>
 
-        <div class="mt-16 px-6 lg:px-8">
+        <div class="mt-8 px-6 lg:px-8">
             <div class="mx-auto max-w-2xl lg:max-w-7xl">
                 <h1
                     class="text-pretty text-3xl font-medium tracking-tighter text-gray-950 data-[dark]:text-white sm:text-6xl">
@@ -49,9 +52,15 @@ const Home = () => {
                     Consultancy. Sign up today and start selling smarter.</p>
             </div>
         </div>
-        <div class="relative py-24">
+        <div class="relative py-12">
             <div
-                class="absolute inset-x-2 bottom-0 top-48 rounded-3xl ring-1 ring-inset ring-black/5bg-[linear-gradient(115deg,var(--tw-gradient-stops))] from-[#b0c4de] from-[10%] via-[#c0c0c0] via-[20%] via-[#8b4513] via-[50%] via-[#b87333] via-[70%] to-[#b8860b] to-[100%] sm:bg-[linear-gradient(145deg,var(--tw-gradient-stops))]">
+                class="absolute inset-x-2 bottom-0 top-48 rounded-3xl ring-1 ring-inset ring-black/5bg-[linear-gradient(115deg,var(--tw-gradient-stops))] 
+                from-[#fff1be] from-[28%]   
+                via-[#4fd1c5] via-[55%]    
+                via-[#4a90e2] via-[70%]    
+                to-[#5e60ff] to-[100%]
+                
+                sm:bg-[linear-gradient(145deg,var(--tw-gradient-stops))]">
             </div>
             <div class="relative px-6 lg:px-8">
                 <div class="mx-auto max-w-2xl lg:max-w-7xl">
@@ -112,7 +121,7 @@ const Home = () => {
         </div>
     </div>
 
-    <div class="relative px-6 lg:px-8 mt-12">
+    <div class="relative px-6 lg:px-8 mt-12 pb-12">
         <div class="mx-auto max-w-2xl lg:max-w-7xl">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center text-justify">
                 <div>
@@ -138,88 +147,99 @@ const Home = () => {
         </div>
     </div>
 
-
-    <div class="relative px-6 lg:px-8 mt-12">
-        <div class="mx-auto max-w-2xl lg:max-w-7xl">
-            <h2
-                class="font-mono text-5xl font-bold uppercase tracking-widest text-black data-[dark]:text-black text-center">
-                Why Choose Us?</h2>
-            <div class="grid grid-cols-1 gap-8 lg:grid-cols-4 mt-8">
-                <div
-                    class="-m-2 grid grid-cols-1 rounded-3xl shadow-[inset_0_0_2px_1px_#ffffff4d] ring-1 ring-black/5 max-lg:mx-auto max-lg:w-full max-lg:max-w-md card">
-                    <div class="grid grid-cols-1 rounded-3xl p-2 shadow-md shadow-black/5">
-                        <div class="rounded-3xl bg-white p-10 pb-9 shadow-2xl ring-1 ring-black/5">
-                            <h3
-                                class="font-mono text-lg font-bold uppercase tracking-widest text-black data-[dark]:text-black">
-                                INSPECTION</h3>
-                            <img src="./public/images/Inspection2.jpg" alt="Pre-shipment Inspection"
-                                class="mt-8 rounded-3xl"></img>
-                            <p class="mt-2 text-sm text-gray-800 text-justify leading-relaxed">
+    <footer>
+        <div
+            class="relative 
+                bg-[linear-gradient(115deg,var(--tw-gradient-stops))] 
+                from-[#fff1be] from-[28%]   
+                via-[#4fd1c5] via-[55%]    
+                via-[#4a90e2] via-[70%]    
+                to-[#5e60ff] to-[100%] 
+                sm:bg-[linear-gradient(145deg,var(--tw-gradient-stops))]">
+            <div class="absolute inset-3 rounded-4xl bg-white/25"></div>
+            <div class="px-6 lg:px-8 py-4">
+                <div class="mx-auto max-w-2xl lg:max-w-7xl">
+                    <div class="relative text-center sm:py-12 pb-4">
+                        <p class=" text-3xl font-medium tracking-tight text-gray-950 sm:text-5xl">Why Choose Us?</p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 gap-8 lg:grid-cols-4 pb-12">
+                    <div
+                        class="-m-2 grid grid-cols-1 rounded-3xl shadow-[inset_0_0_2px_1px_#ffffff4d] ring-1 ring-black/5 max-lg:mx-auto max-lg:w-full max-lg:max-w-md card">
+                        <div class="grid grid-cols-1 rounded-3xl p-2 shadow-md shadow-black/5">
+                            <div class="rounded-3xl bg-white p-10 pb-9 shadow-2xl ring-1 ring-black/5">
+                                <h3
+                                    class="font-mono text-lg font-bold uppercase tracking-widest text-black data-[dark]:text-black">
+                                    INSPECTION</h3>
+                                <img src="./public/images/Inspection2.jpg" alt="Pre-shipment Inspection"
+                                    class="mt-8 rounded-3xl"></img>
+                                <p class="mt-2 text-sm text-gray-800 text-justify leading-relaxed">
                                 Our inspection services are designed to ensure the highest quality and compliance with
                                 industry standards. We provide thorough and detailed inspections to help you:
                                 the highest quality and compliance with industry standards. We provide thorough and
                                 detailed inspections to help you mitigate risks, improve performance, and ensure the
                                 safety and reliability of your products. Our team of experts uses advanced techniques
                                 and tools to deliver accurate and reliable inspection results.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div
-                    class="-m-2 grid grid-cols-1 rounded-3xl shadow-[inset_0_0_2px_1px_#ffffff4d] ring-1 ring-black/5 max-lg:mx-auto max-lg:w-full max-lg:max-w-md card">
-                    <div class="grid grid-cols-1 rounded-3xl p-2 shadow-md shadow-black/5">
-                        <div class="rounded-3xl bg-white p-10 pb-9 shadow-2xl ring-1 ring-black/5">
-                            <h3
-                                class="font-mono text-lg font-bold uppercase tracking-widest text-black data-[dark]:text-black">
-                                QUALITY ANALYSIS</h3>
-                            <img src="./public/images/QualityAnalysis.jpg" alt="Pre-shipment Inspection"
-                                class="mt-8 rounded-3xl"></img>
+                    <div
+                        class="-m-2 grid grid-cols-1 rounded-3xl shadow-[inset_0_0_2px_1px_#ffffff4d] ring-1 ring-black/5 max-lg:mx-auto max-lg:w-full max-lg:max-w-md card">
+                        <div class="grid grid-cols-1 rounded-3xl p-2 shadow-md shadow-black/5">
+                            <div class="rounded-3xl bg-white p-10 pb-9 shadow-2xl ring-1 ring-black/5">
+                                <h3
+                                    class="font-mono text-lg font-bold uppercase tracking-widest text-black data-[dark]:text-black">
+                                    QUALITY ANALYSIS</h3>
+                                <img src="./public/images/QualityAnalysis.jpg" alt="Pre-shipment Inspection"
+                                    class="mt-8 rounded-3xl"></img>
+                                    <p class="mt-2 text-sm text-gray-800 text-justify leading-relaxed">
+                                        ensuring that your products meet the highest standards of quality and performance. We use state-of-the-art equipment and methodologies to conduct thorough and precise quality assessments. Our team of experts is dedicated to identifying any potential issues and providing actionable insights to help you maintain and improve the quality of your products.
+                                    </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="-m-2 grid grid-cols-1 rounded-3xl shadow-[inset_0_0_2px_1px_#ffffff4d] ring-1 ring-black/5 max-lg:mx-auto max-lg:w-full max-lg:max-w-md card">
+                        <div class="grid grid-cols-1 rounded-3xl p-2 shadow-md shadow-black/5">
+                            <div class="rounded-3xl bg-white p-10 pb-9 shadow-2xl ring-1 ring-black/5">
+                                <h3
+                                    class="font-mono text-lg font-bold uppercase tracking-widest text-black data-[dark]:text-black">
+                                    PHYSICAL Testing</h3>
+                                <img src="./public/images/PhysicalTesting2.jpg" alt="Pre-shipment Inspection"
+                                    class="mt-8 rounded-3xl"></img>
                                 <p class="mt-2 text-sm text-gray-800 text-justify leading-relaxed">
-                                    ensuring that your products meet the highest standards of quality and performance. We use state-of-the-art equipment and methodologies to conduct thorough and precise quality assessments. Our team of experts is dedicated to identifying any potential issues and providing actionable insights to help you maintain and improve the quality of your products.
+                                    Our physical testing services are designed to evaluate the physical properties and
+                                    performance of your products. We conduct rigorous tests to ensure that your products
+                                    meet the required specifications and standards. Our team of experts uses advanced
+                                    testing equipment and methodologies to provide accurate and reliable results, helping
+                                    you ensure the quality and durability of your products.
                                 </p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div
-                    class="-m-2 grid grid-cols-1 rounded-3xl shadow-[inset_0_0_2px_1px_#ffffff4d] ring-1 ring-black/5 max-lg:mx-auto max-lg:w-full max-lg:max-w-md card">
-                    <div class="grid grid-cols-1 rounded-3xl p-2 shadow-md shadow-black/5">
-                        <div class="rounded-3xl bg-white p-10 pb-9 shadow-2xl ring-1 ring-black/5">
-                            <h3
-                                class="font-mono text-lg font-bold uppercase tracking-widest text-black data-[dark]:text-black">
-                                PHYSICAL Testing</h3>
-                            <img src="./public/images/PhysicalTesting.jpg" alt="Pre-shipment Inspection"
-                                class="mt-8 rounded-3xl"></img>
-                            <p class="mt-2 text-sm text-gray-800 text-justify leading-relaxed">
-                                Our physical testing services are designed to evaluate the physical properties and
-                                performance of your products. We conduct rigorous tests to ensure that your products
-                                meet the required specifications and standards. Our team of experts uses advanced
-                                testing equipment and methodologies to provide accurate and reliable results, helping
-                                you ensure the quality and durability of your products.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div
-                    class="-m-2 grid grid-cols-1 rounded-3xl shadow-[inset_0_0_2px_1px_#ffffff4d] ring-1 ring-black/5 max-lg:mx-auto max-lg:w-full max-lg:max-w-md card">
-                    <div class="grid grid-cols-1 rounded-3xl p-2 shadow-md shadow-black/5">
-                        <div class="rounded-3xl bg-white p-10 pb-9 shadow-2xl ring-1 ring-black/5">
-                            <h3
-                                class="font-mono text-lg font-bold uppercase tracking-widest text-black data-[dark]:text-black">
-                                SAFETY CONTROL</h3>
-                            <img src="./public/images/SafetyControl.jpg" alt="Pre-shipment Inspection"
-                                class="mt-8 rounded-3xl"></img>
-                            <p class="mt-2 text-sm text-gray-800 text-justify leading-relaxed">
-                                Our safety control services are focused on ensuring the safety and compliance of your
-                                products with industry standards and regulations. We conduct comprehensive safety
-                                assessments to identify potential hazards and provide recommendations for mitigating
-                                risks. Our team of experts is dedicated to helping you maintain a safe and compliant
-                                product, ensuring the well-being of your customers and the success of your business.
-                            </p>
+                    <div
+                        class="-m-2 grid grid-cols-1 rounded-3xl shadow-[inset_0_0_2px_1px_#ffffff4d] ring-1 ring-black/5 max-lg:mx-auto max-lg:w-full max-lg:max-w-md card">
+                        <div class="grid grid-cols-1 rounded-3xl p-2 shadow-md shadow-black/5">
+                            <div class="rounded-3xl bg-white p-10 pb-9 shadow-2xl ring-1 ring-black/5">
+                                <h3
+                                    class="font-mono text-lg font-bold uppercase tracking-widest text-black data-[dark]:text-black">
+                                    SAFETY CONTROL</h3>
+                                <img src="./public/images/SafetyControl.jpg" alt="Pre-shipment Inspection"
+                                    class="mt-8 rounded-3xl"></img>
+                                <p class="mt-2 text-sm text-gray-800 text-justify leading-relaxed">
+                                    Our safety control services are focused on ensuring the safety and compliance of your
+                                    products with industry standards and regulations. We conduct comprehensive safety
+                                    assessments to identify potential hazards and provide recommendations for mitigating
+                                    risks. Our team of experts is dedicated to helping you maintain a safe and compliant
+                                    product, ensuring the well-being of your customers and the success of your business.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </footer>
 </body>
   );
 };
