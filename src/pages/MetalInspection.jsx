@@ -52,7 +52,7 @@ const MetalInspection = () => {
                             class="z-10 !overflow-visible lg:col-span-2 lg:rounded-tr-4xl group relative flex flex-col overflow-hidden rounded-lg bg-white shadow-sm ring-1 ring-black/5 data-[dark]:bg-gray-800 data-[dark]:ring-white/15">
                             
                             <div class="relative "> 
-                                <img alt="" src="./public/images/MetalInspection5.jpg"
+                                <img alt="" src="./public/images/MetalInspection5.jpg "
                                     class="aspect-[3/4] w-full object-cover lg:rounded-tr-4xl rounded-xl ">
                                     </img>     
                             </div>
@@ -288,20 +288,20 @@ const MetalInspection = () => {
                                             <div class="mt-8 space-y-10">
                                                 <div class="flex">
                                                     <div class="flex-shrink-0">
-                                                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-[linear-gradient(115deg,var(--tw-gradient-stops))] 
+                                                        <div class="flex items-center justify-center h-6 w-6 rounded-md bg-[linear-gradient(115deg,var(--tw-gradient-stops))] 
                                                             from-[#fff1be] from-[28%]   
                                                             via-[#4fd1c5] via-[55%]    
                                                             via-[#4a90e2] via-[70%]    
                                                             to-[#5e60ff] to-[100%] 
                                                             sm:bg-[linear-gradient(145deg,var(--tw-gradient-stops))] text-white">
                                                         
-                                                            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="#5e60ff" aria-hidden="true">
+                                                            <svg class="h-3 w-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="#5e60ff" aria-hidden="true">
                                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2a10 10 0 100 20 10 10 0 000-20zM2 12h20M12 2v20" />
                                                             </svg>
                                                         </div>
                                                     </div>
                                                     <div class="ml-4">
-                                                        <p class="mt-2 text-base text-gray-500 text-sm font-medium">
+                                                        <p class=" text-base text-gray-500 text-xs font-medium">
                                                         Classification of scrap metal to ensure conformity with contractual specifications.
                                                         </p>
                                                     </div>
@@ -309,21 +309,21 @@ const MetalInspection = () => {
                             
                                                 <div class="flex">
                                                     <div class="flex-shrink-0">
-                                                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-[linear-gradient(115deg,var(--tw-gradient-stops))] from-[#b0c4de] 
+                                                        <div class="flex items-center justify-center h-6 w-6 rounded-md bg-[linear-gradient(115deg,var(--tw-gradient-stops))] from-[#b0c4de] 
                                                             from-[#fff1be] from-[28%]   
                                                             via-[#4fd1c5] via-[55%]    
                                                             via-[#4a90e2] via-[70%]    
                                                             to-[#5e60ff] to-[100%] 
                                                             sm:bg-[linear-gradient(145deg,var(--tw-gradient-stops))] text-white">
                                                         
-                                                            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="#5e60ff" aria-hidden="true">
+                                                            <svg class="h-3 w-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="#5e60ff" aria-hidden="true">
                                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2a10 10 0 100 20 10 10 0 000-20zM2 12h20M12 2v20" />
                                                             </svg>
                                                         </div>
                                                     </div>
                                                     <div class="ml-4">
                                                         
-                                                        <p class="mt-2 text-base text-gray-500 text-sm font-medium">
+                                                        <p class="text-base text-gray-500 text-xs font-medium">
                                                         Grading determination (sizing and impurities).
                                                         </p>
                                                     </div>
@@ -331,60 +331,60 @@ const MetalInspection = () => {
                             
                                                 <div class="flex">
                                                     <div class="flex-shrink-0">
-                                                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-[linear-gradient(115deg,var(--tw-gradient-stops))] 
+                                                        <div class="flex items-center justify-center h-6 w-6 rounded-md bg-[linear-gradient(115deg,var(--tw-gradient-stops))] 
                                                                 from-[#fff1be] from-[28%]   
                                                                 via-[#4fd1c5] via-[55%]    
                                                                 via-[#4a90e2] via-[70%]    
                                                                 to-[#5e60ff] to-[100%] 
                                                                 sm:bg-[linear-gradient(145deg,var(--tw-gradient-stops))] text-white">
                             
-                                                            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="#5e60ff" aria-hidden="true">
+                                                            <svg class="h-3 w-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="#5e60ff" aria-hidden="true">
                                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2a10 10 0 100 20 10 10 0 000-20zM2 12h20M12 2v20" />
                                                             </svg>
                                                         </div>
                                                     </div>
                                                     <div class="ml-4">
-                                                        <p class="mt-2 text-base text-gray-500 text-sm font-medium">
+                                                        <p class="text-base text-gray-500 text-xs font-medium">
                                                         Radiation testing.
                                                         </p>
                                                     </div>
                                                 </div>
                                                 <div class="flex">
                                                     <div class="flex-shrink-0">
-                                                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-[linear-gradient(115deg,var(--tw-gradient-stops))] 
+                                                        <div class="flex items-center justify-center h-6 w-6 rounded-md bg-[linear-gradient(115deg,var(--tw-gradient-stops))] 
                                                                 from-[#fff1be] from-[28%]   
                                                                 via-[#4fd1c5] via-[55%]    
                                                                 via-[#4a90e2] via-[70%]    
                                                                 to-[#5e60ff] to-[100%] 
                                                                 sm:bg-[linear-gradient(145deg,var(--tw-gradient-stops))] text-white">
                             
-                                                            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="#5e60ff" aria-hidden="true">
+                                                            <svg class="h-3 w-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="#5e60ff" aria-hidden="true">
                                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2a10 10 0 100 20 10 10 0 000-20zM2 12h20M12 2v20" />
                                                             </svg>
                                                         </div>
                                                     </div>
                                                     <div class="ml-4">
-                                                        <p class="mt-2 text-base text-gray-500 text-sm font-medium">
+                                                        <p class="text-base text-gray-500 text-xs font-medium">
                                                         Safety Control Pre-Shipment Inspection for identification & mitigation of any hazardous, dangerous, or prohibited goods.
                                                         </p>
                                                     </div>
                                                 </div>
                                                 <div class="flex">
                                                     <div class="flex-shrink-0">
-                                                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-[linear-gradient(115deg,var(--tw-gradient-stops))] 
+                                                        <div class="flex items-center justify-center h-6 w-6 rounded-md bg-[linear-gradient(115deg,var(--tw-gradient-stops))] 
                                                                 from-[#fff1be] from-[28%]   
                                                                 via-[#4fd1c5] via-[55%]    
                                                                 via-[#4a90e2] via-[70%]    
                                                                 to-[#5e60ff] to-[100%] 
                                                                 sm:bg-[linear-gradient(145deg,var(--tw-gradient-stops))] text-white">
                             
-                                                            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="#5e60ff" aria-hidden="true">
+                                                            <svg class="h-3 w-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="#5e60ff" aria-hidden="true">
                                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2a10 10 0 100 20 10 10 0 000-20zM2 12h20M12 2v20" />
                                                             </svg>
                                                         </div>
                                                     </div>
                                                     <div class="ml-4">
-                                                        <p class="mt-2 text-base text-gray-500 text-sm font-medium">
+                                                        <p class="text-base text-gray-500 text-xs font-medium">
                                                         Certification
                                                         </p>
                                                     </div>
@@ -393,7 +393,7 @@ const MetalInspection = () => {
                                         </div>
                             
                                         <div class="mt-10 lg:mt-0 lg:col-start-2">
-                                            <img class="mx-auto rounded-lg shadow-lg" src="./public/images/RusticAboutUs.jpg" alt="About Us"></img>
+                                            <img class="mx-auto rounded-lg shadow-lg" src="./public/images/StepWeTake2.jpg" alt="About Us"></img>
                                         </div>
                                     </div>
                                 </div>
@@ -403,43 +403,7 @@ const MetalInspection = () => {
                 </div>
             </div>
         </div>
-        
-
-{/*     
-    <div class="relative h-80 shrink-0">
-        <div aria-hidden="true" class="relative h-full overflow-hidden">
-            <div class="absolute inset-0">
-                <div style="--opacity:3%;width:528px;height:528px"
-                    class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle,transparent_25%,color-mix(in_srgb,_theme(colors.blue.500)_var(--opacity),transparent)_100%)] ring-1 ring-inset ring-blue-500/[8%]">
-                </div>
-                <div style="--opacity:5%;width:400px;height:400px"
-                    class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle,transparent_25%,color-mix(in_srgb,_theme(colors.blue.500)_var(--opacity),transparent)_100%)] ring-1 ring-inset ring-blue-500/[8%]">
-                </div>
-                <div style="--opacity:5%;width:272px;height:272px"
-                    class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle,transparent_25%,color-mix(in_srgb,_theme(colors.blue.500)_var(--opacity),transparent)_100%)] ring-1 ring-inset ring-blue-500/[8%]">
-                </div>
-                <div style="--opacity:10%;width:144px;height:144px"
-                    class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle,transparent_25%,color-mix(in_srgb,_theme(colors.blue.500)_var(--opacity),transparent)_100%)] ring-1 ring-inset ring-blue-500/[8%]">
-                </div>
-                <div class="absolute inset-0 bg-gradient-to-t from-white to-35%"></div>
-            </div>
-            <div class="absolute left-1/2 h-full w-[26rem] -translate-x-1/2">
-                <div
-                    class="absolute left-44 top-32 flex size-16 items-center justify-center rounded-full bg-white shadow ring-1 ring-black/5">
-                    </div><img alt="" src="./public/images/linkedin-color-svgrepo-com.svg"
-                    style="left:360px;top:144px;transform:none"
-                    class="absolute size-16 rounded-full bg-white shadow ring-1 ring-black/5"></img>
-                    <img
-                    alt="" src="./public/images/linkedin-color-svgrepo-com.svg"
-                    style="left:285px;top:20px;transform:none"
-                    class="absolute size-16 rounded-full bg-white shadow ring-1 ring-black/5"></img>
-                    
-            </div>
-        </div>
-    </div> */}
-
-
-    
+            
     </>
     
   );

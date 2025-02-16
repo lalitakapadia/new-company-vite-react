@@ -18,6 +18,471 @@ const Services = () => {
             
             <Navbar />
 
+            <section id="services" class="py-24 bg-gradient-to-r from-[#fff1be] via-[#4fd1c5] to-[#5e60ff]">
+  <div class="container mx-auto text-center">
+    <h2 class="text-4xl font-extrabold text-white sm:text-5xl">
+      Our Services
+    </h2>
+    <p class="mt-4 text-lg text-white sm:text-xl">
+      We offer a variety of services to help optimize your shipments and operations, ensuring compliance and efficiency at every step.
+    </p>
+
+    <div class="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+
+      <div class="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
+        <h3 class="text-2xl font-semibold text-gray-800">Comprehensive Inspection Services</h3>
+        <p class="mt-4 text-gray-600">
+          We offer a wide range of inspection services designed to mitigate risks, enhance performance, and ensure superior product quality. Our comprehensive approach helps businesses comply with international standards while minimizing operational disruptions.
+        </p>
+        <div class="mt-6 space-y-4 text-left text-gray-700">
+          <ul>
+            <li class="flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span class="ml-2">Risk Mitigation for compliance and minimal disruptions</span>
+            </li>
+            <li class="flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-500" fill="none" viewBox="http://www.w3.org/2000/svg" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span class="ml-2">Increased Efficiency and reduced delays</span>
+            </li>
+            <li class="flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-500" fill="none" viewBox="http://www.w3.org/2000/svg" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span class="ml-2">Enhanced Quality Control and Customer Trust</span>
+            </li>
+            <li class="flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-500" fill="none" viewBox="http://www.w3.org/2000/svg" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span class="ml-2">Global Compliance in over 60+ countries</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
+        <h3 class="text-2xl font-semibold text-gray-800">Certification Services</h3>
+        <p class="mt-4 text-gray-600">
+          We provide Scrap Inspection services for exporters and importers, ensuring compliance with regulatory standards through thorough testing, validation, and certification.
+        </p>
+        <div class="mt-6 space-y-4 text-left text-gray-700">
+          <ul>
+            <li class="flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-500" fill="none" viewBox="http://www.w3.org/2000/svg" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span class="ml-2">Regulatory Compliance for seamless global trade</span>
+            </li>
+            <li class="flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-500" fill="none" viewBox="http://www.w3.org/2000/svg" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span class="ml-2">Streamlined Transactions and faster clearances</span>
+            </li>
+            <li class="flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-500" fill="none" viewBox="http://www.w3.org/2000/svg" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span class="ml-2">Increased Credibility and enhanced customer trust</span>
+            </li>
+            <li class="flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-500" fill="none" viewBox="http://www.w3.org/2000/svg" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span class="ml-2">Banking and Legal Support for smooth transactions</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
+        <h3 class="text-2xl font-semibold text-gray-800">Consulting Services</h3>
+        <p class="mt-4 text-gray-600">
+          Our expert consulting services help businesses reduce overhead costs, navigate market uncertainties, and achieve sustainable growth. We provide actionable insights to guide your decisions in a dynamic and competitive environment.
+        </p>
+        <div class="mt-6 space-y-4 text-left text-gray-700">
+          <ul>
+            <li class="flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-500" fill="none" viewBox="http://www.w3.org/2000/svg" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span class="ml-2">Cost Optimization for better profitability</span>
+            </li>
+            <li class="flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-500" fill="none" viewBox="http://www.w3.org/2000/svg" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span class="ml-2">Expert Guidance on global market trends</span>
+            </li>
+            <li class="flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-500" fill="none" viewBox="http://www.w3.org/2000/svg" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span class="ml-2">Informed Decision-Making for your business growth</span>
+            </li>
+            <li class="flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-500" fill="none" viewBox="http://www.w3.org/2000/svg" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span class="ml-2">Growth Enablement in a competitive market</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+            <section id="services" class="py-24 bg-gray-100">
+  <div class="container mx-auto text-center">
+    <h2 class="text-4xl font-extrabold text-gray-800 sm:text-5xl">
+      Our Services
+    </h2>
+    <p class="mt-4 text-lg text-gray-600 sm:text-xl">
+      We offer a variety of services to help optimize your shipments and operations, ensuring compliance and efficiency at every step.
+    </p>
+
+
+    <div class="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+
+
+      <div class="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
+        <h3 class="text-2xl font-semibold text-gray-800">Comprehensive Inspection Services</h3>
+        <p class="mt-4 text-gray-600">
+          We offer a wide range of inspection services designed to mitigate risks, enhance performance, and ensure superior product quality. Our comprehensive approach helps businesses comply with international standards while minimizing operational disruptions.
+        </p>
+        <div class="mt-6 space-y-4 text-left text-gray-700">
+          <ul>
+            <li class="flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span class="ml-2">Risk Mitigation for compliance and minimal disruptions</span>
+            </li>
+            <li class="flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span class="ml-2">Increased Efficiency and reduced delays</span>
+            </li>
+            <li class="flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span class="ml-2">Enhanced Quality Control and Customer Trust</span>
+            </li>
+            <li class="flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span class="ml-2">Global Compliance in over 60+ countries</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
+      <div class="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
+        <h3 class="text-2xl font-semibold text-gray-800">Certification Services</h3>
+        <p class="mt-4 text-gray-600">
+          We provide Scrap Inspection services for exporters and importers, ensuring compliance with regulatory standards through thorough testing, validation, and certification.
+        </p>
+        <div class="mt-6 space-y-4 text-left text-gray-700">
+          <ul>
+            <li class="flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span class="ml-2">Regulatory Compliance for seamless global trade</span>
+            </li>
+            <li class="flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span class="ml-2">Streamlined Transactions and faster clearances</span>
+            </li>
+            <li class="flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span class="ml-2">Increased Credibility and enhanced customer trust</span>
+            </li>
+            <li class="flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span class="ml-2">Banking and Legal Support for smooth transactions</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+ 
+      <div class="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
+        <h3 class="text-2xl font-semibold text-gray-800">Consulting Services</h3>
+        <p class="mt-4 text-gray-600">
+          Our expert consulting services help businesses reduce overhead costs, navigate market uncertainties, and achieve sustainable growth. We provide actionable insights to guide your decisions in a dynamic and competitive environment.
+        </p>
+        <div class="mt-6 space-y-4 text-left text-gray-700">
+          <ul>
+            <li class="flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span class="ml-2">Cost Optimization for better profitability</span>
+            </li>
+            <li class="flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span class="ml-2">Expert Guidance on global market trends</span>
+            </li>
+            <li class="flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span class="ml-2">Informed Decision-Making for your business growth</span>
+            </li>
+            <li class="flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span class="ml-2">Growth Enablement in a competitive market</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div> 
+  </div>
+</section>
+
+
+            // Services Page Section
+<div className="bg-gray-50 py-24 px-6 lg:px-8">
+  <div className="mx-auto max-w-7xl text-center">
+    <h2 className="text-4xl font-semibold text-gray-950">Our Services</h2>
+    <p className="mt-4 text-xl text-gray-700">We offer a wide range of services to ensure your shipments are inspected, certified, and ready for global trade.</p>
+    
+    <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+      {/* Pre-Shipment Inspection */}
+      <div className="bg-white shadow-xl rounded-lg p-8">
+        <h3 className="text-2xl font-semibold text-gray-950">Pre-Shipment Inspection</h3>
+        <p className="mt-4 text-gray-600">We offer a comprehensive Pre-Shipment Inspection service, ensuring your products comply with international regulations and quality standards before they leave for their destination. This guarantees that your shipments are risk-free and meet safety protocols.</p>
+      </div>
+      
+      {/* Compliance Certification */}
+      <div className="bg-white shadow-xl rounded-lg p-8">
+        <h3 className="text-2xl font-semibold text-gray-950">Compliance Certification</h3>
+        <p className="mt-4 text-gray-600">We issue official Compliance Certificates for your products, confirming they meet necessary quality and regulatory standards. Our certifications ensure your goods will clear customs smoothly and meet international safety norms.</p>
+      </div>
+
+      {/* Consultancy Services */}
+      <div className="bg-white shadow-xl rounded-lg p-8">
+        <h3 className="text-2xl font-semibold text-gray-950">Consultancy Services</h3>
+        <p className="mt-4 text-gray-600">Our Consultancy Services offer expert guidance in the realm of international trade. From documentation support to navigating legal and regulatory challenges, we ensure smooth and safe business scaling.</p>
+      </div>
+
+      {/* Global Reach */}
+      <div className="bg-white shadow-xl rounded-lg p-8">
+        <h3 className="text-2xl font-semibold text-gray-950">Global Reach</h3>
+        <p className="mt-4 text-gray-600">With our services spanning across over 60 countries, we ensure your shipments comply with both local and international standards. Our global network allows for seamless international operations and enhanced reliability.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+// Services Page Section
+<div className="bg-gray-50 py-24 px-6 lg:px-8">
+  <div className="mx-auto max-w-7xl text-center">
+    <h2 className="text-4xl font-semibold text-gray-950">Our Services</h2>
+    <p className="mt-4 text-xl text-gray-700">
+      We specialize in Metal and Paper Scrap Inspection, Certification, Quality Testing, and Consulting to ensure compliance, mitigate risks, and optimize business performance. Our end-to-end solutions help exporters and importers meet regulatory standards, enhance product quality, and navigate industry challenges with confidence.
+    </p>
+    <p className="mt-4 text-xl text-gray-700 font-semibold">
+      Partner with us for expert inspection, certification, and strategic consulting—ensuring smooth, secure, and compliant shipments.
+    </p>
+
+    <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+      
+      {/* Comprehensive Inspection Services */}
+      <div className="bg-white shadow-xl rounded-lg p-8">
+        <h3 className="text-2xl font-semibold text-gray-950">Comprehensive Inspection Services</h3>
+        <p className="mt-4 text-gray-600">
+          We offer a wide range of inspection services designed to mitigate risks, enhance performance, and ensure superior product quality. Our quality-focused approach helps businesses meet industry standards while maintaining compliance and reliability.
+        </p>
+        <ul className="mt-6 space-y-2 text-gray-600">
+          <li>✅ Diverse Inspection Solutions tailored to your needs</li>
+          <li>✅ Risk Mitigation to safeguard operations</li>
+          <li>✅ Performance Optimization for better efficiency</li>
+          <li>✅ Product Quality Assurance at every stage</li>
+          <li>✅ Commitment to Excellence through rigorous inspections</li>
+        </ul>
+      </div>
+
+      {/* Certification Services */}
+      <div className="bg-white shadow-xl rounded-lg p-8">
+        <h3 className="text-2xl font-semibold text-gray-950">Certification Services</h3>
+        <p className="mt-4 text-gray-600">
+          We provide Scrap Inspection services for exporters and importers, ensuring compliance with regulatory standards through thorough testing, validation, and certification.
+        </p>
+        <ul className="mt-6 space-y-2 text-gray-600">
+          <li>✅ Comprehensive Scrap Inspection for quality assurance</li>
+          <li>✅ Testing, Validation & Certification for compliance</li>
+          <li>✅ Regulatory & Legal Compliance support</li>
+          <li>✅ Banking Certification Assistance for smooth transactions</li>
+        </ul>
+      </div>
+
+      {/* Consulting Services */}
+      <div className="bg-white shadow-xl rounded-lg p-8">
+        <h3 className="text-2xl font-semibold text-gray-950">Consulting Services</h3>
+        <p className="mt-4 text-gray-600">
+          We provide expert consulting services to help businesses reduce overhead costs, navigate market uncertainties, and drive sustainable growth.
+        </p>
+        <ul className="mt-6 space-y-2 text-gray-600">
+          <li>✅ Cost Optimization to improve profitability</li>
+          <li>✅ Strategic Guidance for navigating global challenges</li>
+          <li>✅ Insights on Market Dynamics to stay competitive</li>
+          <li>✅ Industry Expertise in shipping and trade</li>
+          <li>✅ Trusted Advisory Support for informed decision-making</li>
+          <li>✅ Solutions for Business Complexities to ensure smooth operations</li>
+        </ul>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+// Services Page Section
+<div className="bg-gray-50 py-24 px-6 lg:px-12">
+  <div className="mx-auto max-w-7xl text-center">
+    {/* Page Title */}
+    <h2 className="text-5xl font-semibold text-gray-950">Our Services</h2>
+    <p className="mt-6 max-w-3xl mx-auto text-lg text-gray-700">
+      We specialize in Metal and Paper Scrap Inspection, Certification, Quality Testing, and Consulting to ensure compliance, mitigate risks, and optimize business performance. Our end-to-end solutions help exporters and importers meet regulatory standards, enhance product quality, and navigate industry challenges with confidence.
+    </p>
+    <p className="mt-4 max-w-2xl mx-auto text-lg text-gray-700 font-semibold">
+      Partner with us for expert inspection, certification, and strategic consulting—ensuring smooth, secure, and compliant shipments.
+    </p>
+
+    {/* Services Grid */}
+    <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-12">
+      
+      {/* Comprehensive Inspection Services */}
+      <div className="bg-white shadow-lg rounded-lg p-8 transition duration-300 ease-in-out transform hover:scale-105">
+        <h3 className="text-3xl font-semibold text-gray-950">Comprehensive Inspection Services</h3>
+        <p className="mt-4 text-gray-600">
+          We offer a wide range of inspection services designed to mitigate risks, enhance performance, and ensure superior product quality. Our quality-focused approach helps businesses meet industry standards while maintaining compliance and reliability.
+        </p>
+        <div className="mt-6 space-y-4 text-gray-600">
+          <p>✅ Tailored Inspection Solutions</p>
+          <p>✅ Risk Mitigation & Compliance</p>
+          <p>✅ Performance Optimization & Efficiency</p>
+          <p>✅ Quality Assurance at Every Stage</p>
+        </div>
+      </div>
+
+      {/* Certification Services */}
+      <div className="bg-white shadow-lg rounded-lg p-8 transition duration-300 ease-in-out transform hover:scale-105">
+        <h3 className="text-3xl font-semibold text-gray-950">Certification Services</h3>
+        <p className="mt-4 text-gray-600">
+          We provide Scrap Inspection services for exporters and importers, ensuring compliance with regulatory standards through thorough testing, validation, and certification.
+        </p>
+        <div className="mt-6 space-y-4 text-gray-600">
+          <p>✅ Comprehensive Scrap Inspection for Quality Assurance</p>
+          <p>✅ Certification for Regulatory & Legal Compliance</p>
+          <p>✅ Testing & Validation for Seamless Transactions</p>
+          <p>✅ Banking Certification Assistance</p>
+        </div>
+      </div>
+
+      {/* Consulting Services */}
+      <div className="bg-white shadow-lg rounded-lg p-8 transition duration-300 ease-in-out transform hover:scale-105">
+        <h3 className="text-3xl font-semibold text-gray-950">Consulting Services</h3>
+        <p className="mt-4 text-gray-600">
+          We provide expert consulting services to help businesses reduce overhead costs, navigate market uncertainties, and drive sustainable growth.
+        </p>
+        <div className="mt-6 space-y-4 text-gray-600">
+          <p>✅ Cost Optimization for Profitability</p>
+          <p>✅ Strategic Guidance through Global Challenges</p>
+          <p>✅ Industry Insights for Market Competitiveness</p>
+          <p>✅ Trusted Advisors for Informed Decision-making</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+// Services Page Section
+<div className="bg-gray-50 py-24 px-6 lg:px-12">
+  <div className="mx-auto max-w-7xl text-center">
+    {/* Page Title */}
+    <h2 className="text-5xl font-semibold text-gray-950">Our Services</h2>
+    <p className="mt-6 max-w-3xl mx-auto text-lg text-gray-700">
+      We specialize in Metal and Paper Scrap Inspection, Certification, Quality Testing, and Consulting to ensure compliance, mitigate risks, and optimize business performance. Our end-to-end solutions help exporters and importers meet regulatory standards, enhance product quality, and navigate industry challenges with confidence.
+    </p>
+    <p className="mt-4 max-w-2xl mx-auto text-lg text-gray-700 font-semibold">
+      Partner with us for expert inspection, certification, and strategic consulting—ensuring smooth, secure, and compliant shipments.
+    </p>
+
+    {/* Services Grid with equal width for all three services */}
+    <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-12">
+      
+      {/* Comprehensive Inspection Services */}
+      <div className="bg-white shadow-lg rounded-lg p-8 transition duration-300 ease-in-out transform hover:scale-105">
+        <h3 className="text-3xl font-semibold text-gray-950">Comprehensive Inspection Services</h3>
+        <p className="mt-4 text-gray-600">
+          We offer a wide range of inspection services designed to mitigate risks, enhance performance, and ensure superior product quality. Our quality-focused approach helps businesses meet industry standards while maintaining compliance and reliability.
+        </p>
+        <div className="mt-6 space-y-4 text-gray-600">
+          <p>✅ Tailored Inspection Solutions</p>
+          <p>✅ Risk Mitigation & Compliance</p>
+          <p>✅ Performance Optimization & Efficiency</p>
+          <p>✅ Quality Assurance at Every Stage</p>
+        </div>
+      </div>
+
+      {/* Certification Services */}
+      <div className="bg-white shadow-lg rounded-lg p-8 transition duration-300 ease-in-out transform hover:scale-105">
+        <h3 className="text-3xl font-semibold text-gray-950">Certification Services</h3>
+        <p className="mt-4 text-gray-600">
+          We provide Scrap Inspection services for exporters and importers, ensuring compliance with regulatory standards through thorough testing, validation, and certification.
+        </p>
+        <div className="mt-6 space-y-4 text-gray-600">
+          <p>✅ Comprehensive Scrap Inspection for Quality Assurance</p>
+          <p>✅ Certification for Regulatory & Legal Compliance</p>
+          <p>✅ Testing & Validation for Seamless Transactions</p>
+          <p>✅ Banking Certification Assistance</p>
+        </div>
+      </div>
+
+      {/* Consulting Services */}
+      <div className="bg-white shadow-lg rounded-lg p-8 transition duration-300 ease-in-out transform hover:scale-105">
+        <h3 className="text-3xl font-semibold text-gray-950">Consulting Services</h3>
+        <p className="mt-4 text-gray-600">
+          We provide expert consulting services to help businesses reduce overhead costs, navigate market uncertainties, and drive sustainable growth.
+        </p>
+        <div className="mt-6 space-y-4 text-gray-600">
+          <p>✅ Cost Optimization for Profitability</p>
+          <p>✅ Strategic Guidance through Global Challenges</p>
+          <p>✅ Industry Insights for Market Competitiveness</p>
+          <p>✅ Trusted Advisors for Informed Decision-making</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
             <div class="mt-16 px-6 lg:px-8">
                 <div class="relative grid grid-cols-1 gap-8 lg:grid-cols-2">
                     <div class="mx-auto max-w-2xl lg:max-w-7xl">

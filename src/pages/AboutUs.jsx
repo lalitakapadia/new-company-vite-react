@@ -58,7 +58,22 @@ const AboutUs = () => {
                                                     <div class="mt-8 space-y-10">
                                                         <div class="flex">
                                                             <div class="flex-shrink-0">
-                                                                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-[linear-gradient(115deg,var(--tw-gradient-stops))] 
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+  {/* Gradient Definition Inline */}
+  <linearGradient id="shieldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" style={{ stopColor: '#fff1be', stopOpacity: 1 }} />
+    <stop offset="28%" style={{ stopColor: '#4fd1c5', stopOpacity: 1 }} />
+    <stop offset="55%" style={{ stopColor: '#4a90e2', stopOpacity: 1 }} />
+    <stop offset="70%" style={{ stopColor: '#5e60ff', stopOpacity: 1 }} />
+    <stop offset="100%" style={{ stopColor: '#5e60ff', stopOpacity: 1 }} />
+  </linearGradient>
+  
+  {/* Shield Shape with Gradient */}
+  <path d="M7.5 1L1 5V11L7.5 14L14 11V5L7.5 1Z" fill="url(#shieldGradient)" stroke="black" strokeWidth="1.5" />
+</svg>
+
+
+                                                                {/* <div class="flex items-center justify-center h-12 w-12 rounded-md bg-[linear-gradient(115deg,var(--tw-gradient-stops))] 
                                                                     from-[#fff1be] from-[28%]   
                                                                     via-[#4fd1c5] via-[55%]    
                                                                     via-[#4a90e2] via-[70%]    
@@ -68,7 +83,11 @@ const AboutUs = () => {
                                                                     <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="#5e60ff" aria-hidden="true">
                                                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2a10 10 0 100 20 10 10 0 000-20zM2 12h20M12 2v20" />
                                                                     </svg>
-                                                                </div>
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+
+                                                                        <path d="M7.5 1L1 5V11L7.5 14L14 11V5L7.5 1Z" fill="none" stroke="black" stroke-width="1.5"/>
+                                                                    </svg>
+                                                                </div> */}
                                                             </div>
                                                             <div class="ml-4">
                                                                 <h4 class="text-lg leading-6 font-medium text-gray-900">Integrity</h4>
