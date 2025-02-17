@@ -35,7 +35,7 @@ const Navbar = () => {
               </span>
             </a>
             <nav className={`space-x-6  ${isLargeScreen ? 'flex' : 'hidden'}`}>
-              <a href="./" data-page="home" className="hover:text-yellow-600">Home</a>
+              <a href="./" data-page="home" className="hover:text-blue-800">Home</a>
               <a href="./about-us" data-page="about" className="hover:text-yellow-600">About Us</a>
               <a href="./services" data-page="services" className="hover:text-yellow-600">Services</a>
               <a href="./responsibilities" data-page="responsibilities" className="hover:text-yellow-600">Responsibilities</a>

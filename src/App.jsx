@@ -11,7 +11,8 @@ import Services from './pages/Services';
 import Responsibilities from './pages/Responsibilities';
 import MetalInspection from './pages/MetalInspection';
 import MetalImport from './pages/MetalImport';
-
+import Footer from './components/Footer';
+import Clients from './pages/Clients';
 function App() {
   return (
     <Router>
@@ -24,8 +25,11 @@ function App() {
           <Route path="/responsibilities" element={<Responsibilities />} />
           <Route path="/metal-inspection" element={<MetalInspection />} />
           <Route path="/metal-import" element={<MetalImport />} />
+          <Route path="/clients" element={<Clients />} />
+          <Route path="/contactUs" element={<ContactUs/>} />
         </Routes>
-      </main>
+      </main>  
+      <Footer />   
     </Router>
   );
 }
