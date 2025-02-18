@@ -1,9 +1,21 @@
 import React from 'react';
-
+import { motion } from "framer-motion";
 
 const Footer = () => {
     return (
         <footer className="bg-gray-900 text-white p-4 mt-4">
+             {/* CTA Section */}
+            <section className="p-12 text-center">
+                <h2 className="text-3xl font-bold mb-8">Get in Touch</h2>
+                <motion.a
+                href="#contact"
+                className="px-6 py-3 bg-gradient-to-r from-purple-500 to-blue-500 text-white font-semibold rounded-full hover:shadow-lg"
+                whileHover={{ scale: 1.1 }}
+                >
+                Contact Us
+                </motion.a>
+            </section>
+
             <div className="text-center">
                 <p>© 2025 Your Company. All rights reserved.</p>
                 <div className="flex justify-center space-x-4 mt-4">

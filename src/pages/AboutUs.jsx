@@ -1,174 +1,123 @@
-import React from "react";
 import { motion } from "framer-motion";
-import Navbar from "../components/Navbar";
-//import aboutImage from "./public/images/inspection.jpg";// Update the path as needed
-//import rusticImage from "../assets/images/RusticAboutUs.jpg"; // Update the path as needed
-
-const AboutUs = () => {
+import { FaHandshake, FaCheckCircle, FaLightbulb, FaGlobe, FaBalanceScale } from "react-icons/fa";
+import Navbar
+ from "../components/Navbar";
+export default function AboutUs() {
   return (
-    <div className="bg-gray-100 text-gray-800">
-      <Navbar />
-
-      {/* Gradient Background */}
-      <div className="relative mx-auto max-w-7xl">
-        <div className="absolute -right-60 -top-44 h-60 w-[36rem] transform-gpu bg-[linear-gradient(115deg,var(--tw-gradient-stops))] from-[#fff1be] from-[28%] via-[#4fd1c5] via-[55%] via-[#4a90e2] via-[70%] to-[#5e60ff] to-[100%] rotate-[-10deg] rounded-full blur-3xl"></div>
-      </div>
-
-      {/* About Us Section */}
-      <div className="mt-16 px-6 lg:px-8">
-        <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
-          <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6 }}
-            className="mx-auto max-w-2xl lg:max-w-7xl"
-          >
-            <h1 className="text-3xl font-medium tracking-tighter text-gray-950 sm:text-6xl">
-              Our Commitment to Excellence
-            </h1>
-            <p className="mt-6 max-w-3xl text-2xl font-medium text-gray-500">
-              We are dedicated to conducting our operations in a socially
-              responsible manner, recognizing our role as a global corporate
-              citizen.
-            </p>
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.6 }}
-            className="mx-auto max-w-2xl lg:max-w-7xl"
-          >
-            <img
-              src="../public/images/inspection.jpg"
-              alt="Inspection"
-              className="rounded-3xl mt-4 shadow-md"
-            />
-          </motion.div>
-        </div>
-      </div>
-
-      {/* Our Values Section */}
-      <div className="relative py-24">
-        <div className="absolute inset-x-2 bottom-0 top-48 rounded-3xl ring-1 ring-inset ring-black/5 bg-[linear-gradient(115deg,var(--tw-gradient-stops))] from-[#fff1be] from-[28%] via-[#4fd1c5] via-[55%] via-[#4a90e2] via-[70%] to-[#5e60ff] to-[100%] sm:bg-[linear-gradient(145deg,var(--tw-gradient-stops))]"></div>
-
-        <div className="relative px-4 lg:px-12">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="mx-auto max-w-2xl lg:max-w-7xl"
-          >
-            <div className="grid grid-cols-1 sm:grid-cols-1">
-              <div className="grid grid-cols-1 rounded-3xl shadow-lg ring-1 ring-black/5 bg-white p-10">
-                <h3 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
-                  Our Values
-                </h3>
-                <p className="mt-3 max-w-3xl text-lg text-gray-500">
-                  We emphasize integrity, transparency, and accountability to
-                  ensure long-term success and sustainability.
-                </p>
-
-                <div className="mt-8 space-y-8">
-                  {/* Value Item */}
-                  <div className="flex">
-                    <div className="flex-shrink-0">
-                      <div className="flex items-center justify-center h-12 w-12 rounded-md bg-gradient-to-r from-[#4fd1c5] to-[#5e60ff] text-white">
-                        <svg
-                          className="h-6 w-6"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="white"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M12 2a10 10 0 100 20 10 10 0 000-20zM2 12h20M12 2v20"
-                          />
-                        </svg>
-                      </div>
+    <body className="bg-gray-100 text-gray-800">
+      <div className="overflow-hidden">
+      <div class="relative mx-auto max-w-7xl">
+                    <div
+                        class="absolute -right-60 -top-44 h-60 w-[36rem] transform-gpu md:right-0 
+                        bg-[linear-gradient(115deg,var(--tw-gradient-stops))] 
+                        from-[#fff1be] from-[28%]   
+                        via-[#4fd1c5] via-[55%]    
+                        via-[#4a90e2] via-[70%]    
+                        to-[#5e60ff] to-[100%]
+                        rotate-[-10deg] 
+                        rounded-full blur-3xl">
                     </div>
-                    <div className="ml-4">
-                      <h4 className="text-lg font-medium text-gray-900">
-                        Integrity
-                      </h4>
-                      <p className="mt-2 text-base text-gray-500">
-                        We uphold ethical business practices with fairness and
-                        professionalism.
-                      </p>
-                    </div>
-                  </div>
-
-                  {/* Collaboration */}
-                  <div className="flex">
-                    <div className="flex-shrink-0">
-                      <div className="flex items-center justify-center h-12 w-12 rounded-md bg-gradient-to-r from-[#4a90e2] to-[#5e60ff] text-white">
-                        <svg
-                          className="h-6 w-6"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="white"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M12 2a10 10 0 100 20 10 10 0 000-20zM2 12h20M12 2v20"
-                          />
-                        </svg>
-                      </div>
-                    </div>
-                    <div className="ml-4">
-                      <h4 className="text-lg font-medium text-gray-900">
-                        Collaboration
-                      </h4>
-                      <p className="mt-2 text-base text-gray-500">
-                        We partner with leading corporations to enhance social,
-                        ethical, and environmental impact.
-                      </p>
-                    </div>
-                  </div>
-
-                  {/* Ethics */}
-                  <div className="flex">
-                    <div className="flex-shrink-0">
-                      <div className="flex items-center justify-center h-12 w-12 rounded-md bg-gradient-to-r from-[#fff1be] to-[#4fd1c5] text-white">
-                        <svg
-                          className="h-6 w-6"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="white"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M12 2a10 10 0 100 20 10 10 0 000-20zM2 12h20M12 2v20"
-                          />
-                        </svg>
-                      </div>
-                    </div>
-                    <div className="ml-4">
-                      <h4 className="text-lg font-medium text-gray-900">
-                        Ethics
-                      </h4>
-                      <p className="mt-2 text-base text-gray-500">
-                        Our compliance structure ensures adherence to ethical
-                        business practices.
-                      </p>
-                    </div>
-                  </div>
                 </div>
-              </div>
-            </div>
-          </motion.div>
-        </div>
-      </div>
-    </div>
-  );
-};
+      <Navbar />
+      <div className="bg-gray-900 text-white font-sans">
+      {/* Hero Section */}
+      <section className="h-screen/2 text-cyan-800 relative flex flex-col justify-center items-center text-center bg-[url(./public/images/about-us-map1.jpg)] bg-gradient-to-br from-purple-600 to-blue-500 p-8">
+        <motion.h1
+          className="text-5xl font-bold mb-4"
+          initial={{ opacity: 0, y: -50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+        >
+          Your Trusted Inspection Partner
+        </motion.h1>
+        <motion.p
+          className="text-lg opacity-80 max-w-xl"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1.5 }}
+        >
+          Ensuring quality and safety with cutting-edge inspections.
+        </motion.p>
+        <motion.a
+          href="#about"
+          className="mt-6 px-6 py-3 bg-white text-blue-600 font-semibold rounded-full shadow-md hover:bg-opacity-90 transition"
+          whileHover={{ scale: 1.1 }}
+        >
+          Learn More
+        </motion.a>
+      </section>
 
-export default AboutUs;
+      {/* About Section */}
+      <section id="about" className="flex flex-col md:flex-row items-center p-12 gap-8">
+        <motion.img
+          src="./public/images/about-us-core-values.jpg"
+          className="w-full md:w-1/2 rounded-lg shadow-lg"
+          initial={{ opacity: 0, x: -50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+        />
+        <div className="md:w-1/2">
+          <h2 className="text-3xl font-bold mb-4">About Our Company</h2>
+          <p className="text-gray-300 mb-4">
+            With a legacy of excellence, we provide top-tier inspection services worldwide.
+          </p>
+          <ul className="space-y-2">
+            <li className="flex items-center gap-2">
+              <FaCheckCircle className="text-green-400" /> Over 20 years of expertise
+            </li>
+            <li className="flex items-center gap-2">
+              <FaCheckCircle className="text-green-400" /> Trusted in 50+ countries
+            </li>
+          </ul>
+          <p className="font-medium py-6">
+          Integrity is at the core of our business values. Our Company is committed to maintaining high standards of professional conduct and engaging in ethical and fair business practices with our employees, stakeholders, and third parties.<br></br><br></br>
+          Our company collaborates with some of the world's largest multinational corporations and most renowned brands to enhance the social, ethical, and environmental impacts of their products, services, and supply chains. <br></br> <br></br>Our Compliance Code and compliance structure are designed to support adherence to our Code of Ethics.
+          </p>
+          
+        </div>
+      </section>
+
+      {/* Core Values */}
+      <section className="p-12">
+        <h2 className="text-4xl font-bold text-center mb-8">Our Core Values</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {[{ title: "Integrity", icon: FaBalanceScale, text:"We emphasize integrity, transparency, and accountability to ensure long-term success and sustainability." }, 
+          { title: "Innovation", icon: FaLightbulb, text:"" }, 
+          { title: "Collaboration", icon: FaHandshake, text:"We partner with leading corporations to enhance social, ethical, and environmental impact." },  
+          { title: "Global Reach", icon: FaGlobe, text:"" }].map((value, index) => (
+            <motion.div
+              key={index}
+              className="bg-gray-700 bg-opacity-10 p-6 rounded-xl shadow-md text-center"
+              whileHover={{ scale: 1.05 }}
+            >
+              <value.icon className="text-5xl mb-4 mx-auto text-blue-400" />
+              <h3 className="text-2xl font-semibold">{value.title}</h3>
+              <h2 className="mt-4 font-medium">{value.text}</h2>
+            </motion.div>
+          ))}
+        </div>
+      </section>
+
+      {/* Timeline / Achievements */}
+      {/* <section className="p-12">
+        <h2 className="text-4xl font-bold text-center mb-8">Our Journey</h2>
+        <div className="relative border-l-4 border-blue-500 pl-6 space-y-6">
+          {[{ year: "2010", event: "Company Founded" }, { year: "2015", event: "Expanded to 20 Countries" }, { year: "2020", event: "Recognized as Industry Leader" }].map((item, index) => (
+            <motion.div key={index} className="relative" whileHover={{ scale: 1.02 }}>
+              <span className="absolute -left-6 top-0 h-6 w-6 bg-blue-500 rounded-full"></span>
+              <h3 className="text-2xl font-bold">{item.year}</h3>
+              <p className="text-lg">{item.event}</p>
+            </motion.div>
+          ))}
+        </div>
+      </section> */}
+
+     
+    </div>
+      </div>
+    </body>
+    
+      
+    
+  );
+}

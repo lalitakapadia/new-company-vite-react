@@ -1,123 +1,201 @@
-import React from 'react';
-import Navbar from '../components/Navbar';
+// import React from "react";
+// import Navbar from "../components/Navbar";
+
+// const Responsibilities = () => {
+//   return (
+//     <div className="bg-gray-100 text-gray-800">
+//       <Navbar />
+
+//       {/* Header Section */}
+//       <section className="relative overflow-hidden">
+//         <div className="absolute -right-60 -top-44 h-60 w-[36rem] transform-gpu md:right-0 bg-gradient-to-r from-[#fff1be] via-[#4fd1c5] via-[#4a90e2] to-[#5e60ff] rotate-[-10deg] rounded-full blur-3xl"></div>
+//         <div className="container mx-auto px-6 py-16 text-center">
+//           <h1 className="text-4xl sm:text-6xl font-extrabold text-gray-900">
+//             Our Responsibilities
+//           </h1>
+//           <p className="mt-6 max-w-3xl mx-auto text-lg text-gray-600">
+//             We are committed to integrity, transparency, and accountability,
+//             ensuring the long-term success and sustainability of our company.
+//           </p>
+//         </div>
+//       </section>
+
+//       {/* Responsibilities Cards */}
+//       <section className="relative py-16 bg-gradient-to-r from-[#fff1be] via-[#4fd1c5] via-[#4a90e2] to-[#5e60ff] rounded-t-3xl">
+//         <div className="container mx-auto px-6">
+//           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-12">
+//             {[
+//               {
+//                 title: "Our Commitment",
+//                 image: "/images/OurCommitment.jpg",
+//                 description:
+//                   "We collaborate with top multinational corporations to enhance the social, ethical, and environmental impact of their supply chains.",
+//               },
+//               {
+//                 title: "Our Values",
+//                 image: "/images/OurValues.jpg",
+//                 description:
+//                   "We emphasize integrity, transparency, and accountability to ensure long-term corporate success and sustainability.",
+//               },
+//               {
+//                 title: "Our Approach",
+//                 image: "/images/Approach.jpg",
+//                 description:
+//                   "Integrity is at the core of our business values. We maintain high standards of professional conduct with all stakeholders.",
+//               },
+//               {
+//                 title: "Our Impact",
+//                 image: "/images/Impact1.jpg",
+//                 description:
+//                   "Our compliance code supports adherence to ethical standards and corporate governance principles.",
+//               },
+//             ].map((item, index) => (
+//               <div
+//                 key={index}
+//                 className="bg-white p-6 rounded-3xl shadow-xl ring-1 ring-gray-200"
+//               >
+//                 <h3 className="text-xl font-bold uppercase text-center text-gray-900">
+//                   {item.title}
+//                 </h3>
+//                 <img
+//                   src={item.image}
+//                   alt={item.title}
+//                   className="mt-6 w-full h-56 object-cover rounded-2xl shadow-md"
+//                 />
+//                 <p className="mt-4 text-gray-700 text-sm text-justify">
+//                   {item.description}
+//                 </p>
+//               </div>
+//             ))}
+//           </div>
+//         </div>
+//       </section>
+//     </div>
+//   );
+// };
+
+// export default Responsibilities;
+
+import React from "react";
+import { motion } from "framer-motion";
+import Navbar from "../components/Navbar";
 
 const Responsibilities = () => {
-    return (
-        <body class="bg-gray-100 text-gray-800">
-    <div class="overflow-hidden">
-        <div
-            class="absolute -right-60 -top-44 h-60 w-[36rem] transform-gpu md:right-0 
-            bg-[linear-gradient(115deg,var(--tw-gradient-stops))] 
-            from-[#fff1be] from-[28%]   
-            via-[#4fd1c5] via-[55%]    
-            via-[#4a90e2] via-[70%]    
-            to-[#5e60ff] to-[100%]
-            rotate-[-10deg] 
-            rounded-full blur-3xl">
-        </div>
-        <Navbar />
-        <div class="mt-16 px-6 lg:px-8">
-            <div class="grid grid-cols-1 gap-8 lg:grid-cols-1">
-                <div class="max-w-2xl lg:max-w-7xl">
-                    <h1 class="text-pretty text-3xl font-medium tracking-tighter text-gray-950 sm:text-6xl">
-                        Our Responsibility
-                    </h1>
-                    <p class="mt-6 max-w-3xl text-2xl font-medium text-gray-500">
-                        We are committed to integrity, transparency, and accountability, ensuring the long-term success
-                        and sustainability of Company Enterprise.
-                    </p>
-                </div>
-            </div>
-        </div>
+  const fadeInUp = {
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+  };
 
-        <div class="relative py-12">
-            <div
-                class="absolute inset-x-2 bottom-0 top-30 rounded-3xl ring-1 ring-inset ring-black/5 bg-[linear-gradient(115deg,var(--tw-gradient-stops))] 
-                bg-[linear-gradient(115deg,var(--tw-gradient-stops))]
-                from-[#fff1be] from-[28%]   
-                via-[#4fd1c5] via-[55%]    
-                via-[#4a90e2] via-[70%]    
-                to-[#5e60ff] to-[100%]  
-                sm:bg-[linear-gradient(145deg,var(--tw-gradient-stops))]">
-            </div>
-            <div class="relative px-6 lg:px-8">
-                <div class="mx-auto max-w-2xl lg:max-w-7xl">
-                    <div class="grid grid-cols-1 gap-12 lg:grid-cols-2 mt-2">
-                        <div
-                            class="-m-2 grid grid-cols-1 rounded-3xl shadow-[inset_0_0_2px_1px_#ffffff4d] ring-1 ring-black/5 max-lg:mx-auto max-lg:w-full max-lg:max-w-md card">
-                            <div class="grid grid-cols-1 rounded-3xl p-2 shadow-md shadow-black/5">
-                                <div class="rounded-3xl bg-white p-10 pb-9 shadow-2xl ring-1 ring-black/5">
-                                    <h3
-                                        class="font-mono text-xl font-bold uppercase tracking-widest text-black data-[dark]:text-black text-center">
-                                        Our Commitment</h3>
-                                    <img src="./public/images/OurCommitment.jpg" alt="Pre-shipment Inspection"
-                                        class="mt-8 rounded-3xl"></img>
-                                    <p class="mt-2 text-sm/6 text-gray-700 text-justify">
-                                        Our company collaborates with some of the world's largest multinational
-                                        corporations and most renowned brands to enhance the social, ethical, and
-                                        environmental impacts of their products, services, and supply chains.
-                                    </p>
+  const cards = [
+    {
+      title: "Our Commitment",
+      image: "/public/images/OurCommitment.jpg",
+      description:
+        "We collaborate with top multinational corporations to enhance the social, ethical, and environmental impact of their supply chains.",
+    },
+    {
+      title: "Our Values",
+      image: "/public/images/OurValues.jpg",
+      description:
+        "We emphasize integrity, transparency, and accountability to ensure long-term corporate success and sustainability.",
+    },
+    {
+      title: "Our Approach",
+      image: "/public/images/Approach.jpg",
+      description:
+        "Integrity is at the core of our business values. We maintain high standards of professional conduct with all stakeholders.",
+    },
+    {
+      title: "Our Impact",
+      image: "/public/images/Impact1.jpg",
+      description:
+        "Our compliance code supports adherence to ethical standards and corporate governance principles.",
+    },
+  ];
 
-                                </div>
-                            </div>
-                        </div>
-                        <div
-                            class="-m-2 grid grid-cols-1 rounded-3xl shadow-[inset_0_0_2px_1px_#ffffff4d] ring-1 ring-black/5 max-lg:mx-auto max-lg:w-full max-lg:max-w-md card">
-                            <div class="grid grid-cols-1 rounded-3xl p-2 shadow-md shadow-black/5">
-                                <div class="rounded-3xl bg-white p-10 pb-9 shadow-2xl ring-1 ring-black/5">
-                                    <h3
-                                        class="font-mono text-xl font-bold uppercase tracking-widest text-black data-[dark]:text-black text-center">
-                                        Our Values</h3>
-                                    <img src="./public/images/OurValues.jpg" alt="Pre-shipment Inspection"
-                                        class="mt-8 rounded-3xl"></img>
-                                    <p class="mt-2 text-sm/6 text-gray-700 text-justify">
-                                        We adhere to corporate governance principles that emphasize integrity,
-                                        transparency, and accountability, ensuring the long-term success and
-                                        sustainability of Company Enterprise.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div
-                            class="-m-2 grid grid-cols-1 rounded-3xl shadow-[inset_0_0_2px_1px_#ffffff4d] ring-1 ring-black/5 max-lg:mx-auto max-lg:w-full max-lg:max-w-md card">
-                            <div class="grid grid-cols-1 rounded-3xl p-2 shadow-md shadow-black/5">
-                                <div class="rounded-3xl bg-white p-10 pb-9 shadow-2xl ring-1 ring-black/5">
-                                    <h3
-                                        class="font-mono text-xl font-bold uppercase tracking-widest text-black data-[dark]:text-black text-center">
-                                        Our Approach</h3>
-                                    <img src="./public/images/Approach.jpg" alt="Pre-shipment Inspection"
-                                        class="mt-8 rounded-3xl"></img>
-                                    <p class="mt-2 text-sm/6 text-gray-700 text-justify">
-                                        Integrity is at the core of our business values. Our Company is committed to
-                                        maintaining high standards of professional conduct and engaging in ethical and
-                                        fair business practices with our employees, stakeholders, and third parties.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div
-                            class="-m-2 grid grid-cols-1 rounded-3xl shadow-[inset_0_0_2px_1px_#ffffff4d] ring-1 ring-black/5 max-lg:mx-auto max-lg:w-full max-lg:max-w-md card">
-                            <div class="grid grid-cols-1 rounded-3xl p-2 shadow-md shadow-black/5">
-                                <div class="rounded-3xl bg-white p-10 pb-9 shadow-2xl ring-1 ring-black/5">
-                                    <h3
-                                        class="font-mono text-xl font-bold uppercase tracking-widest text-black data-[dark]:text-black text-center">
-                                        Our Impact</h3>
-                                    <img src="./public/images/Impact1.jpg" alt="Pre-shipment Inspection"
-                                        class="mt-8 rounded-3xl"></img>
-                                    <p class="mt-2 text-sm/6 text-gray-700 text-justify">
-                                        Our Compliance Code and compliance structure are designed to support adherence
-                                        to our Code of Ethics.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  return (
+    <div className="bg-gray-100 text-gray-800 min-h-screen">
+      <Navbar />
+      <section className="relative overflow-hidden">
+        <div className="absolute -right-60 -top-44 h-60 w-[36rem] transform-gpu md:right-0 bg-gradient-to-r from-[#fff1be] via-[#4fd1c5] via-[#4a90e2] to-[#5e60ff] rotate-[-10deg] rounded-full blur-3xl"></div>
+         <div className="container mx-auto px-6 py-16 text-center">
+           <h1 className="text-4xl sm:text-6xl font-extrabold text-gray-900">
+                        Our Responsibilities
+           </h1>          
+           <p className="mt-6 max-w-3xl mx-auto text-lg text-gray-600">
+            We are committed to integrity, transparency, and accountability,
+             ensuring the long-term success and sustainability of our company.
+            </p>
+         </div>
+      </section>
+
+      {/* Header Section with Animated Gradient */}
+      <motion.section
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+        className="relative overflow-hidden text-center py-20 bg-gradient-to-r from-[#fff1be] via-[#4fd1c5] to-[#5e60ff] text-black"
+      >
+        <motion.h1
+          initial={{ scale: 0.8, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="text-5xl sm:text-6xl font-extrabold"
+        >
+          Our Responsibilities
+        </motion.h1>
+        <motion.p
+          variants={fadeInUp}
+          initial="hidden"
+          animate="visible"
+          className="mt-6 max-w-3xl mx-auto text-lg text-black/80"
+        >
+          We are committed to integrity, transparency, and accountability,
+          ensuring the long-term success and sustainability of our company.
+        </motion.p>
+        <div className="absolute inset-0 bg-gradient-to-r from-transparent to-white/20 blur-3xl"></div>
+      </motion.section>
+
+      {/* Responsibilities Cards Section */}
+      <section className="relative py-16">
+        <div className="container mx-auto px-6">
+          <motion.div
+            initial="hidden"
+            animate="visible"
+            variants={{
+              visible: {
+                transition: { staggerChildren: 0.2 },
+              },
+            }}
+            className="grid grid-cols-1 md:grid-cols-2 gap-12"
+          >
+            {cards.map((item, index) => (
+              <motion.div
+                key={index}
+                variants={fadeInUp}
+                whileHover={{ scale: 1.05 }}
+                className="bg-white backdrop-blur-lg p-6 rounded-3xl shadow-lg transition-transform duration-300 cursor-pointer hover:shadow-2xl ring-1 ring-gray-200"
+              >
+                <h3 className="text-xl font-bold uppercase text-center text-gray-900">
+                  {item.title}
+                </h3>
+                <motion.img
+                  src={item.image}
+                  alt={item.title}
+                  whileHover={{ scale: 1.1 }}
+                  className="mt-6 w-full h-56 object-cover rounded-2xl shadow-md transition-transform duration-300"
+                />
+                <p className="mt-4 text-gray-700 text-sm text-justify">
+                  {item.description}
+                </p>
+              </motion.div>
+            ))}
+          </motion.div>
         </div>
+      </section>
     </div>
-</body>
-    );
+  );
 };
 
 export default Responsibilities;
+

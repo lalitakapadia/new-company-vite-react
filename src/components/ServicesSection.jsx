@@ -31,7 +31,7 @@ const services = [
 
 export default function ServicesSection() {
   return (
-    <div className="py-16 bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 text-white">
+    <div className="mt-4 py-16 bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 text-white">
       <div className="max-w-7xl mx-auto px-6">
         {/* Section Header */}
         <motion.h2 

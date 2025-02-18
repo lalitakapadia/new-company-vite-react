@@ -29,7 +29,7 @@ const WhyChooseUs = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, ease: "easeOut", delay: index * 0.1 }}
               whileHover={{ scale: 1.08, transition: { duration: 0.2, ease: "easeInOut" } }}
-              className="rounded-3xl shadow-lg p-8 bg-white backdrop-blur-lg bg-opacity-80 transition-all hover:bg-gray-100"
+              className="rounded-3xl shadow-lg p-8 bg-slate-300 backdrop-blur-lg bg-opacity-80 transition-all hover:bg-gray-100"
             >
               <h3 className="text-2xl font-semibold text-gray-950">{item.title}</h3>
               <p className="mt-4 text-base text-gray-600">{item.text}</p>
