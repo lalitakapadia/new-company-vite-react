@@ -1,111 +1,129 @@
+"use client";
+
 import { useState } from "react";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { motion } from "framer-motion";
+import { FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
+import Navbar from '../components/Navbar';
+import countryData from "../utils/countries"; // Assume a utility file for country codes & flags
+import ContactUsForm from "../components/ContactUsForm";
 
 export default function ContactUs() {
-  const [form, setForm] = useState({ name: "", email: "", message: "" });
-
-  const handleChange = (e) => {
-    setForm({ ...form, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    alert("Your message has been sent!");
-    setForm({ name: "", email: "", message: "" });
-  };
-
+  const [selectedCountry, setSelectedCountry] = useState(countryData[0]);
   return (
-    <>
-      <div className="overflow-hidden">
-        <div className="relative mx-auto max-w-7xl">
-          <div
-            className="absolute -right-60 -top-44 h-60 w-[36rem] transform-gpu md:right-0 
-            bg-[linear-gradient(115deg,var(--tw-gradient-stops))] 
-            from-[#fff1be] from-[28%]   
-            via-[#4fd1c5] via-[55%]    
-            via-[#4a90e2] via-[70%]    
-            to-[#5e60ff] to-[100%]
-            rotate-[-10deg] 
-            rounded-full blur-3xl"
-          ></div>
+    <body class="bg-gray-100 text-gray-800 ">
+      <div class="overflow-hidden">
+        <div
+          class="absolute -right-60 -top-44 h-60 w-[36rem] transform-gpu md:right-0 
+                bg-[linear-gradient(115deg,var(--tw-gradient-stops))] 
+                from-[#fff1be] from-[28%]   
+                via-[#4fd1c5] via-[55%]    
+                via-[#4a90e2] via-[70%]    
+                to-[#5e60ff] to-[100%]
+                rotate-[-10deg] 
+                rounded-full blur-3xl">
         </div>
+
         <Navbar />
-      </div>
+        <div className="bg-gray-900 text-white">
+          {/* Hero Section */}
+          <section className="h-80 flex flex-col justify-center items-center text-center px-6 relative overflow-hidden bg-gradient-to-r from-blue-500 to-purple-500">
+            <motion.h1
+              className="text-5xl font-bold"
+              initial={{ opacity: 0, y: -50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+            >
+              Contact Us
+            </motion.h1>
+            <motion.p
+              className="text-lg mt-2"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.5, duration: 0.8 }}
+            >
+              We'd love to hear from you!
+            </motion.p>
+          </section>
 
-      <div className="min-h-screen bg-gray-100 flex items-center justify-center p-6">
-        <div className="max-w-4xl w-full bg-white rounded-2xl shadow-lg p-8">
-          <h2 className="text-3xl font-bold text-center text-gray-900">Contact Us</h2>
-          <p className="text-center text-gray-600 mt-2">
-            Have questions? Get in touch with us.
-          </p>
-
-          {/* Contact Details */}
-          <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
-            <div className="flex flex-col items-center">
-              <Mail className="w-6 h-6 text-blue-500" />
-              <p className="mt-2 text-gray-800 font-medium">info@meltenterprise.com</p>
+          {/* Contact Form & Info */}
+          <section className="p-12 grid grid-cols-1 md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+            {/* Contact Form */}
+            
+            <div className="bg-gray-800 p-8 rounded-lg shadow-lg">
+              <h2 className="text-3xl font-bold mb-6">Get in Touch</h2>
+              <form className="space-y-4">
+                <input
+                  type="text"
+                  placeholder="Your Name"
+                  className="w-full p-3 rounded bg-gray-700 text-white focus:outline-none"
+                  required
+                />
+                <input
+                  type="email"
+                  placeholder="Your Email"
+                  className="w-full p-3 rounded bg-gray-700 text-white focus:outline-none"
+                  required
+                />
+                <div className="flex space-x-3">
+                  {/* Country Code Dropdown */}
+                  <select
+                    value={selectedCountry.code}
+                    onChange={(e) =>
+                      setSelectedCountry(
+                        countryData.find((c) => c.code === e.target.value)
+                      )
+                    }
+                    className="p-3 bg-gray-700 text-white rounded focus:outline-none"
+                  >
+                    {countryData.map((country) => (
+                      <option key={country.code} value={country.code}>
+                        {country.flag} {country.name} ({country.dialCode})
+                      </option>
+                    ))}
+                  </select>
+                  {/* Phone Number Field */}
+                  <input
+                    type="tel"
+                    placeholder="Phone Number"
+                    className="w-full p-3 rounded bg-gray-700 text-white focus:outline-none"
+                    required
+                  />
+                </div>
+                <textarea
+                  placeholder="Your Message"
+                  rows="5"
+                  className="w-full p-3 rounded bg-gray-700 text-white focus:outline-none"
+                  required
+                ></textarea>
+                <motion.button
+                  type="submit"
+                  className="w-full bg-gradient-to-r from-blue-500 to-purple-500 hover:from-purple-500 hover:to-blue-500 text-white p-3 rounded-lg font-semibold shadow-md transition-all"
+                  whileHover={{ scale: 1.05 }}
+                >
+                  Send Message
+                </motion.button>
+              </form>
             </div>
-            <div className="flex flex-col items-center">
-              <Phone className="w-6 h-6 text-blue-500" />
-              <p className="mt-2 text-gray-800 font-medium">+91 98765 43210</p>
-            </div>
-            <div className="flex flex-col items-center">
-              <MapPin className="w-6 h-6 text-blue-500" />
-              <p className="mt-2 text-gray-800 font-medium">Mumbai, India</p>
-            </div>
-          </div>
 
-          {/* Contact Form */}
-          <form onSubmit={handleSubmit} className="mt-8 space-y-4">
-            <input
-              type="text"
-              name="name"
-              placeholder="Your Name"
-              value={form.name}
-              onChange={handleChange}
-              required
-              className="w-full p-3 border border-gray-300 rounded-lg"
-            />
-            <input
-              type="email"
-              name="email"
-              placeholder="Your Email"
-              value={form.email}
-              onChange={handleChange}
-              required
-              className="w-full p-3 border border-gray-300 rounded-lg"
-            />
-            <textarea
-              name="message"
-              placeholder="Your Message"
-              value={form.message}
-              onChange={handleChange}
-              required
-              className="w-full p-3 border border-gray-300 rounded-lg"
-            />
-            <button type="submit" className="w-full bg-blue-600 hover:bg-blue-700 text-white p-3 rounded-lg">
-              Send Message
-            </button>
-          </form>
-
-          {/* Optional: Google Map Embed */}
-          <div className="mt-8 w-full h-64 rounded-lg overflow-hidden">
-            <iframe
-              title="Melt Enterprise Location"
-              width="100%"
-              height="100%"
-              frameBorder="0"
-              scrolling="no"
-              marginHeight="0"
-              marginWidth="0"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.083607028372!2d144.9556518153172!3d-37.8172097420211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d5df1f5242d%3A0x5045675218ce7e33!2sMumbai!5e0!3m2!1sen!2sin!4v1619339044872!5m2!1sen!2sin"
-              allowFullScreen
-            ></iframe>
-          </div>
+            {/* Contact Info */}
+            <div className="bg-gray-800 p-8 rounded-lg shadow-lg space-y-6">
+              <h2 className="text-3xl font-bold mb-6">Contact Information</h2>
+              <div className="flex items-center space-x-4">
+                <FaPhone className="text-blue-400 text-2xl" />
+                <p>+1 234 567 890</p>
+              </div>
+              <div className="flex items-center space-x-4">
+                <FaEnvelope className="text-blue-400 text-2xl" />
+                <p>contact@yourcompany.com</p>
+              </div>
+              <div className="flex items-center space-x-4">
+                <FaMapMarkerAlt className="text-blue-400 text-2xl" />
+                <p>123 Business Street, City, Country</p>
+              </div>
+            </div>
+          </section>
         </div>
       </div>
-    </>
+    </body>
   );
 }

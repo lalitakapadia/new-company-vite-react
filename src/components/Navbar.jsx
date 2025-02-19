@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-
+import ScrollIndicator from './ScrollIndicator';
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth >= 768);
@@ -21,7 +21,9 @@ const Navbar = () => {
 
   return (
     <>
-      <header className=" pt-8 sticky top-0 z-50">
+      <header className=" pt-4 sticky top-0 z-50">
+      
+      <ScrollIndicator />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8  ">
           <div className="flex justify-between items-center py-4">
             <a href="./" className="text-3xl font-bold ">

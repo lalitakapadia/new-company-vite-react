@@ -1,139 +1,250 @@
-import React from 'react';
-import Navbar from '../components/Navbar';
+"use client";
 
-import { FaShieldAlt, FaShippingFast, FaBoxOpen, FaClipboardCheck, FaSearchDollar, FaChartBar } from "react-icons/fa";
 import { motion } from "framer-motion";
+import { FaCheckCircle, FaLightbulb } from "react-icons/fa";
+import { FaShieldAlt, FaShippingFast, FaBoxOpen, FaClipboardCheck, FaSearchDollar, FaChartBar } from "react-icons/fa";
+import ScrollIndicator from "../components/ScrollIndicator";
+import Navbar from "../components/Navbar";
+
+export default function Services() {
+  return (
+    <body className="bg-gray-100 text-gray-800">
+      <div className="overflow-hidden">
+      <div class="relative mx-auto max-w-7xl">
+          <div
+            class="absolute -right-60 -top-44 h-60 w-[36rem] transform-gpu md:right-0 
+                        bg-[linear-gradient(115deg,var(--tw-gradient-stops))] 
+                        from-[#fff1be] from-[28%]   
+                        via-[#4fd1c5] via-[55%]    
+                        via-[#4a90e2] via-[70%]    
+                        to-[#5e60ff] to-[100%]
+                        rotate-[-10deg] 
+                        rounded-full blur-3xl">
+          </div>
+        </div>
+      <Navbar />
+      <div className="bg-gray-900 text-white">
+        {/* Scroll Indicator */}
 
 
-const services = [
+
+        {/* Hero Section */}
+        <section className="h-80 flex flex-col justify-center items-center text-center px-6 bg-gradient-to-r from-blue-500 to-purple-500">
+          <motion.h1
+            className="text-5xl font-bold"
+            initial={{ opacity: 0, y: -50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+          >
+            Our Services
+          </motion.h1>
+          <motion.p
+            className="text-lg mt-2"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.5, duration: 0.8 }}
+          >
+            Delivering Excellence in Quality, Compliance, and Risk Management
+          </motion.p>
+        </section>
+
+        {/* Services Section */}
+        <section className="max-w-6xl mx-auto p-6 space-y-12">
+          {servicesData.map((service, index) => (
+            <ServiceCard key={index} {...service} reverse={index % 2 !== 0} />
+          ))}
+        </section>
+      </div>
+    </div>
+    </body>
+
+  );
+}
+
+const ServiceCard = ({ title, description, features, benefits, image, icon: Icon, reverse }) => {
+  return (
+    <motion.div
+      className={`flex flex-col md:flex-row items-center gap-8 p-8 bg-gray-800 rounded-lg shadow-lg transition-all transform hover:scale-105 ${reverse ? "md:flex-row-reverse" : ""
+        }`}
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6 }}
+      viewport={{ once: true }}
+    >
+      {/* Image Section */}
+      <div className="w-full md:w-1/2">
+        <img
+          src={image}
+          alt={title}
+          className="w-full h-64 object-cover rounded-lg shadow-md"
+        />
+      </div>
+
+      {/* Content Section */}
+      <div className="w-full md:w-1/2">
+        <div className="flex items-center gap-4">
+          <Icon className="text-blue-400 text-5xl" />
+          <h2 className="text-3xl font-semibold text-blue-400">{title}</h2>
+        </div>
+        <p className="mt-4 text-gray-300">{description}</p>
+
+
+
+        {/* Features List */}
+        
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {features.map((feature, index) => (
+            <motion.div
+              key={index}
+              className="flex items-center space-x-3 bg-gray-800 p-4 rounded-lg shadow-md"
+              whileHover={{ scale: 1.05 }}
+            >
+              <FaCheckCircle className="text-green-400 text-2xl" />
+              <p className="text-gray-300 font-normal text-sm">{feature}</p>
+            </motion.div>
+          ))}
+        </div>
+
+        {/* Benefits */}
+        {/* <h3 className="text-xl font-medium text-purple-400 mt-6">🔹 Why It Matters:</h3>
+        <ul className="mt-2 space-y-2 font-normal">
+          {benefits.map((benefit, index) => (
+            <li key={index} className="flex items-center">
+              <FaCheckCircle className="text-yellow-400 mr-2" />
+              {benefit}
+            </li>
+          ))}
+        </ul> */}
+
+        <div className="bg-gradient-to-r from-blue-500 to-purple-500 p-6 rounded-lg shadow-md">
+          <div className="flex items-center space-x-3">
+            <FaLightbulb className="text-yellow-300 text-2xl" />
+            <h3 className="text-xl font-semibold text-white">Why It Matters</h3>
+          </div>
+          {/* <p className="mt-2 text-gray-200">{service.whyItMatters}</p> */}
+          <ul className="mt-2 space-y-2 font-normal">
+          {benefits.map((benefit, index) => (
+            <li key={index} className="flex items-center">
+              <FaCheckCircle className="text-yellow-400 mr-2" />
+              {benefit}
+            </li>
+          ))}
+        </ul>
+        </div>
+      </div>
+    </motion.div>
+  );
+};
+
+// Service Data with Images & Icons
+const servicesData = [
   {
     title: "Independent Quality Assurance",
+    description: "Ensuring excellence through unbiased quality verification.",
+    image: "/images/quality-assurance.jpg",
     icon: FaShieldAlt,
-    summary: "Ensure products meet international standards with rigorous third-party assessments.",
-    details: "We provide comprehensive quality assurance audits, ensuring compliance with industry benchmarks, safety regulations, and customer expectations. Our thorough inspections help mitigate risks and prevent costly defects in the supply chain.",
-    image: "/quality-assurance.jpg",
+    features: [
+      "Comprehensive product inspections at every production stage",
+      "Verification against ISO, ASTM, and other global standards",
+      "Material and performance testing for durability, safety, and reliability",
+      "Detailed compliance reports with corrective action plans",
+      "Tailored assessments to meet specific industry and client needs",
+    ],
+    benefits: [
+      "Minimizes product recalls and compliance risks",
+      "Enhances brand reputation by delivering defect-free products",
+      "Ensures customer satisfaction through consistent quality",
+    ],
   },
   {
     title: "Shipment Integrity Verification",
+    description: "Guaranteeing product quality before dispatch.",
+    image: "/images/shipment-verification.jpg",
     icon: FaShippingFast,
-    summary: "Pre-shipment checks to guarantee quality, compliance, and defect-free deliveries.",
-    details: "Our shipment verification process includes pre-shipment inspections, packaging integrity assessments, and product conformity checks to ensure smooth and hassle-free international deliveries.",
-    image: "/shipment-verification.jpg",
+    features: [
+      "Pre-shipment inspections for defects, compliance, and packaging",
+      "Random sampling and AQL-based quality checks",
+      "Loading and unloading supervision for safety assurance",
+      "Real-time inspection reports with photographic evidence",
+      "Compliance verification for international shipping standards",
+    ],
+    benefits: [
+      "Reduces risk of faulty shipments and customer complaints",
+      "Ensures regulatory compliance for hassle-free global trade",
+      "Strengthens supplier accountability and transparency",
+    ],
   },
   {
     title: "Secure Cargo Supervision",
+    description: "Protecting shipments from damage, misplacement, and security risks.",
+    image: "/images/cargo-supervision.jpg",
     icon: FaBoxOpen,
-    summary: "Monitor container loading to prevent damage, misplacement, or security risks.",
-    details: "We oversee container loading and unloading, verifying product quantity, security seals, and transportation compliance. Our supervision helps reduce transit risks and product losses.",
-    image: "/cargo-supervision.jpg",
+    features: [
+      "24/7 monitoring of loading and unloading procedures",
+      "Tamper-proof security seals and verification",
+      "GPS tracking and real-time surveillance for high-value shipments",
+      "Condition and quantity verification before dispatch",
+      "Detailed incident reporting with corrective recommendations",
+    ],
+    benefits: [
+      "Prevents losses due to theft, mishandling, or misplacement",
+      "Ensures adherence to global security compliance (TAPA, C-TPAT)",
+      "Boosts supply chain confidence with secure logistics",
+    ],
   },
   {
     title: "Supplier Compliance Assistance",
+    description: "Helping suppliers align with regulatory and industry standards.",
+    image: "/images/compliance-assistance.jpg",
     icon: FaClipboardCheck,
-    summary: "Help suppliers align with industry and regulatory requirements for approval.",
-    details: "Our compliance experts assist suppliers in meeting local and global regulations, ensuring smooth certification processes and continuous improvement in operational standards.",
-    image: "/supplier-compliance.jpg",
+    features: [
+      "Regulatory audits to ensure industry compliance",
+      "ISO, FDA, CE, and RoHS certification guidance",
+      "Customized training programs for supplier improvement",
+      "Gap analysis and corrective action planning",
+      "On-site assessments and compliance documentation",
+    ],
+    benefits: [
+      "Reduces non-compliance penalties and legal risks",
+      "Strengthens supplier relationships through quality alignment",
+      "Improves operational efficiency and market competitiveness",
+    ],
   },
   {
     title: "Vendor Risk & Quality Assessment",
+    description: "Evaluating supplier reliability, operational standards, and risk management.",
+    image: "/images/vendor-assessment.jpg",
     icon: FaSearchDollar,
-    summary: "Evaluate suppliers' reliability, operational standards, and risk management.",
-    details: "We conduct in-depth evaluations of supplier capabilities, risk exposure, and financial stability, empowering businesses to make informed procurement decisions.",
-    image: "/vendor-assessment.jpg",
+    features: [
+      "Supplier qualification assessments before onboarding",
+      "Operational audits covering safety, quality, and ethics",
+      "Supply chain risk evaluation and fraud detection",
+      "Financial health checks for business stability",
+      "Custom reports with risk mitigation strategies",
+    ],
+    benefits: [
+      "Mitigates supplier-related risks and potential disruptions",
+      "Ensures long-term partnerships with reliable vendors",
+      "Improves supply chain efficiency and risk preparedness",
+    ],
   },
   {
     title: "Strategic Supplier Benchmarking",
+    description: "Assess vendor performance to optimize procurement and sourcing strategies.",
+    image: "/images/vendor-assessment.jpg",
     icon: FaChartBar,
-    summary: "Assess vendor performance to optimize procurement and sourcing strategies.",
-    details: "Using industry metrics, we analyze supplier efficiency, pricing models, and product quality, helping organizations refine their sourcing strategies and enhance supply chain resilience.",
-    image: "/supplier-benchmarking.jpg",
+    features: [
+      "Supplier qualification assessments before onboarding",
+      "Operational audits covering safety, quality, and ethics",
+      "Supply chain risk evaluation and fraud detection",
+      "Financial health checks for business stability",
+      "Custom reports with risk mitigation strategies",
+    ],
+    benefits: [
+      "Mitigates supplier-related risks and potential disruptions",
+      "Ensures long-term partnerships with reliable vendors",
+      "Improves supply chain efficiency and risk preparedness",
+    ]
   },
 ];
-
-const Services = () => {
-  return (
-    <body class="bg-gray-100 text-gray-800 ">
-      <div class="overflow-hidden">
-        <div
-          class="absolute -right-60 -top-44 h-60 w-[36rem] transform-gpu md:right-0 
-                bg-[linear-gradient(115deg,var(--tw-gradient-stops))] 
-                from-[#fff1be] from-[28%]   
-                via-[#4fd1c5] via-[55%]    
-                via-[#4a90e2] via-[70%]    
-                to-[#5e60ff] to-[100%]
-                rotate-[-10deg] 
-                rounded-full blur-3xl">
-        </div>
-
-        <Navbar />
-
-        <div className="bg-gray-900 text-white">
-
-
-          {/* Hero Section */}
-          <section className="h-screen/2 p-12 flex flex-col justify-center items-center text-center px-6 relative overflow-hidden">
-            <motion.h1
-              className="text-5xl md:text-6xl font-bold mb-4"
-              initial={{ opacity: 0, y: -50 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-            >
-              Our Premium Services
-            </motion.h1>
-            <motion.p
-              className="text-lg md:text-xl mb-6 max-w-3xl"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.5, duration: 0.8 }}
-            >
-              Delivering excellence through rigorous inspections, compliance, and strategic insights.
-            </motion.p>
-          </section>
-
-          {/* Services Section */}
-          <section className="p-12 space-y-16">
-            {services.map((service, index) => (
-              <div
-                key={index}
-                className={`flex flex-col md:flex-row items-center gap-12 ${index % 2 === 0 ? "" : "md:flex-row-reverse"}`}
-              >
-                <div className="md:w-1/2">
-                  <img src={service.image} alt={service.title}></img>
-                  {/* <Image
-                    src={service.image}
-                    alt={service.title}
-                    width={600}
-                    height={400}
-                    className="rounded-lg shadow-lg"
-                  /> */}
-                </div>
-                <div className="md:w-1/2">
-                  <service.icon className="text-5xl text-blue-400 mb-4" />
-                  <h2 className="text-4xl font-bold mb-4">{service.title}</h2>
-                  <p className="text-lg font-semibold mb-2">{service.summary}</p>
-                  <p className="text-lg text-gray-400">{service.details}</p>
-                </div>
-              </div>
-            ))}
-          </section>
-
-          {/* Call to Action */}
-          <section className="p-12 text-center">
-            <h2 className="text-4xl font-bold mb-6">Partner With Us</h2>
-            <p className="text-lg mb-6">Enhance your business with our trusted services.</p>
-            <motion.a
-              href="/contact"
-              className="bg-gradient-to-r from-blue-500 to-purple-500 hover:from-purple-500 hover:to-blue-500 text-white px-8 py-4 rounded-lg text-lg font-semibold shadow-md transition-all"
-              whileHover={{ scale: 1.05 }}
-            >
-              Get Started
-            </motion.a>
-          </section>
-        </div>
-      </div>
-
-    </body>
-  )
-};
-
-export default Services;
