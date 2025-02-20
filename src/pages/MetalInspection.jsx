@@ -1,411 +1,122 @@
-import React, { useState } from 'react';
-import Navbar from '../components/Navbar';
-
-<script src="/_next/static/chunks/polyfills-78c92fac7aa8fdd8.js" nomodule=""></script>
+import React from "react";
+import { motion } from "framer-motion";
+import Navbar from "../components/Navbar";
+import { FaCheckCircle, FaShieldAlt, FaClipboardCheck, FaFlask } from "react-icons/fa";
 
 const MetalInspection = () => {
-
-
   return (
-
     <>
-    <div class="overflow-hidden">
-        <div
-            class="absolute -right-60 -top-44 h-60 w-[36rem] transform-gpu md:right-0 
-            bg-[linear-gradient(115deg,var(--tw-gradient-stops))] 
-            from-[#fff1be] from-[28%]   
-            via-[#4fd1c5] via-[55%]    
-            via-[#4a90e2] via-[70%]    
-            to-[#5e60ff] to-[100%]
-            rotate-[-10deg] 
-            rounded-full blur-3xl">
-        </div>
+      {/* Navbar */}
+      <Navbar />
 
-        <Navbar /></div>
+      {/* Hero Section */}
+      <section className="relative bg-gradient-to-r from-[#fff1be] via-[#4fd1c5] via-[#4a90e2] to-[#5e60ff] text-white text-center py-24">
+        <div className="absolute inset-0 bg-black/25 backdrop-blur-sm"></div>
+        <motion.div
+          className="relative z-10 max-w-4xl mx-auto px-6"
+          initial={{ opacity: 0, y: -30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+        >
+          <h1 className="text-5xl font-bold">Comprehensive Metal Inspection Services</h1>
+          <p className="mt-4 text-lg">Ensuring Safety, Compliance & Quality in 60+ Countries</p>
+        </motion.div>
+      </section>
 
-        <div class="mx-2 mt-2 rounded-4xl bg-gray-900 py-12">
-            <div class="px-6 lg:px-8">
-                <div class="mx-auto max-w-2xl lg:max-w-7xl">
-                    <h2 data-dark="true"
-                        class="font-mono text-xs/5 font-semibold uppercase tracking-widest text-gray-500 data-[dark]:text-gray-400">
-                            We are DGFT approved Pre-shipment inspection agency authorized to conduct a metal scrap inspection.</h2>
-                    <h3 data-dark="true"
-                        class="mt-2 max-w-3xl text-pretty text-4xl font-medium tracking-tighter text-gray-950 data-[dark]:text-white sm:text-6xl">
-                        Metal Inspection</h3>
-                    <div class="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-2">
-                        <div data-dark="true"
-                            class="max-lg:rounded-t-4xl lg:col-span-4 lg:rounded-tl-4xl group relative flex flex-col overflow-hidden rounded-lg bg-white shadow-sm ring-1 ring-black/5 data-[dark]:bg-gray-800 data-[dark]:ring-white/15">
-                            
-                            <div class="relative p-10">
-                                <h3 data-dark="true"
-                                    class="font-mono text-xs/5 font-semibold uppercase tracking-widest text-gray-500 data-[dark]:text-gray-400">
-                                    Networking</h3>
-                                <p
-                                    class="mt-1 text-2xl/8 font-medium tracking-tight text-gray-950 group-data-[dark]:text-white">
-                                    Sell at the speed of light</p>
-                                <p
-                                    class="mt-2 max-w-[600px] text-sm/6 text-gray-600 group-data-[dark]:text-gray-400">
-                                    Metal scrap inspection and testing for composition, grade, and purity, is an important process undertaken before any cargo is imported into the country. The DGFT approved Pre-shipment inspection agency must certify that the cargo being imported is free of any unwanted material such as explosives or radioactive elements. But, metal scrap inspection in itself is more than just a visual inspection on site. During metal scrap inspection, many aspects regarding quality checks need to be considered when dealing with ferrous or non-ferrous metals. Scrap metals are complicated materials to inspect out of recyclables since we need to take into account the impurities, corrosion, and fatigue. Not to mention there needs to be a thorough investigation on toxicities, such as oil and chemical residue that can harm the scrap metal.</p>
-                            </div>
-                        </div>
-                        <div data-dark="true"
-                            class="z-10 !overflow-visible lg:col-span-2 lg:rounded-tr-4xl group relative flex flex-col overflow-hidden rounded-lg bg-white shadow-sm ring-1 ring-black/5 data-[dark]:bg-gray-800 data-[dark]:ring-white/15">
-                            
-                            <div class="relative "> 
-                                <img alt="" src="./public/images/MetalInspection5.jpg "
-                                    class="aspect-[3/4] w-full object-cover lg:rounded-tr-4xl rounded-xl ">
-                                    </img>     
-                            </div>
-                        </div>
-                        <div data-dark="true"
-                            class="lg:col-span-2 lg:rounded-bl-4xl group relative flex flex-col overflow-hidden rounded-lg bg-white shadow-sm ring-1 ring-black/5 data-[dark]:bg-gray-800 data-[dark]:ring-white/15">
-                            
-                            <div class="relative">
-                                <img alt="" src="./public/images/MetalInspection2.jpg"
-                                    class="aspect-[3/4] w-full object-cover lg:rounded-bl-4xl rounded-xl ">
-                                </img>
-                            </div>
-                        </div>
-                        <div data-dark="true"
-                            class="max-lg:rounded-b-4xl lg:col-span-4 lg:rounded-br-4xl group relative flex flex-col overflow-hidden rounded-lg bg-white shadow-sm ring-1 ring-black/5 data-[dark]:bg-gray-800 data-[dark]:ring-white/15">
-                            
-                            <div class="relative p-10">
-                                <h3 data-dark="true"
-                                    class="font-mono text-xs/5 font-semibold uppercase tracking-widest text-gray-500 data-[dark]:text-gray-400">
-                                    Engagement</h3>
-                                <p
-                                    class="mt-1 text-2xl/8 font-medium tracking-tight text-gray-950 group-data-[dark]:text-white">
-                                    Become a thought leader</p>
-                                <p
-                                    class="mt-2 max-w-[600px] text-sm/6 text-gray-600 group-data-[dark]:text-gray-400">
-                                    New Company is a DGFT approved Pre-shipment inspection agency authorized to conduct a metal scrap inspection. We inspect the cargo at the time of loading and ensure that the containers destined for India and free from any hazards. We have our own testing facilities and are authorized to provide Pre-shipment Inspection Certification in 60+ countries. This means we are authorized to check for the presence of arms and ammunition, mines, shells, cartridges, or any other explosive in any form along with radiation (Gamma & Neutron) level and subsequently should carry a Pre-Shipment inspection certificate upon arriving in India.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-        </div>
-        <div class="mt-8 px-6 lg:px-8">
-            <div class="mx-auto max-w-2xl lg:max-w-7xl text-center p-12">
-                <h1
-                    class="text-pretty text-3xl font-medium tracking-tighter text-gray-950 data-[dark]:text-white sm:text-6xl">
-                    Non-ferrous and Ferrous scrap</h1>
-                <h2 class="p-2 text-pretty text-2xl font-medium tracking-tighter text-gray-950 data-[dark]:text-white sm:text-4xl">Imports to India</h2>
-            </div>
-            <div class="relative px-6 lg:px-8">
-                    <div class="mx-auto max-w-2xl lg:max-w-7xl">
-                        <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
-                            <div
-                                class="-m-2 grid grid-cols-1 rounded-3xl shadow-[inset_0_0_2px_1px_#ffffff4d] ring-1 ring-black/5 max-lg:mx-auto max-lg:w-full max-lg:max-w-md">
-                                <div class="grid grid-cols-1 rounded-3xl p-2 shadow-md shadow-black/5">
-                                    <div class="rounded-3xl bg-white p-10 pb-9 shadow-2xl ring-1 ring-black/5">
-                                        
-                                        <div class="mt-8">
-                                            
-                                            <ul class="mt-3 space-y-3">
-                                                <li
-                                                    class="flex items-start gap-4 text-sm/6 text-gray-950/75 data-[disabled]:text-gray-950/25">
-                                                    <span class="inline-flex h-6 items-center"><svg viewBox="0 0 15 15"
-                                                            aria-hidden="true"
-                                                            class="size-[0.9375rem] shrink-0 fill-gray-950/25">
-                                                            <path clip-rule="evenodd" d="M8 0H7v7H0v1h7v7h1V8h7V7H8V0z">
-                                                            </path>
-                                                        </svg></span>Heavy melting steel (HMS)
-                                                </li>
-                                                <li
-                                                    class="flex items-start gap-4 text-sm/6 text-gray-950/75 data-[disabled]:text-gray-950/25">
-                                                    <span class="inline-flex h-6 items-center"><svg viewBox="0 0 15 15"
-                                                            aria-hidden="true"
-                                                            class="size-[0.9375rem] shrink-0 fill-gray-950/25">
-                                                            <path clip-rule="evenodd" d="M8 0H7v7H0v1h7v7h1V8h7V7H8V0z">
-                                                            </path>
-                                                        </svg></span>Copper
-                                                </li>
-                                                <li
-                                                    class="flex items-start gap-4 text-sm/6 text-gray-950/75 data-[disabled]:text-gray-950/25">
-                                                    <span class="inline-flex h-6 items-center"><svg viewBox="0 0 15 15"
-                                                            aria-hidden="true"
-                                                            class="size-[0.9375rem] shrink-0 fill-gray-950/25">
-                                                            <path clip-rule="evenodd" d="M8 0H7v7H0v1h7v7h1V8h7V7H8V0z">
-                                                            </path>
-                                                        </svg></span>Cobalt
+      {/* Services Overview */}
+      <section className="py-20 px-6 lg:px-12 bg-gray-900 text-white">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          {/* Text Content */}
+          <motion.div
+            initial={{ opacity: 0, x: -30 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+          >
+            <h2 className="text-4xl font-bold">Certified Metal Scrap Inspection</h2>
+            <p className="mt-4 text-lg text-gray-300">
+              As a DGFT-approved Pre-shipment Inspection Agency, we conduct rigorous assessments of metal scrap shipments to verify their compliance with international safety standards. Our inspection process ensures that metal cargo is free from hazardous substances, explosives, and radioactive materials before being imported into India.
+            </p>
+            <ul className="mt-6 space-y-3">
+              <li className="flex items-center gap-3">
+                <FaCheckCircle className="text-green-400 text-xl" />
+                Physical and chemical testing for composition and purity
+              </li>
+              <li className="flex items-center gap-3">
+                <FaClipboardCheck className="text-green-400 text-xl" />
+                Verification of compliance with import/export regulations
+              </li>
+              <li className="flex items-center gap-3">
+                <FaShieldAlt className="text-green-400 text-xl" />
+                Detection of explosives, arms, ammunition, and radiation contamination
+              </li>
+              <li className="flex items-center gap-3">
+                <FaFlask className="text-green-400 text-xl" />
+                Lab testing for corrosion, impurities, and structural integrity
+              </li>
+            </ul>
+          </motion.div>
 
-                                                </li>
-                                                <li
-                                                    class="flex items-start gap-4 text-sm/6 text-gray-950/75 data-[disabled]:text-gray-950/25">
-                                                    <span class="inline-flex h-6 items-center"><svg viewBox="0 0 15 15"
-                                                            aria-hidden="true"
-                                                            class="size-[0.9375rem] shrink-0 fill-gray-950/25">
-                                                            <path clip-rule="evenodd" d="M8 0H7v7H0v1h7v7h1V8h7V7H8V0z">
-                                                            </path>
-                                                        </svg></span> Tin
+          {/* Image */}
+          <motion.div
+            className="relative w-full h-96"
+            initial={{ opacity: 0, x: 30 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+          >
+            <div className="absolute inset-0 bg-gradient-to-b from-transparent to-gray-900/60 rounded-lg"></div>
+            <img
+              src="./public/images/MetalInspection5.jpg"
+              alt="Metal Inspection"
+              className="w-full h-full object-cover rounded-lg shadow-lg"
+              style={{ clipPath: "polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%)" }}
+            />
+          </motion.div>
+        </div>
+      </section>
 
-                                                </li>
-                                                
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div
-                                class="-m-2 grid grid-cols-1 rounded-3xl shadow-[inset_0_0_2px_1px_#ffffff4d] ring-1 ring-black/5 max-lg:mx-auto max-lg:w-full max-lg:max-w-md">
-                                <div class="grid grid-cols-1 rounded-3xl p-2 shadow-md shadow-black/5">
-                                    <div class="rounded-3xl bg-white p-10 pb-9 shadow-2xl ring-1 ring-black/5">
-                                        <div class="mt-8">
-                                            <ul class="mt-3 space-y-3">
-                                                <li
-                                                    class="flex items-start gap-4 text-sm/6 text-gray-950/75 data-[disabled]:text-gray-950/25">
-                                                    <span class="inline-flex h-6 items-center"><svg viewBox="0 0 15 15"
-                                                            aria-hidden="true"
-                                                            class="size-[0.9375rem] shrink-0 fill-gray-950/25">
-                                                            <path clip-rule="evenodd" d="M8 0H7v7H0v1h7v7h1V8h7V7H8V0z">
-                                                            </path>
-                                                        </svg></span>Cast Iron
-                                                </li>
-                                                <li
-                                                    class="flex items-start gap-4 text-sm/6 text-gray-950/75 data-[disabled]:text-gray-950/25">
-                                                    <span class="inline-flex h-6 items-center"><svg viewBox="0 0 15 15"
-                                                            aria-hidden="true"
-                                                            class="size-[0.9375rem] shrink-0 fill-gray-950/25">
-                                                            <path clip-rule="evenodd" d="M8 0H7v7H0v1h7v7h1V8h7V7H8V0z">
-                                                            </path>
-                                                        </svg></span>Stainless Steel
-                                                </li>
-                                                
-                                                <li
-                                                class="flex items-start gap-4 text-sm/6 text-gray-950/75 data-[disabled]:text-gray-950/25">
-                                                <span class="inline-flex h-6 items-center"><svg viewBox="0 0 15 15"
-                                                        aria-hidden="true"
-                                                        class="size-[0.9375rem] shrink-0 fill-gray-950/25">
-                                                        <path clip-rule="evenodd" d="M8 0H7v7H0v1h7v7h1V8h7V7H8V0z">
-                                                        </path>
-                                                    </svg></span>Molybdenum
-                                            </li>
-                                            <li
-                                                class="flex items-start gap-4 text-sm/6 text-gray-950/75 data-[disabled]:text-gray-950/25">
-                                                <span class="inline-flex h-6 items-center"><svg viewBox="0 0 15 15"
-                                                    aria-hidden="true"
-                                                    class="size-[0.9375rem] shrink-0 fill-gray-950/25">
-                                                    <path clip-rule="evenodd" d="M8 0H7v7H0v1h7v7h1V8h7V7H8V0z">
-                                                    </path>
-                                                </svg></span>Zinc
-                                            </li>
-                                            <li
-                                                class="flex items-start gap-4 text-sm/6 text-gray-950/75 data-[disabled]:text-gray-950/25">
-                                                <span class="inline-flex h-6 items-center"><svg viewBox="0 0 15 15"
-                                                    aria-hidden="true"
-                                                    class="size-[0.9375rem] shrink-0 fill-gray-950/25">
-                                                    <path clip-rule="evenodd" d="M8 0H7v7H0v1h7v7h1V8h7V7H8V0z">
-                                                    </path>
-                                                </svg></span>Tungsten Etc.
-                                            </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div
-                                class="-m-2 grid grid-cols-1 rounded-3xl shadow-[inset_0_0_2px_1px_#ffffff4d] ring-1 ring-black/5 max-lg:mx-auto max-lg:w-full max-lg:max-w-md">
-                                <div class="grid grid-cols-1 rounded-3xl p-2 shadow-md shadow-black/5">
-                                    <div class="rounded-3xl bg-white p-10 pb-9 shadow-2xl ring-1 ring-black/5">
-                                        
-                                        
-                                        <div class="mt-8">
-                                            
-                                            <ul class="mt-3 space-y-3">
-                                                <li
-                                                    class="flex items-start gap-4 text-sm/6 text-gray-950/75 data-[disabled]:text-gray-950/25">
-                                                    <span class="inline-flex h-6 items-center"><svg viewBox="0 0 15 15"
-                                                            aria-hidden="true"
-                                                            class="size-[0.9375rem] shrink-0 fill-gray-950/25">
-                                                            <path clip-rule="evenodd" d="M8 0H7v7H0v1h7v7h1V8h7V7H8V0z">
-                                                            </path>
-                                                        </svg></span>Aluminium
-                                                </li>
-                                                <li
-                                                    class="flex items-start gap-4 text-sm/6 text-gray-950/75 data-[disabled]:text-gray-950/25">
-                                                    <span class="inline-flex h-6 items-center"><svg viewBox="0 0 15 15"
-                                                            aria-hidden="true"
-                                                            class="size-[0.9375rem] shrink-0 fill-gray-950/25">
-                                                            <path clip-rule="evenodd" d="M8 0H7v7H0v1h7v7h1V8h7V7H8V0z">
-                                                            </path>
-                                                        </svg></span>Chromium
-                                                </li>
-                                                <li
-                                                    class="flex items-start gap-4 text-sm/6 text-gray-950/75 data-[disabled]:text-gray-950/25">
-                                                    <span class="inline-flex h-6 items-center"><svg viewBox="0 0 15 15"
-                                                            aria-hidden="true"
-                                                            class="size-[0.9375rem] shrink-0 fill-gray-950/25">
-                                                            <path clip-rule="evenodd" d="M8 0H7v7H0v1h7v7h1V8h7V7H8V0z">
-                                                            </path>
-                                                        </svg></span>Nickel
-                                                </li>
-                                                <li
-                                                    class="flex items-start gap-4 text-sm/6 text-gray-950/75 data-[disabled]:text-gray-950/25">
-                                                    <span class="inline-flex h-6 items-center"><svg viewBox="0 0 15 15"
-                                                            aria-hidden="true"
-                                                            class="size-[0.9375rem] shrink-0 fill-gray-950/25">
-                                                            <path clip-rule="evenodd" d="M8 0H7v7H0v1h7v7h1V8h7V7H8V0z">
-                                                            </path>
-                                                        </svg></span>Lead
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      {/* Detailed Inspection Steps */}
+      <section className="py-20 px-6 lg:px-12 bg-gray-800 text-white">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-4xl font-bold text-center">Key Steps in Metal Scrap Inspection</h2>
+          <p className="mt-4 text-lg text-center text-gray-300">We follow a structured and methodical approach to ensure thorough assessment of all metal scrap shipments.</p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+            {["Identification and classification of metal scrap based on composition",
+              "Grading and impurity determination to ensure compliance",
+              "Gamma and neutron radiation scanning to detect contamination",
+              "Explosive material detection using advanced scanning techniques",
+              "Final pre-shipment certification and documentation review"].map((step, index) => (
+              <motion.div
+                key={index}
+                className="flex items-center gap-4 bg-gray-900 p-6 rounded-lg shadow-md"
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: index * 0.2, duration: 0.6 }}
+              >
+                <FaCheckCircle className="text-blue-400 text-3xl" />
+                <p className="text-lg">{step}</p>
+              </motion.div>
+            ))}
+          </div>
         </div>
-   
-        <div class="relative py-24">
-            <div
-                class="-mt-36 absolute inset-x-2 bottom-0 top-48 rounded-3xl ring-1 ring-inset ring-black/5 bg-[linear-gradient(115deg,var(--tw-gradient-stops))] from-[#fff1be] from-[28%]   
-                via-[#4fd1c5] via-[55%]    
-                via-[#4a90e2] via-[70%]    
-                to-[#5e60ff] to-[100%] 
-                sm:bg-[linear-gradient(145deg,var(--tw-gradient-stops))]">
-            </div>
-            <div class="relative px-4 lg:px-12">
-                <div class="mx-auto max-w-2xl lg:max-w-7xl">
-                    <div class="grid grid-cols-1  sm:grid-cols-1 ">
-                        <div
-                            class=" grid grid-cols-1 rounded-3xl shadow-[inset_0_0_2px_1px_#ffffff4d] ring-1 ring-black/5 max-lg:mx-auto max-lg:w-full max-lg:max-w-md">
-                            <div class="grid grid-cols-1 rounded-3xl p-2 shadow-md shadow-black/5">
-                            
-                                <div class="rounded-3xl bg-white p-10  shadow-2xl ring-1 ring-black/5">
-                                    <div class="mx-auto max-w-2xl lg:max-w-7xl text-center ">
-                                        <h1
-                                            class="text-pretty text-3xl font-medium tracking-tighter text-gray-950 data-[dark]:text-white sm:text-6xl">
-                                            Steps We Take</h1>
-                                        <h2 class="p-2 text-pretty text-2xl font-medium tracking-tighter text-gray-950 data-[dark]:text-white sm:text-4xl">when conducting a Metal Scrap Inspection</h2>
-                                    </div>
-                                    <div class="lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
-                                        <div>
-                                            
-                                            <div class="mt-8 space-y-10">
-                                                <div class="flex">
-                                                    <div class="flex-shrink-0">
-                                                        <div class="flex items-center justify-center h-6 w-6 rounded-md bg-[linear-gradient(115deg,var(--tw-gradient-stops))] 
-                                                            from-[#fff1be] from-[28%]   
-                                                            via-[#4fd1c5] via-[55%]    
-                                                            via-[#4a90e2] via-[70%]    
-                                                            to-[#5e60ff] to-[100%] 
-                                                            sm:bg-[linear-gradient(145deg,var(--tw-gradient-stops))] text-white">
-                                                        
-                                                            <svg class="h-3 w-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="#5e60ff" aria-hidden="true">
-                                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2a10 10 0 100 20 10 10 0 000-20zM2 12h20M12 2v20" />
-                                                            </svg>
-                                                        </div>
-                                                    </div>
-                                                    <div class="ml-4">
-                                                        <p class=" text-base text-gray-500 text-xs font-medium">
-                                                        Classification of scrap metal to ensure conformity with contractual specifications.
-                                                        </p>
-                                                    </div>
-                                                </div>
-                            
-                                                <div class="flex">
-                                                    <div class="flex-shrink-0">
-                                                        <div class="flex items-center justify-center h-6 w-6 rounded-md bg-[linear-gradient(115deg,var(--tw-gradient-stops))] from-[#b0c4de] 
-                                                            from-[#fff1be] from-[28%]   
-                                                            via-[#4fd1c5] via-[55%]    
-                                                            via-[#4a90e2] via-[70%]    
-                                                            to-[#5e60ff] to-[100%] 
-                                                            sm:bg-[linear-gradient(145deg,var(--tw-gradient-stops))] text-white">
-                                                        
-                                                            <svg class="h-3 w-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="#5e60ff" aria-hidden="true">
-                                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2a10 10 0 100 20 10 10 0 000-20zM2 12h20M12 2v20" />
-                                                            </svg>
-                                                        </div>
-                                                    </div>
-                                                    <div class="ml-4">
-                                                        
-                                                        <p class="text-base text-gray-500 text-xs font-medium">
-                                                        Grading determination (sizing and impurities).
-                                                        </p>
-                                                    </div>
-                                                </div>
-                            
-                                                <div class="flex">
-                                                    <div class="flex-shrink-0">
-                                                        <div class="flex items-center justify-center h-6 w-6 rounded-md bg-[linear-gradient(115deg,var(--tw-gradient-stops))] 
-                                                                from-[#fff1be] from-[28%]   
-                                                                via-[#4fd1c5] via-[55%]    
-                                                                via-[#4a90e2] via-[70%]    
-                                                                to-[#5e60ff] to-[100%] 
-                                                                sm:bg-[linear-gradient(145deg,var(--tw-gradient-stops))] text-white">
-                            
-                                                            <svg class="h-3 w-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="#5e60ff" aria-hidden="true">
-                                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2a10 10 0 100 20 10 10 0 000-20zM2 12h20M12 2v20" />
-                                                            </svg>
-                                                        </div>
-                                                    </div>
-                                                    <div class="ml-4">
-                                                        <p class="text-base text-gray-500 text-xs font-medium">
-                                                        Radiation testing.
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                                <div class="flex">
-                                                    <div class="flex-shrink-0">
-                                                        <div class="flex items-center justify-center h-6 w-6 rounded-md bg-[linear-gradient(115deg,var(--tw-gradient-stops))] 
-                                                                from-[#fff1be] from-[28%]   
-                                                                via-[#4fd1c5] via-[55%]    
-                                                                via-[#4a90e2] via-[70%]    
-                                                                to-[#5e60ff] to-[100%] 
-                                                                sm:bg-[linear-gradient(145deg,var(--tw-gradient-stops))] text-white">
-                            
-                                                            <svg class="h-3 w-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="#5e60ff" aria-hidden="true">
-                                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2a10 10 0 100 20 10 10 0 000-20zM2 12h20M12 2v20" />
-                                                            </svg>
-                                                        </div>
-                                                    </div>
-                                                    <div class="ml-4">
-                                                        <p class="text-base text-gray-500 text-xs font-medium">
-                                                        Safety Control Pre-Shipment Inspection for identification & mitigation of any hazardous, dangerous, or prohibited goods.
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                                <div class="flex">
-                                                    <div class="flex-shrink-0">
-                                                        <div class="flex items-center justify-center h-6 w-6 rounded-md bg-[linear-gradient(115deg,var(--tw-gradient-stops))] 
-                                                                from-[#fff1be] from-[28%]   
-                                                                via-[#4fd1c5] via-[55%]    
-                                                                via-[#4a90e2] via-[70%]    
-                                                                to-[#5e60ff] to-[100%] 
-                                                                sm:bg-[linear-gradient(145deg,var(--tw-gradient-stops))] text-white">
-                            
-                                                            <svg class="h-3 w-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="#5e60ff" aria-hidden="true">
-                                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2a10 10 0 100 20 10 10 0 000-20zM2 12h20M12 2v20" />
-                                                            </svg>
-                                                        </div>
-                                                    </div>
-                                                    <div class="ml-4">
-                                                        <p class="text-base text-gray-500 text-xs font-medium">
-                                                        Certification
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                            
-                                        <div class="mt-10 lg:mt-0 lg:col-start-2">
-                                            <img class="mx-auto rounded-lg shadow-lg" src="./public/images/StepWeTake2.jpg" alt="About Us"></img>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      </section>
+
+      <section className="py-20 px-6 lg:px-12 bg-gray-800 text-white">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-4xl font-bold text-center">Key Steps in Metal Scrap Inspection</h2>
+          <p className="mt-4 text-lg text-center text-gray-300">We follow a structured and methodical approach to ensure thorough assessment of all metal scrap shipments.</p>
+          
         </div>
-            
+      </section>
+
+      {/* Call to Action */}
+      <section className="bg-gradient-to-r from-[#fff1be] via-[#4fd1c5] via-[#4a90e2] to-[#5e60ff] text-white text-center py-16">
+        <h2 className="text-3xl font-bold">Need a Certified Metal Inspection?</h2>
+        <p className="mt-4 text-lg">Contact our experts today for comprehensive inspection services tailored to your needs.</p>
+        <button className="mt-6 px-6 py-3 bg-white text-gray-900 font-semibold rounded-lg shadow-md hover:bg-gray-200 transition-all">
+          Get in Touch
+        </button>
+      </section>
     </>
-    
   );
 };
 
