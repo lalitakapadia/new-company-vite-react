@@ -114,20 +114,23 @@ const Responsibilities = () => {
   ];
 
   return (
+    <body className="bg-gray-100 text-gray-800">
+      <div className="overflow-hidden">
+        <div class="relative mx-auto max-w-7xl">
+          <div
+            class="absolute -right-60 -top-44 h-60 w-[36rem] transform-gpu md:right-0 
+                        bg-[linear-gradient(115deg,var(--tw-gradient-stops))] 
+                        from-[#fff1be] from-[28%]   
+                        via-[#4fd1c5] via-[55%]    
+                        via-[#4a90e2] via-[70%]    
+                        to-[#5e60ff] to-[100%]
+                        rotate-[-10deg] 
+                        rounded-full blur-3xl">
+          </div>
+        </div>
+        <Navbar />
     <div className="bg-gray-100 text-gray-800 min-h-screen">
-      <Navbar />
-      <section className="relative overflow-hidden">
-        <div className="absolute -right-60 -top-44 h-60 w-[36rem] transform-gpu md:right-0 bg-gradient-to-r from-[#fff1be] via-[#4fd1c5] via-[#4a90e2] to-[#5e60ff] rotate-[-10deg] rounded-full blur-3xl"></div>
-         <div className="container mx-auto px-6 py-16 text-center">
-           <h1 className="text-4xl sm:text-6xl font-extrabold text-gray-900">
-                        Our Responsibilities
-           </h1>          
-           <p className="mt-6 max-w-3xl mx-auto text-lg text-gray-600">
-            We are committed to integrity, transparency, and accountability,
-             ensuring the long-term success and sustainability of our company.
-            </p>
-         </div>
-      </section>
+
 
       {/* Header Section with Animated Gradient */}
       <motion.section
@@ -194,6 +197,8 @@ const Responsibilities = () => {
         </div>
       </section>
     </div>
+    </div>
+    </body>
   );
 };
 

@@ -1,12 +1,25 @@
 "use client";
-
+import { useEffect  } from "react";
+import { useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 import { FaCheckCircle, FaLightbulb } from "react-icons/fa";
-import { FaShieldAlt, FaShippingFast, FaBoxOpen, FaClipboardCheck, FaSearchDollar, FaChartBar } from "react-icons/fa";
-import ScrollIndicator from "../components/ScrollIndicator";
+import { FaShieldAlt, FaShippingFast, FaBoxOpen, FaClipboardCheck, FaSearchDollar, FaChartBar,
+   FaBoxes, FaUsers, FaSearch, FaChartLine
+ } from "react-icons/fa";
 import Navbar from "../components/Navbar";
 
 export default function Services() {
+  const { hash } = useLocation(); // Get URL hash
+
+  useEffect(() => {
+    if (hash) {
+      const element = document.getElementById(hash.replace("#", ""));
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [hash]);
+
   return (
     <body className="bg-gray-100 text-gray-800">
       <div className="overflow-hidden">
@@ -61,9 +74,9 @@ export default function Services() {
   );
 }
 
-const ServiceCard = ({ title, description, features, benefits, image, icon: Icon, reverse }) => {
+const ServiceCard = ({ title, description, features, bookmark, benefits, image, icon: Icon, reverse }) => {
   return (
-    <motion.div
+    <motion.div id={bookmark}
       className={`flex flex-col md:flex-row items-center gap-8 p-8 bg-gray-800 rounded-lg shadow-lg transition-all transform hover:scale-105 ${reverse ? "md:flex-row-reverse" : ""
         }`}
       initial={{ opacity: 0, y: 30 }}
@@ -72,32 +85,46 @@ const ServiceCard = ({ title, description, features, benefits, image, icon: Icon
       viewport={{ once: true }}
     >
       {/* Image Section */}
-      <div className="w-full md:w-1/2">
-        <img
-          src={image}
-          alt={title}
-          className="w-full h-64 object-cover rounded-lg shadow-md"
-        />
-      </div>
+      <div className="relative w-full md:w-1/2 h-96">
+              {/* Motion Floating Shapes */}
+              <motion.div
+                className="absolute -top-10 -left-10 w-32 h-32 bg-blue-500 opacity-30 rounded-full"
+                animate={{ y: [0, -10, 10, 0] }}
+                transition={{ repeat: Infinity, duration: 5, ease: "easeInOut" }}
+              />
+              <motion.div
+                className="absolute -bottom-10 right-0 w-20 h-20 bg-purple-500 opacity-20 rounded-full"
+                animate={{ y: [-5, 5, -5] }}
+                transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
+              />
+
+              {/* Clipped Image */}
+              <img
+                src={image}
+                alt={title}
+                className="w-full h-full object-cover rounded-lg shadow-lg"
+                
+              />
+            </div>
 
       {/* Content Section */}
-      <div className="w-full md:w-1/2">
+      <div  className="w-full md:w-1/2">
         <div className="flex items-center gap-4">
           <Icon className="text-blue-400 text-5xl" />
-          <h2 className="text-3xl font-semibold text-blue-400">{title}</h2>
+          <h2  className="text-3xl font-semibold text-blue-400">{title}</h2>
         </div>
-        <p className="mt-4 text-gray-300">{description}</p>
+        <p className="mt-4 text-gray-300 p-1">{description}</p>
 
 
 
         {/* Features List */}
         
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
           {features.map((feature, index) => (
             <motion.div
               key={index}
-              className="flex items-center space-x-3 bg-gray-800 p-4 rounded-lg shadow-md"
+              className="flex items-center space-x-3 bg-gray-700 p-4 rounded-lg shadow-md"
               whileHover={{ scale: 1.05 }}
             >
               <FaCheckCircle className="text-green-400 text-2xl" />
@@ -106,18 +133,7 @@ const ServiceCard = ({ title, description, features, benefits, image, icon: Icon
           ))}
         </div>
 
-        {/* Benefits */}
-        {/* <h3 className="text-xl font-medium text-purple-400 mt-6">🔹 Why It Matters:</h3>
-        <ul className="mt-2 space-y-2 font-normal">
-          {benefits.map((benefit, index) => (
-            <li key={index} className="flex items-center">
-              <FaCheckCircle className="text-yellow-400 mr-2" />
-              {benefit}
-            </li>
-          ))}
-        </ul> */}
-
-        <div className="bg-gradient-to-r from-blue-500 to-purple-500 p-6 rounded-lg shadow-md">
+        <div className="bg-gradient-to-r mt-2 from-blue-500 to-purple-500 p-4 rounded-lg shadow-md">
           <div className="flex items-center space-x-3">
             <FaLightbulb className="text-yellow-300 text-2xl" />
             <h3 className="text-xl font-semibold text-white">Why It Matters</h3>
@@ -142,8 +158,9 @@ const servicesData = [
   {
     title: "Independent Quality Assurance",
     description: "Ensuring excellence through unbiased quality verification.",
-    image: "/images/quality-assurance.jpg",
+    image: "/public/images/QualityAssurance.jpg",
     icon: FaShieldAlt,
+    bookmark:"IndependentQualityAssurance",
     features: [
       "Comprehensive product inspections at every production stage",
       "Verification against ISO, ASTM, and other global standards",
@@ -160,8 +177,9 @@ const servicesData = [
   {
     title: "Shipment Integrity Verification",
     description: "Guaranteeing product quality before dispatch.",
-    image: "/images/shipment-verification.jpg",
+    image: "/public/images/iIntegrityVerification.jpg",
     icon: FaShippingFast,
+    bookmark:"ShipmentIntegrityVerification",
     features: [
       "Pre-shipment inspections for defects, compliance, and packaging",
       "Random sampling and AQL-based quality checks",
@@ -178,8 +196,9 @@ const servicesData = [
   {
     title: "Secure Cargo Supervision",
     description: "Protecting shipments from damage, misplacement, and security risks.",
-    image: "/images/cargo-supervision.jpg",
+    image: "/public/images/SecureCargo.jpg",
     icon: FaBoxOpen,
+    bookmark:"SecureCargoSupervision",
     features: [
       "24/7 monitoring of loading and unloading procedures",
       "Tamper-proof security seals and verification",
@@ -196,8 +215,9 @@ const servicesData = [
   {
     title: "Supplier Compliance Assistance",
     description: "Helping suppliers align with regulatory and industry standards.",
-    image: "/images/compliance-assistance.jpg",
+    image: "/public/images/SupplierCompliance.jpg",
     icon: FaClipboardCheck,
+    bookmark:"SupplierComplianceAssistance",
     features: [
       "Regulatory audits to ensure industry compliance",
       "ISO, FDA, CE, and RoHS certification guidance",
@@ -214,8 +234,9 @@ const servicesData = [
   {
     title: "Vendor Risk & Quality Assessment",
     description: "Evaluating supplier reliability, operational standards, and risk management.",
-    image: "/images/vendor-assessment.jpg",
+    image: "/public/images/VendorRisk.jpg",
     icon: FaSearchDollar,
+    bookmark:"VendorRiskQualityAssessment",
     features: [
       "Supplier qualification assessments before onboarding",
       "Operational audits covering safety, quality, and ethics",
@@ -232,8 +253,9 @@ const servicesData = [
   {
     title: "Strategic Supplier Benchmarking",
     description: "Assess vendor performance to optimize procurement and sourcing strategies.",
-    image: "/images/vendor-assessment.jpg",
+    image: "/public/images/StrategySupplier.jpg",
     icon: FaChartBar,
+    bookmark:"StrategicSupplierBenchmarking",
     features: [
       "Supplier qualification assessments before onboarding",
       "Operational audits covering safety, quality, and ethics",

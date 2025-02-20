@@ -1,227 +1,96 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { FaCheckCircle } from "react-icons/fa";
-import { FaShieldAlt, FaShippingFast, FaBoxOpen, FaClipboardCheck, FaSearchDollar, FaChartBar } from "react-icons/fa";
-import ScrollIndicator from "../components/ScrollIndicator";
-import Navbar from "../components/Navbar";
+import { FaShieldAlt, FaCheckCircle, FaBoxes, FaUsers, FaSearch, FaChartLine } from "react-icons/fa";
 
-export default function Services() {
-  return (
-    <body className="bg-gray-100 text-gray-800">
-      <div className="overflow-hidden">
-      <div class="relative mx-auto max-w-7xl">
-          <div
-            class="absolute -right-60 -top-44 h-60 w-[36rem] transform-gpu md:right-0 
-                        bg-[linear-gradient(115deg,var(--tw-gradient-stops))] 
-                        from-[#fff1be] from-[28%]   
-                        via-[#4fd1c5] via-[55%]    
-                        via-[#4a90e2] via-[70%]    
-                        to-[#5e60ff] to-[100%]
-                        rotate-[-10deg] 
-                        rounded-full blur-3xl">
-          </div>
-        </div>
-      <Navbar />
-      <div className="bg-gray-900 text-white">
-        {/* Scroll Indicator */}
-
-
-
-        {/* Hero Section */}
-        <section className="h-80 flex flex-col justify-center items-center text-center px-6 bg-gradient-to-r from-blue-500 to-purple-500">
-          <motion.h1
-            className="text-5xl font-bold"
-            initial={{ opacity: 0, y: -50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-          >
-            Our Services
-          </motion.h1>
-          <motion.p
-            className="text-lg mt-2"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.5, duration: 0.8 }}
-          >
-            Delivering Excellence in Quality, Compliance, and Risk Management
-          </motion.p>
-        </section>
-
-        {/* Services Section */}
-        <section className="max-w-6xl mx-auto p-6 space-y-12">
-          {servicesData.map((service, index) => (
-            <ServiceCard key={index} {...service} reverse={index % 2 !== 0} />
-          ))}
-        </section>
-      </div>
-    </div>
-    </body>
-
-  );
-}
-
-const ServiceCard = ({ title, description, features, benefits, image, icon: Icon, reverse }) => {
-  return (
-    <motion.div
-      className={`flex flex-col md:flex-row items-center gap-8 p-8 bg-gray-800 rounded-lg shadow-lg transition-all transform hover:scale-105 ${reverse ? "md:flex-row-reverse" : ""
-        }`}
-      initial={{ opacity: 0, y: 30 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6 }}
-      viewport={{ once: true }}
-    >
-      {/* Image Section */}
-      <div className="w-full md:w-1/2">
-        <img
-          src={image}
-          alt={title}
-          className="w-full h-64 object-cover rounded-lg shadow-md"
-        />
-      </div>
-
-      {/* Content Section */}
-      <div className="w-full md:w-1/2">
-        <div className="flex items-center gap-4">
-          <Icon className="text-blue-400 text-5xl" />
-          <h2 className="text-3xl font-semibold text-blue-400">{title}</h2>
-        </div>
-        <p className="mt-4 text-gray-300">{description}</p>
-
-        {/* Features List */}
-        <h3 className="text-xl font-bold text-purple-400 mt-6">✅ Key Features:</h3>
-        <ul className="mt-2 space-y-2">
-          {features.map((feature, index) => (
-            <li key={index} className="flex items-center">
-              <FaCheckCircle className="text-green-400 mr-2" />
-              {feature}
-            </li>
-          ))}
-        </ul>
-
-        {/* Benefits */}
-        <h3 className="text-xl font-bold text-purple-400 mt-6">🔹 Why It Matters:</h3>
-        <ul className="mt-2 space-y-2">
-          {benefits.map((benefit, index) => (
-            <li key={index} className="flex items-center">
-              <FaCheckCircle className="text-yellow-400 mr-2" />
-              {benefit}
-            </li>
-          ))}
-        </ul>
-      </div>
-    </motion.div>
-  );
-};
-
-// Service Data with Images & Icons
-const servicesData = [
+// Sample services data
+const services = [
   {
     title: "Independent Quality Assurance",
-    description: "Ensuring excellence through unbiased quality verification.",
+    description: "Ensuring excellence through unbiased quality verification...",
+    icon: <FaShieldAlt className="text-blue-500 text-5xl" />,
     image: "/images/quality-assurance.jpg",
-    icon: FaShieldAlt,
-    features: [
-      "Comprehensive product inspections at every production stage",
-      "Verification against ISO, ASTM, and other global standards",
-      "Material and performance testing for durability, safety, and reliability",
-      "Detailed compliance reports with corrective action plans",
-      "Tailored assessments to meet specific industry and client needs",
-    ],
-    benefits: [
-      "Minimizes product recalls and compliance risks",
-      "Enhances brand reputation by delivering defect-free products",
-      "Ensures customer satisfaction through consistent quality",
-    ],
   },
   {
     title: "Shipment Integrity Verification",
-    description: "Guaranteeing product quality before dispatch.",
+    description: "Pre-shipment checks to guarantee quality, compliance...",
+    icon: <FaCheckCircle className="text-green-500 text-5xl" />,
     image: "/images/shipment-verification.jpg",
-    icon: FaShippingFast,
-    features: [
-      "Pre-shipment inspections for defects, compliance, and packaging",
-      "Random sampling and AQL-based quality checks",
-      "Loading and unloading supervision for safety assurance",
-      "Real-time inspection reports with photographic evidence",
-      "Compliance verification for international shipping standards",
-    ],
-    benefits: [
-      "Reduces risk of faulty shipments and customer complaints",
-      "Ensures regulatory compliance for hassle-free global trade",
-      "Strengthens supplier accountability and transparency",
-    ],
   },
   {
     title: "Secure Cargo Supervision",
-    description: "Protecting shipments from damage, misplacement, and security risks.",
+    description: "Monitor container loading to prevent damage, misplacement...",
+    icon: <FaBoxes className="text-orange-500 text-5xl" />,
     image: "/images/cargo-supervision.jpg",
-    icon: FaBoxOpen,
-    features: [
-      "24/7 monitoring of loading and unloading procedures",
-      "Tamper-proof security seals and verification",
-      "GPS tracking and real-time surveillance for high-value shipments",
-      "Condition and quantity verification before dispatch",
-      "Detailed incident reporting with corrective recommendations",
-    ],
-    benefits: [
-      "Prevents losses due to theft, mishandling, or misplacement",
-      "Ensures adherence to global security compliance (TAPA, C-TPAT)",
-      "Boosts supply chain confidence with secure logistics",
-    ],
   },
   {
     title: "Supplier Compliance Assistance",
-    description: "Helping suppliers align with regulatory and industry standards.",
-    image: "/images/compliance-assistance.jpg",
-    icon: FaClipboardCheck,
-    features: [
-      "Regulatory audits to ensure industry compliance",
-      "ISO, FDA, CE, and RoHS certification guidance",
-      "Customized training programs for supplier improvement",
-      "Gap analysis and corrective action planning",
-      "On-site assessments and compliance documentation",
-    ],
-    benefits: [
-      "Reduces non-compliance penalties and legal risks",
-      "Strengthens supplier relationships through quality alignment",
-      "Improves operational efficiency and market competitiveness",
-    ],
+    description: "Help suppliers align with industry and regulatory requirements...",
+    icon: <FaUsers className="text-purple-500 text-5xl" />,
+    image: "/images/supplier-compliance.jpg",
   },
   {
     title: "Vendor Risk & Quality Assessment",
-    description: "Evaluating supplier reliability, operational standards, and risk management.",
-    image: "/images/vendor-assessment.jpg",
-    icon: FaSearchDollar,
-    features: [
-      "Supplier qualification assessments before onboarding",
-      "Operational audits covering safety, quality, and ethics",
-      "Supply chain risk evaluation and fraud detection",
-      "Financial health checks for business stability",
-      "Custom reports with risk mitigation strategies",
-    ],
-    benefits: [
-      "Mitigates supplier-related risks and potential disruptions",
-      "Ensures long-term partnerships with reliable vendors",
-      "Improves supply chain efficiency and risk preparedness",
-    ],
+    description: "Evaluate suppliers' reliability, operational standards...",
+    icon: <FaSearch className="text-red-500 text-5xl" />,
+    image: "/images/vendor-risk.jpg",
   },
   {
     title: "Strategic Supplier Benchmarking",
-    description: "Assess vendor performance to optimize procurement and sourcing strategies.",
-    image: "/images/vendor-assessment.jpg",
-    icon: FaChartBar,
-    features: [
-      "Supplier qualification assessments before onboarding",
-      "Operational audits covering safety, quality, and ethics",
-      "Supply chain risk evaluation and fraud detection",
-      "Financial health checks for business stability",
-      "Custom reports with risk mitigation strategies",
-    ],
-    benefits: [
-      "Mitigates supplier-related risks and potential disruptions",
-      "Ensures long-term partnerships with reliable vendors",
-      "Improves supply chain efficiency and risk preparedness",
-    ]
+    description: "Assess vendor performance to optimize procurement...",
+    icon: <FaChartLine className="text-yellow-500 text-5xl" />,
+    image: "/images/supplier-benchmarking.jpg",
   },
 ];
+
+export default function Services() {
+  return (
+    <div className="bg-gray-900 text-white py-16">
+      <h2 className="text-5xl font-bold text-center mb-12">Our Services</h2>
+
+      <div className="max-w-6xl mx-auto space-y-16">
+        {services.map((service, index) => (
+          <div key={index} className={`flex flex-col md:flex-row items-center gap-12 ${index % 2 === 0 ? "md:flex-row-reverse" : ""}`}>
+            {/* Service Image with Masking & Motion */}
+            <div className="relative w-full md:w-1/2 h-96">
+              {/* Motion Floating Shapes */}
+              <motion.div
+                className="absolute -top-10 -left-10 w-32 h-32 bg-blue-500 opacity-30 rounded-full"
+                animate={{ y: [0, -10, 10, 0] }}
+                transition={{ repeat: Infinity, duration: 5, ease: "easeInOut" }}
+              />
+              <motion.div
+                className="absolute bottom-0 right-0 w-20 h-20 bg-purple-500 opacity-20 rounded-full"
+                animate={{ y: [-5, 5, -5] }}
+                transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
+              />
+
+              {/* Clipped Image */}
+              <img
+                src={service.image}
+                alt={service.title}
+                className="w-full h-full object-cover rounded-lg shadow-lg"
+                style={{ clipPath: "polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%)" }}
+              />
+            </div>
+
+            {/* Service Content */}
+            <div className="w-full md:w-1/2 space-y-4">
+              <div className="flex items-center gap-4">
+                {service.icon}
+                <h3 className="text-3xl font-semibold">{service.title}</h3>
+              </div>
+              <p className="text-lg text-gray-300">{service.description}</p>
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                className="bg-gradient-to-r from-blue-500 to-purple-500 hover:from-purple-500 hover:to-blue-500 text-white px-6 py-3 rounded-lg font-semibold shadow-md transition-all"
+              >
+                Learn More
+              </motion.button>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}

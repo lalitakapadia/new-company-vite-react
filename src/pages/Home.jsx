@@ -4,6 +4,7 @@ import ServicesSection from '../components/ServicesSection';
 import WhyChooseUs from '../components/WhyChooseUs';
 
 
+
 const Home = () => {
   return (
     <body className="bg-gray-100 text-gray-800">
@@ -18,36 +19,9 @@ const Home = () => {
 
           <div className="relative px-6 lg:px-8">
             <div className="mx-auto max-w-7xl">
-              {/* <div className="mx-auto max-w-7xl text-center">
-                <h1 className="font-display text-6xl sm:text-8xl text-gray-950 font-semibold leading-tight">
-                  Secure Your Shipments with Confidence.
-                </h1>
-                <p className="mt-4 text-lg sm:text-2xl text-gray-700">
-                  Our DGFT-approved inspection services ensure your goods are
-                  compliant, safe, and ready to be shipped worldwide.
-                </p>
-                <div className="mt-12 flex justify-center gap-x-6">
-                  <a
-                    href="https://wa.me/+447506512666"
-                    className="inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-[#4fd1c5] via-[#4a90e2] to-[#5e60ff] text-white rounded-full hover:from-[#4a90e2] hover:to-[#5e60ff] transition duration-300"
-                  >
-                    Contact Us on WhatsApp
-                  </a>
-                  <a
-                    href="./pages/signup.html"
-                    className="inline-flex items-center justify-center px-6 py-3 bg-gray-50 text-gray-900 rounded-full border border-transparent shadow-lg hover:bg-gray-200"
-                  >
-                    Leave a Message
-                  </a>
-                </div>
-              </div> */}
+              
               <div className="pb-24 pt-16 sm:pb-32 sm:pt-24 md:pb-16 md:pt-16">
-                {/* <h1 className="font-display text-balance text-6xl/[0.9] font-medium tracking-tight text-gray-950 sm:text-8xl/[0.8] md:text-9xl/[0.8]">
-                  Certify Shipment
-                </h1>
-                <p className="mt-8 max-w-lg text-xl/7 font-medium text-gray-950/75 sm:text-2xl/8">
-                  We are DGFT approved and provide Pre-Shipment Inspection service in over 60+ countries.
-                </p> */}
+                
                 <h1 className="font-display text-balance text-6xl/[0.9] font-medium tracking-tight text-gray-950 sm:text-8xl/[0.8] md:text-9xl/[0.8]">
                   Secure Your Shipments with Confidence
                 </h1>
