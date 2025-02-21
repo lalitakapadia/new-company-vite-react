@@ -13,6 +13,7 @@ import MetalInspection from './pages/MetalInspection';
 import MetalImport from './pages/MetalImport';
 import Footer from './components/Footer';
 import Clients from './pages/Clients';
+import HellowPage from './pages/HelloPage';
 function App() {
   return (
     <Router>
@@ -27,9 +28,9 @@ function App() {
           <Route path="/metal-import" element={<MetalImport />} />
           <Route path="/clients" element={<Clients />} />
           <Route path="/contactUs" element={<ContactUs/>} />
+          <Route path="/hellopage" element={<HellowPage/>} />
         </Routes>
       </main>  
-      <Footer />   
     </Router>
   );
 }

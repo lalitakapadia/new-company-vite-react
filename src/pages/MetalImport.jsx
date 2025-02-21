@@ -10,8 +10,8 @@ const MetalImport = () => {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-[#fff1be] via-[#4fd1c5] via-[#4a90e2] to-[#5e60ff] text-white text-center py-24">
-        <div className="absolute inset-0 bg-black/25 backdrop-blur-sm"></div>
+      <section className="relative bg-gradient-to-r from-[#fff1be] via-[#4fd1c5] via-[#4a90e2] to-[#5e60ff] text-black text-center py-24">
+        <div className="absolute inset-0  backdrop-blur-sm"></div>
         <motion.div
           className="relative z-10 max-w-4xl mx-auto px-6"
           initial={{ opacity: 0, y: -30 }}
@@ -65,7 +65,7 @@ const MetalImport = () => {
           >
             <div className="absolute inset-0 bg-gradient-to-b from-transparent to-gray-900/60 rounded-lg"></div>
             <img
-              src="./public/images/MetalImport.jpg"
+              src="./public/images/shipmentInspection.jpg"
               alt="Metal Import"
               className="w-full h-full object-cover rounded-lg shadow-lg"
               style={{ clipPath: "polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%)" }}

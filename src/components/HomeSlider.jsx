@@ -28,7 +28,7 @@ const slides = [
   },
 ];
 
-const Responsibilities = () => {
+const HomeSlider = () => {
   const slideDuration = 4000; // Matches autoplay duration (4 seconds)
   const [activeIndex, setActiveIndex] = useState(0);
   const [progress, setProgress] = useState(0);
@@ -37,15 +37,6 @@ const Responsibilities = () => {
   return (
     <div className="relative w-full ">
       <Navbar />
-
-        {/* Header Section */}
-        <section className="text-center py-16 bg-gradient-to-r from-yellow-200 via-teal-400 to-blue-500 text-black">
-                <h1 className="text-5xl font-extrabold">Our Responsibilities</h1>
-        <p className="mt-4 max-w-3xl mx-auto text-lg text-black/80">
-          We are committed to integrity, transparency, and accountability,
-          ensuring the long-term success and sustainability of our company.
-        </p>
-      </section>
 
       <Swiper
         ref={swiperRef}
@@ -129,4 +120,4 @@ const Responsibilities = () => {
   );
 };
 
-export default Responsibilities;
+export default HomeSlider;

@@ -1,11 +1,12 @@
 "use client";
-import { useEffect  } from "react";
+import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 import { FaCheckCircle, FaLightbulb } from "react-icons/fa";
-import { FaShieldAlt, FaShippingFast, FaBoxOpen, FaClipboardCheck, FaSearchDollar, FaChartBar,
-   FaBoxes, FaUsers, FaSearch, FaChartLine
- } from "react-icons/fa";
+import {
+  FaShieldAlt, FaShippingFast, FaBoxOpen, FaClipboardCheck, FaSearchDollar, FaChartBar,
+  FaBoxes, FaUsers, FaSearch, FaChartLine
+} from "react-icons/fa";
 import Navbar from "../components/Navbar";
 
 export default function Services() {
@@ -23,7 +24,7 @@ export default function Services() {
   return (
     <body className="bg-gray-100 text-gray-800">
       <div className="overflow-hidden">
-      <div class="relative mx-auto max-w-7xl">
+        {/* <div class="relative mx-auto max-w-7xl">
           <div
             class="absolute -right-60 -top-44 h-60 w-[36rem] transform-gpu md:right-0 
                         bg-[linear-gradient(115deg,var(--tw-gradient-stops))] 
@@ -34,41 +35,38 @@ export default function Services() {
                         rotate-[-10deg] 
                         rounded-full blur-3xl">
           </div>
+        </div> */}
+        <Navbar />
+        <div className="bg-gray-900 text-white">
+          {/* Hero Section */}
+          <section className="h-80 flex flex-col justify-center text-black items-center text-center px-6 
+            bg-gradient-to-r from-[#5e60ff] via-[#4a90e2] via-[#4fd1c5] to-[#fff1be]">
+            <motion.h1
+              className="text-5xl font-bold"
+              initial={{ opacity: 0, y: -50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+            >
+              Our Services
+            </motion.h1>
+            <motion.p
+              className="text-lg mt-2"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.5, duration: 0.8 }}
+            >
+              Delivering Excellence in Quality, Compliance, and Risk Management
+            </motion.p>
+          </section>
+
+          {/* Services Section */}
+          <section className="max-w-6xl mx-auto p-6 space-y-12">
+            {servicesData.map((service, index) => (
+              <ServiceCard key={index} {...service} reverse={index % 2 !== 0} />
+            ))}
+          </section>
         </div>
-      <Navbar />
-      <div className="bg-gray-900 text-white">
-        {/* Scroll Indicator */}
-
-
-
-        {/* Hero Section */}
-        <section className="h-80 flex flex-col justify-center items-center text-center px-6 bg-gradient-to-r from-blue-500 to-purple-500">
-          <motion.h1
-            className="text-5xl font-bold"
-            initial={{ opacity: 0, y: -50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-          >
-            Our Services
-          </motion.h1>
-          <motion.p
-            className="text-lg mt-2"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.5, duration: 0.8 }}
-          >
-            Delivering Excellence in Quality, Compliance, and Risk Management
-          </motion.p>
-        </section>
-
-        {/* Services Section */}
-        <section className="max-w-6xl mx-auto p-6 space-y-12">
-          {servicesData.map((service, index) => (
-            <ServiceCard key={index} {...service} reverse={index % 2 !== 0} />
-          ))}
-        </section>
       </div>
-    </div>
     </body>
 
   );
@@ -86,39 +84,39 @@ const ServiceCard = ({ title, description, features, bookmark, benefits, image, 
     >
       {/* Image Section */}
       <div className="relative w-full md:w-1/2 h-96">
-              {/* Motion Floating Shapes */}
-              <motion.div
-                className="absolute -top-10 -left-10 w-32 h-32 bg-blue-500 opacity-30 rounded-full"
-                animate={{ y: [0, -10, 10, 0] }}
-                transition={{ repeat: Infinity, duration: 5, ease: "easeInOut" }}
-              />
-              <motion.div
-                className="absolute -bottom-10 right-0 w-20 h-20 bg-purple-500 opacity-20 rounded-full"
-                animate={{ y: [-5, 5, -5] }}
-                transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
-              />
+        {/* Motion Floating Shapes */}
+        <motion.div
+          className="absolute -top-10 -left-10 w-32 h-32 bg-blue-500 opacity-30 rounded-full"
+          animate={{ y: [0, -10, 10, 0] }}
+          transition={{ repeat: Infinity, duration: 5, ease: "easeInOut" }}
+        />
+        <motion.div
+          className="absolute -bottom-10 right-0 w-20 h-20 bg-purple-500 opacity-20 rounded-full"
+          animate={{ y: [-5, 5, -5] }}
+          transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
+        />
 
-              {/* Clipped Image */}
-              <img
-                src={image}
-                alt={title}
-                className="w-full h-full object-cover rounded-lg shadow-lg"
-                
-              />
-            </div>
+        {/* Clipped Image */}
+        <img
+          src={image}
+          alt={title}
+          className="w-full h-full object-cover rounded-lg shadow-lg"
+
+        />
+      </div>
 
       {/* Content Section */}
-      <div  className="w-full md:w-1/2">
+      <div className="w-full md:w-1/2">
         <div className="flex items-center gap-4">
           <Icon className="text-blue-400 text-5xl" />
-          <h2  className="text-3xl font-semibold text-blue-400">{title}</h2>
+          <h2 className="text-3xl font-semibold text-blue-400">{title}</h2>
         </div>
         <p className="mt-4 text-gray-300 p-1">{description}</p>
 
 
 
         {/* Features List */}
-        
+
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
           {features.map((feature, index) => (
@@ -133,20 +131,20 @@ const ServiceCard = ({ title, description, features, bookmark, benefits, image, 
           ))}
         </div>
 
-        <div className="bg-gradient-to-r mt-2 from-blue-500 to-purple-500 p-4 rounded-lg shadow-md">
+        <div className="bg-gradient-to-r mt-2 from-[#5e60ff] via-[#4a90e2] via-[#4fd1c5] to-[#fff1be] p-4 rounded-lg shadow-md text-black">
           <div className="flex items-center space-x-3">
             <FaLightbulb className="text-yellow-300 text-2xl" />
-            <h3 className="text-xl font-semibold text-white">Why It Matters</h3>
+            <h3 className="text-xl font-semibold">Why It Matters</h3>
           </div>
           {/* <p className="mt-2 text-gray-200">{service.whyItMatters}</p> */}
           <ul className="mt-2 space-y-2 font-normal">
-          {benefits.map((benefit, index) => (
-            <li key={index} className="flex items-center">
-              <FaCheckCircle className="text-yellow-400 mr-2" />
-              {benefit}
-            </li>
-          ))}
-        </ul>
+            {benefits.map((benefit, index) => (
+              <li key={index} className="flex items-center">
+                <FaCheckCircle className="text-yellow-400 mr-2" />
+                {benefit}
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </motion.div>
@@ -160,7 +158,7 @@ const servicesData = [
     description: "Ensuring excellence through unbiased quality verification.",
     image: "/public/images/QualityAssurance.jpg",
     icon: FaShieldAlt,
-    bookmark:"IndependentQualityAssurance",
+    bookmark: "IndependentQualityAssurance",
     features: [
       "Comprehensive product inspections at every production stage",
       "Verification against ISO, ASTM, and other global standards",
@@ -179,7 +177,7 @@ const servicesData = [
     description: "Guaranteeing product quality before dispatch.",
     image: "/public/images/iIntegrityVerification.jpg",
     icon: FaShippingFast,
-    bookmark:"ShipmentIntegrityVerification",
+    bookmark: "ShipmentIntegrityVerification",
     features: [
       "Pre-shipment inspections for defects, compliance, and packaging",
       "Random sampling and AQL-based quality checks",
@@ -198,7 +196,7 @@ const servicesData = [
     description: "Protecting shipments from damage, misplacement, and security risks.",
     image: "/public/images/SecureCargo.jpg",
     icon: FaBoxOpen,
-    bookmark:"SecureCargoSupervision",
+    bookmark: "SecureCargoSupervision",
     features: [
       "24/7 monitoring of loading and unloading procedures",
       "Tamper-proof security seals and verification",
@@ -217,7 +215,7 @@ const servicesData = [
     description: "Helping suppliers align with regulatory and industry standards.",
     image: "/public/images/SupplierCompliance.jpg",
     icon: FaClipboardCheck,
-    bookmark:"SupplierComplianceAssistance",
+    bookmark: "SupplierComplianceAssistance",
     features: [
       "Regulatory audits to ensure industry compliance",
       "ISO, FDA, CE, and RoHS certification guidance",
@@ -236,7 +234,7 @@ const servicesData = [
     description: "Evaluating supplier reliability, operational standards, and risk management.",
     image: "/public/images/VendorRisk.jpg",
     icon: FaSearchDollar,
-    bookmark:"VendorRiskQualityAssessment",
+    bookmark: "VendorRiskQualityAssessment",
     features: [
       "Supplier qualification assessments before onboarding",
       "Operational audits covering safety, quality, and ethics",
@@ -255,7 +253,7 @@ const servicesData = [
     description: "Assess vendor performance to optimize procurement and sourcing strategies.",
     image: "/public/images/StrategySupplier.jpg",
     icon: FaChartBar,
-    bookmark:"StrategicSupplierBenchmarking",
+    bookmark: "StrategicSupplierBenchmarking",
     features: [
       "Supplier qualification assessments before onboarding",
       "Operational audits covering safety, quality, and ethics",

@@ -10,8 +10,8 @@ const MetalInspection = () => {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-[#fff1be] via-[#4fd1c5] via-[#4a90e2] to-[#5e60ff] text-white text-center py-24">
-        <div className="absolute inset-0 bg-black/25 backdrop-blur-sm"></div>
+      <section className="relative bg-gradient-to-r from-[#fff1be] via-[#4fd1c5] via-[#4a90e2] to-[#5e60ff] text-black text-center py-24">
+        <div className="absolute inset-0  backdrop-blur-sm"></div>
         <motion.div
           className="relative z-10 max-w-4xl mx-auto px-6"
           initial={{ opacity: 0, y: -30 }}
@@ -85,17 +85,17 @@ const MetalInspection = () => {
               "Gamma and neutron radiation scanning to detect contamination",
               "Explosive material detection using advanced scanning techniques",
               "Final pre-shipment certification and documentation review"].map((step, index) => (
-              <motion.div
-                key={index}
-                className="flex items-center gap-4 bg-gray-900 p-6 rounded-lg shadow-md"
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.2, duration: 0.6 }}
-              >
-                <FaCheckCircle className="text-blue-400 text-3xl" />
-                <p className="text-lg">{step}</p>
-              </motion.div>
-            ))}
+                <motion.div
+                  key={index}
+                  className="flex items-center gap-4 bg-gray-900 p-6 rounded-lg shadow-md"
+                  initial={{ opacity: 0, y: 30 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: index * 0.2, duration: 0.6 }}
+                >
+                  <FaCheckCircle className="text-blue-400 text-3xl" />
+                  <p className="text-lg">{step}</p>
+                </motion.div>
+              ))}
           </div>
         </div>
       </section>
@@ -104,7 +104,7 @@ const MetalInspection = () => {
         <div className="max-w-7xl mx-auto">
           <h2 className="text-4xl font-bold text-center">Key Steps in Metal Scrap Inspection</h2>
           <p className="mt-4 text-lg text-center text-gray-300">We follow a structured and methodical approach to ensure thorough assessment of all metal scrap shipments.</p>
-          
+
         </div>
       </section>
 
