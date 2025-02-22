@@ -109,9 +109,9 @@ const MetalInspection = () => {
       </section>
 
       {/* Call to Action */}
-      <section className="bg-gradient-to-r from-[#fff1be] via-[#4fd1c5] via-[#4a90e2] to-[#5e60ff] text-white text-center py-16">
+      <section className="bg-gradient-to-r from-[#fff1be] via-[#4fd1c5] via-[#4a90e2] to-[#5e60ff] text-black text-center py-16">
         <h2 className="text-3xl font-bold">Need a Certified Metal Inspection?</h2>
-        <p className="mt-4 text-lg">Contact our experts today for comprehensive inspection services tailored to your needs.</p>
+        <p className="mt-4 text-lg font-medium">Contact our experts today for comprehensive inspection services tailored to your needs.</p>
         <button className="mt-6 px-6 py-3 bg-white text-gray-900 font-semibold rounded-lg shadow-md hover:bg-gray-200 transition-all">
           Get in Touch
         </button>
