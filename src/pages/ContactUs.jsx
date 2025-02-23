@@ -24,9 +24,15 @@ export default function ContactUs() {
         </div>
 
         <Navbar />
-        <div className="bg-gray-900 text-white">
+        <div className="bg-gray-900 text-black">
           {/* Hero Section */}
-          <section className="h-80 flex flex-col justify-center items-center text-center px-6 relative overflow-hidden bg-gradient-to-r from-blue-500 to-purple-500">
+          <section className="h-80 flex flex-col justify-center items-center text-center px-6 relative overflow-hidden 
+          bg-[linear-gradient(115deg,var(--tw-gradient-stops))] 
+          from-[#fff1be] from-[28%] 
+          via-[#4fd1c5] via-[55%] 
+          via-[#4a90e2] via-[70%] 
+          to-[#5e60ff] to-[100%] 
+          sm:bg-[linear-gradient(145deg,var(--tw-gradient-stops))]">
             <motion.h1
               className="text-5xl font-bold"
               initial={{ opacity: 0, y: -50 }}
@@ -48,7 +54,7 @@ export default function ContactUs() {
           {/* Contact Form & Info */}
           <section className="p-12 grid grid-cols-1 md:grid-cols-2 gap-12 max-w-6xl mx-auto">
             {/* Contact Form */}
-            
+
             <div className="bg-gray-800 p-8 rounded-lg shadow-lg">
               <h2 className="text-3xl font-bold mb-6">Get in Touch</h2>
               <form className="space-y-4">

@@ -1,217 +1,118 @@
-import React from 'react';
-import { FaCheckCircle } from 'react-icons/fa';
-import { motion } from 'framer-motion';
-
-const InspectionPage = () => {
-  return (
-    <div className="bg-gray-900 text-white">
-
-      {/* Hero Section */}
-      <motion.section 
-        className="py-20 px-6 lg:px-12 bg-indigo-900 text-white"
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-      >
-        <div className="max-w-7xl mx-auto">
-          <h1 className="text-5xl font-bold text-center mb-4">MELT Enterprise Ltd: Your Trusted DGFT-Approved Inspection Partner</h1>
-          <p className="text-lg text-center text-gray-300 mb-8">
-            MELT Enterprise Ltd is a DGFT-approved Pre-Shipment Inspection Agency, specializing in ensuring the safety and compliance of goods entering India and other global markets.
-          </p>
+import { useState } from "react";
+import { motion } from "framer-motion";
+import { FaBuilding, FaShieldAlt, FaCheckCircle, FaSearch, FaRadiation, FaFlask, FaMicroscope, FaAtom, FaVial, FaGlobe, FaClipboardCheck } from "react-icons/fa";
+const Accordion = ({ title, descriptionItems, imageUrl, buttonText, url }) => {
+    const [isOpen, setIsOpen] = useState(false);
+  
+    return (
+      <div className="bg-gray-800 rounded-lg shadow-lg mb-6 relative">
+        <div
+          className="flex justify-between items-center p-6 cursor-pointer"
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          <h3 className="text-xl font-semibold text-blue-400">{title}</h3>
+          <button className="text-blue-400">{isOpen ? "Close" : "Open"}</button>
         </div>
-      </motion.section>
-
-      {/* Timeline Section */}
-      <motion.section 
-        className="py-20 px-6 lg:px-12 bg-gray-800 text-white"
-        initial={{ opacity: 0, x: -100 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1 }}
-      >
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-6 text-blue-400">Our Inspection Process & Global Reach</h2>
-          <p className="text-lg text-center text-gray-300 mb-8">
-            MELT Enterprise Ltd is your trusted partner for Pre-Shipment Inspection services across the globe. Below is an interactive timeline of how we ensure the safety and compliance of your goods.
-          </p>
-          <div className="timeline">
-            <motion.div 
-              className="timeline-item"
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.2, duration: 0.6 }}
-            >
-              <div className="timeline-step bg-blue-800 p-6 rounded-lg shadow-md">
-                <span className="step-number text-white">1</span>
-                <h3 className="step-title text-2xl font-bold text-white">MELT Enterprise Overview</h3>
-                <p className="step-description text-gray-300">
-                  MELT Enterprise Ltd is a DGFT-approved agency specializing in PSI services for safety and compliance.
-                </p>
-              </div>
-            </motion.div>
-            <motion.div 
-              className="timeline-item"
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.4, duration: 0.6 }}
-            >
-              <div className="timeline-step bg-green-800 p-6 rounded-lg shadow-md">
-                <span className="step-number text-white">2</span>
-                <h3 className="step-title text-2xl font-bold text-white">Pre-Shipment Inspection Process</h3>
-                <p className="step-description text-gray-300">
-                  Our inspection process ensures compliance with DGFT regulations, covering dangerous items such as arms, explosives, and radiation.
-                </p>
-              </div>
-            </motion.div>
-            <motion.div 
-              className="timeline-item"
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.6, duration: 0.6 }}
-            >
-              <div className="timeline-step bg-purple-800 p-6 rounded-lg shadow-md">
-                <span className="step-number text-white">3</span>
-                <h3 className="step-title text-2xl font-bold text-white">Global Reach & Certification</h3>
-                <p className="step-description text-gray-300">
-                  We provide certification services across multiple regions including the USA, UK, UAE, and more.
-                </p>
-              </div>
-            </motion.div>
-            <motion.div 
-              className="timeline-item"
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.8, duration: 0.6 }}
-            >
-              <div className="timeline-step bg-red-800 p-6 rounded-lg shadow-md">
-                <span className="step-number text-white">4</span>
-                <h3 className="step-title text-2xl font-bold text-white">Customizable Services</h3>
-                <p className="step-description text-gray-300">
-                  MELT Enterprise Ltd tailors its inspection process to meet specific client requirements, ensuring thorough checks.
-                </p>
-              </div>
-            </motion.div>
-          </div>
-        </div>
-      </motion.section>
-
-      {/* Infographics Section */}
-      <motion.section 
-        className="py-20 px-6 lg:px-12 bg-gray-700 text-white"
-        initial={{ opacity: 0, x: 100 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1 }}
-      >
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-6 text-yellow-400">Key Checks During Our Pre-Shipment Inspection</h2>
-          <p className="text-lg text-center text-gray-300 mb-8">
-            MELT Enterprise Ltd follows a comprehensive inspection checklist to ensure quality, safety, and compliance. Here are some key checks that we perform.
-          </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.2, duration: 0.6 }}
-              className="flex flex-col items-center bg-gray-900 p-6 rounded-lg shadow-md"
-            >
-              <FaCheckCircle className="text-blue-400 text-4xl mb-4" />
-              <h3 className="text-xl font-bold">Radioactive Contamination Check</h3>
-              <p className="text-gray-300 mt-4">
-                We perform checks for radioactive contamination in scrap and waste materials to ensure safe handling.
-              </p>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.4, duration: 0.6 }}
-              className="flex flex-col items-center bg-gray-900 p-6 rounded-lg shadow-md"
-            >
-              <FaCheckCircle className="text-blue-400 text-4xl mb-4" />
-              <h3 className="text-xl font-bold">Material Quality Analysis</h3>
-              <p className="text-gray-300 mt-4">
-                Our testing includes ferrous and non-ferrous material quality analysis, such as HMS, Cast Iron, Aluminum, Copper, and more.
-              </p>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.6, duration: 0.6 }}
-              className="flex flex-col items-center bg-gray-900 p-6 rounded-lg shadow-md"
-            >
-              <FaCheckCircle className="text-blue-400 text-4xl mb-4" />
-              <h3 className="text-xl font-bold">Explosive Material Detection</h3>
-              <p className="text-gray-300 mt-4">
-                We use advanced scanning techniques to detect explosive materials, ensuring the safety of all shipments.
-              </p>
-            </motion.div>
-          </div>
-        </div>
-      </motion.section>
-
-      {/* Explainer Video Section */}
-      <motion.section
-        className="py-20 px-6 lg:px-12 bg-gray-800 text-white"
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-      >
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-6 text-green-400">Pre-Shipment Inspection in Action</h2>
-          <p className="text-lg text-center text-gray-300 mb-8">
-            Watch this short video to see how MELT Enterprise Ltd ensures compliance and safety during the Pre-Shipment Inspection process.
-          </p>
-          <div className="flex justify-center">
-            <iframe
-              width="800"
-              height="450"
-              src="https://www.youtube.com/embed/your_video_id_here"
-              title="Pre-Shipment Inspection Overview"
-              frameBorder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
-          </div>
-        </div>
-      </motion.section>
-
-      {/* Global Reach Section */}
-      <motion.section 
-        className="py-20 px-6 lg:px-12 bg-blue-900 text-white"
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-      >
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-6 text-orange-400">Our Global Presence</h2>
-          <p className="text-lg text-center text-gray-300 mb-8">
-            MELT Enterprise Ltd offers Pre-Shipment Inspection Certification in a wide array of regions across the globe.
-          </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {["United Kingdom", "Europe", "USA", "UAE", "Israel", "South Africa", "Australia", "New Zealand"].map((region, index) => (
-              <motion.div 
-                key={index}
-                className="flip-card bg-gray-700 p-6 rounded-lg shadow-md"
-                initial={{ opacity: 0, rotateY: 90 }}
-                animate={{ opacity: 1, rotateY: 0 }}
-                transition={{ delay: 0.3 * index, duration: 0.6 }}
-              >
-                <div className="flip-card-inner">
-                  <div className="flip-card-front">
-                    <h3 className="text-2xl font-bold">{region}</h3>
-                  </div>
-                  <div className="flip-card-back">
-                    <p className="text-lg">
-                      Pre-Shipment Inspection services available in {region} to ensure full compliance with local regulations.
-                    </p>
-                  </div>
+  
+        {isOpen && (
+          <div className="p-6 space-y-4">
+            <div className="space-y-2">
+              {descriptionItems.map((item, index) => (
+                <div key={index} className="flex items-center space-x-3 text-gray-300">
+                  <div className="text-yellow-300">{item.symbol}</div>
+                  <p className="text-sm">{item.text}</p>
                 </div>
-              </motion.div>
-            ))}
+              ))}
+            </div>
+            <div className="relative mt-6">
+              {/* Motion Floating Shapes */}
+              <motion.div
+                className="absolute -top-10 -left-10 w-32 h-32 bg-blue-500 opacity-30 rounded-full"
+                animate={{ y: [0, -10, 10, 0] }}
+                transition={{ repeat: Infinity, duration: 5, ease: "easeInOut" }}
+              />
+              <motion.div
+                className="absolute -bottom-10 right-0 w-20 h-20 bg-purple-500 opacity-20 rounded-full"
+                animate={{ y: [-5, 5, -5] }}
+                transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
+              />
+  
+              {/* Image with reduced size */}
+              <img src={imageUrl} alt={title} className="w-1/2 mx-auto rounded-lg shadow-lg" />
+            </div>
+            <div className="mt-4 text-center">
+              <a href={url} className="text-xl font-semibold text-blue-400 bg-gray-700 py-2 px-6 rounded-lg hover:bg-gray-600 transition">
+                {buttonText}
+              </a>
+            </div>
           </div>
+        )}
+      </div>
+    );
+  };
+  
+  export default function Services() {
+    return (
+      <body className="bg-gray-100 text-gray-800">
+        <div className="overflow-hidden">
+          <div className="relative mx-auto max-w-7xl">
+            <div
+              className="absolute -right-60 -top-44 h-60 w-[36rem] transform-gpu md:right-0 
+                          bg-[linear-gradient(115deg,var(--tw-gradient-stops))] 
+                          from-[#fff1be] from-[28%]   
+                          via-[#4fd1c5] via-[55%]    
+                          via-[#4a90e2] via-[70%]    
+                          to-[#5e60ff] to-[100%]
+                          rotate-[-10deg] 
+                          rounded-full blur-3xl">
+            </div>
+          </div>
+  
+          {/* About Us Accordion Section */}
+          <section className="max-w-6xl mx-auto p-6 space-y-12">
+            {aboutUsData.map((section, index) => (
+              <Accordion key={index} {...section} />
+            ))}
+          </section>
         </div>
-      </motion.section>
-      
-    </div>
-  );
-};
-
-export default InspectionPage;
+      </body>
+    );
+  }
+  
+  const aboutUsData = [
+    {
+      title: "Who we are",
+      descriptionItems: [
+        { text: "New Company is a DGFT-approved Pre-Shipment Inspection Agency, recognized under Public Notice No: 35/2015-2020, dated 28th December 2020.", symbol: <FaBuilding /> },
+        { text: "We specialize in providing Pre-Shipment Inspection (PSI) services to ensure the safety and compliance of goods coming into India and other international markets.", symbol: <FaShieldAlt /> },
+        { text: "As per Director General of Foreign Trade (DGFT) regulations, all containers entering India must be inspected at the time of loading by a DGFT-approved agency. This inspection checks for dangerous items such as arms, ammunition, explosives, and radiation. Once the inspection is complete, a Pre-Shipment Inspection Certificate (PSIC) is issued, which is necessary for customs clearance in India.", symbol: <FaCheckCircle /> },
+      ],
+      imageUrl: "./public/images/about-us-core-values.jpg",
+      buttonText: "Let's Talk",
+      url: "/contactus",
+    },
+    {
+      title: "What we do",
+      descriptionItems: [
+        { text: "Inspection for radioactive and explosive contamination in scrap and waste of metal, plastic, and paper.", symbol: <FaSearch /> },
+        { text: "Radioactive testing using X-Systems Alloy Analyzers.", symbol: <FaRadiation /> },
+        { text: "Ferrous and Non-Ferrous quality analysis including HMS, Cast Iron, Aluminum, Copper, Stainless Steel, Chromium, Cobalt, Nickel, Tin, Zinc, Lead, Tungsten, etc.", symbol: <FaFlask /> },
+        { text: "Spectrometer and spectrochemical testing for precise material analysis.", symbol: <FaMicroscope /> },
+        { text: "Physical testing such as tensile strength, Rockwell and Brinell hardness, grain size, etc.", symbol: <FaAtom /> },
+        { text: "Safety control Pre-Shipment Inspection for the identification and mitigation of potential contamination of scrap and recyclables with explosives, radioactivity, and hazardous substances.", symbol: <FaVial /> },
+      ],
+      imageUrl: "./public/images/Inspection2.jpg",
+      buttonText: "Let's Talk",
+      url: "/contactus",
+    },
+    {
+      title: "What we offer",
+      descriptionItems: [
+        { text: "New Company is authorized to provide Pre-Shipment Inspection Certification in multiple regions, including the United Kingdom, Europe, USA, UAE, Israel, South Africa, Australia, New Zealand, and many others, ensuring global coverage for our clients.", symbol: <FaGlobe /> },
+        { text: "MELT Enterprise Ltd can customize the inspection process based on the client’s specific requirements.", symbol: <FaClipboardCheck /> },
+      ],
+      imageUrl: "./public/images/Inspection2.jpg",
+      buttonText: "Let's Talk",
+      url: "/contactus",
+    }
+  ];

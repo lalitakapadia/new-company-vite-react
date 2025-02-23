@@ -6,8 +6,21 @@ import { FaShip,FaCheckCircle, FaClipboardCheck, FaTruck, FaExchangeAlt } from "
 const MetalImport = () => {
   return (
     <>
-      {/* Navbar */}
-      <Navbar />
+     <body className="bg-gray-100 text-gray-800">
+      <div className="overflow-hidden">
+        <div class="relative mx-auto max-w-7xl">
+          <div
+            class="absolute -right-60 -top-44 h-60 w-[36rem] transform-gpu md:right-0 
+                        bg-[linear-gradient(115deg,var(--tw-gradient-stops))] 
+                        from-[#fff1be] from-[28%]   
+                        via-[#4fd1c5] via-[55%]    
+                        via-[#4a90e2] via-[70%]    
+                        to-[#5e60ff] to-[100%]
+                        rotate-[-10deg] 
+                        rounded-full blur-3xl">
+          </div>
+        </div>
+        <Navbar />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-r from-[#fff1be] via-[#4fd1c5] via-[#4a90e2] to-[#5e60ff] text-black text-center py-24">
@@ -108,6 +121,8 @@ const MetalImport = () => {
           Get in Touch
         </button>
       </section>
+      </div>
+      </body>
     </>
   );
 };
