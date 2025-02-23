@@ -1,7 +1,9 @@
 import { motion } from "framer-motion";
-import { FaHandshake, FaCheckCircle, FaLightbulb, FaGlobe, FaBalanceScale } from "react-icons/fa";
+import { FaChevronDown, FaHandshake, FaCheckCircle, FaLightbulb, FaGlobe, FaBalanceScale } from "react-icons/fa";
 import Navbar from "../components/Navbar";
 import ContinentsSection from "../components/ContinentsSection";
+import React, { useState } from 'react';
+import AboutUsAccordion from "../components/AbboutUsAccordion";
 
 export default function AboutUs() {
   return (
@@ -19,10 +21,19 @@ export default function AboutUs() {
                         rounded-full blur-3xl"
           ></div>
         </div>
+        
         <Navbar />
+
+
         <div className="bg-gray-900 text-white font-sans">
           {/* Hero Section */}
-          <section className="h-screen text-cyan-800 relative flex flex-col justify-center items-center text-center bg-[url(./public/images/about-us-map1.jpg)] p-8">
+          <section className="h-screen/2 p-24 text-black relative flex flex-col justify-center items-center text-center  
+          bg-[linear-gradient(115deg,var(--tw-gradient-stops))] 
+          from-[#fff1be] from-[28%] 
+          via-[#4fd1c5] via-[55%] 
+          via-[#4a90e2] via-[70%] 
+          to-[#5e60ff] to-[100%] 
+          sm:bg-[linear-gradient(145deg,var(--tw-gradient-stops))] p-8">
             <motion.h1
               className="text-5xl font-bold mb-4"
               initial={{ opacity: 0, y: -50 }}
@@ -48,39 +59,8 @@ export default function AboutUs() {
             </motion.a>
           </section>
 
-          {/* About Us Section */}
-          <section id="about" className="flex flex-col md:flex-row items-center p-12 gap-8">
-            <motion.img
-              src="./public/images/about-us-core-values.jpg"
-              className="w-full md:w-1/2 rounded-lg shadow-lg"
-              initial={{ opacity: 0, x: -50 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 1 }}
-            />
-            <div className="md:w-1/2">
-              <h2 className="text-3xl font-bold mb-4">About Us</h2>
-              <p className="text-gray-300 mb-4">
-                **MELT Enterprise Ltd** is a **DGFT-approved Pre-Shipment Inspection Agency**, recognized under **Public Notice No: 35/2015-2020**, dated **28th December 2020**. We specialize in providing Pre-Shipment Inspection (PSI) services to ensure the safety and compliance of goods coming into India and other international markets.
-              </p>
-              <p className="text-gray-300 mb-4">
-                As per **Director General of Foreign Trade (DGFT)** regulations, all containers entering India must be inspected at the time of loading by a **DGFT-approved agency**. This inspection checks for dangerous items such as arms, ammunition, explosives, and radiation. Once the inspection is complete, a **Pre-Shipment Inspection Certificate (PSIC)** is issued, which is necessary for customs clearance in India.
-              </p>
-              <p className="text-gray-300 mb-4">
-                MELT Enterprise Ltd is authorized to provide **Pre-Shipment Inspection Certification** in multiple regions, including the **United Kingdom, Europe, USA, UAE, Israel, South Africa, Australia, New Zealand**, and many others, ensuring global coverage for our clients.
-              </p>
-              <p className="text-gray-300 mb-4">
-                MELT Enterprise Ltd can customize the inspection process based on the client’s specific requirements. Below are a few checks that we perform during our Pre-Shipment Inspection:
-              </p>
-              <ul className="list-disc pl-8 text-gray-300 mb-4">
-                <li>Inspection for radioactive and explosive contamination in scrap and waste of metal, plastic, and paper.</li>
-                <li>Radioactive testing using X-Systems Alloy Analyzers.</li>
-                <li>Ferrous and Non-Ferrous quality analysis including HMS, Cast Iron, Aluminum, Copper, Stainless Steel, Chromium, Cobalt, Nickel, Tin, Zinc, Lead, Tungsten, etc.</li>
-                <li>Spectrometer and spectrochemical testing for precise material analysis.</li>
-                <li>Physical testing such as tensile strength, Rockwell and Brinell hardness, grain size, etc.</li>
-                <li>Safety control Pre-Shipment Inspection for the identification and mitigation of potential contamination of scrap and recyclables with explosives, radioactivity, and hazardous substances.</li>
-              </ul>
-            </div>
-          </section>
+
+          <AboutUsAccordion />
 
           {/* Continent Section */}
           <section id="continent" className="bg-gray-800 text-white p-12">
@@ -130,6 +110,23 @@ export default function AboutUs() {
                 >
                   <h3 className="text-2xl">{item.title}</h3>
                   <p className="mt-4">{item.text}</p>
+                </motion.div>
+              ))}
+            </div>
+          </section>
+
+          {/* Why Choose Us */}
+          <section className="container mx-auto px-8 py-16">
+            <h2 className="text-4xl font-bold text-center mb-8">Why Choose MELT Enterprise?</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+              {[{ icon: FaCheckCircle, title: "Expertise", text: "Over 20 years of industry experience delivering high-quality inspection services." },
+              { icon: FaBalanceScale, title: "Integrity", text: "Unwavering commitment to ethics, transparency, and compliance." },
+              { icon: FaLightbulb, title: "Innovation", text: "We employ cutting-edge technology to ensure precise and efficient inspections." }
+              ].map((item, index) => (
+                <motion.div key={index} className="p-6 bg-gray-100 rounded-lg shadow-lg text-center hover:scale-105 transition">
+                  <item.icon className="text-5xl text-teal-500 mb-4 mx-auto" />
+                  <h3 className="text-2xl font-semibold">{item.title}</h3>
+                  <p className="mt-4 text-gray-700">{item.text}</p>
                 </motion.div>
               ))}
             </div>

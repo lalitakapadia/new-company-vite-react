@@ -128,9 +128,8 @@ export default function ContinentsSection() {
             </motion.div>
             {/* Gradient bar effect */}
             <div
-              className={`absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-blue-500 to-green-400 scale-y-0 group-hover:scale-y-100 transition-transform duration-300 ${
-                expandedContinent === index ? "scale-y-100" : ""
-              }`}
+              className={`absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-blue-500 to-green-400 scale-y-0 group-hover:scale-y-100 transition-transform duration-300 ${expandedContinent === index ? "scale-y-100" : ""
+                }`}
             ></div>
           </div>
         ))}
@@ -141,9 +140,8 @@ export default function ContinentsSection() {
         {continentsData.map((continent, index) => (
           <div
             key={index}
-            className={`transition-all duration-300 ${
-              expandedContinent === index ? "max-h-screen" : "max-h-0 overflow-hidden"
-            }`}
+            className={`transition-all duration-300 ${expandedContinent === index ? "max-h-screen" : "max-h-0 overflow-hidden"
+              }`}
           >
             <div className="mt-4 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
               {continent.countries.map((country, idx) => (

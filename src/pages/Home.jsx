@@ -10,11 +10,11 @@ const DiscoverSection = lazy(() => import("../components/DiscoverSection"));
 const Home = () => {
   return (
     <div className="bg-gray-100 text-gray-800 overflow-hidden">
-      
+
       {/* Hero Section */}
       <div className="relative">
         {/* Gradient Background */}
-        <div
+        {/* <div
           id="certify-shipment"
           className="absolute inset-2 bottom-0 rounded-3xl ring-1 ring-inset ring-black/5 
                      bg-[linear-gradient(115deg,var(--tw-gradient-stops))] 
@@ -22,8 +22,17 @@ const Home = () => {
                       via-[#4fd1c5] 
                       via-[70%]  to-[#5e60ff] 
                      sm:bg-gradient-to-r"
+        ></div> */}
+        <div
+          id="certify-shipment"
+          className="absolute inset-2 bottom-0 rounded-3xl ring-1 ring-inset ring-black/5 
+          bg-[linear-gradient(115deg,var(--tw-gradient-stops))] 
+          from-[#fff1be] from-[28%] 
+          via-[#4fd1c5] via-[55%] 
+          via-[#4a90e2] via-[70%] 
+          to-[#5e60ff] to-[100%] 
+          sm:bg-[linear-gradient(145deg,var(--tw-gradient-stops))]"
         ></div>
-
 
         <Suspense fallback={<div>Loading Navbar...</div>}>
           <Navbar />
@@ -70,8 +79,8 @@ const Home = () => {
         <ServicesSection />
       </Suspense>
 
-      <DiscoverSection/>
-      
+      <DiscoverSection />
+
 
       {/* Footer Section */}
       <footer className="text-center text-sm text-gray-600 py-4">

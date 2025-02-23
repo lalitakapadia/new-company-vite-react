@@ -24,7 +24,7 @@ export default function Services() {
   return (
     <body className="bg-gray-100 text-gray-800">
       <div className="overflow-hidden">
-        {/* <div class="relative mx-auto max-w-7xl">
+        <div class="relative mx-auto max-w-7xl">
           <div
             class="absolute -right-60 -top-44 h-60 w-[36rem] transform-gpu md:right-0 
                         bg-[linear-gradient(115deg,var(--tw-gradient-stops))] 
@@ -35,12 +35,17 @@ export default function Services() {
                         rotate-[-10deg] 
                         rounded-full blur-3xl">
           </div>
-        </div> */}
+        </div>
         <Navbar />
         <div className="bg-gray-900 text-white">
           {/* Hero Section */}
           <section className="h-80 flex flex-col justify-center text-black items-center text-center px-6 
-            bg-gradient-to-r from-[#5e60ff] via-[#4a90e2] via-[#4fd1c5] to-[#fff1be]">
+             bg-[linear-gradient(115deg,var(--tw-gradient-stops))] 
+          from-[#fff1be] from-[28%] 
+          via-[#4fd1c5] via-[55%] 
+          via-[#4a90e2] via-[70%] 
+          to-[#5e60ff] to-[100%] 
+          sm:bg-[linear-gradient(145deg,var(--tw-gradient-stops))]">
             <motion.h1
               className="text-5xl font-bold"
               initial={{ opacity: 0, y: -50 }}
