@@ -1,0 +1,28 @@
+{/* Pre-Shipment Inspection Section */}
+          <section id="psi" className="p-12 bg-gray-800 text-white">
+            <h2 className="text-4xl font-bold text-center mb-8">What is Pre-Shipment Inspection (PSI)?</h2>
+            <p className="max-w-4xl mx-auto text-lg text-gray-300">
+              Pre-Shipment Inspection (PSI) is a quality control procedure where goods are inspected before shipment to ensure compliance with contract specifications, regulations, and standards. PSI helps mitigate risks, reduce delays, and guarantee product quality before export.
+            </p>
+          </section>
+
+          {/* Pre-Shipment Inspection Expertise Section */}
+          <section className="p-12">
+            <h2 className="text-4xl font-bold text-center mb-8">Our Pre-Shipment Inspection Expertise</h2>
+            <div className="max-w-5xl mx-auto text-lg text-gray-800">
+              <p className="mb-4">
+                Our team of experienced inspectors is well-versed in international standards and regulations, ensuring that your products undergo a thorough inspection process before shipment. We provide detailed reports, clear certifications, and actionable insights to help you move forward with confidence.
+              </p>
+            </div>
+          </section>
+
+          {/* Why Get a Pre-Shipment Inspection Section */}
+          <section id="why-psi" className="bg-gray-100 text-gray-800 p-12">
+            <h2 className="text-4xl font-bold text-center mb-8">Why Get a Pre-Shipment Inspection?</h2>
+            <ul className="list-disc pl-8 space-y-4">
+              <li>Minimize risks and avoid costly delays by ensuring your products meet quality standards.</li>
+              <li>Ensure that your goods are compliant with local and international regulations.</li>
+              <li>Reduce the chances of disputes with suppliers by having an impartial third-party inspection.</li>
+              <li>Gain a competitive edge by offering high-quality products to your customers with peace of mind.</li>
+            </ul>
+          </section>

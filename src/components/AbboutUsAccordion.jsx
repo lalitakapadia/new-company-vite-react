@@ -64,7 +64,7 @@ const Accordion = ({ title, descriptionItems, imageUrl, buttonText, url, isActiv
               <img
                 src={imageUrl}
                 alt={title}
-                className="w-full sm:w-80 rounded-lg shadow-lg"
+                className="w-full sm:w-80 rounded-lg shadow-lg mb-4"
               />
             </div>
           </motion.div>
@@ -74,7 +74,7 @@ const Accordion = ({ title, descriptionItems, imageUrl, buttonText, url, isActiv
   );
 };
 
-export default function Services() {
+export default function AboutUsAccordion() {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
