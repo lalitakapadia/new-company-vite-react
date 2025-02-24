@@ -120,9 +120,9 @@ const aboutUsData = [
     title: "What we offer",
     descriptionItems: [
       { text: "New Company is authorized to provide Pre-Shipment Inspection Certification in multiple regions, including the United Kingdom, Europe, USA, UAE, Israel, South Africa, Australia, New Zealand, and many others, ensuring global coverage for our clients.", symbol: <FaGlobe /> },
-      { text: "MELT Enterprise Ltd can customize the inspection process based on the client’s specific requirements.", symbol: <FaClipboardCheck /> },
+      { text: "New Comapany can customize the inspection process based on the client’s specific requirements.", symbol: <FaClipboardCheck /> },
     ],
-    imageUrl: "./public/images/Inspection2.jpg",
+    imageUrl: "./public/images/VendorRisk.jpg",
     buttonText: "Let's Talk",
     url: "/contactus",
   },
