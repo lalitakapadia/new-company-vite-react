@@ -13,7 +13,7 @@ const DiscoverSection = () => {
       icon: <FaIndustry className="w-12 h-12 text-orange-500 mx-auto" />,
       title: 'Scrap Loading Experts',
       description: 'Specializing in inspecting metal and paper scrap at the port of origin for safety assurance.',
-      link: './metal-inspection',
+      link: './services#ShipmentIntegrityVerification',
     },
     {
       icon: <FaGlobe className="w-12 h-12 text-green-500 mx-auto" />,
@@ -25,19 +25,19 @@ const DiscoverSection = () => {
       icon: <FaCheckCircle className="w-12 h-12 text-yellow-500 mx-auto" />,
       title: 'Safety & Compliance',
       description: 'We ensure shipments meet all regulatory and safety requirements.',
-      link: './metal-import',
+      link: './services#SupplierComplianceAssistance',
     },
     {
       icon: <FaCheckCircle className="w-12 h-12 text-yellow-500 mx-auto" />,
       title: 'Hazard-Free Shipments',
       description: 'We certify that shipments are free from hazardous materials before export to India.',
-      link: '/safety-compliance',
+      link: './metal-import',
     },
     {
       icon: <FaUsers className="w-12 h-12 text-purple-500 mx-auto" />,
       title: 'Expert Team',
       description: 'A dedicated team ensuring precision, efficiency, and reliability.',
-      link: './metal-import',
+      link: './contact-us',
     },
   ];
 

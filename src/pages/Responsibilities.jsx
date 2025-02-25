@@ -7,7 +7,7 @@ import Navbar from "../components/Navbar";
 
 const slides = [
   {
-    image: "./public/images/ourcommitment.jpg",
+    image: "./public/images/OurCommitment1.jpg",
     title: "Our Commitment",
     description:
       "We collaborate with top multinational corporations to enhance the social, ethical, and environmental impact of their supply chains.",

@@ -13,16 +13,6 @@ const Home = () => {
 
       {/* Hero Section */}
       <div className="relative">
-        {/* Gradient Background */}
-        {/* <div
-          id="certify-shipment"
-          className="absolute inset-2 bottom-0 rounded-3xl ring-1 ring-inset ring-black/5 
-                     bg-[linear-gradient(115deg,var(--tw-gradient-stops))] 
-                      from-[#fff1be] from-[1%] 
-                      via-[#4fd1c5] 
-                      via-[70%]  to-[#5e60ff] 
-                     sm:bg-gradient-to-r"
-        ></div> */}
         <div
           id="certify-shipment"
           className="absolute inset-2 bottom-0 rounded-3xl ring-1 ring-inset ring-black/20 

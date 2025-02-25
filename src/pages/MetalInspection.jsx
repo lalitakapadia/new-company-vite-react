@@ -78,7 +78,7 @@ const MetalInspection = () => {
           >
             <div className="absolute inset-0 bg-gradient-to-b from-transparent to-gray-900/60 rounded-lg"></div>
             <img
-              src="./public/images/MetalInspection5.jpg"
+              src="./public/images/ShipmentInspection1.jpg"
               alt="Metal Inspection"
               className="w-full h-full object-cover rounded-lg shadow-lg"
               style={{ clipPath: "polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%)" }}
@@ -88,7 +88,7 @@ const MetalInspection = () => {
       </section>
 
       {/* Detailed Inspection Steps */}
-      <section className="py-20 px-6 lg:px-12 bg-gray-800 text-white mt-4 rounded-3xl">
+      <section id="metal-service" className="py-20 px-6 lg:px-12 bg-gray-800 text-white mt-4 rounded-3xl">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-4xl font-bold text-center">Key Steps in Metal Scrap Inspection</h2>
           <p className="mt-4 text-lg text-center text-gray-300">We follow a structured and methodical approach to ensure thorough assessment of all metal scrap shipments.</p>
