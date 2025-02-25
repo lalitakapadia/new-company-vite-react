@@ -5,8 +5,20 @@ import ContinentsSection from "../components/ContinentsSection";
 import React, { useState } from 'react';
 import AboutUsAccordion from "../components/AbboutUsAccordion";
 import GlobalPresence from "../components/GlobalPresence";
+import { useLocation } from "react-router-dom";
+import { useEffect } from "react";
 
 export default function AboutUs() {
+   const { hash } = useLocation(); // Get URL hash
+  
+    useEffect(() => {
+      if (hash) {
+        const element = document.getElementById(hash.replace("#", ""));
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      }
+    }, [hash]);
   return (
     <body className="bg-gray-100 text-gray-800">
       <div className="overflow-hidden">
@@ -68,7 +80,7 @@ export default function AboutUs() {
           <ContinentsSection />
 
           {/* Why Choose Us */}
-          <section className="container mx-auto px-8 py-16">
+          <section className="container mx-auto px-8 py-16 ">
             <h2 className="text-4xl font-bold text-center mb-8">Why Choose MELT Enterprise?</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
               {[{ icon: FaCheckCircle, title: "Expertise", text: "With over 20 years in the inspection industry, we offer unmatched knowledge and skills to guarantee your products meet global standards." },
@@ -78,7 +90,7 @@ export default function AboutUs() {
                 <motion.div key={index} className="p-6 bg-gray-100 rounded-lg shadow-lg text-center hover:scale-105 transition">
                   <item.icon className="text-5xl text-teal-500 mb-4 mx-auto" />
                   <h3 className="text-2xl font-semibold text-black">{item.title}</h3>
-                  <p className="mt-4 text-gray-700">{item.text}</p>
+                  <p className="mt-4 font-normal text-gray-800">{item.text}</p>
                 </motion.div>
               ))}
             </div>
@@ -87,12 +99,15 @@ export default function AboutUs() {
           
         </div>
         {/* Call to Action */}
-      <section className="bg-gradient-to-r from-[#fff1be] via-[#4fd1c5] via-[#4a90e2] to-[#5e60ff] text-black text-center py-16">
+      <section className="mt-4 ring-1 ring-inset ring-black/20 rounded-3xl bg-gradient-to-r from-[#fff1be] via-[#4fd1c5] via-[#4a90e2] to-[#5e60ff] text-black text-center py-16">
         <h2 className="text-3xl font-bold">Ensuring Global Compliance & Safety</h2>
-        <p className="mt-4 text-lg font-medium">Partner with us for certified, DGFT-approved pre-shipment inspections, guaranteeing secure and seamless trade.</p>
-        <button className="mt-6 px-6 py-3 bg-white text-gray-900 font-semibold rounded-lg shadow-md hover:bg-gray-200 transition-all">
-          Get in Touch
-        </button>
+        <p className="text-lg mb-4 max-w-2xl mx-auto font-medium">Partner with us for certified, DGFT-approved pre-shipment inspections, guaranteeing secure and seamless trade.</p>
+        <a
+              href="./contact-us"
+              className="inline-flex items-center justify-center px-6 py-3 bg-white text-gray-900 font-semibold rounded-full hover:bg-gray-200 transition duration-300"
+            >
+              Get in Touch
+            </a>
       </section>
       </div>
     </body>

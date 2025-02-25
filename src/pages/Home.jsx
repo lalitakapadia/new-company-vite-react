@@ -25,7 +25,7 @@ const Home = () => {
         ></div> */}
         <div
           id="certify-shipment"
-          className="absolute inset-2 bottom-0 rounded-3xl ring-1 ring-inset ring-black/5 
+          className="absolute inset-2 bottom-0 rounded-3xl ring-1 ring-inset ring-black/20 
           bg-[linear-gradient(115deg,var(--tw-gradient-stops))] 
           from-[#fff1be] from-[28%] 
           via-[#4fd1c5] via-[55%] 
@@ -61,7 +61,7 @@ const Home = () => {
                   Contact Us on WhatsApp
                 </a>
                 <a
-                  href="./pages/signup.html"
+                  href="./contactus"
                   className="inline-flex items-center justify-center px-6 py-3 bg-gray-50 
                              text-gray-900 rounded-full border border-gray-300 
                              shadow-lg transition-all duration-300 hover:bg-gray-200 hover:scale-105"
@@ -80,12 +80,6 @@ const Home = () => {
       </Suspense>
 
       <DiscoverSection />
-
-
-      {/* Footer Section */}
-      <footer className="text-center text-sm text-gray-600 py-4">
-        &copy; {new Date().getFullYear()} New Company. All rights reserved.
-      </footer>
     </div>
   );
 };

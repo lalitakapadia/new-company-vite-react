@@ -88,7 +88,7 @@ const MetalInspection = () => {
       </section>
 
       {/* Detailed Inspection Steps */}
-      <section className="py-20 px-6 lg:px-12 bg-gray-800 text-white">
+      <section className="py-20 px-6 lg:px-12 bg-gray-800 text-white mt-4 rounded-3xl">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-4xl font-bold text-center">Key Steps in Metal Scrap Inspection</h2>
           <p className="mt-4 text-lg text-center text-gray-300">We follow a structured and methodical approach to ensure thorough assessment of all metal scrap shipments.</p>
@@ -114,12 +114,12 @@ const MetalInspection = () => {
       </section>
 
       {/* Call to Action */}
-      <section className="bg-gradient-to-r from-[#fff1be] via-[#4fd1c5] via-[#4a90e2] to-[#5e60ff] text-black text-center py-16">
+      <section className=" mt-4  rounded-3xl ring-1 ring-inset ring-black/20 bg-gradient-to-r from-[#fff1be] via-[#4fd1c5] via-[#4a90e2] to-[#5e60ff] text-black text-center py-16">
         <h2 className="text-3xl font-bold">Need a Certified Metal Inspection?</h2>
-        <p className="mt-4 text-lg font-medium">Contact our experts today for comprehensive inspection services tailored to your needs.</p>
-        <button className="mt-6 px-6 py-3 bg-white text-gray-900 font-semibold rounded-lg shadow-md hover:bg-gray-200 transition-all">
+        <p className="mt-4 text-lg font-medium mb-4">Contact our experts today for comprehensive inspection services tailored to your needs.</p>
+        <a href ="./contactus" className="mt-6 px-6 py-3 bg-white text-gray-900 font-semibold rounded-lg shadow-md hover:bg-gray-200 transition-all">
           Get in Touch
-        </button>
+        </a>
       </section>
       </div>
       </body>

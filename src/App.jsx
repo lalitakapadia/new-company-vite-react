@@ -30,7 +30,8 @@ function App() {
           <Route path="/contactUs" element={<ContactUs/>} />
           <Route path="/hellopage" element={<HellowPage/>} />
         </Routes>
-      </main>  
+      </main> 
+      <Footer/> 
     </Router>
   );
 }

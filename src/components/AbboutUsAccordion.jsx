@@ -4,7 +4,7 @@ import { FaChevronDown, FaChevronUp, FaBuilding, FaShieldAlt, FaCheckCircle, FaS
 
 const Accordion = ({ title, descriptionItems, imageUrl, buttonText, url, isActive, onClick }) => {
   return (
-    <article className="bg-gray-800 rounded-lg shadow-lg mb-6 p-2 sm:p-3">
+    <article className="bg-gray-800 rounded-3xl shadow-lg mb-6 p-2 sm:p-3">
       <header
         className={`flex justify-between items-center p-2 sm:p-3 ${isActive ? "cursor-default" : "cursor-pointer"
           }`}
@@ -64,7 +64,7 @@ const Accordion = ({ title, descriptionItems, imageUrl, buttonText, url, isActiv
               <img
                 src={imageUrl}
                 alt={title}
-                className="w-full sm:w-80 rounded-lg shadow-lg mb-4"
+                className="w-full sm:w-80 rounded-3xl shadow-lg mb-4"
               />
             </div>
           </motion.div>

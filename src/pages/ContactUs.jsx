@@ -10,7 +10,7 @@ import ContactUsForm from "../components/ContactUsForm";
 export default function ContactUs() {
   const [selectedCountry, setSelectedCountry] = useState(countryData[0]);
   return (
-    <body class="bg-gray-100 text-gray-800 ">
+    <body class="bg-gray-100 text-gray-800">
       <div class="overflow-hidden">
         <div
           class="absolute -right-60 -top-44 h-60 w-[36rem] transform-gpu md:right-0 
@@ -24,9 +24,9 @@ export default function ContactUs() {
         </div>
 
         <Navbar />
-        <div className="bg-gray-900 text-black">
+        <div className="bg-gray-900">
           {/* Hero Section */}
-          <section className="h-80 flex flex-col justify-center items-center text-center px-6 relative overflow-hidden 
+          <section className="rounded-3xl mt-4 ring-1 ring-inset ring-black/20 h-80 flex flex-col justify-center items-center text-center px-6 relative overflow-hidden 
           bg-[linear-gradient(115deg,var(--tw-gradient-stops))] 
           from-[#fff1be] from-[28%] 
           via-[#4fd1c5] via-[55%] 
@@ -34,25 +34,26 @@ export default function ContactUs() {
           to-[#5e60ff] to-[100%] 
           sm:bg-[linear-gradient(145deg,var(--tw-gradient-stops))]">
             <motion.h1
-              className="text-5xl font-bold"
+              className="text-3xl sm:text-5xl font-bold text-center text-gray-900 mt-6 px-4"
               initial={{ opacity: 0, y: -50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
             >
-              Contact Us
+              Contact Us – We're Here to Help!
             </motion.h1>
             <motion.p
-              className="text-lg mt-2"
+              className="text-lg sm:text-xl text-center text-gray-800 mt-4 px-4"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.5, duration: 0.8 }}
             >
-              We'd love to hear from you!
+             Let’s connect and make things happen!
             </motion.p>
           </section>
 
           {/* Contact Form & Info */}
-          <section className="p-12 grid grid-cols-1 md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+          <section className="p-12 grid grid-cols-1 md:grid-cols-2 
+          gap-12 max-w-6xl mx-auto text-gray-300">
             {/* Contact Form */}
 
             <div className="bg-gray-800 p-8 rounded-lg shadow-lg">
@@ -130,6 +131,8 @@ export default function ContactUs() {
           </section>
         </div>
       </div>
+      {/* Call to Action */}
+
     </body>
   );
 }

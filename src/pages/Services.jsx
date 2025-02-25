@@ -45,7 +45,7 @@ export default function Services() {
           via-[#4fd1c5] via-[55%] 
           via-[#4a90e2] via-[70%] 
           to-[#5e60ff] to-[100%] 
-          sm:bg-[linear-gradient(145deg,var(--tw-gradient-stops))]">
+          sm:bg-[linear-gradient(145deg,var(--tw-gradient-stops))] ring-1 ring-inset ring-black/20 rounded-3xl">
             <motion.h1
               className="text-5xl font-bold"
               initial={{ opacity: 0, y: -50 }}
@@ -72,6 +72,16 @@ export default function Services() {
           </section>
         </div>
       </div>
+      <section className="bg-gradient-to-r from-[#fff1be] via-[#4fd1c5] via-[#4a90e2] to-[#5e60ff] text-black text-center py-16 ring-1 ring-inset ring-black/20 rounded-3xl mt-4">
+        <h2 className="text-3xl font-bold">Excellence in Every Step: Your Trusted Partner in Quality & Compliance</h2>
+        <p className="mt-4 text-lg font-medium mb-4">From Quality to Compliance – We’ve Got Your Supply Chain Covered!</p>
+        <a
+              href="./contact-us"
+              className="inline-flex items-center justify-center px-6 py-3 bg-white text-gray-900 font-semibold rounded-full hover:bg-gray-200 transition duration-300"
+            >
+              Get in Touch
+            </a>
+      </section>
     </body>
 
   );
@@ -80,7 +90,7 @@ export default function Services() {
 const ServiceCard = ({ title, description, features, bookmark, benefits, image, icon: Icon, reverse }) => {
   return (
     <motion.div id={bookmark}
-      className={`flex flex-col md:flex-row items-center gap-8 p-8 bg-gray-800 rounded-lg shadow-lg transition-all transform hover:scale-105 ${reverse ? "md:flex-row-reverse" : ""
+      className={`flex flex-col md:flex-row items-center gap-8 p-8 bg-gray-800 rounded-3xl shadow-lg transition-all transform hover:scale-105 ${reverse ? "md:flex-row-reverse" : ""
         }`}
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
@@ -153,6 +163,7 @@ const ServiceCard = ({ title, description, features, bookmark, benefits, image, 
         </div>
       </div>
     </motion.div>
+    
   );
 };
 

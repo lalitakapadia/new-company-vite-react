@@ -110,7 +110,7 @@ export default function ContinentsSection() {
   };
 
   return (
-    <section className="flex bg-gray-800 text-white p-12 flex-wrap">
+    <section className="flex bg-gray-800 text-white p-12 flex-wrap  rounded-3xl mt-4">
       {/* Left: Continent List */}
       <div className="w-full sm:w-1/4 space-y-4">
         {continentsData.map((continent, index) => (
@@ -136,7 +136,7 @@ export default function ContinentsSection() {
       </div>
 
       {/* Right: Country List (Flowing in next row within available space) */}
-      <div className="w-full sm:w-3/4 pl-8">
+      <div className="w-full sm:w-3/4 pl-8 ">
         {continentsData.map((continent, index) => (
           <div
             key={index}

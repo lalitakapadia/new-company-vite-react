@@ -59,7 +59,8 @@ const Responsibilities = () => {
         <Navbar />
 
         {/* Hero Section */}
-        <section className="relative  bg-[linear-gradient(115deg,var(--tw-gradient-stops))] 
+        <section className="relative  ring-1 ring-inset ring-black/20 rounded-3xl 
+          bg-[linear-gradient(115deg,var(--tw-gradient-stops))] 
           from-[#fff1be] from-[28%] 
           via-[#4fd1c5] via-[55%] 
           via-[#4a90e2] via-[70%] 
@@ -86,7 +87,7 @@ const Responsibilities = () => {
           onAutoplayTimeLeft={(swiper, timeLeft) => {
             setProgress(((slideDuration - timeLeft) / slideDuration) * 100);
           }}
-          className="w-full"
+          className="w-full ring-1 ring-inset ring-black/20 rounded-3xl mt-4"
         >
           {slides.map((slide, index) => (
             <SwiperSlide key={index}>
@@ -164,7 +165,7 @@ const Responsibilities = () => {
         </Swiper>
 
         {/* Get in Touch Section */}
-        <section className="bg-gradient-to-r from-[#5e60ff] via-[#4a90e2] to-[#4fd1c5] text-black py-16">
+        <section className="ring-1 ring-inset ring-black/20 rounded-3xl mt-4 bg-gradient-to-r from-[#fff1be] via-[#4fd1c5] via-[#4a90e2] to-[#5e60ff] text-black py-16">
           <div className="max-w-7xl mx-auto text-center px-6">
             <h2 className="text-3xl font-bold mb-4">Get in Touch with Us</h2>
             <p className="text-lg mb-6 max-w-2xl mx-auto font-medium">
@@ -178,7 +179,6 @@ const Responsibilities = () => {
             </a>
           </div>
         </section>
-
       </div>
     </body>
   );
