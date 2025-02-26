@@ -63,13 +63,6 @@ export default function AboutUs() {
             >
               Ensuring quality and safety with cutting-edge inspections worldwide.
             </motion.p>
-            <motion.a
-              href="#about"
-              className="mt-6 px-8 py-3 bg-gradient-to-r from-[#4fd1c5] via-[#4a90e2] to-[#5e60ff] text-white rounded-full hover:from-[#4a90e2] hover:to-[#5e60ff] transition duration-300 text-blue-600 font-semibold rounded-full shadow-md hover:bg-opacity-90 transition"
-              whileHover={{ scale: 1.1 }}
-            >
-              Learn More
-            </motion.a>
           </section>
 
 
@@ -104,7 +97,7 @@ export default function AboutUs() {
         <p className="text-lg mb-4 max-w-2xl mx-auto font-medium">Partner with us for certified, DGFT-approved pre-shipment inspections, guaranteeing secure and seamless trade.</p>
         <a
               href="./contact-us"
-              className="inline-flex items-center justify-center px-6 py-3 bg-white text-gray-900 font-semibold rounded-full hover:bg-gray-200 transition duration-300"
+              className="mt-6 px-6 py-3 bg-gradient-to-r from-[#4fd1c5] via-[#4a90e2] to-[#5e60ff] text-black rounded-full hover:from-[#4a90e2] hover:to-[#5e60ff]  font-semibold rounded-lg shadow-md  transition-all"
             >
               Get in Touch
             </a>
