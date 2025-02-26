@@ -16,7 +16,7 @@ import Clients from './pages/Clients';
 import HellowPage from './pages/HelloPage';
 function App() {
   return (
-    <Router>
+    <Router basename="/new-company-vite-react">
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
