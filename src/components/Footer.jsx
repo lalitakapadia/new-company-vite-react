@@ -1,5 +1,4 @@
-"use client";
-
+import { Link } from "react-router-dom"; // ✅ Import Link
 import { motion } from "framer-motion";
 import { FaLinkedin, FaFacebook, FaTwitter, FaSkype, FaEnvelope } from "react-icons/fa";
 
@@ -20,77 +19,41 @@ export default function Footer() {
         >
           Connect with Us
         </motion.h2>
+
+        {/* Social Media Links (External) */}
         <div className="flex justify-center space-x-6">
-          <motion.a
-            href="https://www.linkedin.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-3xl hover:text-blue-400 transition-all"
-            whileHover={{ scale: 1.2 }}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.4, duration: 0.6 }}
-          >
+          <motion.a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" className="text-3xl hover:text-blue-400 transition-all" whileHover={{ scale: 1.2 }}>
             <FaLinkedin />
           </motion.a>
-
-          <motion.a
-            href="https://www.facebook.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-3xl hover:text-blue-600 transition-all"
-            whileHover={{ scale: 1.2 }}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.5, duration: 0.6 }}
-          >
+          <motion.a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" className="text-3xl hover:text-blue-600 transition-all" whileHover={{ scale: 1.2 }}>
             <FaFacebook />
           </motion.a>
-
-          <motion.a
-            href="https://twitter.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-3xl hover:text-blue-400 transition-all"
-            whileHover={{ scale: 1.2 }}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.6, duration: 0.6 }}
-          >
+          <motion.a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" className="text-3xl hover:text-blue-400 transition-all" whileHover={{ scale: 1.2 }}>
             <FaTwitter />
           </motion.a>
-
-          <motion.a
-            href="https://www.skype.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-3xl hover:text-blue-500 transition-all"
-            whileHover={{ scale: 1.2 }}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.7, duration: 0.6 }}
-          >
+          <motion.a href="https://www.skype.com/" target="_blank" rel="noopener noreferrer" className="text-3xl hover:text-blue-500 transition-all" whileHover={{ scale: 1.2 }}>
             <FaSkype />
           </motion.a>
-
-          <motion.a
-            href="mailto:contact@yourcompany.com"
-            className="text-3xl hover:text-purple-500 transition-all"
-            whileHover={{ scale: 1.2 }}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.8, duration: 0.6 }}
-          >
+          <motion.a href="mailto:contact@yourcompany.com" className="text-3xl hover:text-purple-500 transition-all" whileHover={{ scale: 1.2 }}>
             <FaEnvelope />
           </motion.a>
         </div>
 
-        <motion.p
-          className="mt-6 text-lg"
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1, duration: 0.6 }}
-        >
+        {/* Internal Links (Using <Link> for React Router) */}
+        <div className="mt-6 flex justify-center space-x-6 text-lg">
+          <Link to="/about-us" className="hover:text-gray-300 transition-all">
+            About Us
+          </Link>
+          <Link to="/contact-us" className="hover:text-gray-300 transition-all">
+            Contact Us
+          </Link>
+          <Link to="/privacy-policy" className="hover:text-gray-300 transition-all">
+            Privacy Policy
+          </Link>
+        </div>
+
+        {/* Copyright */}
+        <motion.p className="mt-6 text-lg" initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1, duration: 0.6 }}>
           © 2025 YourCompany. All Rights Reserved.
         </motion.p>
       </div>
