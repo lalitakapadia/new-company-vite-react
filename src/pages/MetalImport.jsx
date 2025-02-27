@@ -117,9 +117,11 @@ const MetalImport = () => {
       <section className="mt-4  rounded-3xl ring-1 ring-inset ring-black/20 bg-gradient-to-r from-[#fff1be] via-[#4fd1c5] via-[#4a90e2] to-[#5e60ff] text-black text-center py-16">
         <h2 className="text-3xl font-bold">Ready for Smooth and Safe Metal Imports?</h2>
         <p className="text-lg mb-6 max-w-2xl mx-auto font-medium">Contact our experts today to ensure compliance, safety, and efficiency in your next metal import.</p>
-        <a href= "./contact-us"  className="mt-6 px-6 py-3 bg-gradient-to-r from-[#4fd1c5] via-[#4a90e2] to-[#5e60ff] text-black rounded-full hover:from-[#4a90e2] hover:to-[#5e60ff]  font-semibold rounded-lg shadow-md  transition-all">
-          Get in Touch
-        </a>
+          <Link
+            to="/contact-us"
+            className="mt-6 px-6 py-3 bg-gradient-to-r from-[#4fd1c5] via-[#4a90e2] to-[#5e60ff] text-black rounded-full hover:from-[#4a90e2] hover:to-[#5e60ff] font-semibold rounded-lg shadow-md transition-all">
+            Get in Touch
+          </Link>
       </section>
       </div>
       </body>

@@ -75,12 +75,11 @@ export default function Services() {
       <section className="bg-gradient-to-r from-[#fff1be] via-[#4fd1c5] via-[#4a90e2] to-[#5e60ff] text-black text-center py-16 ring-1 ring-inset ring-black/20 rounded-3xl mt-4">
         <h2 className="text-3xl font-bold">Excellence in Every Step: Your Trusted Partner in Quality & Compliance</h2>
         <p className="mt-4 text-lg font-medium mb-4">From Quality to Compliance – We’ve Got Your Supply Chain Covered!</p>
-        <a
-              href="./contact-us"
-              className="mt-6 px-6 py-3 bg-gradient-to-r from-[#4fd1c5] via-[#4a90e2] to-[#5e60ff] text-black rounded-full hover:from-[#4a90e2] hover:to-[#5e60ff]  font-semibold rounded-lg shadow-md  transition-all"
-            >
-              Get in Touch
-            </a>
+           <Link
+            to="/contact-us"
+            className="mt-6 px-6 py-3 bg-gradient-to-r from-[#4fd1c5] via-[#4a90e2] to-[#5e60ff] text-black rounded-full hover:from-[#4a90e2] hover:to-[#5e60ff] font-semibold rounded-lg shadow-md transition-all">
+            Get in Touch
+          </Link>
       </section>
     </body>
 

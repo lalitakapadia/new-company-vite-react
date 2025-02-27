@@ -171,12 +171,11 @@ const Responsibilities = () => {
             <p className="text-lg mb-6 max-w-2xl mx-auto font-medium">
               Have any questions or want to know more about our global compliance services? Feel free to contact us. We're here to assist you in navigating complex regulatory landscapes and ensuring business sustainability.
             </p>
-            <a
-              href="./contact-us"
-              className="mt-6 px-6 py-3 bg-gradient-to-r from-[#4fd1c5] via-[#4a90e2] to-[#5e60ff] text-black rounded-full hover:from-[#4a90e2] hover:to-[#5e60ff]  font-semibold rounded-lg shadow-md  transition-all"
-            >
+            <Link
+              to="/contact-us"
+              className="mt-6 px-6 py-3 bg-gradient-to-r from-[#4fd1c5] via-[#4a90e2] to-[#5e60ff] text-black rounded-full hover:from-[#4a90e2] hover:to-[#5e60ff] font-semibold rounded-lg shadow-md transition-all">
               Get in Touch
-            </a>
+           </Link>
           </div>
         </section>
       </div>
