@@ -3,6 +3,7 @@ import { FaChevronDown, FaHandshake, FaBuilding , FaCheckCircle, FaLightbulb, Fa
 import Navbar from "../components/Navbar";
 import ContinentsSection from "../components/ContinentsSection";
 import React, { useState } from 'react';
+import { Link } from "react-router-dom"; // ✅ Import Link from React Router
 import AboutUsAccordion from "../components/AbboutUsAccordion";
 import GlobalPresence from "../components/GlobalPresence";
 import { useLocation } from "react-router-dom";

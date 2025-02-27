@@ -1,5 +1,6 @@
 "use client";
 import { useEffect } from "react";
+import { Link } from "react-router-dom"; // ✅ Import Link from React Router
 import { useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 import { FaCheckCircle, FaLightbulb } from "react-icons/fa";
