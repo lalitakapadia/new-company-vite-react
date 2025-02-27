@@ -103,7 +103,7 @@ const aboutUsData = [
     ],
     imageUrl: "./public/images/about-us-core-values.jpg",
     buttonText: "Let's Talk",
-    url: "/contactus",
+    url: "/contact-us",
   },
   {
     title: "What we do",
@@ -115,9 +115,9 @@ const aboutUsData = [
       { text: "Physical testing such as tensile strength, Rockwell and Brinell hardness, grain size, etc.", symbol: <FaAtom /> },
       { text: "Safety control Pre-Shipment Inspection for contamination identification.", symbol: <FaVial /> },
     ],
-    imageUrl: "/public/images/Inspection2.jpg",
+    imageUrl: "./public/images/Inspection2.jpg",
     buttonText: "Let's Talk",
-    url: "/contactus",
+    url: "/contact-us",
   },
   {
     title: "What we offer",
@@ -125,8 +125,8 @@ const aboutUsData = [
       { text: "We provide Pre-Shipment Inspection Certification in multiple regions worldwide.", symbol: <FaGlobe /> },
       { text: "We customize the inspection process based on client requirements.", symbol: <FaClipboardCheck /> },
     ],
-    imageUrl: "/images/VendorRisk.jpg",
+    imageUrl: "./public/images/VendorRisk.jpg",
     buttonText: "Let's Talk",
-    url: "/contactus",
+    url: "/contact-us",
   },
 ];

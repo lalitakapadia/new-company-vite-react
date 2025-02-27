@@ -1,5 +1,4 @@
 import React, { Suspense, lazy } from "react";
-import aboutImage from "/public/images/AboutHomePage.jpg";
 import { motion } from "framer-motion";
 
 // Lazy load components for better performance
@@ -51,7 +50,7 @@ const Home = () => {
                   Contact Us on WhatsApp
                 </a>
                 <a
-                  href="./contactus"
+                  href="./contact-us"
                   className="inline-flex items-center justify-center px-6 py-3 bg-gray-50 
                              text-gray-900 rounded-full border border-gray-300 
                              shadow-lg transition-all duration-300 hover:bg-gray-200 hover:scale-105"

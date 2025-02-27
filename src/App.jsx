@@ -6,14 +6,13 @@ import './App.css';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import ContactUs from './pages/ContactUs';
-import AboutUs from './pages/AboutUs';
+import AboutUs from './components/AboutUs';
 import Services from './pages/Services';
 import Responsibilities from './pages/Responsibilities';
 import MetalInspection from './pages/MetalInspection';
 import MetalImport from './pages/MetalImport';
 import Footer from './components/Footer';
 import Clients from './pages/Clients';
-import HellowPage from './pages/HelloPage';
 function App() {
   return (
     <Router basename="/new-company-vite-react">
@@ -27,8 +26,6 @@ function App() {
           <Route path="/metal-inspection" element={<MetalInspection />} />
           <Route path="/metal-import" element={<MetalImport />} />
           <Route path="/clients" element={<Clients />} />
-          <Route path="/contactUs" element={<ContactUs/>} />
-          <Route path="/hellopage" element={<HellowPage/>} />
         </Routes>
       </main> 
       <Footer/> 

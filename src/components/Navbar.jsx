@@ -43,9 +43,8 @@ const Navbar = () => {
               <a href="./responsibilities" data-page="responsibilities" className="hover:text-blue-600">Responsibilities</a>
               <a href="./metal-inspection" data-page="metalinspection" className="hover:text-blue-600">Metal Inspection</a>
               <a href="./metal-import" data-page="metalimport" className="hover:text-blue-600">Metal Import</a>
-              <a href="./clients" data-page="clients" className="hover:text-blue-600">Clients</a>
-              <a href="./contactUs" data-page="contactUs" className="hover:text-blue-600">Contact Us</a>
-              <a href="./hellopage" data-page="hellopage" className="hover:text-blue-600">Hello</a>
+              {/* <a href="./clients" data-page="clients" className="hover:text-blue-600">Clients</a> */}
+              <a href="./contact-us" data-page="contactUs" className="hover:text-blue-600">Contact Us</a>
             </nav>
             <button className="md:hidden text-gray-600" id="mobile-menu-button" onClick={toggleMobileMenu}>
               <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -63,8 +62,8 @@ const Navbar = () => {
               <a href="./responsibilities" data-page="responsibilities" className="teal:text-blue-600">Responsibilities</a>
               <a href="./metal-inspection" data-page="metalinspection" className="teal:text-blue-600">Metal Inspection</a>
               <a href="./metal-import" data-page="metalimport" className="hover:text-blue-600">Metal Import</a>
-              <a href="./clients" data-page="clients" className="hover:text-blue-600">Clients</a>
-              <a href="./contactUs" data-page="contactUs" className="hover:text-blue-600">Contact Us</a>
+              {/* <a href="./clients" data-page="clients" className="hover:text-blue-600">Clients</a> */}
+              <a href="./contact-us" data-page="contactUs" className="hover:text-blue-600">Contact Us</a>
           </nav>
         </div>
       </header>

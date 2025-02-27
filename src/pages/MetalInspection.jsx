@@ -117,7 +117,7 @@ const MetalInspection = () => {
       <section className=" mt-4  rounded-3xl ring-1 ring-inset ring-black/20 bg-gradient-to-r from-[#fff1be] via-[#4fd1c5] via-[#4a90e2] to-[#5e60ff] text-black text-center py-16">
         <h2 className="text-3xl font-bold">Need a Certified Metal Inspection?</h2>
         <p className="mt-4 text-lg font-medium mb-4">Contact our experts today for comprehensive inspection services tailored to your needs.</p>
-        <a href ="./contactus" className="mt-6 px-6 py-3 bg-gradient-to-r from-[#4fd1c5] via-[#4a90e2] to-[#5e60ff] text-black rounded-full hover:from-[#4a90e2] hover:to-[#5e60ff]  font-semibold rounded-lg shadow-md  transition-all">
+        <a href ="-us" className="mt-6 px-6 py-3 bg-gradient-to-r from-[#4fd1c5] via-[#4a90e2] to-[#5e60ff] text-black rounded-full hover:from-[#4a90e2] hover:to-[#5e60ff]  font-semibold rounded-lg shadow-md  transition-all">
           Get in Touch
         </a>
       </section>
