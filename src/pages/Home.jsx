@@ -1,4 +1,5 @@
 import React, { Suspense, lazy } from "react";
+import { Link } from "react-router-dom"; // ✅ Import Link from React Router
 import { motion } from "framer-motion";
 
 // Lazy load components for better performance
@@ -9,7 +10,6 @@ const DiscoverSection = lazy(() => import("../components/DiscoverSection"));
 const Home = () => {
   return (
     <div className="bg-gray-100 text-gray-800 overflow-hidden">
-
       {/* Hero Section */}
       <div className="relative">
         <div
@@ -49,14 +49,14 @@ const Home = () => {
                 >
                   Contact Us on WhatsApp
                 </a>
-                <a
-                  href="./contact-us"
+                <Link
+                  to="/contact-us"
                   className="inline-flex items-center justify-center px-6 py-3 bg-gray-50 
                              text-gray-900 rounded-full border border-gray-300 
                              shadow-lg transition-all duration-300 hover:bg-gray-200 hover:scale-105"
                 >
                   Leave a Message
-                </a>
+                </Link>
               </div>
             </div>
           </div>
