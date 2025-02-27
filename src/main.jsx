@@ -5,7 +5,7 @@ import App from './App.jsx'
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import ContactUs from './pages/ContactUs';
-import AboutUs from './components/AboutUs';
+import AboutUs from './pages/AboutUs';
 import Services from './pages/Services';
 import Responsibilities from './pages/Responsibilities';
 import MetalInspection from './pages/MetalInspection';

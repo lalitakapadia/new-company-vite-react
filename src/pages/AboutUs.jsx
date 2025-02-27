@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 import { FaChevronDown, FaHandshake, FaBuilding , FaCheckCircle, FaLightbulb, FaGlobe, FaBalanceScale, FaShieldAlt } from "react-icons/fa";
-import Navbar from "./Navbar";
-import ContinentsSection from "./ContinentsSection";
+import Navbar from "../components/Navbar";
+import ContinentsSection from "../components/ContinentsSection";
 import React, { useState } from 'react';
-import AboutUsAccordion from "./AbboutUsAccordion";
-import GlobalPresence from "./GlobalPresence";
+import AboutUsAccordion from "../components/AbboutUsAccordion";
+import GlobalPresence from "../components/GlobalPresence";
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
 

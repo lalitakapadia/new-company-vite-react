@@ -7,25 +7,25 @@ import Navbar from "../components/Navbar";
 
 const slides = [
   {
-    image: "./public/images/OurCommitment1.jpg",
+    image: "/images/OurCommitment1.jpg",
     title: "Our Commitment",
     description:
       "We collaborate with top multinational corporations to enhance the social, ethical, and environmental impact of their supply chains.",
   },
   {
-    image: "./public/images/ourvalues.jpg",
+    image: "/images/ourvalues.jpg",
     title: "Our Values",
     description:
       "We emphasize integrity, transparency, and accountability to ensure long-term corporate success and sustainability.",
   },
   {
-    image: "./public/images/approach.jpg",
+    image: "/images/approach.jpg",
     title: "Our Approach",
     description:
       "Integrity is at the core of our business values. We maintain high standards of professional conduct with all stakeholders.",
   },
   {
-    image: "./public/images/impact1.jpg",
+    image: "/images/impact1.jpg",
     title: "Our Impact",
     description:
       "Our compliance code supports adherence to ethical standards and corporate governance principles.",

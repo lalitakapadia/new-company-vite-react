@@ -78,7 +78,7 @@ const MetalInspection = () => {
           >
             <div className="absolute inset-0 bg-gradient-to-b from-transparent to-gray-900/60 rounded-lg"></div>
             <img
-              src="./public/images/ShipmentInspection1.jpg"
+              src="/images/ShipmentInspection1.jpg"
               alt="Metal Inspection"
               className="w-full h-full object-cover rounded-lg shadow-lg"
               style={{ clipPath: "polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%)" }}

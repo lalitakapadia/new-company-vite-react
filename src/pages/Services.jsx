@@ -172,7 +172,7 @@ const servicesData = [
   {
     title: "Independent Quality Assurance",
     description: "Ensuring excellence through unbiased quality verification.",
-    image: "/public/images/QualityAssurance.jpg",
+    image: "/images/QualityAssurance.jpg",
     icon: FaShieldAlt,
     bookmark: "IndependentQualityAssurance",
     features: [
@@ -191,7 +191,7 @@ const servicesData = [
   {
     title: "Shipment Integrity Verification",
     description: "Guaranteeing product quality before dispatch.",
-    image: "/public/images/iIntegrityVerification.jpg",
+    image: "/images/iIntegrityVerification.jpg",
     icon: FaShippingFast,
     bookmark: "ShipmentIntegrityVerification",
     features: [
@@ -210,7 +210,7 @@ const servicesData = [
   {
     title: "Secure Cargo Supervision",
     description: "Protecting shipments from damage, misplacement, and security risks.",
-    image: "/public/images/SecureCargo.jpg",
+    image: "/images/SecureCargo.jpg",
     icon: FaBoxOpen,
     bookmark: "SecureCargoSupervision",
     features: [
@@ -229,7 +229,7 @@ const servicesData = [
   {
     title: "Supplier Compliance Assistance",
     description: "Helping suppliers align with regulatory and industry standards.",
-    image: "/public/images/SupplierCompliance.jpg",
+    image: "/images/SupplierCompliance.jpg",
     icon: FaClipboardCheck,
     bookmark: "SupplierComplianceAssistance",
     features: [
@@ -248,7 +248,7 @@ const servicesData = [
   {
     title: "Vendor Risk & Quality Assessment",
     description: "Evaluating supplier reliability, operational standards, and risk management.",
-    image: "/public/images/VendorRisk.jpg",
+    image: "/images/VendorRisk.jpg",
     icon: FaSearchDollar,
     bookmark: "VendorRiskQualityAssessment",
     features: [
@@ -267,7 +267,7 @@ const servicesData = [
   {
     title: "Strategic Supplier Benchmarking",
     description: "Assess vendor performance to optimize procurement and sourcing strategies.",
-    image: "/public/images/StrategySupplier.jpg",
+    image: "/images/StrategySupplier.jpg",
     icon: FaChartBar,
     bookmark: "StrategicSupplierBenchmarking",
     features: [
