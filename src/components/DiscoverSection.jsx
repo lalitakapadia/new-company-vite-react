@@ -7,7 +7,7 @@ const DiscoverSection = () => {
     { icon: <FaShieldAlt className="w-12 h-12 text-blue-500 mx-auto" />, 
       title: 'Inspection Services', 
       description: 'Ensuring international shipment compliance with expert inspections.', 
-      link: '/metal-inspection' 
+      link: './metal-inspection' 
     },
     { icon: <FaIndustry className="w-12 h-12 text-orange-500 mx-auto" />, 
       title: 'Scrap Loading Experts', 

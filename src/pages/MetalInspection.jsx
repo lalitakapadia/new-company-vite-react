@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"; // ✅ Import Link from React Router
 import { motion } from "framer-motion";
 import Navbar from "../components/Navbar";
 import { FaCheckCircle, FaShieldAlt, FaClipboardCheck, FaFlask } from "react-icons/fa";
-
+import MetalInspectImage from "../assets/ShipmentInspection1.jpg"
 const MetalInspection = () => {
   return (
     <>
@@ -79,7 +79,7 @@ const MetalInspection = () => {
           >
             <div className="absolute inset-0 bg-gradient-to-b from-transparent to-gray-900/60 rounded-lg"></div>
             <img
-              src="/images/ShipmentInspection1.jpg"
+              src={MetalInspectImage}
               alt="Metal Inspection"
               className="w-full h-full object-cover rounded-lg shadow-lg"
               style={{ clipPath: "polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%)" }}
