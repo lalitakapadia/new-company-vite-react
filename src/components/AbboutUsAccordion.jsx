@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom"; // ✅ Import Link
 import { motion } from "framer-motion";
 import { FaChevronDown, FaChevronUp, FaBuilding, FaShieldAlt, FaCheckCircle, FaSearch, FaRadiation, FaFlask, FaMicroscope, FaAtom, FaVial, FaGlobe, FaClipboardCheck } from "react-icons/fa";
 import aboutUsCoreValues from "../assets/about-us-core-values.jpg";
@@ -32,13 +33,13 @@ const Accordion = ({ title, descriptionItems, imageUrl, buttonText, url, isActiv
             ))}
 
             <div className="mt-4">
-              <a
-                href={url}
-                title={buttonText}
-                className="inline-block text-lg font-semibold text-blue-400 bg-gray-700 py-2 px-6 rounded-lg hover:bg-gray-600 transition"
+            <Link
+              to={url}
+              title={buttonText}
+              className="inline-block text-lg font-semibold text-blue-400 bg-gray-700 py-2 px-6 rounded-lg hover:bg-gray-600 transition"
               >
-                {buttonText}
-              </a>
+              {buttonText}
+            </Link>
             </div>
           </div>
 
