@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"; // ✅ Import Link from React Router
 import { motion } from "framer-motion";
 import Navbar from "../components/Navbar";
 import { FaShip,FaCheckCircle, FaClipboardCheck, FaTruck, FaExchangeAlt } from "react-icons/fa";
-import MetalImportImage from "/images/shipmentInspection.jpg";
+import MetalImportImage from "../assets/shipmentInspection.jpg";
 const MetalImport = () => {
   return (
     <>
