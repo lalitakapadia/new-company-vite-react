@@ -5,28 +5,32 @@ import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import Navbar from "../components/Navbar";
+import ourValuesImage from "../assets/ourvalues.jpg";
+import ourCimmitmentImage from "../assets/OurCommitment1.jpg";
+import ourApproachImage from "../assets/approach.jpg";
+import ourImpactImage from "../assets/impact1.jpg";
 
 const slides = [
   {
-    image: "/images/OurCommitment1.jpg",
+    image: ourCimmitmentImage ,
     title: "Our Commitment",
     description:
       "We collaborate with top multinational corporations to enhance the social, ethical, and environmental impact of their supply chains.",
   },
   {
-    image: "/images/ourvalues.jpg",
+    image: ourValuesImage,
     title: "Our Values",
     description:
       "We emphasize integrity, transparency, and accountability to ensure long-term corporate success and sustainability.",
   },
   {
-    image: "/images/approach.jpg",
+    image: ourApproachImage,
     title: "Our Approach",
     description:
       "Integrity is at the core of our business values. We maintain high standards of professional conduct with all stakeholders.",
   },
   {
-    image: "/images/impact1.jpg",
+    image: ourImpactImage,
     title: "Our Impact",
     description:
       "Our compliance code supports adherence to ethical standards and corporate governance principles.",
