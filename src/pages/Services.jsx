@@ -9,6 +9,12 @@ import {
   FaBoxes, FaUsers, FaSearch, FaChartLine
 } from "react-icons/fa";
 import Navbar from "../components/Navbar";
+import qualityAssuranceImage from "../assets/QualityAssurance.jpg";
+import shipmentIntegrityVerification from "../assets/IntegrityVerification.jpg";
+import secureCargoImage from "../assets/SecureCargo.jpg";
+import strategySupplierImage from "../assets/StrategySupplier.jpg";
+import supplierComplianceImage from "../assets/SupplierCompliance.jpg";
+import qualityAnalysisImage from "../assets/QualityAnalysis.jpg";
 
 export default function Services() {
   const { hash } = useLocation(); // Get URL hash
@@ -41,12 +47,12 @@ export default function Services() {
         <div className="bg-gray-900 text-white">
           {/* Hero Section */}
           <section className="h-80 flex flex-col justify-center text-black items-center text-center px-6 
-             bg-[linear-gradient(115deg,var(--tw-gradient-stops))] 
-          from-[#fff1be] from-[28%] 
-          via-[#4fd1c5] via-[55%] 
-          via-[#4a90e2] via-[70%] 
-          to-[#5e60ff] to-[100%] 
-          sm:bg-[linear-gradient(145deg,var(--tw-gradient-stops))] ring-1 ring-inset ring-black/20 rounded-3xl">
+                bg-[linear-gradient(115deg,var(--tw-gradient-stops))] 
+                from-[#fff1be] from-[28%] 
+                via-[#4fd1c5] via-[55%] 
+                via-[#4a90e2] via-[70%] 
+                to-[#5e60ff] to-[100%] 
+                sm:bg-[linear-gradient(145deg,var(--tw-gradient-stops))] ring-1 ring-inset ring-black/20 rounded-3xl">
             <motion.h1
               className="text-5xl font-bold"
               initial={{ opacity: 0, y: -50 }}
@@ -172,7 +178,7 @@ const servicesData = [
   {
     title: "Independent Quality Assurance",
     description: "Ensuring excellence through unbiased quality verification.",
-    image: "/images/QualityAssurance.jpg",
+    image: qualityAssuranceImage,
     icon: FaShieldAlt,
     bookmark: "IndependentQualityAssurance",
     features: [
@@ -191,7 +197,7 @@ const servicesData = [
   {
     title: "Shipment Integrity Verification",
     description: "Guaranteeing product quality before dispatch.",
-    image: "/images/iIntegrityVerification.jpg",
+    image: shipmentIntegrityVerification,
     icon: FaShippingFast,
     bookmark: "ShipmentIntegrityVerification",
     features: [
@@ -210,7 +216,7 @@ const servicesData = [
   {
     title: "Secure Cargo Supervision",
     description: "Protecting shipments from damage, misplacement, and security risks.",
-    image: "/images/SecureCargo.jpg",
+    image: secureCargoImage,
     icon: FaBoxOpen,
     bookmark: "SecureCargoSupervision",
     features: [
@@ -229,7 +235,7 @@ const servicesData = [
   {
     title: "Supplier Compliance Assistance",
     description: "Helping suppliers align with regulatory and industry standards.",
-    image: "/images/SupplierCompliance.jpg",
+    image: supplierComplianceImage,
     icon: FaClipboardCheck,
     bookmark: "SupplierComplianceAssistance",
     features: [
@@ -248,7 +254,7 @@ const servicesData = [
   {
     title: "Vendor Risk & Quality Assessment",
     description: "Evaluating supplier reliability, operational standards, and risk management.",
-    image: "/images/VendorRisk.jpg",
+    image: qualityAnalysisImage,
     icon: FaSearchDollar,
     bookmark: "VendorRiskQualityAssessment",
     features: [
@@ -267,7 +273,7 @@ const servicesData = [
   {
     title: "Strategic Supplier Benchmarking",
     description: "Assess vendor performance to optimize procurement and sourcing strategies.",
-    image: "/images/StrategySupplier.jpg",
+    image: strategySupplierImage,
     icon: FaChartBar,
     bookmark: "StrategicSupplierBenchmarking",
     features: [
