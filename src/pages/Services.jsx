@@ -9,7 +9,7 @@ import {
   FaBoxes, FaUsers, FaSearch, FaChartLine
 } from "react-icons/fa";
 import Navbar from "../components/Navbar";
-import qualityAssuranceImage from "../assets/Quality-Assurance.jpg";
+import qualityAssuranceImage from "../assets/QualityAssurance-3.jpg";
 import shipmentIntegrityVerification from "../assets/IntegrityVerification.jpg";
 import secureCargoImage from "../assets/SecureCargo.jpg";
 import strategySupplierImage from "../assets/StrategySupplier.jpg";
