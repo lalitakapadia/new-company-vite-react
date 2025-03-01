@@ -37,24 +37,24 @@ const DiscoverSection = () => {
   ];
 
   return (
-    <div className="mt-4 rounded-3xl relative px-6 lg:px-8 py-20 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-700 text-white">
+    <div className="m-2 rounded-3xl relative px-6 lg:px-8 py-20 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-700 text-white">
       <div className="mx-auto max-w-7xl text-center">
-        <h2 className="text-4xl font-extrabold tracking-tight mb-6">Discover Our Expertise</h2>
-        <p className="text-lg text-gray-300 max-w-2xl mx-auto mb-12">
+        <h2 className="text-4xl font-bold tracking-tight mb-6">Discover Our Expertise</h2>
+        <p className="text-lg text-gray-300 max-w-2xl font-normal mx-auto mb-12">
           We specialize in globally recognized, DGFT-approved pre-shipment inspections. Our expertise ensures compliance, safety, and smooth international trade operations.
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <div key={index} className="group relative bg-gray-100 p-6 rounded-lg shadow-lg transition-all duration-300 hover:shadow-2xl hover:scale-[1.03]">
+            <div key={index} className="relative group overflow-hidden rounded-3xl bg-gray-100 shadow-lg hover:shadow-2xl transition-transform hover:scale-105 p-6">
               {/* Left Animated Border */}
-              <div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-blue-500 to-green-400 scale-y-0 group-hover:scale-y-100 transition-transform duration-300"></div>
+              <div className="rounded-3xl absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-blue-500 to-green-400 scale-y-0 group-hover:scale-y-100 transition-transform duration-300"></div>
               
               {/* Card Content */}
               <div className="relative z-10">
                 <div className="mb-4 flex items-center justify-center">{service.icon}</div>
                 <h3 className="text-2xl font-semibold text-gray-900">{service.title}</h3>
-                <p className="mt-2 text-gray-600 text-lg">{service.description}</p>
+                <p className="mt-2 text-gray-800 text-lg font-normal">{service.description}</p>
                 <Link to={service.link} className="mt-4 inline-block text-blue-500 font-semibold relative">
                   Learn More →
                   {/* Bottom Underline Animation */}

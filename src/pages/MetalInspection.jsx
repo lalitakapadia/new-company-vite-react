@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Navbar from "../components/Navbar";
 import { FaCheckCircle, FaShieldAlt, FaClipboardCheck, FaFlask } from "react-icons/fa";
 import MetalInspectImage from "../assets/ShipmentInspection1.jpg"
+import Heros from "../components/Heros";
 const MetalInspection = () => {
   return (
     <>
@@ -24,21 +25,10 @@ const MetalInspection = () => {
         <Navbar />
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-[#fff1be] via-[#4fd1c5] via-[#4a90e2] to-[#5e60ff] text-black text-center py-24">
-        <div className="absolute inset-0  backdrop-blur-sm"></div>
-        <motion.div
-          className="relative z-10 max-w-4xl mx-auto px-6"
-          initial={{ opacity: 0, y: -30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-        >
-          <h1 className="text-5xl font-bold">Comprehensive Metal Inspection Services</h1>
-          <p className="mt-4 text-lg">Ensuring Safety, Compliance & Quality in 60+ Countries</p>
-        </motion.div>
-      </section>
-
+      <Heros title="Comprehensive Metal Inspection Services" 
+             description="Ensuring Safety, Compliance & Quality in 60+ Countries"/>
       {/* Services Overview */}
-      <section className="py-20 px-6 lg:px-12 bg-gray-900 text-white">
+      <section className="py-20 px-6 lg:px-12 bg-gray-900 text-white mt-4 rounded-3xl ring-1 ring-inset ring-black/20">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
           <motion.div
@@ -47,10 +37,10 @@ const MetalInspection = () => {
             transition={{ duration: 0.8 }}
           >
             <h2 className="text-4xl font-bold">Certified Metal Scrap Inspection</h2>
-            <p className="mt-4 text-lg text-gray-300">
+            <p className="mt-4 text-lg text-gray-300 font-normal">
               As a DGFT-approved Pre-shipment Inspection Agency, we conduct rigorous assessments of metal scrap shipments to verify their compliance with international safety standards. Our inspection process ensures that metal cargo is free from hazardous substances, explosives, and radioactive materials before being imported into India.
             </p>
-            <ul className="mt-6 space-y-3">
+            <ul className="mt-6 space-y-3 font-normal">
               <li className="flex items-center gap-3">
                 <FaCheckCircle className="text-green-400 text-xl" />
                 Physical and chemical testing for composition and purity
@@ -93,7 +83,7 @@ const MetalInspection = () => {
         <div className="max-w-7xl mx-auto">
           <h2 className="text-4xl font-bold text-center">Key Steps in Metal Scrap Inspection</h2>
           <p className="mt-4 text-lg text-center text-gray-300">We follow a structured and methodical approach to ensure thorough assessment of all metal scrap shipments.</p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12 font-normal">
             {["Identification and classification of metal scrap based on composition",
               "Grading and impurity determination to ensure compliance",
               "Gamma and neutron radiation scanning to detect contamination",

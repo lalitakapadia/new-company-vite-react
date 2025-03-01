@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Navbar from "../components/Navbar";
 import { FaShip,FaCheckCircle, FaClipboardCheck, FaTruck, FaExchangeAlt } from "react-icons/fa";
 import MetalImportImage from "../assets/shipmentInspection.jpg";
+import Heros from "../components/Heros";
 const MetalImport = () => {
   return (
     <>
@@ -23,22 +24,12 @@ const MetalImport = () => {
         </div>
         <Navbar />
 
-      {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-[#fff1be] via-[#4fd1c5] via-[#4a90e2] to-[#5e60ff] text-black text-center py-24">
-        <div className="absolute inset-0  backdrop-blur-sm"></div>
-        <motion.div
-          className="relative z-10 max-w-4xl mx-auto px-6"
-          initial={{ opacity: 0, y: -30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-        >
-          <h1 className="text-5xl font-bold">Seamless Metal Import Services</h1>
-          <p className="mt-4 text-lg">Your trusted partner in efficient and compliant metal imports</p>
-        </motion.div>
-      </section>
+        {/* Hero Section */}
+          <Heros title="Seamless Metal Import Services" 
+                description="Your trusted partner in efficient and compliant metal imports"/>
 
       {/* Services Overview */}
-      <section className="py-20 px-6 lg:px-12 bg-gray-900 text-white">
+      <section className="mt-4 py-20 px-6 lg:px-12 bg-gray-900 text-white rounded-3xl ring-1 ring-inset ring-black/20">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
           <motion.div
@@ -47,10 +38,10 @@ const MetalImport = () => {
             transition={{ duration: 0.8 }}
           >
             <h2 className="text-4xl font-bold">Expert Metal Import Solutions</h2>
-            <p className="mt-4 text-lg text-gray-300">
+            <p className="mt-4 text-lg text-gray-300 font-normal">
               We offer reliable and efficient solutions for importing metal materials globally. Our services ensure compliance with local regulations, timely delivery, and safe handling of all shipments.
             </p>
-            <ul className="mt-6 space-y-3">
+            <ul className="mt-6 space-y-3 font-normal">
               <li className="flex items-center gap-3">
                 <FaShip className="text-green-400 text-xl" />
                 International shipping and logistics management
@@ -89,11 +80,11 @@ const MetalImport = () => {
       </section>
 
       {/* Detailed Import Process */}
-      <section className="py-20 px-6 lg:px-12 bg-gray-800 text-white">
+      <section className="mt-4 py-20 px-6 lg:px-12 bg-gray-800 text-white rounded-3xl ring-1 ring-inset ring-black/20">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-4xl font-bold text-center">The Metal Import Process</h2>
           <p className="mt-4 text-lg text-center text-gray-300">We ensure smooth and compliant metal imports, every step of the way.</p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12 font-normal">
             {["Global shipping coordination for timely delivery",
               "Customs clearance and regulatory compliance",
               "Inspection for quality and purity of metal materials",

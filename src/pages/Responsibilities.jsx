@@ -9,6 +9,7 @@ import ourValuesImage from "../assets/ourvalues.jpg";
 import ourCimmitmentImage from "../assets/OurCommitment1.jpg";
 import ourApproachImage from "../assets/approach.jpg";
 import ourImpactImage from "../assets/impact1.jpg";
+import Heros from "../components/Heros";
 
 const slides = [
   {
@@ -64,23 +65,9 @@ const Responsibilities = () => {
         <Navbar />
 
         {/* Hero Section */}
-        <section className="relative  ring-1 ring-inset ring-black/20 rounded-3xl 
-          bg-[linear-gradient(115deg,var(--tw-gradient-stops))] 
-          from-[#fff1be] from-[28%] 
-          via-[#4fd1c5] via-[55%] 
-          via-[#4a90e2] via-[70%] 
-          to-[#5e60ff] to-[100%] 
-          sm:bg-[linear-gradient(145deg,var(--tw-gradient-stops))] text-black h-screen/2 p-24 flex items-center justify-center">
-          <div className="absolute inset-0"></div> {/* Overlay */}
-          <div className="relative text-center px-6 md:px-12 z-10">
-            <h1 className="text-5xl font-bold sm:text-6xl md:text-7xl">Our Responsibilities in Global Compliance</h1>
-            <p className="mt-4 text-lg md:text-xl max-w-3xl mx-auto">
-              We are committed to ensuring the highest standards of corporate governance and sustainability across industries worldwide. We aim to impact supply chains with integrity and accountability.
-            </p>
-          </div>
-        </section>
-
-
+        <Heros title="Our Responsibilities in Global Compliance" 
+               description="We are committed to ensuring the highest standards of corporate governance and sustainability across industries worldwide. We aim to impact supply chains with integrity and accountability."/>
+      
         <Swiper
           ref={swiperRef}
           modules={[Navigation, Autoplay]}

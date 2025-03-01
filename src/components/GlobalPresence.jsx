@@ -1,11 +1,12 @@
 import { motion } from "framer-motion";
 import { FaGlobe, FaBuilding, FaShieldAlt } from "react-icons/fa";
+import ContinentsSection from "../components/ContinentsSection";
 
 export default function GlobalPresence() {
   return (
-    <section id="continent" className="bg-gray-800 text-white p-12 rounded-3xl ">
+    <section id="continent" className="bg-gray-800 text-white p-12 rounded-3xl">
       <h2 className="text-4xl font-bold text-center mb-8">Our Global Presence</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 ">
+      <div className="grid grid-cols-1  md:grid-cols-3 gap-6 ">
         {data.map((item, index) => (
           <motion.div
             key={index}
@@ -28,6 +29,7 @@ export default function GlobalPresence() {
           </motion.div>
         ))}
       </div>
+      <ContinentsSection />
     </section>
   );
 }

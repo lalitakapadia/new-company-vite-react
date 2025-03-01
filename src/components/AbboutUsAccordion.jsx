@@ -82,7 +82,7 @@ export default function AboutUsAccordion() {
 
   return (
     <main className="bg-gray-100 text-gray-800">
-      <div className="max-w-6xl mx-auto p-6 space-y-12">
+      <div className=" mx-auto  mt-4 space-y-12">
         {aboutUsData.map((section, index) => (
           <Accordion
             key={index}

@@ -7,6 +7,7 @@ import Navbar from '../components/Navbar';
 import countryData from "../utils/countries"; // Assume a utility file for country codes & flags
 import ContactUsForm from "../components/ContactUsForm";
 import { Link } from "react-router-dom"; // ✅ Import Link from React Router
+import Heros from "../components/Heros";
 
 export default function ContactUs() {
   const [selectedCountry, setSelectedCountry] = useState(countryData[0]);
@@ -25,33 +26,12 @@ export default function ContactUs() {
         </div>
 
         <Navbar />
-        <div className="bg-gray-900">
-          {/* Hero Section */}
-          <section className="rounded-3xl mt-4 ring-1 ring-inset ring-black/20 h-80 flex flex-col justify-center items-center text-center px-6 relative overflow-hidden 
-          bg-[linear-gradient(115deg,var(--tw-gradient-stops))] 
-          from-[#fff1be] from-[28%] 
-          via-[#4fd1c5] via-[55%] 
-          via-[#4a90e2] via-[70%] 
-          to-[#5e60ff] to-[100%] 
-          sm:bg-[linear-gradient(145deg,var(--tw-gradient-stops))]">
-            <motion.h1
-              className="text-3xl sm:text-5xl font-bold text-center text-gray-900 mt-6 px-4"
-              initial={{ opacity: 0, y: -50 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-            >
-              Contact Us – We're Here to Help!
-            </motion.h1>
-            <motion.p
-              className="text-lg sm:text-xl text-center text-gray-800 mt-4 px-4"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.5, duration: 0.8 }}
-            >
-             Let’s connect and make things happen!
-            </motion.p>
-          </section>
-
+        
+        {/* Hero Section */}
+          <Heros title="Contact Us – We're Here to Help!s" 
+                description=" Let’s connect and make things happen!"/>
+                
+        <div className="bg-gray-900 rounded-3xl ring-1 ring-inset ring-black/20 mt-4">
           {/* Contact Form & Info */}
           <section className="p-12 grid grid-cols-1 md:grid-cols-2 
           gap-12 max-w-6xl mx-auto text-gray-300">

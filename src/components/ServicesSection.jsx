@@ -38,14 +38,14 @@ const services = [
 
 export default function ServicesSection() {
   return (
-    <div className="inset-2 bottom-0 rounded-3xl mt-4 py-16 bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 text-white">
-      <div className="max-w-7xl mx-auto px-6">
+    <div className="m-2 inset-2 bottom-0 rounded-3xl py-16 bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 text-white">
+      <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <motion.h2 
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="text-4xl font-extrabold text-center"
+          className="text-4xl font-bold text-center"
         >
           Our Premium Services
         </motion.h2>
@@ -53,7 +53,7 @@ export default function ServicesSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, duration: 0.8 }}
-          className="text-center text-gray-300 mt-2"
+          className="text-center font-normal text-gray-300 mt-2"
         >
           We provide expert inspection and compliance services to safeguard your supply chain.
         </motion.p>
@@ -66,13 +66,13 @@ export default function ServicesSection() {
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: index * 0.2, duration: 0.5 }}
-              className="relative group overflow-hidden rounded-3xl bg-gray-800 shadow-lg hover:shadow-2xl transition-transform hover:scale-105 p-6"
+              className="relative group overflow-hidden rounded-3xl bg-gray-800 shadow-lg hover:shadow-2xl transition-transform hover:scale-105 mx-2"
             >
-              <div className="flex items-center space-x-4">
+              <div className="flex items-center m-6 space-x-4">
                 <CheckCircle className="w-10 h-10 text-blue-400 group-hover:text-blue-300 transition-colors" />
                 <h3 className="text-xl font-semibold" ><Link to={service.bookmark}>{service.title}</Link></h3>
               </div>
-              <p className="mt-2 text-gray-300">{service.description}</p>
+              <p className="m-6 text-gray-300 font-normal">{service.description}</p>
               {/* Animated Bottom Border Effect */}
               <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-blue-500 to-green-400 scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
             </motion.div>

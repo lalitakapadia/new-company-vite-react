@@ -5,12 +5,16 @@ import { FaLinkedin, FaFacebook, FaTwitter, FaSkype, FaEnvelope } from "react-ic
 export default function Footer() {
   return (
     <motion.footer
-      className="rounded-3xl mt-4 bg-[linear-gradient(115deg,var(--tw-gradient-stops))] from-[#1f2937] to-[#6b7280] p-6 text-center text-black"
+      className="rounded-3xl  
+      bg-[linear-gradient(115deg,var(--tw-gradient-stops))] 
+      from-[#1f2937] to-[#6b7280] 
+      p-6 text-center 
+      text-black mx-2"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.8 }}
     >
-      <div className="max-w-6xl mx-auto text-center">
+      <div className="max-w-7xl mx-auto text-center">
         <motion.h2
           className="text-3xl font-bold mb-6"
           initial={{ opacity: 0, y: -50 }}

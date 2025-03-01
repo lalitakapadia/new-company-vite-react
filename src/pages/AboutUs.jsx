@@ -8,6 +8,7 @@ import AboutUsAccordion from "../components/AbboutUsAccordion";
 import GlobalPresence from "../components/GlobalPresence";
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
+import Heros from "../components/Heros";
 
 export default function AboutUs() {
    const { hash } = useLocation(); // Get URL hash
@@ -37,47 +38,18 @@ export default function AboutUs() {
         </div>
         
         <Navbar />
-
-        <div >
-          {/* Hero Section */}
-          <section className="rounded-3xl ring-1 ring-inset ring-black/20 h-screen/2 p-24 text-black relative flex flex-col justify-center items-center text-center  
-          bg-[linear-gradient(115deg,var(--tw-gradient-stops))] 
-          from-[#fff1be] from-[28%] 
-          via-[#4fd1c5] via-[55%] 
-          via-[#4a90e2] via-[70%] 
-          to-[#5e60ff] to-[100%] 
-          sm:bg-[linear-gradient(145deg,var(--tw-gradient-stops))] p-8">
-            <motion.h1
-              className="text-5xl font-bold mb-4 "
-              initial={{ opacity: 0, y: -50 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1 }}
-            >
-              Your Trusted Inspection Partner
-            </motion.h1>
-            <motion.p
-              className="text-lg opacity-80 max-w-xl"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 1.5 }}
-            >
-              Ensuring quality and safety with cutting-edge inspections worldwide.
-            </motion.p>
-          </section>
-        </div>
-
-
-
-        <div className="bg-gray-900 text-white font-sans">
+        <Heros title="Your Trusted Inspection Partner" 
+               description=" Ensuring quality and safety with cutting-edge inspections worldwide." />
+               
+        <div className="
+         text-white font-sans">
           
           <AboutUsAccordion />
 
           <GlobalPresence />
-          
-          <ContinentsSection />
 
           {/* Why Choose Us */}
-          <section className="container mx-auto px-8 py-16 ">
+          <section className="bg-gray-900 container mx-auto px-8 py-16 rounded-3xl ring-1 ring-inset ring-black/20 mt-4 ">
             <h2 className="text-4xl font-bold text-center mb-8">Why Choose MELT Enterprise?</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
               {[{ icon: FaCheckCircle, title: "Expertise", text: "With over 20 years in the inspection industry, we offer unmatched knowledge and skills to guarantee your products meet global standards." },

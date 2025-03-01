@@ -9,7 +9,7 @@ const DiscoverSection = lazy(() => import("../components/DiscoverSection"));
 
 const Home = () => {
   return (
-    <div className="bg-gray-100 text-gray-800 overflow-hidden">
+    <div className="text-gray-800 overflow-hidden">
       {/* Hero Section */}
       <div className="relative">
         <div
