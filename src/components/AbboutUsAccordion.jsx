@@ -2,7 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { FaChevronDown, FaChevronUp, FaBuilding, FaShieldAlt, FaCheckCircle, FaSearch, FaRadiation, FaFlask, FaMicroscope, FaAtom, FaVial, FaGlobe, FaClipboardCheck } from "react-icons/fa";
 import aboutUsCoreValues from "../assets/about-us-core-values.jpg";
-import inspectionImages from "../assets/Inspection2.jpg";
+import inspectionImage from "../assets/Inspection2.jpg";
 import vendorRiskImage from "../assets/VendorRisk.jpg";
 const Accordion = ({ title, descriptionItems, imageUrl, buttonText, url, isActive, onClick }) => {
   return (
@@ -103,7 +103,7 @@ const aboutUsData = [
       { text: "We specialize in providing Pre-Shipment Inspection (PSI) services to ensure the safety and compliance of goods coming into India and other international markets.", symbol: <FaShieldAlt /> },
       { text: "As per Director General of Foreign Trade (DGFT) regulations, all containers entering India must be inspected at the time of loading by a DGFT-approved agency.", symbol: <FaCheckCircle /> },
     ],
-    imageUrl: {aboutUsCoreValues},
+    imageUrl: aboutUsCoreValues,
     buttonText: "Let's Talk",
     url: "/contact-us",
   },
@@ -117,7 +117,7 @@ const aboutUsData = [
       { text: "Physical testing such as tensile strength, Rockwell and Brinell hardness, grain size, etc.", symbol: <FaAtom /> },
       { text: "Safety control Pre-Shipment Inspection for contamination identification.", symbol: <FaVial /> },
     ],
-    imageUrl: {inspectionImages},
+    imageUrl: inspectionImage,
     buttonText: "Let's Talk",
     url: "/contact-us",
   },
@@ -127,7 +127,7 @@ const aboutUsData = [
       { text: "We provide Pre-Shipment Inspection Certification in multiple regions worldwide.", symbol: <FaGlobe /> },
       { text: "We customize the inspection process based on client requirements.", symbol: <FaClipboardCheck /> },
     ],
-    imageUrl: {vendorRiskImage},
+    imageUrl: vendorRiskImage,
     buttonText: "Let's Talk",
     url: "/contact-us",
   },
