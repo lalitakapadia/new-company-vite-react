@@ -21,7 +21,7 @@ export default function AboutUs() {
       }
     }, [hash]);
   return (
-    <body className="bg-gray-100 text-gray-800">
+    <body className="text-gray-800 ">
       <div className="overflow-hidden">
         <div className="relative mx-auto max-w-7xl">
           <div
@@ -38,10 +38,9 @@ export default function AboutUs() {
         
         <Navbar />
 
-
-        <div className="bg-gray-900 text-white font-sans">
+        <div >
           {/* Hero Section */}
-          <section className="h-screen/2 p-24 text-black relative flex flex-col justify-center items-center text-center  
+          <section className="rounded-3xl ring-1 ring-inset ring-black/20 h-screen/2 p-24 text-black relative flex flex-col justify-center items-center text-center  
           bg-[linear-gradient(115deg,var(--tw-gradient-stops))] 
           from-[#fff1be] from-[28%] 
           via-[#4fd1c5] via-[55%] 
@@ -49,7 +48,7 @@ export default function AboutUs() {
           to-[#5e60ff] to-[100%] 
           sm:bg-[linear-gradient(145deg,var(--tw-gradient-stops))] p-8">
             <motion.h1
-              className="text-5xl font-bold mb-4"
+              className="text-5xl font-bold mb-4 "
               initial={{ opacity: 0, y: -50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1 }}
@@ -65,8 +64,12 @@ export default function AboutUs() {
               Ensuring quality and safety with cutting-edge inspections worldwide.
             </motion.p>
           </section>
+        </div>
 
 
+
+        <div className="bg-gray-900 text-white font-sans">
+          
           <AboutUsAccordion />
 
           <GlobalPresence />

@@ -44,9 +44,8 @@ export default function Services() {
           </div>
         </div>
         <Navbar />
-        <div className="bg-gray-900 text-white">
-          {/* Hero Section */}
-          <section className="h-80 flex flex-col justify-center text-black items-center text-center px-6 
+        <div>
+        <section className="h-80 flex flex-col justify-center text-black items-center text-center px-6 
                 bg-[linear-gradient(115deg,var(--tw-gradient-stops))] 
                 from-[#fff1be] from-[28%] 
                 via-[#4fd1c5] via-[55%] 
@@ -70,6 +69,33 @@ export default function Services() {
               Delivering Excellence in Quality, Compliance, and Risk Management
             </motion.p>
           </section>
+        </div>
+        <div className="bg-gray-900 ring-1 ring-inset ring-black/20 rounded-3xl pt-6 mt-4">
+          {/* Hero Section */}
+          {/* <section className="h-80 flex flex-col justify-center text-black items-center text-center px-6 
+                bg-[linear-gradient(115deg,var(--tw-gradient-stops))] 
+                from-[#fff1be] from-[28%] 
+                via-[#4fd1c5] via-[55%] 
+                via-[#4a90e2] via-[70%] 
+                to-[#5e60ff] to-[100%] 
+                sm:bg-[linear-gradient(145deg,var(--tw-gradient-stops))] ring-1 ring-inset ring-black/20 rounded-3xl">
+            <motion.h1
+              className="text-5xl font-bold"
+              initial={{ opacity: 0, y: -50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+            >
+              Our Services
+            </motion.h1>
+            <motion.p
+              className="text-lg mt-2"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.5, duration: 0.8 }}
+            >
+              Delivering Excellence in Quality, Compliance, and Risk Management
+            </motion.p>
+          </section> */}
 
           {/* Services Section */}
           <section className="max-w-6xl mx-auto p-6 space-y-12">
