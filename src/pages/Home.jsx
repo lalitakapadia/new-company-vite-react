@@ -41,7 +41,7 @@ const Home = () => {
               {/* Buttons */}
               <div className="mt-12 flex flex-col gap-x-6 gap-y-4 sm:flex-row">
                 <a
-                  href="https://wa.me/+447506512666"
+                  href="https://wa.me/+44 "
                   className="inline-flex items-center justify-center px-6 py-3 
                              bg-gradient-to-r from-[#4fd1c5] via-[#4a90e2] to-[#5e60ff] 
                              text-white rounded-full shadow-md transition-all 
