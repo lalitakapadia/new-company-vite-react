@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import { Outlet } from 'react-router-dom'
 import Footer from './components/Footer';
-function App() {
+import ScrollToTop from "./components/ScrollToTop";function App() {
   return (
         <>
+        <ScrollToTop />
           <Outlet />
           <Footer/>
+          
         </>
   );
 }

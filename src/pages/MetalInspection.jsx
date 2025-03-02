@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom"; // ✅ Import Link from React Router
 import { motion } from "framer-motion";
 import Navbar from "../components/Navbar";
-import { FaCheckCircle, FaShieldAlt, FaClipboardCheck, FaFlask } from "react-icons/fa";
+import { FaCheckCircle, FaIndustry , FaShieldAlt, FaClipboardCheck, FaFlask } from "react-icons/fa";
 import MetalInspectImage from "../assets/ShipmentInspection1.jpg"
 import Heros from "../components/Heros";
 const MetalInspection = () => {
@@ -103,6 +103,30 @@ const MetalInspection = () => {
           </div>
         </div>
       </section>
+
+       {/* Metal Types Section */}
+       <section className="py-16 px-6 lg:px-12 bg-gray-900 text-white m-2 rounded-3xl ring-1 ring-inset ring-black/20">
+            <div className="max-w-7xl mx-auto text-center">
+              <h2 className="text-4xl font-semibold">Non-Ferrous & Ferrous Scrap Imports to India</h2>
+              <p className="mt-4 text-lg text-gray-300 font-normal">
+                We provide inspection for a variety of metal scrap materials, ensuring compliance with import regulations.
+              </p>
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 mt-8">
+                {["Heavy Melting Steel (HMS)", "Copper", "Cobalt", "Tin", "Cast Iron", "Stainless Steel", "Molybdenum", "Zinc", "Tungsten", "Aluminium", "Chromium", "Nickel", "Lead"].map((metal, index) => (
+                  <motion.div
+                    key={index}
+                    className="bg-gray-800 p-4 rounded-lg shadow-md flex items-center justify-center gap-2 text-lg font-medium"
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: index * 0.1, duration: 0.5 }}
+                  >
+                    <FaIndustry className="text-blue-400" />
+                    {metal}
+                  </motion.div>
+                ))}
+              </div>
+            </div>
+          </section>
 
       {/* Call to Action */}
       <section className=" m-2  rounded-3xl ring-1 ring-inset ring-black/20 bg-gradient-to-r from-[#fff1be] via-[#4fd1c5] via-[#4a90e2] to-[#5e60ff] text-black text-center py-16">

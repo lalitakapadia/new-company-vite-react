@@ -18,16 +18,16 @@ import qualityAnalysisImage from "../assets/QualityAnalysis.jpg";
 import Heros from "../components/Heros";
 
 export default function Services() {
-  const { hash } = useLocation(); // Get URL hash
+  // const { hash } = useLocation(); // Get URL hash
 
-  useEffect(() => {
-    if (hash) {
-      const element = document.getElementById(hash.replace("#", ""));
-      if (element) {
-        element.scrollIntoView({ behavior: "smooth" });
-      }
-    }
-  }, [hash]);
+  // useEffect(() => {
+  //   if (hash) {
+  //     const element = document.getElementById(hash.replace("#", ""));
+  //     if (element) {
+  //       element.scrollIntoView({ behavior: "smooth" });
+  //     }
+  //   }
+  // }, [hash]);
 
   return (
     <body className="bg-gray-100 text-gray-800">
