@@ -60,10 +60,10 @@ export default function Services() {
       </div>
       <section className="bg-gradient-to-r from-[#fff1be] via-[#4fd1c5] via-[#4a90e2] to-[#5e60ff] text-black text-center py-16 ring-1 ring-inset ring-black/20 rounded-3xl mx-2 mb-2">
         <h2 className="text-3xl font-bold">Excellence in Every Step: Your Trusted Partner in Quality & Compliance</h2>
-        <p className="mt-4 text-lg font-medium mb-4">From Quality to Compliance – We’ve Got Your Supply Chain Covered!</p>
+        <p className="mb-8 mt-4 text-lg font-medium">From Quality to Compliance – We’ve Got Your Supply Chain Covered!</p>
            <Link
             to="/contact-us"
-            className="mt-6 px-6 py-3 bg-gradient-to-r from-[#4fd1c5] via-[#4a90e2] to-[#5e60ff] text-black rounded-full hover:from-[#4a90e2] hover:to-[#5e60ff] font-semibold rounded-lg shadow-md transition-all">
+            className="mt-6 px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-500 hover:from-purple-500 hover:to-blue-500 text-black rounded-full hover:from-[#4a90e2] hover:to-[#5e60ff] font-semibold rounded-lg shadow-md transition-all">
             Get in Touch
           </Link>
       </section>

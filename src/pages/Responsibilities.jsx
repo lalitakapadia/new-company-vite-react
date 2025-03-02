@@ -162,12 +162,12 @@ const Responsibilities = () => {
         <section className="ring-1 ring-inset ring-black/20 rounded-3xl m-2 bg-gradient-to-r from-[#fff1be] via-[#4fd1c5] via-[#4a90e2] to-[#5e60ff] text-black py-16">
           <div className="max-w-7xl mx-auto text-center px-6">
             <h2 className="text-3xl font-bold mb-4">Get in Touch with Us</h2>
-            <p className="text-lg mb-6 max-w-2xl mx-auto font-medium">
+            <p className="text-lg mb-8 max-w-2xl mx-auto font-medium">
               Have any questions or want to know more about our global compliance services? Feel free to contact us. We're here to assist you in navigating complex regulatory landscapes and ensuring business sustainability.
             </p>
             <Link
               to="/contact-us"
-              className="mt-6 px-6 py-3 bg-gradient-to-r from-[#4fd1c5] via-[#4a90e2] to-[#5e60ff] text-black rounded-full hover:from-[#4a90e2] hover:to-[#5e60ff] font-semibold rounded-lg shadow-md transition-all">
+              className="mt-6 px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-500 hover:from-purple-500 hover:to-blue-500 text-black rounded-full hover:from-[#4a90e2] hover:to-[#5e60ff] font-semibold rounded-lg shadow-md transition-all">
               Get in Touch
            </Link>
           </div>
