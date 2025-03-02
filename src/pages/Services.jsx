@@ -18,16 +18,6 @@ import qualityAnalysisImage from "../assets/QualityAnalysis.jpg";
 import Heros from "../components/Heros";
 
 export default function Services() {
-  // const { hash } = useLocation(); // Get URL hash
-
-  // useEffect(() => {
-  //   if (hash) {
-  //     const element = document.getElementById(hash.replace("#", ""));
-  //     if (element) {
-  //       element.scrollIntoView({ behavior: "smooth" });
-  //     }
-  //   }
-  // }, [hash]);
 
   return (
     <body className="bg-gray-100 text-gray-800">
@@ -58,7 +48,7 @@ export default function Services() {
           </section>
         </div>
       </div>
-      <section className="bg-gradient-to-r from-[#fff1be] via-[#4fd1c5] via-[#4a90e2] to-[#5e60ff] text-black text-center py-16 ring-1 ring-inset ring-black/20 rounded-3xl mx-2 mb-2">
+      <section className="p-4 bg-gradient-to-r from-[#fff1be] via-[#4fd1c5] via-[#4a90e2] to-[#5e60ff] text-black text-center py-16 ring-1 ring-inset ring-black/20 rounded-3xl mx-2 mb-2">
         <h2 className="text-3xl font-bold">Excellence in Every Step: Your Trusted Partner in Quality & Compliance</h2>
         <p className="mb-8 mt-4 text-lg font-medium">From Quality to Compliance – We’ve Got Your Supply Chain Covered!</p>
            <Link

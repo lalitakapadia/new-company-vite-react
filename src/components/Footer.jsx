@@ -44,7 +44,7 @@ export default function Footer() {
         </div>
 
         {/* Internal Links (Using <Link> for React Router) */}
-        <div className="mt-6 flex justify-center space-x-6 text-lg">
+        {/* <div className="mt-6 flex justify-center space-x-6 text-lg">
           <Link to="/about-us" className="hover:text-gray-300 transition-all">
             About Us
           </Link>
@@ -54,7 +54,7 @@ export default function Footer() {
           <Link to="/privacy-policy" className="hover:text-gray-300 transition-all">
             Privacy Policy
           </Link>
-        </div>
+        </div> */}
 
         {/* Copyright */}
         <motion.p className="mt-6 text-lg" initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1, duration: 0.6 }}>

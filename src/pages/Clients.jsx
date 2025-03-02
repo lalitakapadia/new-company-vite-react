@@ -57,7 +57,7 @@ const Clients = () => {
       </div>
     </div>
     {/* Call to Action */}
-    <section className="mt-4  rounded-3xl ring-1 ring-inset ring-black/20 bg-gradient-to-r from-[#fff1be] via-[#4fd1c5] via-[#4a90e2] to-[#5e60ff] text-black text-center py-16">
+    <section className="mt-4 p-4 rounded-3xl ring-1 ring-inset ring-black/20 bg-gradient-to-r from-[#fff1be] via-[#4fd1c5] via-[#4a90e2] to-[#5e60ff] text-black text-center py-16">
         <h2 className="text-3xl font-bold">Ready for Smooth and Safe Metal Imports?</h2>
         <p className="mt-4 mb-8 text-lg font-medium mb-8">Contact our experts today to ensure compliance, safety, and efficiency in your next metal import.</p>
         <a href= "./contact-us"  className="mt-6 px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-500 hover:from-purple-500 hover:to-blue-500 font-semibold rounded-lg shadow-md  transition-all">

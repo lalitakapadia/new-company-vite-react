@@ -74,7 +74,7 @@ export default function AboutUs() {
           </div>
 
           {/* Call to Action */}
-          <section className="m-2 ring-1 ring-inset ring-black/20 rounded-3xl bg-gradient-to-r from-[#fff1be] via-[#4fd1c5] via-[#4a90e2] to-[#5e60ff] text-black text-center py-16">
+          <section className="m-2 ring-1 ring-inset ring-black/20 rounded-3xl bg-gradient-to-r from-[#fff1be] via-[#4fd1c5] via-[#4a90e2] to-[#5e60ff] text-black text-center py-16 p-4">
             <h2 className="text-3xl font-bold">Ensuring Global Compliance & Safety</h2>
             <p className="mb-8 text-lg max-w-2xl mx-auto font-medium">Partner with us for certified, DGFT-approved pre-shipment inspections, guaranteeing secure and seamless trade.</p>
             <Link
