@@ -68,6 +68,7 @@ const Responsibilities = () => {
         <Heros title="Our Responsibilities in Global Compliance" 
                description="We are committed to ensuring the highest standards of corporate governance and sustainability across industries worldwide. We aim to impact supply chains with integrity and accountability."/>
       
+        <div class="m-2">
         <Swiper
           ref={swiperRef}
           modules={[Navigation, Autoplay]}
@@ -79,7 +80,7 @@ const Responsibilities = () => {
           onAutoplayTimeLeft={(swiper, timeLeft) => {
             setProgress(((slideDuration - timeLeft) / slideDuration) * 100);
           }}
-          className="w-full ring-1 ring-inset ring-black/20 rounded-3xl mt-4"
+          className="w-full ring-1 ring-inset ring-black/20 rounded-3xl"
         >
           {slides.map((slide, index) => (
             <SwiperSlide key={index}>
@@ -109,9 +110,9 @@ const Responsibilities = () => {
                     <div className="hidden md:block md:w-1/2"></div>
 
                     {/* Text Appears on Faded Section */}
-                    <div className="w-full md:w-1/2 text-white text-left md:text-right mt-10 md:mt-0">
+                    <div className="w-full md:w-1/2 text-white text-left md:text-right mt-10 md:mt-0 ">
                       <h2 className="text-4xl md:text-6xl font-bold">{slide.title}</h2>
-                      <p className="mt-4 text-lg md:text-xl text-gray-300">
+                      <p className="m-4 text-lg md:text-xl text-gray-300 font-normal">
                         {slide.description}
                       </p>
                     </div>
@@ -155,9 +156,10 @@ const Responsibilities = () => {
             </SwiperSlide>
           ))}
         </Swiper>
+        </div>
 
         {/* Get in Touch Section */}
-        <section className="ring-1 ring-inset ring-black/20 rounded-3xl mt-4 bg-gradient-to-r from-[#fff1be] via-[#4fd1c5] via-[#4a90e2] to-[#5e60ff] text-black py-16">
+        <section className="ring-1 ring-inset ring-black/20 rounded-3xl m-2 bg-gradient-to-r from-[#fff1be] via-[#4fd1c5] via-[#4a90e2] to-[#5e60ff] text-black py-16">
           <div className="max-w-7xl mx-auto text-center px-6">
             <h2 className="text-3xl font-bold mb-4">Get in Touch with Us</h2>
             <p className="text-lg mb-6 max-w-2xl mx-auto font-medium">

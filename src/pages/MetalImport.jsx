@@ -29,7 +29,7 @@ const MetalImport = () => {
                 description="Your trusted partner in efficient and compliant metal imports"/>
 
       {/* Services Overview */}
-      <section className="mt-4 py-20 px-6 lg:px-12 bg-gray-900 text-white rounded-3xl ring-1 ring-inset ring-black/20">
+      <section className="m-2 py-20 px-6 lg:px-12 bg-gray-900 text-white rounded-3xl ring-1 ring-inset ring-black/20">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
           <motion.div
@@ -80,7 +80,7 @@ const MetalImport = () => {
       </section>
 
       {/* Detailed Import Process */}
-      <section className="mt-4 py-20 px-6 lg:px-12 bg-gray-800 text-white rounded-3xl ring-1 ring-inset ring-black/20">
+      <section className="m-2 py-20 px-6 lg:px-12 bg-gray-800 text-white rounded-3xl ring-1 ring-inset ring-black/20">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-4xl font-bold text-center">The Metal Import Process</h2>
           <p className="mt-4 text-lg text-center text-gray-300">We ensure smooth and compliant metal imports, every step of the way.</p>
@@ -106,7 +106,7 @@ const MetalImport = () => {
       </section>
 
       {/* Call to Action */}
-      <section className="mt-4  rounded-3xl ring-1 ring-inset ring-black/20 bg-gradient-to-r from-[#fff1be] via-[#4fd1c5] via-[#4a90e2] to-[#5e60ff] text-black text-center py-16">
+      <section className="m-2  rounded-3xl ring-1 ring-inset ring-black/20 bg-gradient-to-r from-[#fff1be] via-[#4fd1c5] via-[#4a90e2] to-[#5e60ff] text-black text-center py-16">
         <h2 className="text-3xl font-bold">Ready for Smooth and Safe Metal Imports?</h2>
         <p className="text-lg mb-6 max-w-2xl mx-auto font-medium">Contact our experts today to ensure compliance, safety, and efficiency in your next metal import.</p>
           <Link

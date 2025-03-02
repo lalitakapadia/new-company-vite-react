@@ -31,10 +31,10 @@ export default function ContactUs() {
           <Heros title="Contact Us – We're Here to Help!s" 
                 description=" Let’s connect and make things happen!"/>
                 
-        <div className="bg-gray-900 rounded-3xl ring-1 ring-inset ring-black/20 mt-4">
+        <div className="bg-gray-900 rounded-3xl ring-1 ring-inset ring-black/20 m-2">
           {/* Contact Form & Info */}
           <section className="p-12 grid grid-cols-1 md:grid-cols-2 
-          gap-12 max-w-6xl mx-auto text-gray-300">
+          gap-12  mx-auto text-gray-300">
             {/* Contact Form */}
 
             <div className="bg-gray-800 p-8 rounded-lg shadow-lg">

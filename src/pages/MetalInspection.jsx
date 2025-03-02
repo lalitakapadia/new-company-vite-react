@@ -28,7 +28,7 @@ const MetalInspection = () => {
       <Heros title="Comprehensive Metal Inspection Services" 
              description="Ensuring Safety, Compliance & Quality in 60+ Countries"/>
       {/* Services Overview */}
-      <section className="py-20 px-6 lg:px-12 bg-gray-900 text-white mt-4 rounded-3xl ring-1 ring-inset ring-black/20">
+      <section className="py-20 px-6 lg:px-12 bg-gray-900 text-white m-2 rounded-3xl ring-1 ring-inset ring-black/20">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
           <motion.div
@@ -79,7 +79,7 @@ const MetalInspection = () => {
       </section>
 
       {/* Detailed Inspection Steps */}
-      <section id="metal-service" className="py-20 px-6 lg:px-12 bg-gray-800 text-white mt-4 rounded-3xl">
+      <section id="metal-service" className="py-20 px-6 lg:px-12 bg-gray-800 text-white m-2 rounded-3xl">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-4xl font-bold text-center">Key Steps in Metal Scrap Inspection</h2>
           <p className="mt-4 text-lg text-center text-gray-300">We follow a structured and methodical approach to ensure thorough assessment of all metal scrap shipments.</p>
@@ -105,7 +105,7 @@ const MetalInspection = () => {
       </section>
 
       {/* Call to Action */}
-      <section className=" mt-4  rounded-3xl ring-1 ring-inset ring-black/20 bg-gradient-to-r from-[#fff1be] via-[#4fd1c5] via-[#4a90e2] to-[#5e60ff] text-black text-center py-16">
+      <section className=" m-2  rounded-3xl ring-1 ring-inset ring-black/20 bg-gradient-to-r from-[#fff1be] via-[#4fd1c5] via-[#4a90e2] to-[#5e60ff] text-black text-center py-16">
         <h2 className="text-3xl font-bold">Need a Certified Metal Inspection?</h2>
         <p className="mt-4 text-lg font-medium mb-4">Contact our experts today for comprehensive inspection services tailored to your needs.</p>
           <Link

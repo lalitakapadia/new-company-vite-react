@@ -48,42 +48,17 @@ export default function Services() {
         <Heros title="Our Services" 
                description="Delivering Excellence in Quality, Compliance, and Risk Management"/>
 
-        <div className="bg-gray-900 ring-1 ring-inset ring-black/20 rounded-3xl pt-6 mt-4">
-          {/* Hero Section */}
-          {/* <section className="h-80 flex flex-col justify-center text-black items-center text-center px-6 
-                bg-[linear-gradient(115deg,var(--tw-gradient-stops))] 
-                from-[#fff1be] from-[28%] 
-                via-[#4fd1c5] via-[55%] 
-                via-[#4a90e2] via-[70%] 
-                to-[#5e60ff] to-[100%] 
-                sm:bg-[linear-gradient(145deg,var(--tw-gradient-stops))] ring-1 ring-inset ring-black/20 rounded-3xl">
-            <motion.h1
-              className="text-5xl font-bold"
-              initial={{ opacity: 0, y: -50 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-            >
-              Our Services
-            </motion.h1>
-            <motion.p
-              className="text-lg mt-2"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.5, duration: 0.8 }}
-            >
-              Delivering Excellence in Quality, Compliance, and Risk Management
-            </motion.p>
-          </section> */}
+        <div className="bg-gray-900 ring-1 ring-inset ring-black/20 rounded-3xl pt-6 m-2">
 
           {/* Services Section */}
-          <section className="max-w-6xl mx-auto p-6 space-y-12">
+          <section className=" mx-auto p-12 space-y-12">
             {servicesData.map((service, index) => (
               <ServiceCard key={index} {...service} reverse={index % 2 !== 0} />
             ))}
           </section>
         </div>
       </div>
-      <section className="bg-gradient-to-r from-[#fff1be] via-[#4fd1c5] via-[#4a90e2] to-[#5e60ff] text-black text-center py-16 ring-1 ring-inset ring-black/20 rounded-3xl mt-4">
+      <section className="bg-gradient-to-r from-[#fff1be] via-[#4fd1c5] via-[#4a90e2] to-[#5e60ff] text-black text-center py-16 ring-1 ring-inset ring-black/20 rounded-3xl mx-2 mb-2">
         <h2 className="text-3xl font-bold">Excellence in Every Step: Your Trusted Partner in Quality & Compliance</h2>
         <p className="mt-4 text-lg font-medium mb-4">From Quality to Compliance – We’ve Got Your Supply Chain Covered!</p>
            <Link

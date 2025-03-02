@@ -49,14 +49,14 @@ export default function AboutUs() {
           <GlobalPresence />
 
           {/* Why Choose Us */}
-          <section className="bg-gray-900 container mx-auto px-8 py-16 rounded-3xl ring-1 ring-inset ring-black/20 mt-4 ">
-            <h2 className="text-4xl font-bold text-center mb-8">Why Choose MELT Enterprise?</h2>
+          <section className="bg-gray-900 container mx-auto px-8 py-16 rounded-3xl ring-1 ring-inset ring-black/20 m-2 ">
+            <h2 className="text-4xl font-bold text-center mb-8">Why Choose Our Company?</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
               {[{ icon: FaCheckCircle, title: "Expertise", text: "With over 20 years in the inspection industry, we offer unmatched knowledge and skills to guarantee your products meet global standards." },
               { icon: FaBalanceScale, title: "Integrity", text: "Our business operates with the highest standards of ethics and transparency, ensuring you can trust us with your compliance needs." },
               { icon: FaLightbulb, title: "Innovation", text: "We continuously innovate and adapt our services to stay ahead in the industry, ensuring you always have the best solutions." }
               ].map((item, index) => (
-                <motion.div key={index} className="p-6 bg-gray-100 rounded-lg shadow-lg text-center hover:scale-105 transition">
+                <motion.div key={index} className="p-6 bg-gray-100 rounded-3xl shadow-lg text-center hover:scale-105 transition">
                   <item.icon className="text-5xl text-teal-500 mb-4 mx-auto" />
                   <h3 className="text-2xl font-semibold text-black">{item.title}</h3>
                   <p className="mt-4 font-normal text-gray-800">{item.text}</p>
@@ -68,7 +68,7 @@ export default function AboutUs() {
           
         </div>
         {/* Call to Action */}
-      <section className="mt-4 ring-1 ring-inset ring-black/20 rounded-3xl bg-gradient-to-r from-[#fff1be] via-[#4fd1c5] via-[#4a90e2] to-[#5e60ff] text-black text-center py-16">
+      <section className="m-2 ring-1 ring-inset ring-black/20 rounded-3xl bg-gradient-to-r from-[#fff1be] via-[#4fd1c5] via-[#4a90e2] to-[#5e60ff] text-black text-center py-16">
         <h2 className="text-3xl font-bold">Ensuring Global Compliance & Safety</h2>
         <p className="text-lg mb-4 max-w-2xl mx-auto font-medium">Partner with us for certified, DGFT-approved pre-shipment inspections, guaranteeing secure and seamless trade.</p>
         <Link

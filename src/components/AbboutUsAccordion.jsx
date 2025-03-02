@@ -7,22 +7,22 @@ import inspectionImage from "../assets/Inspection2.jpg";
 import vendorRiskImage from "../assets/VendorRisk.jpg";
 const Accordion = ({ title, descriptionItems, imageUrl, buttonText, url, isActive, onClick }) => {
   return (
-    <article className="bg-gray-800 rounded-3xl shadow-lg mb-6 p-2 sm:p-3">
+    <article className="bg-gray-800 rounded-3xl shadow-lg mb-2 p-2 sm:p-3">
       <header
         className={`flex justify-between items-center p-2 sm:p-3 ${isActive ? "cursor-default" : "cursor-pointer"
           }`}
         onClick={onClick}
       >
 
-        <h3 className="text-lg sm:text-2xl font-semibold text-blue-400 pb-2">{title}</h3>
-        <span className="text-blue-400">
+        <h3 className="text-lg sm:text-2xl font-semibold text-blue-400 px-8">{title}</h3>
+        <span className="text-blue-400 px-8">
           {isActive ? <FaChevronUp /> : <FaChevronDown />}
         </span>
       </header>
 
       {/* Content Section */}
       {isActive && (
-        <div className="flex flex-col sm:flex-row items-center gap-6">
+        <div className="flex flex-col sm:flex-row items-center gap-6 px-8">
           {/* Left Section: Description */}
           <div className="w-full sm:w-1/2 space-y-4 pl-4">
             {descriptionItems.map((item, index) => (
@@ -81,8 +81,8 @@ export default function AboutUsAccordion() {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <main className="bg-gray-100 text-gray-800">
-      <div className=" mx-auto  mt-4 space-y-12">
+    <main className="bg-gray-100 text-gray-800 m-2">
+      <div className=" mx-auto space-y-12">
         {aboutUsData.map((section, index) => (
           <Accordion
             key={index}
@@ -109,6 +109,16 @@ const aboutUsData = [
     url: "/contact-us",
   },
   {
+    title: "What we offer",
+    descriptionItems: [
+      { text: "We provide Pre-Shipment Inspection Certification in multiple regions worldwide.", symbol: <FaGlobe /> },
+      { text: "We customize the inspection process based on client requirements.", symbol: <FaClipboardCheck /> },
+    ],
+    imageUrl: vendorRiskImage,
+    buttonText: "Let's Talk",
+    url: "/contact-us",
+  },
+  {
     title: "What we do",
     descriptionItems: [
       { text: "Inspection for radioactive and explosive contamination in scrap and waste of metal, plastic, and paper.", symbol: <FaSearch /> },
@@ -119,16 +129,6 @@ const aboutUsData = [
       { text: "Safety control Pre-Shipment Inspection for contamination identification.", symbol: <FaVial /> },
     ],
     imageUrl: inspectionImage,
-    buttonText: "Let's Talk",
-    url: "/contact-us",
-  },
-  {
-    title: "What we offer",
-    descriptionItems: [
-      { text: "We provide Pre-Shipment Inspection Certification in multiple regions worldwide.", symbol: <FaGlobe /> },
-      { text: "We customize the inspection process based on client requirements.", symbol: <FaClipboardCheck /> },
-    ],
-    imageUrl: vendorRiskImage,
     buttonText: "Let's Talk",
     url: "/contact-us",
   },
