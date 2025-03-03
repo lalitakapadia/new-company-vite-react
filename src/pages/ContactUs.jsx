@@ -1,50 +1,51 @@
 "use client";
 
 import { useState } from "react";
+import { Helmet } from "react-helmet"; // ✅ SEO Optimization
 import { motion } from "framer-motion";
 import { FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
-import Navbar from '../components/Navbar';
-import countryData from "../utils/countries"; // Assume a utility file for country codes & flags
-import ContactUsForm from "../components/ContactUsForm";
-import { Link } from "react-router-dom"; // ✅ Import Link from React Router
+import Navbar from "../components/Navbar";
+import countryData from "../utils/countries"; // ✅ Assume a utility file for country codes & flags
+import { Link } from "react-router-dom";
 import Heros from "../components/Heros";
-import { Helmet } from "react-helmet"; // ✅ Import React Helmet for SEO
+import ContactUsForm from "../components/ContactUsForm";
 
 export default function ContactUs() {
   const [selectedCountry, setSelectedCountry] = useState(countryData[0]);
 
   return (
     <>
+      {/* 🔹 SEO Meta Tags */}
       <Helmet>
-        <meta charSet="utf-8" />
-        <title>Contact Us - We're Here to Help</title>
-        <meta name="description" content="Get in touch with us for inquiries. Our team is ready to assist you with any questions you have." />
-        <meta name="keywords" content="contact us, customer support, inquiry, phone, email, address" />
+        <title>Contact Us - Reach Out for Assistance</title>
+        <meta
+          name="description"
+          content="Get in touch with us for inquiries, support, or partnerships. Our team is ready to assist you with any questions."
+        />
+        <meta name="keywords" content="contact us, customer support, inquiry, phone, email, business address" />
+        <meta name="robots" content="index, follow" />
+        <meta property="og:title" content="Contact Us - Reach Out for Assistance" />
+        <meta property="og:description" content="Need help? Get in touch with us for support and inquiries. We're here to assist you!" />
+        <meta property="og:url" content="https://www.yourwebsite.com/contact-us" />
+        <meta name="twitter:card" content="summary_large_image" />
       </Helmet>
 
       <div className="bg-gray-100 text-gray-800 overflow-hidden">
-        <div
-          className="absolute -right-60 -top-44 h-60 w-[36rem] transform-gpu md:right-0 
-                    bg-[linear-gradient(115deg,var(--tw-gradient-stops))] 
-                    from-[#fff1be] from-[28%]   
-                    via-[#4fd1c5] via-[55%]    
-                    via-[#4a90e2] via-[70%]    
-                    to-[#5e60ff] to-[100%]
-                    rotate-[-10deg] 
-                    rounded-full blur-3xl"
-        ></div>
-
         <Navbar />
 
-        {/* Hero Section */}
-        <Heros title="Contact Us – We're Here to Help!" 
-               description="Let’s connect and make things happen!" />
+        {/* 🔹 Hero Section */}
+        <Heros
+          title="We're Here to Help!"
+          description="Let’s connect and make things happen!"
+        />
 
         <div className="bg-gray-900 rounded-3xl ring-1 ring-inset ring-black/20 m-2">
-          {/* Contact Form & Info */}
+          {/* 🔹 Contact Form & Info */}
           <section className="p-6 sm:p-12 grid grid-cols-1 md:grid-cols-2 gap-12 mx-auto text-gray-300">
-            {/* Contact Form */}
-            <div className="bg-gray-800 p-8 rounded-lg shadow-lg">
+          {/* <ContactUsForm/> */}
+            
+            {/* 🔹 Contact Form */}
+            <div className="bg-gray-800 sm:p-12 p-4 rounded-lg shadow-lg">
               <h2 className="text-3xl font-bold mb-6">Get in Touch</h2>
               <form className="space-y-4">
                 <div className="space-y-2">
@@ -69,8 +70,9 @@ export default function ContactUs() {
                     title="Please enter a valid email address."
                   />
                 </div>
-                <div className="flex space-x-3 flex-wrap md:flex-nowrap">
-                  {/* Country Code Dropdown */}
+                <div className="flex flex-col md:flex-row gap-4">
+                  
+                  {/* 🔹 Country Code Dropdown */}
                   <div className="flex-1 space-y-2">
                     <label htmlFor="country" className="text-lg font-medium">Country Code</label>
                     <select
@@ -90,7 +92,8 @@ export default function ContactUs() {
                       ))}
                     </select>
                   </div>
-                  {/* Phone Number Field */}
+
+                  {/* 🔹 Phone Number Field */}
                   <div className="flex-1 space-y-2">
                     <label htmlFor="phone" className="text-lg font-medium">Phone Number</label>
                     <input
@@ -124,19 +127,19 @@ export default function ContactUs() {
               </form>
             </div>
 
-            {/* Contact Info */}
-            <div className="bg-gray-800 p-8 rounded-lg shadow-lg space-y-6">
+            {/* 🔹 Contact Info */}
+            <div className="bg-gray-800 p-4 sm:p-12 rounded-lg shadow-lg space-y-6">
               <h2 className="text-3xl font-bold mb-6">Contact Information</h2>
               <div className="flex items-center space-x-4">
-                <FaPhone className="text-blue-400 text-2xl" />
+                <FaPhone className="text-blue-400 text-2xl" aria-hidden="true" />
                 <p>+1 234 567 890</p>
               </div>
               <div className="flex items-center space-x-4">
-                <FaEnvelope className="text-blue-400 text-2xl" />
+                <FaEnvelope className="text-blue-400 text-2xl" aria-hidden="true" />
                 <p>contact@yourcompany.com</p>
               </div>
               <div className="flex items-center space-x-4">
-                <FaMapMarkerAlt className="text-blue-400 text-2xl" />
+                <FaMapMarkerAlt className="text-blue-400 text-2xl" aria-hidden="true" />
                 <p>123 Business Street, City, Country</p>
               </div>
             </div>

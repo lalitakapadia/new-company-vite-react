@@ -14,15 +14,15 @@ const Accordion = ({ title, descriptionItems, imageUrl, buttonText, url, isActiv
         onClick={onClick}
       >
 
-        <h3 className="text-lg sm:text-2xl font-semibold text-blue-400 px-8">{title}</h3>
-        <span className="text-blue-400 px-8">
+        <h3 className="text-lg sm:text-2xl font-semibold text-blue-400 sm:px-8 px-4">{title}</h3>
+        <span className="text-blue-400 sm:px-8 px-4">
           {isActive ? <FaChevronUp /> : <FaChevronDown />}
         </span>
       </header>
 
       {/* Content Section */}
       {isActive && (
-        <div className="flex flex-col sm:flex-row items-center gap-6 px-8">
+        <div className="flex flex-col sm:flex-row items-center gap-6 sm:px-8 px-4">
           {/* Left Section: Description */}
           <div className="w-full sm:w-1/2 space-y-4 pl-4">
             {descriptionItems.map((item, index) => (

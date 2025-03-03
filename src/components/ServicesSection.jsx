@@ -41,7 +41,7 @@ export default function ServicesSection() {
     <div className="m-2 inset-2 bottom-0 rounded-3xl py-16 bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 text-white">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
-        <motion.h2 
+        <motion.h2
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
@@ -70,7 +70,11 @@ export default function ServicesSection() {
             >
               <div className="flex items-center m-6 space-x-4">
                 <CheckCircle className="w-10 h-10 text-blue-400 group-hover:text-blue-300 transition-colors" />
-                <h3 className="text-xl font-semibold" ><Link to={service.bookmark}>{service.title}</Link></h3>
+                <h3 className="text-xl font-semibold">
+                  <Link to={service.bookmark} className="hover:text-blue-400 transition-colors">
+                    {service.title}
+                  </Link>
+                </h3>
               </div>
               <p className="m-6 text-gray-300 font-normal">{service.description}</p>
               {/* Animated Bottom Border Effect */}

@@ -44,6 +44,7 @@ const DiscoverSection = () => {
           We specialize in globally recognized, DGFT-approved pre-shipment inspections. Our expertise ensures compliance, safety, and smooth international trade operations.
         </p>
 
+        {/* Service Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <div key={index} className="relative group overflow-hidden rounded-3xl bg-gray-100 shadow-lg hover:shadow-2xl transition-transform hover:scale-105 p-6">
@@ -55,8 +56,12 @@ const DiscoverSection = () => {
                 <div className="mb-4 flex items-center justify-center">{service.icon}</div>
                 <h3 className="text-2xl font-semibold text-gray-900">{service.title}</h3>
                 <p className="mt-2 text-gray-800 text-lg font-normal">{service.description}</p>
-                <Link to={service.link} className="mt-4 inline-block text-blue-500 font-semibold relative">
-                  Learn More →
+                <Link 
+                  to={service.link} 
+                  className="mt-4 inline-block text-blue-500 font-semibold relative"
+                  aria-label={`Learn more about ${service.title}`}
+                >
+                  Learn More → 
                   {/* Bottom Underline Animation */}
                   <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-blue-500 to-green-400 scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
                 </Link>

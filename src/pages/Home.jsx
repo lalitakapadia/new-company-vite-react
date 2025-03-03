@@ -14,10 +14,18 @@ const Home = () => {
       <Helmet>
         <meta charSet="utf-8" />
         <title>Home - Secure Your Shipments with Confidence</title>
-        <meta name="description" content="We offer DGFT-approved inspection services ensuring your shipments are safe, compliant, and ready for the global market." />
+        <meta
+          name="description"
+          content="We offer DGFT-approved inspection services ensuring your shipments are safe, compliant, and ready for the global market."
+        />
         <meta name="keywords" content="shipment inspection, DGFT-approved services, global trade, compliance, safety" />
+        <meta name="robots" content="index, follow" />
+        <meta property="og:title" content="Secure Your Shipments with Confidence" />
+        <meta property="og:description" content="DGFT-approved inspection services ensuring compliance, safety, and reliability for global trade." />
+        <meta property="og:url" content="https://www.yourwebsite.com" />
+        <meta name="twitter:card" content="summary_large_image" />
       </Helmet>
-
+      
       <div className="text-gray-800 overflow-hidden">
         {/* Hero Section */}
         <div className="relative">
