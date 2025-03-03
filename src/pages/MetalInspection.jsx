@@ -27,7 +27,7 @@ const MetalInspection = () => {
       </Helmet>
 
       <div className="bg-gray-100 text-gray-800">
-      <div class="relative mx-auto max-w-7xl">
+      <div class="relative mx-auto ">
           <div
             class="absolute -right-60 -top-44 h-60 w-[36rem] transform-gpu md:right-0 
                         bg-[linear-gradient(115deg,var(--tw-gradient-stops))] 
@@ -47,7 +47,7 @@ const MetalInspection = () => {
         <main>
           {/* 🔹 Services Overview */}
           <section className="m-2 py-16 px-6 lg:px-12 bg-gray-900 text-white rounded-3xl ring-1 ring-inset ring-black/20">
-            <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className=" mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               {/* Left: Text Content */}
               <motion.div initial={{ opacity: 0, x: -30 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8 }}>
                 <h2 className="text-4xl font-bold">Certified Metal Scrap Inspection</h2>
@@ -78,7 +78,7 @@ const MetalInspection = () => {
 
           {/* 🔹 Inspection Process */}
           <section className="m-2 py-16 px-6 lg:px-12 bg-gray-800 text-white rounded-3xl ring-1 ring-inset ring-black/20">
-            <div className="max-w-7xl mx-auto">
+            <div className=" mx-auto">
               <h2 className="text-4xl font-bold text-center">Key Steps in Metal Scrap Inspection</h2>
               <p className="mt-4 text-lg text-center text-gray-300">We follow a structured and methodical approach to ensure compliance.</p>
 
@@ -101,7 +101,7 @@ const MetalInspection = () => {
 
           {/* 🔹 Metal Types */}
           <section className="py-16 px-6 lg:px-12 bg-gray-900 text-white m-2 rounded-3xl ring-1 ring-inset ring-black/20">
-            <div className="max-w-7xl mx-auto text-center">
+            <div className=" mx-auto text-center">
               <h2 className="text-4xl font-semibold">Non-Ferrous & Ferrous Scrap Imports</h2>
               <p className="mt-4 text-lg text-gray-300">We inspect various types of scrap metals for compliance.</p>
               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 mt-8">

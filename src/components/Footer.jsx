@@ -14,7 +14,7 @@ export default function Footer() {
       animate={{ opacity: 1 }}
       transition={{ duration: 0.8 }}
     >
-      <div className="max-w-7xl mx-auto text-center">
+      <div className=" mx-auto text-center">
         <motion.h2
           className="text-3xl font-bold mb-6"
           initial={{ opacity: 0, y: -50 }}

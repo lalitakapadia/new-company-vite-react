@@ -66,7 +66,7 @@ const Responsibilities = () => {
       </Helmet>
 
       <div className="bg-gray-100 text-gray-800">
-      <div class="relative mx-auto max-w-7xl">
+      <div class="relative mx-auto ">
           <div
             class="absolute -right-60 -top-44 h-60 w-[36rem] transform-gpu md:right-0 
                         bg-[linear-gradient(115deg,var(--tw-gradient-stops))] 
@@ -118,7 +118,7 @@ const Responsibilities = () => {
 
                   {/* Text Content */}
                   <div className="absolute inset-0 flex flex-col justify-start md:justify-center px-6 md:px-12">
-                    <div className="w-full max-w-7xl flex flex-col md:flex-row items-start md:items-center">
+                    <div className="w-full  flex flex-col md:flex-row items-start md:items-center">
                       <div className="hidden md:block md:w-1/2"></div>
                       <div className="w-full md:w-1/2 text-white text-left md:text-right mt-10 md:mt-0">
                         <h2 className="text-3xl md:text-5xl font-bold">{slide.title}</h2>
@@ -131,7 +131,7 @@ const Responsibilities = () => {
 
                   {/* Progress Bar */}
                   <div className="absolute bottom-10 left-0 w-full px-6">
-                    <div className="max-w-7xl mx-auto flex gap-6">
+                    <div className=" mx-auto flex gap-6">
                       {slides.map((slide, index) => (
                         <div key={index} className="flex-1 flex flex-col items-center">
                           <span
@@ -164,7 +164,7 @@ const Responsibilities = () => {
 
         {/* 🔹 Call to Action */}
         <section className="ring-1 ring-inset ring-black/20 rounded-3xl m-2 p-6 bg-gradient-to-r from-[#fff1be] via-[#4fd1c5] via-[#4a90e2] to-[#5e60ff] text-black py-16">
-          <div className="max-w-7xl mx-auto text-center px-6">
+          <div className=" mx-auto text-center px-6">
             <h2 className="text-3xl font-bold mb-4">Get in Touch with Us</h2>
             <p className="text-lg mb-8 max-w-2xl mx-auto font-medium">
               Have any questions or want to know more about our global compliance services? Feel free to contact us. We're here to assist you in navigating complex regulatory landscapes.

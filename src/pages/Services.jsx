@@ -36,7 +36,7 @@ export default function Services() {
       </Helmet>
 
       <div className="bg-gray-100 text-gray-800">
-        <div class="relative mx-auto max-w-7xl">
+        <div class="relative mx-auto ">
           <div
             class="absolute -right-60 -top-44 h-60 w-[36rem] transform-gpu md:right-0 
                         bg-[linear-gradient(115deg,var(--tw-gradient-stops))] 
@@ -57,7 +57,7 @@ export default function Services() {
         <main>
           {/* 🔹 Services Section */}
           <section className="bg-gray-900 ring-1 ring-inset ring-black/20 rounded-3xl pt-6 m-2">
-            <div className="mx-auto p-12 space-y-12">
+            <div className="mx-auto sm:p-12 p-4 space-y-12">
               {servicesData.map((service, index) => (
                 <ServiceCard key={index} {...service} reverse={index % 2 !== 0} />
               ))}
@@ -65,7 +65,7 @@ export default function Services() {
           </section>
 
           {/* 🔹 Call to Action */}
-          <section className="p-6 bg-gradient-to-r from-[#fff1be] via-[#4fd1c5] via-[#4a90e2] to-[#5e60ff] text-black text-center py-16 ring-1 ring-inset ring-black/20 rounded-3xl mx-2 mb-2">
+          <section className=" bg-gradient-to-r from-[#fff1be] via-[#4fd1c5] via-[#4a90e2] to-[#5e60ff] text-black text-center py-16 ring-1 ring-inset ring-black/20 rounded-3xl mx-2 mb-2">
             <h2 className="text-3xl font-bold">Excellence in Every Step: Your Trusted Partner in Quality & Compliance</h2>
             <p className="mb-8 mt-4 text-lg font-medium">From Quality to Compliance – We’ve Got Your Supply Chain Covered!</p>
             <Link

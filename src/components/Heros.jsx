@@ -5,7 +5,7 @@ export default function Heros({ title, description }) {
     <div className="mx-auto px-2">
       {/* Hero Section */}
       <section
-        className="rounded-xl ring-1 ring-inset ring-black/20 h-auto p-8 lg:p-24 text-black relative flex flex-col justify-center items-center text-center
+        className="rounded-3xl ring-1 ring-inset ring-black/20 h-screen/2 p-8 lg:p-24 text-black relative flex flex-col justify-center items-center text-center
          bg-[linear-gradient(115deg,var(--tw-gradient-stops))] 
             from-[#fff1be] from-[28%] 
             via-[#4fd1c5] via-[55%] 

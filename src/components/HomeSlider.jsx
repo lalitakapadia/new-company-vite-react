@@ -77,7 +77,7 @@ const HomeSlider = () => {
               </div>
               {/* Progress Bar */}
               <div className="absolute bottom-10 left-0 w-full px-6">
-                <div className="max-w-7xl mx-auto flex gap-6">
+                <div className=" mx-auto flex gap-6">
                   {slides.map((slide, index) => (
                     <div key={index} className="flex-1 flex flex-col items-center">
                       {/* Slide Title */}

@@ -13,9 +13,9 @@ const Navbar = () => {
   }, []);
 
   return (
-    <header className="p-4 sticky top-0 z-50 px-12 ">
+    <header className="p-4 sticky top-0 z-50 px-6 sm:px-12 ">
       <ScrollIndicator />
-      <div className="max-w-7xl mx-auto ">
+      <div className=" mx-auto ">
         <div className="flex justify-between items-center py-4">
           <Link to="/" className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-teal-400 to-blue-500">
             New Company

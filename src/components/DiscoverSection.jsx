@@ -38,7 +38,7 @@ const DiscoverSection = () => {
 
   return (
     <div className="m-2 rounded-3xl relative px-6 lg:px-8 py-20 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-700 text-white">
-      <div className="mx-auto max-w-7xl text-center">
+      <div className="mx-auto  text-center">
         <h2 className="text-4xl font-bold tracking-tight mb-6">Discover Our Expertise</h2>
         <p className="text-lg text-gray-300 max-w-2xl font-normal mx-auto mb-12">
           We specialize in globally recognized, DGFT-approved pre-shipment inspections. Our expertise ensures compliance, safety, and smooth international trade operations.

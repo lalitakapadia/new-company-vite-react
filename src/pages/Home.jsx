@@ -44,8 +44,8 @@ const Home = () => {
             <Navbar />
           </Suspense>
 
-          <div className="relative px-6 lg:px-8">
-            <div className="mx-auto max-w-7xl">
+          <div className="relative px-6 lg:px-12">
+            <div className="mx-auto ">
               <div className="pb-24 pt-16 sm:pb-32 sm:pt-24 md:pb-16 md:pt-16">
                 <h1 className="font-display text-balance text-4xl sm:text-6xl md:text-8xl font-medium tracking-tight text-gray-950 sm:text-8xl/[0.8] md:text-9xl/[0.8]">
                   Secure Your Shipments with Confidence

@@ -24,7 +24,7 @@ const MetalImport = () => {
       </Helmet>
 
       <div className="bg-gray-100 text-gray-800">
-      <div class="relative mx-auto max-w-7xl">
+      <div class="relative mx-auto ">
           <div
             class="absolute -right-60 -top-44 h-60 w-[36rem] transform-gpu md:right-0 
                         bg-[linear-gradient(115deg,var(--tw-gradient-stops))] 
@@ -48,7 +48,7 @@ const MetalImport = () => {
         <main>
           {/* 🔹 Services Overview */}
           <section className="m-2 py-16 px-6 lg:px-12 bg-gray-900 text-white rounded-3xl ring-1 ring-inset ring-black/20">
-            <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className=" mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               {/* Left: Text Content */}
               <motion.div
                 initial={{ opacity: 0, x: -30 }}
@@ -97,7 +97,7 @@ const MetalImport = () => {
 
           {/* 🔹 Detailed Import Process */}
           <section className="m-2 py-16 px-6 lg:px-12 bg-gray-800 text-white rounded-3xl ring-1 ring-inset ring-black/20">
-            <div className="max-w-7xl mx-auto">
+            <div className=" mx-auto">
               <h2 className="text-4xl font-bold text-center">The Metal Import Process</h2>
               <p className="mt-4 text-lg text-center text-gray-300">We ensure smooth and compliant metal imports, every step of the way.</p>
               
@@ -126,7 +126,7 @@ const MetalImport = () => {
 
           {/* 🔹 Call to Action */}
           <section className="m-2 p-6 rounded-3xl ring-1 ring-inset ring-black/20 bg-gradient-to-r from-[#fff1be] via-[#4fd1c5] via-[#4a90e2] to-[#5e60ff] text-black text-center py-16">
-            <div className="max-w-7xl mx-auto">
+            <div className=" mx-auto">
               <h2 className="text-3xl font-bold">Ready for Smooth and Safe Metal Imports?</h2>
               <p className="text-lg mb-8 max-w-2xl mx-auto font-medium">
                 Contact our experts today to ensure compliance, safety, and efficiency in your next metal import.

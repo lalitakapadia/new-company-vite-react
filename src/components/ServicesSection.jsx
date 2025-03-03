@@ -39,7 +39,7 @@ const services = [
 export default function ServicesSection() {
   return (
     <div className="m-2 inset-2 bottom-0 rounded-3xl py-16 bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 text-white">
-      <div className="max-w-7xl mx-auto">
+      <div className=" mx-auto">
         {/* Section Header */}
         <motion.h2
           initial={{ opacity: 0, y: -20 }}
@@ -59,7 +59,7 @@ export default function ServicesSection() {
         </motion.p>
 
         {/* Service Cards */}
-        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="mt-12 px-4 sm:px-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, index) => (
             <motion.div
               key={index}
