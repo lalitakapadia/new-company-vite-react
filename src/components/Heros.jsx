@@ -15,7 +15,7 @@ export default function Heros({ title, description }) {
       >
         {/* Heading with appropriate semantic tag for SEO */}
         <motion.h1
-          className="text-3xl sm:text-5xl font-bold mb-4 text-gray-800"
+          className="text-3xl sm:text-5xl font-bold mb-8 text-gray-800"
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}

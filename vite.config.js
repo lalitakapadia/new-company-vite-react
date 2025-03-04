@@ -6,5 +6,8 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
   base: '/',
   plugins: [react(), tailwindcss()],
+  server: {
+    historyApiFallback: true, // ✅ Fix for "Page Not Found" in development
+  },
 
-})
+});
