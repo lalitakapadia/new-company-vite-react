@@ -7,7 +7,10 @@ export default defineConfig({
   base: '/',
   plugins: [react(), tailwindcss()],
   server: {
-    historyApiFallback: true, // ✅ Fix for "Page Not Found" in development
+    open: true, // Auto-opens in the browser
+  },
+  build: {
+    outDir: "dist",
   },
 
 });
