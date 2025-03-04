@@ -95,7 +95,7 @@ const ServiceCard = ({ title, description, features, benefits, image, icon: Icon
       <div className="relative w-full md:w-1/2 lg:h-96">
       {/* Motion Floating Shapes */}
       <motion.div
-          className="absolute -top-10 -left-10 w-32 h-32 bg-blue-500 opacity-30 rounded-full"
+          className="absolute -top-15 -left-5 w-32 h-32 bg-blue-500 opacity-30 rounded-full"
           animate={{ y: [0, -10, 10, 0] }}
           transition={{ repeat: Infinity, duration: 5, ease: "easeInOut" }}
         />
@@ -116,11 +116,11 @@ const ServiceCard = ({ title, description, features, benefits, image, icon: Icon
         <p className="mt-4 text-gray-300  font-normal">{description}</p>
 
         {/* Features List */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mt-4  font-normal">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mt-4 font-normal">
           {features.map((feature, index) => (
             <motion.div key={index} className="flex items-center space-x-3 bg-gray-700 p-4 rounded-lg shadow-md" whileHover={{ scale: 1.05 }}>
-              <FaCheckCircle className="text-green-400 text-2xl" aria-hidden="true" />
-              <p className="text-gray-300 text-sm">{feature}</p>
+              <FaCheckCircle className="text-green-400 text-4xl" aria-hidden="true" />
+              <p className="text-gray-300 text-md">{feature}</p>
             </motion.div>
           ))}
         </div>
@@ -134,7 +134,7 @@ const ServiceCard = ({ title, description, features, benefits, image, icon: Icon
           <ul className="mt-2 space-y-2 text-black  font-normal">
             {benefits.map((benefit, index) => (
               <li key={index} className="flex items-center">
-                <FaCheckCircle className="text-yellow-400 mr-2" aria-hidden="true" />
+                <FaCheckCircle className="text-yellow-400 mr-2 text-xl" aria-hidden="true" />
                 {benefit}
               </li>
             ))}
@@ -216,7 +216,7 @@ const ServiceCard = ({ title, description, features, benefits, image, icon: Icon
     features: [
       "Regulatory audits to ensure industry compliance",
       "ISO, FDA, CE, and RoHS certification guidance",
-      "Customized training programs for supplier improvement",
+      "Compliance support for regulatory filings and reporting",
       "Gap analysis and corrective action planning",
       "On-site assessments and compliance documentation",
     ],
