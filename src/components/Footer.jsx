@@ -16,7 +16,7 @@ export default function Footer() {
     >
       <div className=" mx-auto text-center">
         <motion.h2
-          className="text-3xl font-bold mb-6"
+          className="text-3xl font-semibold mb-6"
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3, duration: 0.6 }}
@@ -38,7 +38,7 @@ export default function Footer() {
           <motion.a href="https://www.skype.com/" target="_blank" rel="noopener noreferrer" className="text-3xl hover:text-blue-500 transition-all" whileHover={{ scale: 1.2 }}>
             <FaSkype />
           </motion.a>
-          <motion.a href="mailto:contact@yourcompany.com" className="text-3xl hover:text-purple-500 transition-all" whileHover={{ scale: 1.2 }}>
+          <motion.a href="mailto:contact@yourcompany.com" className="text-3xl hover:text-blue-500 transition-all" whileHover={{ scale: 1.2 }}>
             <FaEnvelope />
           </motion.a>
         </div>

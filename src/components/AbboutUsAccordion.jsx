@@ -14,20 +14,20 @@ const Accordion = ({ title, descriptionItems, imageUrl, buttonText, url, isActiv
         onClick={onClick}
       >
 
-        <h3 className="text-lg sm:text-2xl font-semibold text-blue-400 sm:px-8 px-4">{title}</h3>
-        <span className="text-blue-400 sm:px-8 px-4">
+        <h3 className="text-lg sm:text-2xl font-semibold text-blue-400 sm:px-8 px-4 mb-2">{title}</h3>
+        <span className="text-blue-400 sm:px-8 px-4 ">
           {isActive ? <FaChevronUp /> : <FaChevronDown />}
         </span>
       </header>
 
       {/* Content Section */}
       {isActive && (
-        <div className="flex flex-col sm:flex-row items-center gap-6 sm:px-8 px-4">
+        <div className="flex flex-col sm:flex-row items-center gap-6 lg:px-8">
           {/* Left Section: Description */}
           <div className="w-full sm:w-1/2 space-y-4 pl-4">
             {descriptionItems.map((item, index) => (
-              <div key={index} className="flex space-x-3 text-gray-300">
-                <div className="text-yellow-300">{item.symbol}</div>
+              <div key={index} className="flex space-x-3 text-gray-300 ">
+                <div className="text-yellow-300 mt-2">{item.symbol}</div>
                 <p className="text-sm sm:text-base font-normal">{item.text}</p>
               </div>
             ))}
@@ -58,7 +58,7 @@ const Accordion = ({ title, descriptionItems, imageUrl, buttonText, url, isActiv
                 transition={{ repeat: Infinity, duration: 5, ease: "easeInOut" }}
               />
               <motion.div
-                className="absolute -bottom-6 -right-6 w-12 h-12 bg-purple-500 opacity-20 rounded-full"
+                className="absolute -bottom-2 -right-4 w-12 h-12 bg-purple-500 opacity-20 rounded-full"
                 animate={{ y: [5, -5, 5] }}
                 transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
               />
