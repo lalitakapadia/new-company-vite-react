@@ -163,10 +163,10 @@ const Responsibilities = () => {
         </main>
 
         {/* 🔹 Call to Action */}
-        <section className="ring-1 ring-inset ring-black/20 rounded-3xl m-2 p-6 bg-gradient-to-r from-[#fff1be] via-[#4fd1c5] via-[#4a90e2] to-[#5e60ff] text-black py-16">
-          <div className=" mx-auto text-center px-6">
-            <h2 className="text-3xl font-bold mb-4">Get in Touch with Us</h2>
-            <p className="text-lg mb-8 max-w-2xl mx-auto font-medium">
+        <section className="bg-gradient-to-r from-[#fff1be] via-[#4fd1c5] via-[#4a90e2] to-[#5e60ff] text-black text-center sm:py-16 ring-1 ring-inset ring-black/20 rounded-3xl m-2 mb-2 p-4 py-12">
+          <div className=" mx-auto text-center ">
+            <h2 className="text-3xl font-semibold mb-4">Get in Touch with Us</h2>
+            <p className="text-lg m-4 mb-6 max-w-2xl mx-auto font-medium">
               Have any questions or want to know more about our global compliance services? Feel free to contact us. We're here to assist you in navigating complex regulatory landscapes.
             </p>
             <Link

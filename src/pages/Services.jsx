@@ -36,7 +36,7 @@ export default function Services() {
       </Helmet>
 
       <div className="bg-gray-100 text-gray-800">
-        <div class="relative mx-auto overflow-hidden ">
+        <div class="relative mx-auto overflow-hidden">
           <div
             class="absolute -right-60 -top-44 h-60 w-[36rem] transform-gpu md:right-0 
                         bg-[linear-gradient(115deg,var(--tw-gradient-stops))] 
@@ -65,9 +65,9 @@ export default function Services() {
           </section>
 
           {/* 🔹 Call to Action */}
-          <section className=" bg-gradient-to-r from-[#fff1be] via-[#4fd1c5] via-[#4a90e2] to-[#5e60ff] text-black text-center py-16 ring-1 ring-inset ring-black/20 rounded-3xl mx-2 mb-2">
-            <h2 className="text-3xl font-bold">Excellence in Every Step: Your Trusted Partner in Quality & Compliance</h2>
-            <p className="mb-8 mt-4 text-lg font-medium">From Quality to Compliance – We’ve Got Your Supply Chain Covered!</p>
+          <section className=" bg-gradient-to-r from-[#fff1be] via-[#4fd1c5] via-[#4a90e2] to-[#5e60ff] text-black text-center sm:py-16 ring-1 ring-inset ring-black/20 rounded-3xl m-2 mb-2 p-4 py-12 ">
+            <h2 className="text-3xl font-semibold">Excellence in Every Step: Your Trusted Partner in Quality & Compliance</h2>
+            <p className="m-4 mb-6 text-lg font-medium">From Quality to Compliance – We’ve Got Your Supply Chain Covered!</p>
             <Link
               to="/contact-us"
               className="mt-6 px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-500 hover:from-purple-500 hover:to-blue-500 text-black rounded-full font-semibold shadow-md transition-all"
@@ -85,15 +85,26 @@ export default function Services() {
 const ServiceCard = ({ title, description, features, benefits, image, icon: Icon, reverse }) => {
   return (
     <motion.article
-      className={`flex flex-col md:flex-row items-center gap-8 p-8 bg-gray-800 rounded-3xl shadow-lg transition-transform hover:scale-105 ${reverse ? "md:flex-row-reverse" : ""}`}
+      className={`flex flex-col md:flex-row items-center gap-12 lg:p-8 p-4 bg-gray-800 rounded-3xl shadow-lg transition-transform hover:scale-105 ${reverse ? "md:flex-row-reverse" : ""}`}
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
       viewport={{ once: true }}
     >
       {/* Image Section */}
-      <div className="relative w-full md:w-1/2 h-96">
-        <img src={image} alt={title} className="w-full h-full object-cover rounded-lg shadow-lg" loading="lazy" />
+      <div className="relative w-full md:w-1/2 lg:h-96">
+      {/* Motion Floating Shapes */}
+      <motion.div
+          className="absolute -top-10 -left-10 w-32 h-32 bg-blue-500 opacity-30 rounded-full"
+          animate={{ y: [0, -10, 10, 0] }}
+          transition={{ repeat: Infinity, duration: 5, ease: "easeInOut" }}
+        />
+        <motion.div
+          className="absolute -bottom-10 right-0 w-20 h-20 bg-purple-500 opacity-20 rounded-full"
+          animate={{ y: [-5, 5, -5] }}
+          transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
+        />
+        <img src={image} alt={title} className="w-full h-full object-fit rounded-lg shadow-lg" loading="lazy" />
       </div>
 
       {/* Content Section */}
@@ -102,10 +113,10 @@ const ServiceCard = ({ title, description, features, benefits, image, icon: Icon
           <Icon className="text-blue-400 text-5xl" aria-hidden="true" />
           <h2 className="text-3xl font-semibold text-blue-400">{title}</h2>
         </div>
-        <p className="mt-4 text-gray-300">{description}</p>
+        <p className="mt-4 text-gray-300  font-normal">{description}</p>
 
         {/* Features List */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mt-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mt-4  font-normal">
           {features.map((feature, index) => (
             <motion.div key={index} className="flex items-center space-x-3 bg-gray-700 p-4 rounded-lg shadow-md" whileHover={{ scale: 1.05 }}>
               <FaCheckCircle className="text-green-400 text-2xl" aria-hidden="true" />
@@ -120,7 +131,7 @@ const ServiceCard = ({ title, description, features, benefits, image, icon: Icon
             <FaLightbulb className="text-yellow-300 text-2xl" aria-hidden="true" />
             <h3 className="text-xl font-semibold">Why It Matters</h3>
           </div>
-          <ul className="mt-2 space-y-2 text-black">
+          <ul className="mt-2 space-y-2 text-black  font-normal">
             {benefits.map((benefit, index) => (
               <li key={index} className="flex items-center">
                 <FaCheckCircle className="text-yellow-400 mr-2" aria-hidden="true" />

@@ -99,9 +99,9 @@ export default function AboutUs() {
         </main>
 
         {/* 🔹 Call to Action */}
-        <section className="m-2 p-6 ring-1 ring-inset ring-black/20 rounded-3xl bg-gradient-to-r from-[#fff1be] via-[#4fd1c5] via-[#4a90e2] to-[#5e60ff] text-black text-center py-16">
-          <h2 className="text-3xl font-bold">Ensuring Global Compliance & Safety</h2>
-          <p className="mb-8 text-lg max-w-2xl mx-auto font-medium">
+        <section className="bg-gradient-to-r from-[#fff1be] via-[#4fd1c5] via-[#4a90e2] to-[#5e60ff] text-black text-center sm:py-16 ring-1 ring-inset ring-black/20 rounded-3xl m-2 mb-2 p-4 py-12">
+          <h2 className="text-3xl font-semibold">Ensuring Global Compliance & Safety</h2>
+          <p className="m-4 mb-6 text-lg max-w-2xl mx-auto font-medium">
             Partner with us for certified, DGFT-approved pre-shipment inspections, guaranteeing secure and seamless trade.
           </p>
           <Link
