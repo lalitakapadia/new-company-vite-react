@@ -12,6 +12,36 @@ import ContactUsForm from "../components/ContactUsForm";
 
 export default function ContactUs() {
   const [selectedCountry, setSelectedCountry] = useState(countryData[0]);
+  const [formData, setFormData] = useState({ name: "", email: "", phone: "", message: "" });
+  const [status, setStatus] = useState(null);
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setStatus("sending");
+
+    try {
+      const response = await fetch("http://localhost:5000/send-email", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+      if (response.ok) {
+        setStatus("success");
+        setFormData({ name: "", email: "", phone: "", message: "" });
+      } else {
+        setStatus("error");
+      }
+    } catch (error) {
+      setStatus("error");
+    }
+  };
+
 
   return (
     <>
@@ -31,6 +61,18 @@ export default function ContactUs() {
       </Helmet>
 
       <div className="bg-gray-100 text-gray-800 overflow-hidden">
+      <div class="relative mx-auto ">
+                    <div
+                        class="absolute -right-60 -top-44 h-60 w-[36rem] transform-gpu md:right-0 
+                        bg-[linear-gradient(115deg,var(--tw-gradient-stops))] 
+                        from-[#fff1be] from-[28%]   
+                        via-[#4fd1c5] via-[55%]    
+                        via-[#4a90e2] via-[70%]    
+                        to-[#5e60ff] to-[100%]
+                        rotate-[-10deg] 
+                        rounded-full blur-3xl">
+                    </div>
+                </div>
         <Navbar />
 
         {/* 🔹 Hero Section */}
@@ -47,14 +89,16 @@ export default function ContactUs() {
             {/* 🔹 Contact Form */}
             <div className="bg-gray-800 sm:p-12 p-4 rounded-lg shadow-lg">
               <h2 className="text-3xl font-bold mb-6">Get in Touch</h2>
-              <form className="space-y-4">
+              <form className="space-y-4" onSubmit={handleSubmit}>
                 <div className="space-y-2">
                   <label htmlFor="name" className="text-lg font-medium">Your Name</label>
                   <input
                     id="name"
-                    type="text"
-                    placeholder="Your Name"
-                    className="w-full p-3 rounded bg-gray-700 text-white focus:outline-none"
+                     name="name" 
+                     type="text" 
+                     value={formData.name} 
+                     onChange={handleChange}
+                    className="w-full p-3 rounded bg-gray-700 text-white focus:outline-none" 
                     required
                   />
                 </div>
@@ -62,9 +106,11 @@ export default function ContactUs() {
                   <label htmlFor="email" className="text-lg font-medium">Your Email</label>
                   <input
                     id="email"
-                    type="email"
-                    placeholder="Your Email"
-                    className="w-full p-3 rounded bg-gray-700 text-white focus:outline-none"
+                    name="email" 
+                    type="email" 
+                    value={formData.email} 
+                    onChange={handleChange}
+                    className="w-full p-3 rounded bg-gray-700 text-white focus:outline-none" 
                     required
                     pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
                     title="Please enter a valid email address."
@@ -97,11 +143,13 @@ export default function ContactUs() {
                   <div className="flex-1 space-y-2">
                     <label htmlFor="phone" className="text-lg font-medium">Phone Number</label>
                     <input
-                      id="phone"
-                      type="tel"
-                      placeholder="Phone Number"
-                      className="w-full p-3 rounded bg-gray-700 text-white focus:outline-none"
-                      required
+                      id="phone" 
+                      name="phone" 
+                      type="tel" 
+                      value={formData.phone} 
+                      onChange={handleChange}
+                      className="w-full p-3 rounded bg-gray-700 text-white focus:outline-none" 
+                      required 
                       minLength="10"
                       maxLength="15"
                     />
@@ -110,11 +158,13 @@ export default function ContactUs() {
                 <div className="space-y-2">
                   <label htmlFor="message" className="text-lg font-medium">Your Message</label>
                   <textarea
-                    id="message"
-                    placeholder="Your Message"
-                    rows="5"
-                    className="w-full p-3 rounded bg-gray-700 text-white focus:outline-none"
-                    required
+                   id="message" 
+                   name="message" 
+                   rows="5" 
+                   value={formData.message} 
+                   onChange={handleChange}
+                   className="w-full p-3 rounded bg-gray-700 text-white focus:outline-none" 
+                   required
                   ></textarea>
                 </div>
                 <motion.button
@@ -125,6 +175,9 @@ export default function ContactUs() {
                   Send Message
                 </motion.button>
               </form>
+              {status === "sending" && <p className="text-yellow-400 mt-4">Sending...</p>}
+              {status === "success" && <p className="text-green-400 mt-4">Email sent successfully!</p>}
+              {status === "error" && <p className="text-red-400 mt-4">Failed to send email. Try again later.</p>}
             </div>
 
             {/* 🔹 Contact Info */}

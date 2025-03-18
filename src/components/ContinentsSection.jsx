@@ -110,7 +110,8 @@ export default function ContinentsSection() {
   };
 
   return (
-    <section className="flex bg-gray-800 text-white sm:py-8 px-4 flex-wrap  rounded-3xl mt-4">
+    <>
+    <section className="flex bg-gray-800 text-white sm:py-8 px-4 flex-wrap  rounded-3xl m-2">
       {/* Left: Continent List */}
       <div className="w-full sm:w-1/4 space-y-4">
         {continentsData.map((continent, index) => (
@@ -169,5 +170,7 @@ export default function ContinentsSection() {
         ))}
       </div>
     </section>
+    </>
+    
   );
 }

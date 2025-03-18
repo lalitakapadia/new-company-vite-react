@@ -5,7 +5,7 @@ import ContinentsSection from "../components/ContinentsSection";
 export default function GlobalPresence() {
   return (
     <section id="continent" className="bg-gray-800 text-white p-4 sm:p-8 rounded-3xl m-2">
-      <h2 className="text-4xl font-bold text-center mb-8">Our Global Presence</h2>
+      <h2 className="text-4xl font-bold text-center m-6">Our Global Presence</h2>
       <div className="grid grid-cols-1  md:grid-cols-3 gap-8 ">
         {data.map((item, index) => (
           <motion.div

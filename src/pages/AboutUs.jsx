@@ -64,7 +64,7 @@ export default function AboutUs() {
           <GlobalPresence />
 
           {/* 🔹 Why Choose Us Section */}
-          <section className="bg-gray-900 container mx-auto sm:px-8 px-4 py-12 
+          <section className="bg-gray-900 container  sm:px-8 px-6 py-12
           rounded-3xl ring-1 ring-inset ring-black/20 m-2">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">Why Choose Our Company?</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">

@@ -96,8 +96,8 @@ const Responsibilities = () => {
                     <p className="m-4 text-lg md:text-xl text-gray-300 font-normal hidden sm:block">{slide.description}</p>
                   </div>
                   {/* Progress Bar */}
-                  <div className="absolute bottom-10 left-0 w-full px-6">
-                    <div className="max-w-7xl mx-auto flex gap-6">
+                  <div className="absolute bottom-10 left-0 w-full px-6 md:px-12">
+                    <div className="max-w-7xl mx-auto flex gap-6 ">
                       {slides.map((slide, index) => (
                         <div key={index} className="flex-1 flex flex-col items-center">
                           {/* Slide Title */}

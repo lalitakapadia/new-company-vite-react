@@ -45,6 +45,10 @@ const router = createBrowserRouter([
         element: <MetalImport/>,
       },
       {
+        path: '/client',
+        element: <Clients/>,
+      },
+      {
         path: '/contact-us',
         element: <ContactUs/>,
       },
