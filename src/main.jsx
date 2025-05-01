@@ -11,7 +11,7 @@ import Responsibilities from './pages/Responsibilities';
 import MetalInspection from './pages/MetalInspection';
 import MetalImport from './pages/MetalImport';
 
-import Clients from './pages/Clients';
+//import Clients from './pages/Clients';
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
@@ -43,10 +43,6 @@ const router = createBrowserRouter([
       {
         path: '/metal-import',
         element: <MetalImport/>,
-      },
-      {
-        path: '/client',
-        element: <Clients/>,
       },
       {
         path: '/contact-us',

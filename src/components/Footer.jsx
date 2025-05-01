@@ -58,7 +58,7 @@ export default function Footer() {
 
         {/* Copyright */}
         <motion.p className="mt-6 text-lg" initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1, duration: 0.6 }}>
-          © 2025 YourCompany. All Rights Reserved.
+          © 2025 NewCompany. All Rights Reserved.
         </motion.p>
       </div>
     </motion.footer>

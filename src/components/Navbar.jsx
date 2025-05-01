@@ -29,7 +29,7 @@ const Navbar = () => {
             <Link to="/metal-inspection" className="hover:text-blue-600">Metal Inspection</Link>
             <Link to="/metal-import" className="hover:text-blue-600">Metal Import</Link>
             <Link to="/contact-us" className="hover:text-blue-600">Contact Us</Link>
-            <Link to="/client" className="hover:text-blue-600">Clients</Link>
+            {/* <Link to="/client" className="hover:text-blue-600">Clients</Link> */}
           </nav>
 
           <button className="md:hidden text-gray-600" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
