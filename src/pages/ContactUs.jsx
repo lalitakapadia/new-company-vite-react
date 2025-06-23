@@ -185,7 +185,7 @@ export default function ContactUs() {
               </div>
               <div className="flex items-center space-x-4">
                 <FaEnvelope className="text-blue-400 text-2xl md:text-3xl" aria-hidden="true" />
-                <p className="text-lg md:text-xl font-medium text-gray-100">worldwidequalityinspection@gmail.com</p>
+                <p className="text-lg md:text-xl font-medium text-gray-100">email@email.com</p>
               </div>
               <div className="flex items-center space-x-4">
                 <FaMapMarkerAlt className="text-blue-400 text-2xl md:text-3xl" aria-hidden="true" />
