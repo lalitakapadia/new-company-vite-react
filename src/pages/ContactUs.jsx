@@ -61,9 +61,9 @@ export default function ContactUs() {
       </Helmet>
 
       <div className="bg-gray-100 text-gray-800 overflow-hidden">
-      <div class="relative mx-auto ">
-                    <div
-                        class="absolute -right-60 -top-44 h-60 w-[36rem] transform-gpu md:right-0 
+        <div class="relative mx-auto ">
+          <div
+            class="absolute -right-60 -top-44 h-60 w-[36rem] transform-gpu md:right-0 
                         bg-[linear-gradient(115deg,var(--tw-gradient-stops))] 
                         from-[#fff1be] from-[28%]   
                         via-[#4fd1c5] via-[55%]    
@@ -71,8 +71,8 @@ export default function ContactUs() {
                         to-[#5e60ff] to-[100%]
                         rotate-[-10deg] 
                         rounded-full blur-3xl">
-                    </div>
-                </div>
+          </div>
+        </div>
         <Navbar />
 
         {/* 🔹 Hero Section */}
@@ -84,43 +84,41 @@ export default function ContactUs() {
         <div className="bg-gray-900 rounded-3xl ring-1 ring-inset ring-black/20 m-2">
           {/* 🔹 Contact Form & Info */}
           <section className="p-6 sm:p-12 grid grid-cols-1 md:grid-cols-2 gap-12 mx-auto text-gray-300">
-          {/* <ContactUsForm/> */}
-            
+            {/* <ContactUsForm/> */}
+
             {/* 🔹 Contact Form */}
             <div className="bg-gray-800 sm:p-12 p-4 rounded-lg shadow-lg">
-              <h2 className="text-3xl font-bold mb-6">Get in Touch</h2>
+              <h2 className="text-3xl md:text-4xl font-semibold mb-6 tracking-tight text-white">Get in Touch</h2>
               <form className="space-y-4" onSubmit={handleSubmit}>
                 <div className="space-y-2">
-                  <label htmlFor="name" className="text-lg font-medium">Your Name</label>
+                  <label htmlFor="name" className="text-base md:text-lg font-semibold text-gray-200">Your Name</label>
                   <input
                     id="name"
-                     name="name" 
-                     type="text" 
-                     value={formData.name} 
-                     onChange={handleChange}
-                    className="w-full p-3 rounded bg-gray-700 text-white focus:outline-none" 
+                    name="name"
+                    type="text"
+                    value={formData.name}
+                    onChange={handleChange}
+                    className="w-full p-3 rounded bg-gray-700 text-white focus:outline-none text-base md:text-lg font-medium"
                     required
                   />
                 </div>
                 <div className="space-y-2">
-                  <label htmlFor="email" className="text-lg font-medium">Your Email</label>
+                  <label htmlFor="email" className="text-base md:text-lg font-semibold text-gray-200">Your Email</label>
                   <input
                     id="email"
-                    name="email" 
-                    type="email" 
-                    value={formData.email} 
+                    name="email"
+                    type="email"
+                    value={formData.email}
                     onChange={handleChange}
-                    className="w-full p-3 rounded bg-gray-700 text-white focus:outline-none" 
+                    className="w-full p-3 rounded bg-gray-700 text-white focus:outline-none text-base md:text-lg font-medium"
                     required
                     pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
                     title="Please enter a valid email address."
                   />
                 </div>
                 <div className="flex flex-col md:flex-row gap-4">
-                  
-                  {/* 🔹 Country Code Dropdown */}
                   <div className="flex-1 space-y-2">
-                    <label htmlFor="country" className="text-lg font-medium">Country Code</label>
+                    <label htmlFor="country" className="text-base md:text-lg font-semibold text-gray-200">Country Code</label>
                     <select
                       id="country"
                       value={selectedCountry.code}
@@ -129,7 +127,7 @@ export default function ContactUs() {
                           countryData.find((c) => c.code === e.target.value)
                         )
                       }
-                      className="w-full p-3 bg-gray-700 text-white rounded focus:outline-none"
+                      className="w-full p-3 bg-gray-700 text-white rounded focus:outline-none text-base md:text-lg font-medium"
                     >
                       {countryData.map((country) => (
                         <option key={country.code} value={country.code}>
@@ -138,62 +136,62 @@ export default function ContactUs() {
                       ))}
                     </select>
                   </div>
-
-                  {/* 🔹 Phone Number Field */}
                   <div className="flex-1 space-y-2">
-                    <label htmlFor="phone" className="text-lg font-medium">Phone Number</label>
+                    <label htmlFor="phone" className="text-base md:text-lg font-semibold text-gray-200">Phone Number</label>
                     <input
-                      id="phone" 
-                      name="phone" 
-                      type="tel" 
-                      value={formData.phone} 
+                      id="phone"
+                      name="phone"
+                      type="tel"
+                      value={formData.phone}
                       onChange={handleChange}
-                      className="w-full p-3 rounded bg-gray-700 text-white focus:outline-none" 
-                      required 
+                      className="w-full p-3 rounded bg-gray-700 text-white focus:outline-none text-base md:text-lg font-medium"
+                      required
                       minLength="10"
                       maxLength="15"
                     />
                   </div>
                 </div>
                 <div className="space-y-2">
-                  <label htmlFor="message" className="text-lg font-medium">Your Message</label>
+                  <label htmlFor="message" className="text-base md:text-lg font-semibold text-gray-200">Your Message</label>
                   <textarea
-                   id="message" 
-                   name="message" 
-                   rows="5" 
-                   value={formData.message} 
-                   onChange={handleChange}
-                   className="w-full p-3 rounded bg-gray-700 text-white focus:outline-none" 
-                   required
+                    id="message"
+                    name="message"
+                    rows="5"
+                    value={formData.message}
+                    onChange={handleChange}
+                    className="w-full p-3 rounded bg-gray-700 text-white focus:outline-none text-base md:text-lg font-medium"
+                    required
                   ></textarea>
                 </div>
                 <motion.button
                   type="submit"
-                  className="w-full bg-gradient-to-r from-blue-500 to-purple-500 hover:from-purple-500 hover:to-blue-500 text-white p-3 rounded-lg font-semibold shadow-md transition-all"
+                  className="w-full bg-gradient-to-r from-blue-500 to-purple-500 hover:from-purple-500 hover:to-blue-500 text-white p-3 rounded-lg font-semibold shadow-md transition-all text-lg md:text-xl"
                   whileHover={{ scale: 1.05 }}
                 >
                   Send Message
                 </motion.button>
               </form>
-              {status === "sending" && <p className="text-yellow-400 mt-4">Sending...</p>}
-              {status === "success" && <p className="text-green-400 mt-4">Email sent successfully!</p>}
-              {status === "error" && <p className="text-red-400 mt-4">Failed to send email. Try again later.</p>}
+              {status === "sending" && <p className="text-yellow-400 mt-4 font-medium">Sending...</p>}
+              {status === "success" && <p className="text-green-400 mt-4 font-medium">Email sent successfully!</p>}
+              {status === "error" && <p className="text-red-400 mt-4 font-medium">Failed to send email. Try again later.</p>}
             </div>
 
             {/* 🔹 Contact Info */}
-            <div className="bg-gray-800 p-4 sm:p-12 rounded-lg shadow-lg space-y-6">
-              <h2 className="text-3xl font-bold mb-6">Contact Information</h2>
+            <div className="bg-gray-800 p-4 sm:p-12 rounded-lg shadow-lg space-y-8">
+              <h2 className="text-3xl md:text-4xl font-semibold mb-6 tracking-tight text-white">Contact Information</h2>
               <div className="flex items-center space-x-4">
-                <FaPhone className="text-blue-400 text-2xl" aria-hidden="true" />
-                <p>+1 234 567 890</p>
+                <FaPhone className="text-blue-400 text-2xl md:text-3xl" aria-hidden="true" />
+                <p className="text-lg md:text-xl font-medium text-gray-100">+91 91230 56093</p>
               </div>
               <div className="flex items-center space-x-4">
-                <FaEnvelope className="text-blue-400 text-2xl" aria-hidden="true" />
-                <p>contact@yourcompany.com</p>
+                <FaEnvelope className="text-blue-400 text-2xl md:text-3xl" aria-hidden="true" />
+                <p className="text-lg md:text-xl font-medium text-gray-100">worldwidequalityinspection@gmail.com</p>
               </div>
               <div className="flex items-center space-x-4">
-                <FaMapMarkerAlt className="text-blue-400 text-2xl" aria-hidden="true" />
-                <p>123 Business Street, City, Country</p>
+                <FaMapMarkerAlt className="text-blue-400 text-2xl md:text-3xl" aria-hidden="true" />
+                <p className="text-lg md:text-xl font-medium text-gray-100">
+                  27 Old Glouster Street, Royal Borough of Kensington & Chelsea, UK WC1N3AX
+                </p>
               </div>
             </div>
           </section>

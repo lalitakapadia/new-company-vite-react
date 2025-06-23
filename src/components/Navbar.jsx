@@ -18,7 +18,7 @@ const Navbar = () => {
       <div className=" mx-auto ">
         <div className="flex justify-between items-center py-4">
           <Link to="/" className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-teal-400 to-blue-500">
-            New Company
+            Worldwide Quality Inspection Ltd
           </Link>
 
           <nav className={`space-x-6 ${isLargeScreen ? 'flex' : 'hidden'}`}>

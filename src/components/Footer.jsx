@@ -15,18 +15,18 @@ export default function Footer() {
       transition={{ duration: 0.8 }}
     >
       <div className=" mx-auto text-center">
-        <motion.h2
+        {/* <motion.h2
           className="text-3xl font-semibold mb-6"
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3, duration: 0.6 }}
         >
           Connect with Us
-        </motion.h2>
+        </motion.h2> */}
 
         {/* Social Media Links (External) */}
-        <div className="flex justify-center space-x-6">
-          <motion.a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" className="text-3xl hover:text-blue-400 transition-all" whileHover={{ scale: 1.2 }}>
+        {/* <div className="flex justify-center space-x-6"> */}
+          {/* <motion.a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" className="text-3xl hover:text-blue-400 transition-all" whileHover={{ scale: 1.2 }}>
             <FaLinkedin />
           </motion.a>
           <motion.a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" className="text-3xl hover:text-blue-600 transition-all" whileHover={{ scale: 1.2 }}>
@@ -37,28 +37,28 @@ export default function Footer() {
           </motion.a>
           <motion.a href="https://www.skype.com/" target="_blank" rel="noopener noreferrer" className="text-3xl hover:text-blue-500 transition-all" whileHover={{ scale: 1.2 }}>
             <FaSkype />
-          </motion.a>
-          <motion.a href="mailto:contact@yourcompany.com" className="text-3xl hover:text-blue-500 transition-all" whileHover={{ scale: 1.2 }}>
+          </motion.a> */}
+          {/* <motion.a href="mailto:worldwidequalityinspection@gmail.com" className="text-3xl hover:text-blue-500 transition-all" whileHover={{ scale: 1.2 }}>
             <FaEnvelope />
           </motion.a>
-        </div>
+        </div> */}
 
         {/* Internal Links (Using <Link> for React Router) */}
-        {/* <div className="mt-6 flex justify-center space-x-6 text-lg">
+        <div className="mt-6 flex justify-center space-x-6 text-2xl">
           <Link to="/about-us" className="hover:text-gray-300 transition-all">
             About Us
           </Link>
           <Link to="/contact-us" className="hover:text-gray-300 transition-all">
             Contact Us
           </Link>
-          <Link to="/privacy-policy" className="hover:text-gray-300 transition-all">
+          {/* <Link to="/privacy-policy" className="hover:text-gray-300 transition-all">
             Privacy Policy
-          </Link>
-        </div> */}
+          </Link> */}
+        </div>
 
         {/* Copyright */}
         <motion.p className="mt-6 text-lg" initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1, duration: 0.6 }}>
-          © 2025 NewCompany. All Rights Reserved.
+          © 2025 Worldwide Quality Inspection Ltd. All Rights Reserved.
         </motion.p>
       </div>
     </motion.footer>
