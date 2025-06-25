@@ -1,0 +1,15 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+    RewriteRule ^index\.html$ - [L]
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+
+    # Redirect all HTTP to HTTPS
+    RewriteCond %{HTTPS} off
+    RewriteRule ^ https://www.worldwidequalityinpection.co.uk%{REQUEST_URI} [L,R=301]
+
+    # Redirect non-www to www (optional)
+    RewriteCond %{HTTP_HOST} ^worldwidequalityinpection\.com$ [NC]
+    RewriteRule ^ https://www.worldwidequalityinpection.co.uk%{REQUEST_URI} [L,R=301]
+</IfModule>
