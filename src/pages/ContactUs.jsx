@@ -71,7 +71,7 @@ export default function ContactUs() {
         <Heros title="We're Here to Help!" description="Let’s connect and make things happen!" />
 
         <div className="bg-gray-900 rounded-3xl ring-1 ring-inset ring-black/20 m-2">
-          <section className="p-4 sm:p-12 grid grid-cols-1 md:grid-cols-2 gap-8 mx-auto text-gray-300">
+          <section className="p-4 sm:p-12 grid lg:grid-cols-2 md:grid-cols-1 gap-8 mx-auto text-gray-300">
             {/* 🔹 Contact Form */}
             <div className="bg-gray-800 p-4 sm:p-12 rounded-lg shadow-lg">
               <h2 className="text-3xl md:text-4xl font-semibold mb-6 text-white">Get in Touch</h2>
@@ -161,7 +161,6 @@ export default function ContactUs() {
             </div>
 
             {/* 🔹 Contact Info */}
-            
             <address className="not-italic bg-gray-800 p-4 sm:p-12 rounded-lg shadow-lg space-y-8 text-white">
               <h2 className="text-3xl md:text-4xl font-semibold mb-6">Contact Information</h2>
               <div className="flex items-center space-x-4">
@@ -174,7 +173,7 @@ export default function ContactUs() {
                 <FaEnvelope className="text-blue-400 text-2xl md:text-3xl" aria-hidden="true" />
                 <a
                   href="mailto:contact@worldwidequalityinspection.com"
-                  className="text-lg md:text-xl font-semibold text-gray-100 whitespace-nowrap overflow-auto"
+                  className="text-lg md:text-xl font-semibold text-gray-100"
                   aria-label="Send us an email"
                 >
                   contact@worldwidequalityinspection.com
@@ -186,8 +185,6 @@ export default function ContactUs() {
                   27 Old Glouster Street, Royal Borough of Kensington & Chelsea, UK WC1N3AX
                 </p>
               </div>
-
-              {/* Optional WhatsApp button */}
               <a
                 href="https://wa.me/919123056093"
                 target="_blank"
