@@ -1,10 +1,12 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { motion } from "framer-motion";
+import emailjs from "@emailjs/browser";
 import countryData from "../utils/countries"; // Assume a utility file for country codes & flags
 
 export default function ContactUsForm() {
+   const formRef = useRef();
   const [selectedCountry, setSelectedCountry] = useState(countryData[0]);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -12,6 +14,7 @@ export default function ContactUsForm() {
   const [message, setMessage] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [errors, setErrors] = useState({});
+  const [successMsg, setSuccessMsg] = useState("");
 
   // Regular expressions for validation
   const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
@@ -51,17 +54,34 @@ export default function ContactUsForm() {
     }
 
     setIsSubmitting(true);
+    setErrors({});
+    setSuccessMsg("");
 
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitting(false);
-      alert("Your message has been sent!");
-      // Reset form fields after submission (optional)
-      setName("");
-      setEmail("");
-      setPhone("");
-      setMessage("");
-    }, 2000);
+    // Append country dial code to phone
+    const fullPhone = `${selectedCountry.dialCode} ${phone}`;
+
+    emailjs
+      .sendForm(
+        "your_service_id",    // 🔁 Replace with your EmailJS Service ID
+        "template_dvkjexn",   // 🔁 Replace with your Template ID
+        formRef.current,
+        "D9FnTyYKD8BtzXnD7"     // 🔁 Replace with your Public Key
+      )
+      .then(
+        () => {
+          setSuccessMsg("✅ Your message has been sent!");
+          setName("");
+          setEmail("");
+          setPhone("");
+          setMessage("");
+          setIsSubmitting(false);
+        },
+        (error) => {
+          console.error("EmailJS Error:", error);
+          setErrors({ submit: "❌ Failed to send message. Please try again." });
+          setIsSubmitting(false);
+        }
+      );
   };
 
   return (

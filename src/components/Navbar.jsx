@@ -5,10 +5,10 @@ import logo from '../assets/logo.jpg'; // Adjust the path as necessary
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth >= 768);
+  const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth >= 1280);
 
   useEffect(() => {
-    const handleResize = () => setIsLargeScreen(window.innerWidth >= 768);
+    const handleResize = () => setIsLargeScreen(window.innerWidth >= 1280);
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
@@ -22,9 +22,9 @@ const Navbar = () => {
             <img
               src={logo}
               alt="Company Logo"
-              className="h-12 w-12 object-contain rounded-full border border-gray-200 shadow-sm"
+              className="h-20 w-20 object-contain rounded-full border border-gray-200 shadow-sm"
             />
-            <span className="text-xl sm:text-2xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-teal-400 to-blue-500 whitespace-nowrap">
+            <span className="text-xl sm:text-2xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-teal-400 to-blue-500 ">
               Worldwide Quality Inspection Ltd
             </span>
           </Link>
@@ -42,7 +42,7 @@ const Navbar = () => {
 
            <button
             aria-label="Toggle mobile menu"
-            className="md:hidden text-gray-700"
+            className="xl:hidden text-gray-700"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor">
