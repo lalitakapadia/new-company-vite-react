@@ -71,13 +71,13 @@ export default function ContactUs() {
         <Heros title="We're Here to Help!" description="Let’s connect and make things happen!" />
 
         <div className="bg-gray-900 rounded-3xl ring-1 ring-inset ring-black/20 m-2">
-          <section className="px-4 py-8 sm:px-8 md:px-12 lg:px-16 grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-screen-xl mx-auto text-gray-300">
+          <section className="px-4 py-8 sm:px-8 md:px-12 lg:px-16 grid grid-cols-1 xl:grid-cols-2  gap-8 max-w-screen-xl mx-auto text-gray-300">
             {/* 🔹 Contact Form */}
             <div className="bg-gray-800 p-4 sm:p-12 rounded-lg shadow-lg">
               <h2 className="text-3xl md:text-4xl font-semibold mb-6 text-white">Get in Touch</h2>
               <form className="space-y-4" onSubmit={handleSubmit}>
                 <div className="space-y-2">
-                  <label htmlFor="name" className="text-lg font-semibold text-gray-200">Your Name</label>
+                  <label htmlFor="name" className="text-lg font-normal text-gray-200">Your Name</label>
                   <input
                     id="name"
                     name="name"
@@ -89,7 +89,7 @@ export default function ContactUs() {
                   />
                 </div>
                 <div className="space-y-2">
-                  <label htmlFor="email" className="text-lg font-semibold text-gray-200">Your Email</label>
+                  <label htmlFor="email" className="text-lg font-normal text-gray-200">Your Email</label>
                   <input
                     id="email"
                     name="email"
@@ -104,14 +104,14 @@ export default function ContactUs() {
                 </div>
                 <div className="flex flex-col md:flex-row gap-4">
                   <div className="flex-1 space-y-2">
-                    <label htmlFor="country" className="text-lg font-semibold text-gray-200">Country Code</label>
+                    <label htmlFor="country" className="text-lg font-normal text-gray-200">Country Code</label>
                     <select
                       id="country"
                       value={selectedCountry.code}
                       onChange={(e) =>
                         setSelectedCountry(countryData.find((c) => c.code === e.target.value))
                       }
-                      className="w-full p-3 bg-gray-700 text-white rounded focus:outline-none text-lg"
+                      className="w-full p-3 bg-gray-700 text-white rounded focus:outline-none text-lg font-normal"
                     >
                       {countryData.map((country) => (
                         <option key={country.code} value={country.code}>
@@ -121,7 +121,7 @@ export default function ContactUs() {
                     </select>
                   </div>
                   <div className="flex-1 space-y-2">
-                    <label htmlFor="phone" className="text-lg font-semibold text-gray-200">Phone Number</label>
+                    <label htmlFor="phone" className="text-lg font-normal text-gray-200">Phone Number</label>
                     <input
                       id="phone"
                       name="phone"
@@ -136,7 +136,7 @@ export default function ContactUs() {
                   </div>
                 </div>
                 <div className="space-y-2">
-                  <label htmlFor="message" className="text-lg font-semibold text-gray-200">Your Message</label>
+                  <label htmlFor="message" className="text-lg font-normal text-gray-200">Your Message</label>
                   <textarea
                     id="message"
                     name="message"
@@ -149,7 +149,7 @@ export default function ContactUs() {
                 </div>
                 <motion.button
                   type="submit"
-                  className="w-full bg-gradient-to-r from-blue-500 to-purple-500 hover:from-purple-600 hover:to-blue-600 text-white p-3 rounded-lg font-semibold shadow-md transition-all text-lg"
+                  className="w-full bg-gradient-to-r from-blue-500 to-purple-500 hover:from-purple-600 hover:to-blue-600 text-black p-3 rounded-lg font-semibold shadow-md transition-all text-lg"
                   whileHover={{ scale: 1.05 }}
                 >
                   Send Message
@@ -165,7 +165,7 @@ export default function ContactUs() {
               <h2 className="text-3xl md:text-4xl font-semibold mb-6">Contact Information</h2>
               <div className="flex items-center space-x-4">
                 <FaPhone className="text-blue-400 text-2xl md:text-3xl" aria-hidden="true" />
-                <a href="tel:+919123056093" className="text-lg md:text-xl font-medium text-gray-100" aria-label="Call us">
+                <a href="tel:+919123056093" className="text-lg md:text-xl font-normal text-gray-100" aria-label="Call us">
                   +91 91230 56093
                 </a>
               </div>
@@ -173,7 +173,7 @@ export default function ContactUs() {
                 <FaEnvelope className="text-blue-400 text-2xl md:text-3xl" aria-hidden="true" />
                 <a
                   href="mailto:contact@worldwidequalityinspection.com"
-                  className="text-lg md:text-xl font-semibold text-gray-100"
+                  className="text-lg md:text-xl font-normal text-gray-100"
                   aria-label="Send us an email"
                 >
                   contact@worldwidequalityinspection.com
@@ -181,7 +181,7 @@ export default function ContactUs() {
               </div>
               <div className="flex items-center space-x-4">
                 <FaMapMarkerAlt className="text-blue-400 text-2xl md:text-3xl" aria-hidden="true" />
-                <p className="text-lg md:text-xl font-semibold text-gray-100">
+                <p className="text-lg md:text-xl font-normal text-gray-100">
                   27 Old Glouster Street, Royal Borough of Kensington & Chelsea, UK WC1N3AX
                 </p>
               </div>

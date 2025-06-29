@@ -9,7 +9,7 @@ export default function Footer() {
       bg-[linear-gradient(115deg,var(--tw-gradient-stops))] 
       from-[#1f2937] to-[#6b7280] 
       p-6 text-center 
-      text-black mx-2"
+      text-slate-200 mx-2"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.8 }}
@@ -57,7 +57,7 @@ export default function Footer() {
         </div>
 
         {/* Copyright */}
-        <motion.p className="mt-6 text-lg" initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1, duration: 0.6 }}>
+        <motion.p className="mt-6 text-lg font-medium" initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1, duration: 0.6 }}>
           © 2025 Worldwide Quality Inspection Ltd. All Rights Reserved.
         </motion.p>
       </div>

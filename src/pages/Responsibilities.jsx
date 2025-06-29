@@ -44,7 +44,7 @@ const Responsibilities = () => {
           </div>
           <Navbar />
         </div>
-        <Heros
+        <Heros 
           title="Our Responsibilities in Global Compliance"
           description="We are committed to ensuring the highest standards of corporate governance and sustainability across industries worldwide."
         />

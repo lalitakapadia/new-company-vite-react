@@ -1,4 +1,5 @@
 import React, { Suspense, lazy } from "react";
+import { useEffect } from "react";
 import { Link } from "react-router-dom"; // ✅ Import Link from React Router
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet"; // ✅ Import React Helmet for SEO
@@ -9,6 +10,16 @@ const ServicesSection = lazy(() => import("../components/ServicesSection"));
 const DiscoverSection = lazy(() => import("../components/DiscoverSection"));
 
 const Home = () => {
+  useEffect(() => {
+    const scrollBackTo = sessionStorage.getItem('scrollBackTo');
+    if (scrollBackTo) {
+      const el = document.getElementById(scrollBackTo);
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth", block: "center" });
+      }
+      sessionStorage.removeItem('scrollBackTo');
+    }
+  }, []);
   return (
     <>
       <Helmet>

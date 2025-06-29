@@ -5,33 +5,39 @@ import { Link } from "react-router-dom";
 
 const services = [
   {
+    id: "service-secion-1",
     title: "Independent Quality Assurance",
     bookmark: "/services#IndependentQualityAssurance",
     description: "Ensure products meet international standards with rigorous third-party assessments.",
   },
   {
+    id: "service-secion-2",
     title: "Shipment Integrity Verification",
-    bookmark: "/services#ShipmentIntegrityVerification",
+    bookmark: "./services#ShipmentIntegrityVerification",
     description: "Pre-shipment checks to guarantee quality, compliance, and defect-free deliveries.",
   },
   {
+    id: "service-secion-3",
     title: "Secure Cargo Supervision",
-    bookmark: "/services#SecureCargoSupervision",
+    bookmark: "./services#SecureCargoSupervision",
     description: "Monitor container loading to prevent damage, misplacement, or security risks.",
   },
   {
+    id: "service-secion-4",
     title: "Supplier Compliance Assistance",
-    bookmark: "/services#SupplierComplianceAssistance",
+    bookmark: "./services#SupplierComplianceAssistance",
     description: "Help suppliers align with industry and regulatory requirements for approval.",
   },
   {
+    id: "service-secion-5",
     title: "Vendor Risk & Quality Assessment",
-    bookmark: "/services#VendorRiskQualityAssessment",
+    bookmark: "./services#VendorRiskQualityAssessment",
     description: "Evaluate suppliers' reliability, operational standards, and risk management.",
   },
   {
+    id: "service-secion-6",
     title: "Strategic Supplier Benchmarking",
-    bookmark: "/services#StrategicSupplierBenchmarking",
+    bookmark: "./services#StrategicSupplierBenchmarking",
     description: "Assess vendor performance to optimize procurement and sourcing strategies.",
   },
 ];
@@ -70,14 +76,7 @@ export default function ServicesSection() {
             >
               <div className="flex items-center m-6 space-x-4">
                 <CheckCircle className="w-12  text-blue-400 group-hover:text-blue-300 transition-colors" />
-                <h3 className="text-xl font-semibold">
-                  <a
-                    href={`/services#${service.hash}`}
-                    className="hover:text-blue-400 transition-colors"
-                  >
-                    {service.title}
-                  </a>
-                </h3>
+                <h3 className="text-xl font-semibold" ><Link to={service.bookmark}>{service.title}</Link></h3>
               </div>
               <p className="m-6 text-gray-300 font-normal">{service.description}</p>
               {/* Animated Bottom Border Effect */}
