@@ -173,7 +173,7 @@ export default function ContactUs() {
                 <FaEnvelope className="text-blue-400 text-2xl md:text-3xl" aria-hidden="true" />
                 <a
                   href="mailto:contact@worldwidequalityinspection.com"
-                  className="text-lg md:text-xl font-normal text-gray-100"
+                  className="text-lg md:text-xl font-normal text-gray-100 "
                   aria-label="Send us an email"
                 >
                   contact@worldwidequalityinspection.com
