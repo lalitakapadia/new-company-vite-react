@@ -76,7 +76,16 @@ export default function ServicesSection() {
             >
               <div className="flex items-center m-6 space-x-4">
                 <CheckCircle className="w-12  text-blue-400 group-hover:text-blue-300 transition-colors" />
-                <h3 className="text-xl font-semibold" ><Link to={service.bookmark}>{service.title}</Link></h3>
+                <h3 className="text-xl font-semibold">
+                  <a
+                    id={index === 0 ? "services-bookmark-link" : undefined}
+                    href={service.bookmark}
+                    onClick={() => sessionStorage.setItem('scrollBackTo', 'services-bookmark-link')}
+                    className="hover:text-blue-400 transition-colors"
+                  >
+                    {service.title}
+                  </a>
+                </h3>
               </div>
               <p className="m-6 text-gray-300 font-normal">{service.description}</p>
               {/* Animated Bottom Border Effect */}
