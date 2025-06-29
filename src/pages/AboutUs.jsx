@@ -72,7 +72,7 @@ export default function AboutUs() {
                 {
                   icon: FaCheckCircle,
                   title: "Expertise",
-                  text: "With over 20 years in the inspection industry, we offer unmatched knowledge and skills to guarantee your products meet global standards.",
+                  text: "With over 20 years in the inspection industry, Worldwide Quality Inspection Ltd offers unmatched knowledge and skills to guarantee your products meet global standards.",
                 },
                 {
                   icon: FaBalanceScale,
@@ -82,7 +82,7 @@ export default function AboutUs() {
                 {
                   icon: FaLightbulb,
                   title: "Innovation",
-                  text: "We continuously innovate and adapt our services to stay ahead in the industry, ensuring you always have the best solutions.",
+                  text: "We continuously innovate and adapt our services at Worldwide Quality Inspection Ltd to stay ahead in the industry, delivering cutting-edge solutions tailored to your needs.",
                 },
               ].map((item, index) => (
                 <motion.div
@@ -102,7 +102,7 @@ export default function AboutUs() {
         <section className="bg-gradient-to-r from-[#fff1be] via-[#4fd1c5] via-[#4a90e2] to-[#5e60ff] text-black text-center sm:py-16 ring-1 ring-inset ring-black/20 rounded-3xl m-2 mb-2 p-4 py-12">
           <h2 className="text-3xl font-semibold">Ensuring Global Compliance & Safety</h2>
           <p className="m-4 mb-6 text-lg max-w-2xl mx-auto font-medium">
-            Partner with us for certified, DGFT-approved pre-shipment inspections, guaranteeing secure and seamless trade.
+            Partner with <strong>Worldwide Quality Inspection Ltd</strong> for certified, DGFT-approved pre-shipment inspections—ensuring your goods meet international safety and regulatory standards.
           </p>
           <Link
             to="/contact-us"

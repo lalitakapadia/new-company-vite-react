@@ -38,19 +38,19 @@ const data = [
   {
     title: "Global Reach",
     description:
-      "With a network spanning multiple continents, we bring global insights to ensure your products meet regional and international standards. Wherever you do business, we are there.",
+      "With a network spanning multiple continents, Worldwide Quality Inspection Ltd brings global insights to ensure your products meet regional and international standards. Wherever you do business, we are there.",
     icon: FaGlobe,
   },
   {
     title: "Local Expertise",
     description:
-      "Our local experts understand the intricacies of different regions and markets, ensuring compliance with every regulatory requirement and maintaining quality in every step.",
+      "Our local experts at Worldwide Quality Inspection Ltd understand the intricacies of different regions and markets, ensuring compliance with every regulatory requirement and maintaining quality at every step.",
     icon: FaBuilding,
   },
   {
     title: "Comprehensive Solutions",
     description:
-      "Whether you're expanding into new markets or ensuring compliance in existing ones, our services span industries and sectors to meet your needs in every corner of the globe.",
+      "Whether you're expanding into new markets or ensuring compliance in existing ones, Worldwide Quality Inspection Ltd offers services that span industries and sectors to meet your needs globally.",
     icon: FaShieldAlt,
   },
 ];

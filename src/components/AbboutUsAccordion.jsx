@@ -100,9 +100,9 @@ const aboutUsData = [
   {
     title: "Who we are",
     descriptionItems: [
-      { text: "New Company is a DGFT-approved Pre-Shipment Inspection Agency, recognized under Public Notice No: 35/2015-2020, dated 28th December 2020.", symbol: <FaBuilding /> },
-      { text: "We specialize in providing Pre-Shipment Inspection (PSI) services to ensure the safety and compliance of goods coming into India and other international markets.", symbol: <FaShieldAlt /> },
-      { text: "As per Director General of Foreign Trade (DGFT) regulations, all containers entering India must be inspected at the time of loading by a DGFT-approved agency.", symbol: <FaCheckCircle /> },
+      { text: "Worldwide Quality Inspection Ltd is a DGFT-approved Pre-Shipment Inspection Agency, recognized under Public Notice No: 35/2015-2020, dated 28th December 2020.", symbol: <FaBuilding /> },
+      { text: "At Worldwide Quality Inspection Ltd, We specialize in providing Pre-Shipment Inspection (PSI) services to ensure the safety and compliance of goods coming into India and other international markets.", symbol: <FaShieldAlt /> },
+      { text: "As per Director General of Foreign Trade (DGFT) regulations, all containers entering India must be inspected at the time of loading by a DGFT-approved agency like Worldwide Quality Inspection Ltd.", symbol: <FaCheckCircle /> },
     ],
     imageUrl: aboutUsCoreValues,
     buttonText: "Let's Talk",
@@ -111,8 +111,8 @@ const aboutUsData = [
   {
     title: "What we offer",
     descriptionItems: [
-      { text: "We provide Pre-Shipment Inspection Certification in multiple regions worldwide.", symbol: <FaGlobe /> },
-      { text: "We customize the inspection process based on client requirements.", symbol: <FaClipboardCheck /> },
+      { text: "Worldwide Quality Inspection Ltd provide Pre-Shipment Inspection Certification in multiple regions worldwide.", symbol: <FaGlobe /> },
+      { text: "We customize the inspection process based on each client’s specific needs and compliance requirements.", symbol: <FaClipboardCheck /> },
     ],
     imageUrl: vendorRiskImage,
     buttonText: "Let's Talk",
@@ -121,12 +121,12 @@ const aboutUsData = [
   {
     title: "What we do",
     descriptionItems: [
-      { text: "Inspection for radioactive and explosive contamination in scrap and waste of metal, plastic, and paper.", symbol: <FaSearch /> },
-      { text: "Radioactive testing using X-Systems Alloy Analyzers.", symbol: <FaRadiation /> },
-      { text: "Ferrous and Non-Ferrous quality analysis including HMS, Cast Iron, Aluminum, Copper, Stainless Steel, etc.", symbol: <FaFlask /> },
-      { text: "Spectrometer and spectrochemical testing for precise material analysis.", symbol: <FaMicroscope /> },
-      { text: "Physical testing such as tensile strength, Rockwell and Brinell hardness, grain size, etc.", symbol: <FaAtom /> },
-      { text: "Safety control Pre-Shipment Inspection for contamination identification.", symbol: <FaVial /> },
+      { text: "We inspect for radioactive and explosive contamination in scrap and waste materials including metal, plastic, and paper.", symbol: <FaSearch /> },
+      { text: "Radioactive testing is conducted using state-of-the-art X-Systems Alloy Analyzers.", symbol: <FaRadiation /> },
+      { text: "We perform ferrous and non-ferrous quality analysis, including HMS, Cast Iron, Aluminum, Copper, Stainless Steel, and more", symbol: <FaFlask /> },
+      { text: "Our spectrometer and spectrochemical testing provide precise material composition analysis.", symbol: <FaMicroscope /> },
+      { text: "PWe conduct physical testing such as tensile strength, Rockwell and Brinell hardness, and grain size evaluation.", symbol: <FaAtom /> },
+      { text: "Worldwide Quality Inspection Ltd also performs safety control inspections to detect contamination before shipment.", symbol: <FaVial /> },
     ],
     imageUrl: inspectionImage,
     buttonText: "Let's Talk",
