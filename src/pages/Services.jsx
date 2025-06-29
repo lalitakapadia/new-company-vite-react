@@ -35,7 +35,7 @@ export default function Services() {
         <meta name="twitter:card" content="summary_large_image" />
       </Helmet>
 
-      <div className="bg-gray-100 text-gray-800">
+      <div className="text-gray-800">
         <div class="relative mx-auto overflow-hidden">
           <div
             class="absolute -right-60 -top-44 h-60 w-[36rem] transform-gpu md:right-0 
@@ -59,7 +59,7 @@ export default function Services() {
           <section className="bg-gray-900 ring-1 ring-inset ring-black/20 rounded-3xl pt-6 m-2">
             <div className="mx-auto sm:p-12 p-4 space-y-12">
               {servicesData.map((service, index) => (
-                <ServiceCard key={index} {...service} reverse={index % 2 !== 0} />
+                <ServiceCard key={index} {...service} reverse={index % 2 !== 0} id={service.bookmark}/>
               ))}
             </div>
           </section>
@@ -82,9 +82,10 @@ export default function Services() {
   );
 }
 
-const ServiceCard = ({ title, description, features, benefits, image, icon: Icon, reverse }) => {
+const ServiceCard = ({ id,title, description, features, benefits, image, icon: Icon, reverse }) => {
   return (
     <motion.article
+      id={id}
       className={`flex flex-col md:flex-row items-center gap-12 lg:p-8 p-4 bg-gray-800 rounded-3xl shadow-lg transition-transform hover:scale-105 ${reverse ? "md:flex-row-reverse" : ""}`}
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}

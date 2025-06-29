@@ -54,7 +54,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden shadow-lg p-4">
+        <div className="xl:hidden shadow-lg p-4">
           <nav className="flex flex-col space-y-4">
             <Link to="/" className="hover:text-blue-600">Home</Link>
             <Link to="/about-us" className="hover:text-blue-600">About Us</Link>

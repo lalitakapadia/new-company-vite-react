@@ -71,7 +71,7 @@ export default function ContactUs() {
         <Heros title="We're Here to Help!" description="Let’s connect and make things happen!" />
 
         <div className="bg-gray-900 rounded-3xl ring-1 ring-inset ring-black/20 m-2">
-          <section className="p-4 sm:p-12 grid lg:grid-cols-2 md:grid-cols-1 gap-8 mx-auto text-gray-300">
+          <section className="px-4 py-8 sm:px-8 md:px-12 lg:px-16 grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-screen-xl mx-auto text-gray-300">
             {/* 🔹 Contact Form */}
             <div className="bg-gray-800 p-4 sm:p-12 rounded-lg shadow-lg">
               <h2 className="text-3xl md:text-4xl font-semibold mb-6 text-white">Get in Touch</h2>

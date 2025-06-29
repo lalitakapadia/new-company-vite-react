@@ -6,32 +6,32 @@ import { Link } from "react-router-dom";
 const services = [
   {
     title: "Independent Quality Assurance",
-    bookmark: "./services#IndependentQualityAssurance",
+    bookmark: "/services#IndependentQualityAssurance",
     description: "Ensure products meet international standards with rigorous third-party assessments.",
   },
   {
     title: "Shipment Integrity Verification",
-    bookmark: "./services#ShipmentIntegrityVerification",
+    bookmark: "/services#ShipmentIntegrityVerification",
     description: "Pre-shipment checks to guarantee quality, compliance, and defect-free deliveries.",
   },
   {
     title: "Secure Cargo Supervision",
-    bookmark: "./services#SecureCargoSupervision",
+    bookmark: "/services#SecureCargoSupervision",
     description: "Monitor container loading to prevent damage, misplacement, or security risks.",
   },
   {
     title: "Supplier Compliance Assistance",
-    bookmark: "./services#SupplierComplianceAssistance",
+    bookmark: "/services#SupplierComplianceAssistance",
     description: "Help suppliers align with industry and regulatory requirements for approval.",
   },
   {
     title: "Vendor Risk & Quality Assessment",
-    bookmark: "./services#VendorRiskQualityAssessment",
+    bookmark: "/services#VendorRiskQualityAssessment",
     description: "Evaluate suppliers' reliability, operational standards, and risk management.",
   },
   {
     title: "Strategic Supplier Benchmarking",
-    bookmark: "./services#StrategicSupplierBenchmarking",
+    bookmark: "/services#StrategicSupplierBenchmarking",
     description: "Assess vendor performance to optimize procurement and sourcing strategies.",
   },
 ];
@@ -45,7 +45,7 @@ export default function ServicesSection() {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="text-4xl font-bold text-center"
+          className="text-4xl font-bold text-center pl-2 pr-2"
         >
           Our Premium Services
         </motion.h2>
@@ -53,7 +53,7 @@ export default function ServicesSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, duration: 0.8 }}
-          className="text-center font-normal text-gray-300 mt-2"
+          className="text-center font-normal text-gray-300 mt-2 p-2"
         >
           We provide expert inspection and compliance services to safeguard your supply chain.
         </motion.p>
@@ -69,11 +69,14 @@ export default function ServicesSection() {
               className="relative group overflow-hidden rounded-3xl bg-gray-800 shadow-lg hover:shadow-2xl transition-transform hover:scale-105 mx-2"
             >
               <div className="flex items-center m-6 space-x-4">
-                <CheckCircle className="w-10 h-10 text-blue-400 group-hover:text-blue-300 transition-colors" />
+                <CheckCircle className="w-12  text-blue-400 group-hover:text-blue-300 transition-colors" />
                 <h3 className="text-xl font-semibold">
-                  <Link to={service.bookmark} className="hover:text-blue-400 transition-colors">
+                  <a
+                    href={`/services#${service.hash}`}
+                    className="hover:text-blue-400 transition-colors"
+                  >
                     {service.title}
-                  </Link>
+                  </a>
                 </h3>
               </div>
               <p className="m-6 text-gray-300 font-normal">{service.description}</p>
