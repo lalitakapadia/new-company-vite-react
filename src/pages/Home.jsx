@@ -62,8 +62,7 @@ const Home = () => {
                   Secure Your Shipments with Confidence
                 </h1>
                 <p className="mt-8 max-w-lg text-lg font-medium text-gray-950/75 sm:text-2xl/8">
-                  Our DGFT-approved inspection services ensure your goods are
-                  compliant, safe, and ready to be shipped worldwide.
+                 Worldwide Quality Inspection Ltd., a DGFT-approved agency, ensures your goods are compliant, safe, and ready for seamless global shipment.
                 </p>
 
                 {/* Buttons */}

@@ -8,37 +8,37 @@ const services = [
     id: "service-secion-1",
     title: "Independent Quality Assurance",
     bookmark: "/services#IndependentQualityAssurance",
-    description: "Ensure products meet international standards with rigorous third-party assessments.",
+    description: "Worldwide Quality Inspection Ltd. delivers third-party quality assessments to ensure your products meet international standards.",
   },
   {
     id: "service-secion-2",
     title: "Shipment Integrity Verification",
     bookmark: "./services#ShipmentIntegrityVerification",
-    description: "Pre-shipment checks to guarantee quality, compliance, and defect-free deliveries.",
+    description: "Pre-shipment checks by Worldwide Quality Inspection Ltd. guarantee product quality, regulatory compliance, and damage-free deliveries.",
   },
   {
     id: "service-secion-3",
     title: "Secure Cargo Supervision",
     bookmark: "./services#SecureCargoSupervision",
-    description: "Monitor container loading to prevent damage, misplacement, or security risks.",
+    description: "Worldwide Quality Inspection Ltd. supervises container loading to minimize damage, prevent tampering, and ensure cargo security.",
   },
   {
     id: "service-secion-4",
     title: "Supplier Compliance Assistance",
     bookmark: "./services#SupplierComplianceAssistance",
-    description: "Help suppliers align with industry and regulatory requirements for approval.",
+    description: "Our experts at Worldwide Quality Inspection Ltd. assist your suppliers in meeting industry standards and regulatory approvals.",
   },
   {
     id: "service-secion-5",
     title: "Vendor Risk & Quality Assessment",
     bookmark: "./services#VendorRiskQualityAssessment",
-    description: "Evaluate suppliers' reliability, operational standards, and risk management.",
+    description: "Worldwide Quality Inspection Ltd. evaluates supplier risk, quality control systems, and operational practices to reduce supply chain exposure.",
   },
   {
     id: "service-secion-6",
     title: "Strategic Supplier Benchmarking",
     bookmark: "./services#StrategicSupplierBenchmarking",
-    description: "Assess vendor performance to optimize procurement and sourcing strategies.",
+    description: "Leverage Worldwide Quality Inspection Ltd.’s insights to benchmark vendors and improve your procurement strategy and performance.",
   },
 ];
 
@@ -61,7 +61,7 @@ export default function ServicesSection() {
           transition={{ delay: 0.2, duration: 0.8 }}
           className="text-center font-normal text-gray-300 mt-2 p-2"
         >
-          We provide expert inspection and compliance services to safeguard your supply chain.
+          Worldwide Quality Inspection Ltd. provides expert inspection and compliance services to safeguard your global supply chain.
         </motion.p>
 
         {/* Service Cards */}

@@ -6,32 +6,32 @@ const DiscoverSection = () => {
   const services = [
     { icon: <FaShieldAlt className="w-12 h-12 text-blue-500 mx-auto" />, 
       title: 'Inspection Services', 
-      description: 'Ensuring international shipment compliance with expert inspections.', 
+      description: 'Worldwide Quality Inspection Ltd. delivers DGFT-approved pre-shipment inspections, ensuring international shipment compliance and trusted trade operations.', 
       link: './metal-inspection' 
     },
     { icon: <FaIndustry className="w-12 h-12 text-orange-500 mx-auto" />, 
       title: 'Scrap Loading Experts', 
-      description: 'Specializing in inspecting metal and paper scrap at the port of origin for safety assurance.', 
+      description: 'Worldwide Quality Inspection Ltd. specializes in inspecting metal and paper scrap at ports of origin, guaranteeing safety and regulatory compliance for exports.', 
       link: '/services#ShipmentIntegrityVerification' 
     },
     { icon: <FaGlobe className="w-12 h-12 text-green-500 mx-auto" />, 
       title: 'Global Reach', 
-      description: 'Operating in 60+ countries to facilitate seamless trade worldwide.', 
+      description: 'Operating in over 60 countries, Worldwide Quality Inspection Ltd. ensures seamless, compliant international trade with extensive global presence.', 
       link: '/about-us#continent' 
     },
     { icon: <FaCheckCircle className="w-12 h-12 text-yellow-500 mx-auto" />, 
       title: 'Safety & Compliance', 
-      description: 'We ensure shipments meet all regulatory and safety requirements.', 
+      description: 'Worldwide Quality Inspection Ltd. guarantees that all shipments meet rigorous safety and regulatory standards before they cross international borders.', 
       link: '/services#SupplierComplianceAssistance' 
     },
     { icon: <FaCheckCircle className="w-12 h-12 text-yellow-500 mx-auto" />, 
       title: 'Hazard-Free Shipments', 
-      description: 'We certify that shipments are free from hazardous materials before export to India.', 
+      description: 'Worldwide Quality Inspection Ltd. certifies that shipments are free from hazardous materials, complying with Indian import safety regulations.', 
       link: '/metal-import' 
     },
     { icon: <FaUsers className="w-12 h-12 text-purple-500 mx-auto" />, 
       title: 'Expert Team', 
-      description: 'A dedicated team ensuring precision, efficiency, and reliability.', 
+      description: 'Our dedicated team at Worldwide Quality Inspection Ltd. brings industry-leading expertise, precision, and reliability to every inspection.', 
       link: '/contact-us' 
     },
   ];
@@ -41,7 +41,7 @@ const DiscoverSection = () => {
       <div className="mx-auto  text-center">
         <h2 className="text-4xl font-bold tracking-tight mb-6">Discover Our Expertise</h2>
         <p className="text-lg text-gray-300 max-w-2xl font-normal mx-auto mb-12">
-          We specialize in globally recognized, DGFT-approved pre-shipment inspections. Our expertise ensures compliance, safety, and smooth international trade operations.
+          At Worldwide Quality Inspection Ltd., we specialize in globally recognized, DGFT-approved pre-shipment inspections. Our expertise ensures full regulatory compliance, shipment safety, and smooth international trade operations.
         </p>
 
         {/* Service Cards */}

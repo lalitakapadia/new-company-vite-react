@@ -56,7 +56,7 @@ export default function AboutUs() {
         {/* 🔹 Hero Section */}
         <Heros
           title="Your Trusted Inspection Partner"
-          description="Ensuring quality and safety with cutting-edge inspections worldwide."
+          description="Worldwide Quality Inspection Ltd. ensures global quality, compliance, and safety through DGFT-approved, industry-leading inspection services."
         />
 
         <main className="text-white font-sans">

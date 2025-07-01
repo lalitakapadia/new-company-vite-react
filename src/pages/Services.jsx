@@ -52,7 +52,7 @@ export default function Services() {
       
 
         {/* 🔹 Hero Section */}
-        <Heros title="Our Services" description="Delivering Excellence in Quality, Compliance, and Risk Management" />
+        <Heros title="Our Services" description="Worldwide Quality Inspection Ltd. delivers trusted expertise in quality assurance, regulatory compliance, and risk management for global supply chains." />
 
         <main>
           {/* 🔹 Services Section */}
@@ -66,8 +66,8 @@ export default function Services() {
 
           {/* 🔹 Call to Action */}
           <section className=" bg-gradient-to-r from-[#fff1be] via-[#4fd1c5] via-[#4a90e2] to-[#5e60ff] text-black text-center sm:py-16 ring-1 ring-inset ring-black/20 rounded-3xl m-2 mb-2 p-4 py-12 ">
-            <h2 className="text-3xl font-semibold">Excellence in Every Step: Your Trusted Partner in Quality & Compliance</h2>
-            <p className="m-4 mb-6 text-lg font-medium">From Quality to Compliance – We’ve Got Your Supply Chain Covered!</p>
+            <h2 className="text-3xl font-semibold text-wrap"> Excellence in Every Step – Worldwide Quality Inspection Ltd., Your Trusted Partner in Quality & Compliance</h2>
+            <p className="m-4 mb-6 text-lg font-medium">From inspections to international compliance, Worldwide Quality Inspection Ltd. ensures your supply chain is secure, certified, and globally trusted</p>
             <Link
               to="/contact-us"
               className="mt-6 px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-500 hover:from-purple-500 hover:to-blue-500 text-black rounded-full font-semibold shadow-md transition-all"
@@ -151,118 +151,118 @@ const ServiceCard = ({ id,title, description, features, benefits, image, icon: I
 
 // Service Data with Images & Icons
  const servicesData = [
-  {
-    title: "Independent Quality Assurance",
-    description: "Ensuring excellence through unbiased quality verification.",
-    image: qualityAssuranceImage,
-    icon: FaShieldAlt,
-    bookmark: "IndependentQualityAssurance",
-    features: [
-      "Comprehensive product inspections at every production stage",
-      "Verification against ISO, ASTM, and other global standards",
-      "Material and performance testing for durability, safety, and reliability",
-      "Detailed compliance reports with corrective action plans",
-      "Tailored assessments to meet specific industry and client needs",
-    ],
-    benefits: [
-      "Minimizes product recalls and compliance risks",
-      "Enhances brand reputation by delivering defect-free products",
-      "Ensures customer satisfaction through consistent quality",
-    ],
-  },
-  {
-    title: "Shipment Integrity Verification",
-    description: "Guaranteeing product quality before dispatch.",
-    image: shipmentIntegrityVerification,
-    icon: FaShippingFast,
-    bookmark: "ShipmentIntegrityVerification",
-    features: [
-      "Pre-shipment inspections for defects, compliance, and packaging",
-      "Random sampling and AQL-based quality checks",
-      "Loading and unloading supervision for safety assurance",
-      "Real-time inspection reports with photographic evidence",
-      "Compliance verification for international shipping standards",
-    ],
-    benefits: [
-      "Reduces risk of faulty shipments and customer complaints",
-      "Ensures regulatory compliance for hassle-free global trade",
-      "Strengthens supplier accountability and transparency",
-    ],
-  },
-  {
-    title: "Secure Cargo Supervision",
-    description: "Protecting shipments from damage, misplacement, and security risks.",
-    image: secureCargoImage,
-    icon: FaBoxOpen,
-    bookmark: "SecureCargoSupervision",
-    features: [
-      "24/7 monitoring of loading and unloading procedures",
-      "Tamper-proof security seals and verification",
-      "GPS tracking and real-time surveillance for high-value shipments",
-      "Condition and quantity verification before dispatch",
-      "Detailed incident reporting with corrective recommendations",
-    ],
-    benefits: [
-      "Prevents losses due to theft, mishandling, or misplacement",
-      "Ensures adherence to global security compliance (TAPA, C-TPAT)",
-      "Boosts supply chain confidence with secure logistics",
-    ],
-  },
-  {
-    title: "Supplier Compliance Assistance",
-    description: "Helping suppliers align with regulatory and industry standards.",
-    image: supplierComplianceImage,
-    icon: FaClipboardCheck,
-    bookmark: "SupplierComplianceAssistance",
-    features: [
-      "Regulatory audits to ensure industry compliance",
-      "ISO, FDA, CE, and RoHS certification guidance",
-      "Compliance support for regulatory filings and reporting",
-      "Gap analysis and corrective action planning",
-      "On-site assessments and compliance documentation",
-    ],
-    benefits: [
-      "Reduces non-compliance penalties and legal risks",
-      "Strengthens supplier relationships through quality alignment",
-      "Improves operational efficiency and market competitiveness",
-    ],
-  },
-  {
-    title: "Vendor Risk & Quality Assessment",
-    description: "Evaluating supplier reliability, operational standards, and risk management.",
-    image: qualityAnalysisImage,
-    icon: FaSearchDollar,
-    bookmark: "VendorRiskQualityAssessment",
-    features: [
-      "Supplier qualification assessments before onboarding",
-      "Operational audits covering safety, quality, and ethics",
-      "Supply chain risk evaluation and fraud detection",
-      "Financial health checks for business stability",
-      "Custom reports with risk mitigation strategies",
-    ],
-    benefits: [
-      "Mitigates supplier-related risks and potential disruptions",
-      "Ensures long-term partnerships with reliable vendors",
-      "Improves supply chain efficiency and risk preparedness",
-    ],
-  },
-  {
-    title: "Strategic Supplier Benchmarking",
-    description: "Assess vendor performance to optimize procurement and sourcing strategies.",
-    image: strategySupplierImage,
-    icon: FaChartBar,
-    bookmark: "StrategicSupplierBenchmarking",
-    features: [
-      "Supplier qualification assessments before onboarding",
-      "Operational audits covering safety, quality, and ethics",
-      "Supply chain risk evaluation and fraud detection",
-      "Financial health checks for business stability",
-      "Custom reports with risk mitigation strategies",
-    ],
-    benefits: [
-      "Mitigates supplier-related risks and potential disruptions",
-      "Ensures long-term partnerships with reliable vendors",
-      "Improves supply chain efficiency and risk preparedness",
-    ]
-  },
+ {
+  title: "Independent Quality Assurance",
+  description: "Worldwide Quality Inspection Ltd. ensures excellence through unbiased, third-party quality verification services across industries.",
+  image: qualityAssuranceImage,
+  icon: FaShieldAlt,
+  bookmark: "IndependentQualityAssurance",
+  features: [
+    "Comprehensive product inspections at every production stage",
+    "Verification against ISO, ASTM, and other global standards",
+    "Material and performance testing for durability, safety, and reliability",
+    "Detailed compliance reports with corrective action plans",
+    "Tailored assessments to meet specific industry and client needs",
+  ],
+  benefits: [
+    "Minimizes product recalls and compliance risks",
+    "Enhances brand reputation by delivering defect-free products",
+    "Ensures customer satisfaction through consistent quality",
+  ],
+},
+{
+  title: "Shipment Integrity Verification",
+  description: "Worldwide Quality Inspection Ltd. guarantees product quality, compliance, and packaging reliability through robust pre-shipment inspections.",
+  image: shipmentIntegrityVerification,
+  icon: FaShippingFast,
+  bookmark: "ShipmentIntegrityVerification",
+  features: [
+    "Pre-shipment inspections for defects, compliance, and packaging",
+    "Random sampling and AQL-based quality checks",
+    "Loading and unloading supervision for safety assurance",
+    "Real-time inspection reports with photographic evidence",
+    "Compliance verification for international shipping standards",
+  ],
+  benefits: [
+    "Reduces risk of faulty shipments and customer complaints",
+    "Ensures regulatory compliance for hassle-free global trade",
+    "Strengthens supplier accountability and transparency",
+  ],
+},
+{
+  title: "Secure Cargo Supervision",
+  description: "Worldwide Quality Inspection Ltd. protects shipments from damage, tampering, or misplacement with advanced cargo monitoring and security protocols.",
+  image: secureCargoImage,
+  icon: FaBoxOpen,
+  bookmark: "SecureCargoSupervision",
+  features: [
+    "24/7 monitoring of loading and unloading procedures",
+    "Tamper-proof security seals and verification",
+    "GPS tracking and real-time surveillance for high-value shipments",
+    "Condition and quantity verification before dispatch",
+    "Detailed incident reporting with corrective recommendations",
+  ],
+  benefits: [
+    "Prevents losses due to theft, mishandling, or misplacement",
+    "Ensures adherence to global security compliance (TAPA, C-TPAT)",
+    "Boosts supply chain confidence with secure logistics",
+  ],
+},
+{
+  title: "Supplier Compliance Assistance",
+  description: "Worldwide Quality Inspection Ltd. helps suppliers meet regulatory and industry standards to support smooth global trade operations.",
+  image: supplierComplianceImage,
+  icon: FaClipboardCheck,
+  bookmark: "SupplierComplianceAssistance",
+  features: [
+    "Regulatory audits to ensure industry compliance",
+    "ISO, FDA, CE, and RoHS certification guidance",
+    "Compliance support for regulatory filings and reporting",
+    "Gap analysis and corrective action planning",
+    "On-site assessments and compliance documentation",
+  ],
+  benefits: [
+    "Reduces non-compliance penalties and legal risks",
+    "Strengthens supplier relationships through quality alignment",
+    "Improves operational efficiency and market competitiveness",
+  ],
+},
+{
+  title: "Vendor Risk & Quality Assessment",
+  description: "Worldwide Quality Inspection Ltd. evaluates supplier reliability, compliance history, and risk posture to ensure secure sourcing.",
+  image: qualityAnalysisImage,
+  icon: FaSearchDollar,
+  bookmark: "VendorRiskQualityAssessment",
+  features: [
+    "Supplier qualification assessments before onboarding",
+    "Operational audits covering safety, quality, and ethics",
+    "Supply chain risk evaluation and fraud detection",
+    "Financial health checks for business stability",
+    "Custom reports with risk mitigation strategies",
+  ],
+  benefits: [
+    "Mitigates supplier-related risks and potential disruptions",
+    "Ensures long-term partnerships with reliable vendors",
+    "Improves supply chain efficiency and risk preparedness",
+  ],
+},
+{
+  title: "Strategic Supplier Benchmarking",
+  description: "Worldwide Quality Inspection Ltd. benchmarks vendor performance to drive strategic procurement and minimize sourcing risks.",
+  image: strategySupplierImage,
+  icon: FaChartBar,
+  bookmark: "StrategicSupplierBenchmarking",
+  features: [
+    "Supplier qualification assessments before onboarding",
+    "Operational audits covering safety, quality, and ethics",
+    "Supply chain risk evaluation and fraud detection",
+    "Financial health checks for business stability",
+    "Custom reports with risk mitigation strategies",
+  ],
+  benefits: [
+    "Mitigates supplier-related risks and potential disruptions",
+    "Ensures long-term partnerships with reliable vendors",
+    "Improves supply chain efficiency and risk preparedness",
+  ]
+}
 ]; 
