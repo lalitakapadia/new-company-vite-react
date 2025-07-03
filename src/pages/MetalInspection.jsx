@@ -102,8 +102,8 @@ const MetalInspection = () => {
           {/* 🔹 Metal Types */}
           <section className="py-16 px-6 lg:px-12 bg-gray-900 text-white m-2 rounded-3xl ring-1 ring-inset ring-black/20">
             <div className=" mx-auto text-center">
-              <h2 className="text-4xl font-semibold">Non-Ferrous & Ferrous Scrap Imports</h2>
-              <p className="mt-4 text-lg text-gray-300">We inspect various types of scrap metals for compliance.</p>
+              <h2 className="text-4xl font-semibold">Non-Ferrous & Ferrous Scrap Import Inspections</h2>
+              <p className="mt-4 text-lg text-gray-300 font-normal"> Worldwide Quality Inspection Ltd. specializes in inspecting non-ferrous and ferrous metal scrap imports to ensure regulatory compliance, safety, and quality before shipment to India and other global destinations.</p>
               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 mt-8">
                 {["HMS", "Copper", "Cobalt", "Tin", "Cast Iron", "Stainless Steel", "Molybdenum", "Zinc", "Tungsten", "Aluminium", "Chromium", "Nickel", "Lead"].map((metal, index) => (
                   <motion.div key={index} className="bg-gray-700 p-4 rounded-lg shadow-md flex items-center justify-center gap-2 text-lg font-medium" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: index * 0.1, duration: 0.5 }}>
@@ -117,9 +117,13 @@ const MetalInspection = () => {
 
           {/* 🔹 Call to Action */}
           <section className="bg-gradient-to-r from-[#fff1be] via-[#4fd1c5] via-[#4a90e2] to-[#5e60ff] text-black text-center sm:py-16 ring-1 ring-inset ring-black/20 rounded-3xl m-2 mb-2 p-4 py-12">
-            <h2 className="text-3xl font-semibold">Need a Certified Metal Inspection?</h2>
-            <p className="text-lg m-4 mb-6 max-w-2xl mx-auto font-medium">Contact our experts today.</p>
-            <Link to="/contact-us" className="px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-500 hover:from-purple-500 hover:to-blue-500 text-black rounded-full hover:from-[#4a90e2] hover:to-[#5e60ff] text-black rounded-full font-semibold shadow-md transition-all" aria-label="Get in Touch for Metal Inspection">
+            <h2 className="text-3xl font-semibold">Need a Certified Metal Inspection Services?</h2>
+            <p className="text-lg m-4 mb-6 max-w-2xl mx-auto font-normal">Contact the experts at Worldwide Quality Inspection Ltd. — a DGFT-approved agency specializing in non-ferrous and ferrous metal inspection for international compliance and safety.</p>
+            <Link to="/contact-us" className="px-6 py-3 bg-gradient-to-r from-[#5e60ff] via-[#4a90e2] to-[#4fd1c5] 
+                    rounded-full shadow-md transition-all 
+                    duration-300 hover:scale-105 hover:shadow-lg  hover:to-blue-500
+                    text-black rounded-full font-semibold shadow-md transition-all" 
+                    aria-label="Get in Touch for Metal Inspection">
               Get in Touch
             </Link>
           </section>

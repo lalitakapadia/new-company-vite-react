@@ -70,7 +70,9 @@ export default function Services() {
             <p className="m-4 mb-6 text-lg font-medium">From inspections to international compliance, Worldwide Quality Inspection Ltd. ensures your supply chain is secure, certified, and globally trusted</p>
             <Link
               to="/contact-us"
-              className="mt-6 px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-500 hover:from-purple-500 hover:to-blue-500 text-black rounded-full font-semibold shadow-md transition-all"
+              className="mt-6 px-6 py-3 bg-gradient-to-r from-[#5e60ff] via-[#4a90e2] to-[#4fd1c5] 
+                    rounded-full shadow-md transition-all 
+                    duration-300 hover:scale-105 hover:shadow-lg  hover:to-blue-500  text-black rounded-full font-semibold shadow-md transition-all"
               aria-label="Contact Us for Quality Assurance and Risk Management"
             >
               Get in Touch

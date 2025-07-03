@@ -58,6 +58,7 @@ const DiscoverSection = () => {
                 <p className="mt-2 text-gray-800 text-lg font-normal">{service.description}</p>
                 <Link 
                   to={service.link} 
+                  onClick={() => sessionStorage.setItem('scrollBackTo', 'discover-expertise')}
                   className="mt-4 inline-block text-blue-500 font-semibold relative"
                   aria-label={`Learn more about ${service.title}`}
                 >

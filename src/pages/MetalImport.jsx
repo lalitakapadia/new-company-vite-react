@@ -41,8 +41,8 @@ const MetalImport = () => {
 
         {/* 🔹 Hero Section */}
         <Heros 
-          title="Seamless Metal Import Services" 
-          description="Your trusted partner in efficient and compliant metal imports." 
+          title="Seamless Metal Import Services by Worldwide Quality Inspection Ltd." 
+          description="Your trusted DGFT-approved partner for compliant, secure, and efficient metal scrap imports across global ports." 
         />
 
         <main>
@@ -55,26 +55,26 @@ const MetalImport = () => {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8 }}
               >
-                <h2 className="text-4xl font-bold">Expert Metal Import Solutions</h2>
-                <p className="mt-4 text-lg text-gray-300 font-normal">
-                  We offer reliable and efficient solutions for importing metal materials globally. Our services ensure compliance with local regulations, timely delivery, and safe handling of all shipments.
+                <h2 className="text-4xl font-bold">Expert Metal Import Solutions by Worldwide Quality Inspection Ltd.</h2>
+                <p className="mt-4 text-lg text-gray-300 font-medium">
+                 Worldwide Quality Inspection Ltd. delivers reliable, DGFT-approved metal import services that ensure regulatory compliance, timely logistics, and secure global shipping. We support your operations with full-spectrum inspection and customs solutions.
                 </p>
                 <ul className="mt-6 space-y-3 font-normal">
                   <li className="flex items-center gap-3">
                     <FaShip className="text-green-400 text-xl" aria-hidden="true" />
-                    <span>International shipping and logistics management</span>
+                    <span>End-to-end international shipping and logistics management</span>
                   </li>
                   <li className="flex items-center gap-3">
                     <FaClipboardCheck className="text-green-400 text-xl" aria-hidden="true" />
-                    <span>Compliance with import/export regulations</span>
+                    <span>Compliance with global and DGFT import/export regulations</span>
                   </li>
                   <li className="flex items-center gap-3">
                     <FaTruck className="text-green-400 text-xl" aria-hidden="true" />
-                    <span>Secure transportation and handling</span>
+                    <span>Secure inland transportation and safe material handling</span>
                   </li>
                   <li className="flex items-center gap-3">
                     <FaExchangeAlt className="text-green-400 text-xl" aria-hidden="true" />
-                    <span>Efficient customs clearance and documentation</span>
+                    <span>Seamless customs clearance and import documentation</span>
                   </li>
                 </ul>
               </motion.div>
@@ -98,14 +98,14 @@ const MetalImport = () => {
           {/* 🔹 Detailed Import Process */}
           <section className="m-2 py-16 px-6 lg:px-12 bg-gray-800 text-white rounded-3xl ring-1 ring-inset ring-black/20">
             <div className=" mx-auto">
-              <h2 className="text-4xl font-bold text-center">The Metal Import Process</h2>
-              <p className="mt-4 text-lg text-center text-gray-300">We ensure smooth and compliant metal imports, every step of the way.</p>
+              <h2 className="text-4xl font-bold text-center">The Metal Import Process with Worldwide Quality Inspection Ltd.</h2>
+              <p className="mt-4 text-lg text-center text-gray-300 font-medium ">At Worldwide Quality Inspection Ltd., we streamline the metal import process by ensuring every shipment meets international compliance, safety, and documentation standards.</p>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12 font-normal">
                 {[
                   "Global shipping coordination for timely delivery",
                   "Customs clearance and regulatory compliance",
-                  "Inspection for quality and purity of metal materials",
+                  "Inspection for quality and purity of metal materials by Worldwide Quality Inspection Ltd",
                   "Efficient logistics and warehouse management",
                   "Final delivery and documentation process"
                 ].map((step, index) => (
@@ -129,11 +129,13 @@ const MetalImport = () => {
             <div className=" mx-auto">
               <h2 className="text-3xl font-semibold">Ready for Smooth and Safe Metal Imports?</h2>
               <p className="text-lg m-4 mb-6 max-w-2xl mx-auto font-medium">
-                Contact our experts today to ensure compliance, safety, and efficiency in your next metal import.
+                Contact the DGFT‑approved experts at Worldwide Quality Inspection Ltd. today to guarantee compliance, safety, and efficiency in your next metal import.
               </p>
               <Link
                 to="/contact-us"
-                className="mt-6 px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-500 hover:from-purple-500 hover:to-blue-500 text-black rounded-full font-semibold shadow-md transition-all"
+                className="mt-6 px-6 py-3 bg-gradient-to-r from-[#5e60ff] via-[#4a90e2] to-[#4fd1c5] 
+                    rounded-full shadow-md transition-all 
+                    duration-300 hover:scale-105 hover:shadow-lg  hover:to-blue-500 text-black rounded-full font-semibold shadow-md transition-all"
                 aria-label="Get in touch for metal import services"
               >
                 Get in Touch

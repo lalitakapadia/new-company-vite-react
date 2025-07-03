@@ -68,7 +68,7 @@ export default function ContactUs() {
         </div>
 
         <Navbar />
-        <Heros title="We're Here to Help!" description="Let’s connect and make things happen!" />
+        <Heros title="Worldwide Quality Inspection Ltd. — We're Here to Help!" description="Reach out to our certified inspection experts to ensure compliance, quality, and smooth global trade operations!" />
 
         <div className="bg-gray-900 rounded-3xl ring-1 ring-inset ring-black/20 m-2">
           <section className="px-4 py-8 sm:px-8 md:px-12 lg:px-16 grid grid-cols-1 xl:grid-cols-2  gap-8 max-w-screen-xl mx-auto text-gray-300">
@@ -149,7 +149,9 @@ export default function ContactUs() {
                 </div>
                 <motion.button
                   type="submit"
-                  className="w-full bg-gradient-to-r from-blue-500 to-purple-500 hover:from-purple-600 hover:to-blue-600 text-black p-3 rounded-lg font-semibold shadow-md transition-all text-lg"
+                  className="w-full bg-gradient-to-r from-[#5e60ff] via-[#4a90e2] to-[#4fd1c5] 
+                    rounded-full shadow-md transition-all 
+                    duration-300 hover:scale-105 hover:shadow-lg  hover:to-blue-500  hover:to-blue-600 text-black p-3 rounded-lg font-semibold shadow-md transition-all text-lg"
                   whileHover={{ scale: 1.05 }}
                 >
                   Send Message
@@ -189,7 +191,9 @@ export default function ContactUs() {
                 href="https://wa.me/919123056093"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block mt-4 text-white bg-green-500 hover:bg-green-600 px-4 py-2 rounded-lg text-lg font-semibold"
+                className="inline-block mt-4 text-black bg-gradient-to-r from-[#5e60ff] via-[#4a90e2] to-[#4fd1c5] 
+                    rounded-full shadow-md transition-all 
+                    duration-300 hover:scale-105 hover:shadow-lg  hover:to-blue-500 px-4 py-2 rounded-lg text-lg font-semibold"
                 aria-label="Chat with us on WhatsApp"
               >
                 Chat on WhatsApp

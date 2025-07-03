@@ -106,7 +106,9 @@ export default function AboutUs() {
           </p>
           <Link
             to="/contact-us"
-            className="mt-6 px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-500 hover:from-purple-500 hover:to-blue-500 font-semibold rounded-lg shadow-md transition-all"
+            className="mt-6 px-6 py-3 bg-gradient-to-r from-[#5e60ff] via-[#4a90e2] to-[#4fd1c5] 
+                    rounded-full shadow-md transition-all 
+                    duration-300 hover:scale-105 hover:shadow-lg  hover:to-blue-500 font-semibold rounded-lg shadow-md transition-all"
             aria-label="Contact Us for more details"
           >
             Get in Touch

@@ -99,8 +99,12 @@ const Home = () => {
           <ServicesSection />
         </Suspense>
 
-        {/* Discover Section */}
-        <DiscoverSection />
+        {/* Discover Section with id for scroll restoration */}
+        <div id="discover-expertise">
+          <Suspense fallback={<div>Loading Discover...</div>}>
+            <DiscoverSection />
+          </Suspense>
+        </div>
       </div>
     </>
   );

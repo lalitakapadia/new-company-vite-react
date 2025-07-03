@@ -169,7 +169,7 @@ const Responsibilities = () => {
                           <div className="relative w-full h-2 bg-white/30 rounded-full mt-2 overflow-hidden">
                             <div
                               className={`absolute left-0 h-full ${activeIndex === idx
-                                ? "bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500"
+                                ? "bg-gradient-to-r from-[#5e60ff] via-[#4a90e2] to-[#4fd1c5]"
                                 : "bg-transparent"
                                 }`}
                               style={{
