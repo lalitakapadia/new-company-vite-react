@@ -47,7 +47,7 @@ const MetalImport = () => {
         </div>
 
         <Heros
-          title="Seamless Metal Import Services by Worldwide Quality Inspection Ltd."
+          title="Seamless Metal Import Services"
           description="Your trusted DGFT-approved partner for compliant, secure, and efficient metal scrap imports across global ports."
         />
 

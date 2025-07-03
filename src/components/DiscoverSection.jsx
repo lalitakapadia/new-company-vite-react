@@ -28,7 +28,7 @@ const DiscoverSection = () => {
       icon: <FaGlobe className="w-12 h-12 text-green-500 mx-auto" />,
       title: 'Global Reach',
       description:
-        'OOperating in over 60 countries, Worldwide Quality Inspection Ltd. ensures seamless, compliant international trade with extensive global presence.',
+        'Operating in over 60 countries, Worldwide Quality Inspection Ltd. ensures seamless, compliant international trade with extensive global presence.',
       link: '/about-us#continent',
     },
     {

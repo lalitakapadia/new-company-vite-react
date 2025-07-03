@@ -95,7 +95,7 @@ export default function ContactUs() {
         </div>
 
         <Navbar />
-        <Heros title="Worldwide Quality Inspection Ltd. — We're Here to Help!" 
+        <Heros title="We're Here to Help!" 
         description="Reach out to our certified inspection experts to ensure compliance, quality, and smooth global trade operations!" />
 
         <div className="bg-gray-900 rounded-3xl ring-1 ring-inset ring-black/20 m-2">

@@ -59,7 +59,7 @@ export default function ServicesSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, duration: 0.8 }}
-          className="text-center font-normal text-gray-300 mt-2 p-8"
+          className="text-center font-normal text-gray-300 mt-2 p-2"
         >
           Worldwide Quality Inspection Ltd. provides expert inspection and compliance services to safeguard your global supply chain.
         </motion.p>
