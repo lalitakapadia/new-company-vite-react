@@ -4,37 +4,37 @@ import { motion } from "framer-motion";
 
 // Flag URLs for each country
 const flagUrls = {
-  "Nigeria": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Flag_of_Nigeria.svg/2560px-Flag_of_Nigeria.svg.png",
-  "South Africa": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Flag_of_South_Africa.svg/2560px-Flag_of_South_Africa.svg.png",
-  "Egypt": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Flag_of_Egypt.svg/2560px-Flag_of_Egypt.svg.png",
-  "Kenya": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Flag_of_Kenya.svg/2560px-Flag_of_Kenya.svg.png",
-  "Ghana": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Flag_of_Ghana.svg/2560px-Flag_of_Ghana.svg.png",
-  "Morocco": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Flag_of_Morocco.svg/2560px-Flag_of_Morocco.svg.png",
-  "Ethiopia": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Flag_of_Ethiopia.svg/2560px-Flag_of_Ethiopia.svg.png",
-  "United States": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/2560px-Flag_of_the_United_States.svg.png",
-  "Canada": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Flag_of_Canada.svg/2560px-Flag_of_Canada.svg.png",
-  "Mexico": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Flag_of_Mexico.svg/2560px-Flag_of_Mexico.svg.png",
-  "Brazil": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/2560px-Flag_of_Brazil.svg.png",
-  "Argentina": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Flag_of_Argentina.svg/2560px-Flag_of_Argentina.svg.png",
-  "Colombia": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Flag_of_Colombia.svg/2560px-Flag_of_Colombia.svg.png",
-  "Chile": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Flag_of_Chile.svg/2560px-Flag_of_Chile.svg.png",
-  "Australia": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Flag_of_Australia.svg/2560px-Flag_of_Australia.svg.png",
-  "New Zealand": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Flag_of_New_Zealand.svg/2560px-Flag_of_New_Zealand.svg.png",
-  "China": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Flag_of_China.svg",
+  "Nigeria": "https://upload.wikimedia.org/wikipedia/commons/7/79/Flag_of_Nigeria.svg",
+  "South Africa": "https://upload.wikimedia.org/wikipedia/commons/a/af/Flag_of_South_Africa.svg",
+  "Egypt": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Flag_of_Egypt.svg",
+  "Kenya": "https://upload.wikimedia.org/wikipedia/commons/4/49/Flag_of_Kenya.svg",
+  "Ghana": "https://upload.wikimedia.org/wikipedia/commons/1/19/Flag_of_Ghana.svg",
+  "Morocco": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Flag_of_Morocco.svg",
+  "Ethiopia": "https://upload.wikimedia.org/wikipedia/commons/7/71/Flag_of_Ethiopia.svg",
+  "United States": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg",
+  "Canada": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Flag_of_Canada.svg",
+  "Mexico": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Flag_of_Mexico.svg",
+  "Brazil": "https://upload.wikimedia.org/wikipedia/commons/0/05/Flag_of_Brazil.svg",
+  "Argentina": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_Argentina.svg",
+  "Colombia": "https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Colombia.svg",
+  "Chile": "https://upload.wikimedia.org/wikipedia/commons/7/78/Flag_of_Chile.svg",
+  "Australia": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Flag_of_Australia.svg",
+  "New Zealand": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Flag_of_New_Zealand.svg",
+  "China": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_the_People%27s_Republic_of_China.svg",
   "India": "https://upload.wikimedia.org/wikipedia/commons/4/41/Flag_of_India.svg",
   "Japan": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Flag_of_Japan.svg",
   "South Korea": "https://upload.wikimedia.org/wikipedia/commons/0/09/Flag_of_South_Korea.svg",
   "Indonesia": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_Indonesia.svg",
   "Malaysia": "https://upload.wikimedia.org/wikipedia/commons/6/66/Flag_of_Malaysia.svg",
   "Singapore": "https://upload.wikimedia.org/wikipedia/commons/4/48/Flag_of_Singapore.svg",
-  "Germany": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Flag_of_Germany.svg/2560px-Flag_of_Germany.svg.png",
-  "United Kingdom": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_Kingdom.svg/2560px-Flag_of_the_United_Kingdom.svg.png",
-  "France": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Flag_of_France.svg/2560px-Flag_of_France.svg.png",
-  "Italy": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Italy.svg/2560px-Flag_of_Italy.svg.png",
-  "Spain": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Spain.svg/2560px-Flag_of_Spain.svg.png",
-  "Russia": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Russia.svg/2560px-Flag_of_Russia.svg.png",
-  "Ukraine": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Flag_of_Ukraine.svg/2560px-Flag_of_Ukraine.svg.png",
-  "Turkey": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Flag_of_Turkey.svg/2560px-Flag_of_Turkey.svg.png",
+  "Germany": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Flag_of_Germany.svg",
+  "United Kingdom": "https://flagcdn.com/w320/gb.png",
+  "France": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg",
+  "Italy": "https://upload.wikimedia.org/wikipedia/commons/0/03/Flag_of_Italy.svg",
+  "Spain": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Spain.svg",
+  "Russia": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Russia.svg",
+  "Ukraine": "https://upload.wikimedia.org/wikipedia/commons/4/49/Flag_of_Ukraine.svg",
+  "Turkey": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Flag_of_Turkey.svg",
 };
 
 // Data for continents and their countries
@@ -157,6 +157,12 @@ export default function ContinentsSection() {
                     src={country.flag}
                     alt={country.name}
                     className="w-20 h-12 rounded-md object-cover"
+                    loading="lazy"
+                    onError={e => { 
+                      e.target.onerror = null; 
+                      e.target.src = "https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.png"; 
+                    }}
+
                   />
                   <span className="text-sm font-semibold text-center mt-2">{country.name}</span>
                   {/* Bottom Animation for Card */}
