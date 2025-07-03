@@ -51,7 +51,7 @@ export default function ServicesSection() {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="text-4xl font-bold text-center pl-2 pr-2"
+          className="text-4xl font-bold text-center p-2 sm:pl-8 sm:pr-8 md:pl-12 md:pr-12 lg:pl-16 lg:pr-16 text-gray-100"
         >
           Our Premium Services
         </motion.h2>
@@ -59,13 +59,13 @@ export default function ServicesSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, duration: 0.8 }}
-          className="text-center font-normal text-gray-300 mt-2 p-2"
+          className="text-center font-normal text-gray-300 mt-2 p-8"
         >
           Worldwide Quality Inspection Ltd. provides expert inspection and compliance services to safeguard your global supply chain.
         </motion.p>
 
         {/* Service Cards */}
-        <div className="mt-12 px-4 sm:px-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="mt-12 px-4 sm:px-8 grid grid-cols-1 sm:grid-cols-1  md:grid-cols-2 xl:grid-cols-3 gap-6">
           {services.map((service, index) => (
             <motion.div
               key={index}

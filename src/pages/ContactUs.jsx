@@ -41,17 +41,44 @@ export default function ContactUs() {
     <>
       <Helmet>
         <html lang="en" />
-        <title>Contact Us - Worldwide Quality Inspection Ltd</title>
+        <title>Contact Us | Worldwide Quality Inspection Ltd.</title>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href="https://www.worldwidequalityinspection.com/contact-us" />
-        <meta name="description" content="Get in touch with us for inquiries, support, or partnerships. Our team is ready to assist you with any questions." />
-        <meta name="keywords" content="contact us, customer support, inspection, business, email, phone" />
+        <meta name="description" content="Contact Worldwide Quality Inspection Ltd. for expert inspection services. Get support via phone, email, or WhatsApp." />
+        <meta name="keywords" content="contact inspection company, email, phone, Worldwide Quality Inspection Ltd." />
         <meta name="robots" content="index, follow" />
-        <meta property="og:title" content="Contact Us - Reach Out for Assistance" />
-        <meta property="og:description" content="Need help? Get in touch with us for support and inquiries. We're here to assist you!" />
+        <meta property="og:title" content="Contact Us | Worldwide Quality Inspection Ltd." />
+        <meta property="og:description" content="Reach out to us for all inspection-related services. We're here to help!" />
         <meta property="og:url" content="https://www.worldwidequalityinspection.com/contact-us" />
         <meta name="twitter:card" content="summary_large_image" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Worldwide Quality Inspection Ltd.",
+            "url": "https://www.worldwidequalityinspection.com",
+            "contactPoint": [
+              {
+                "@type": "ContactPoint",
+                "telephone": "+91-9123056093",
+                "contactType": "Customer Service",
+                "areaServed": "IN",
+                "availableLanguage": ["English", "Hindi"]
+              }
+            ],
+            "address": [
+              {
+                "@type": "PostalAddress",
+                "streetAddress": "27 Old Glouster Street",
+                "addressLocality": "London",
+                "addressRegion": "Greater London",
+                "postalCode": "WC1N3AX",
+                "addressCountry": "UK"
+              },  
+            ]
+          })}
+        </script>
       </Helmet>
 
       <div className="bg-gray-100 text-gray-800 overflow-hidden">
@@ -68,10 +95,11 @@ export default function ContactUs() {
         </div>
 
         <Navbar />
-        <Heros title="Worldwide Quality Inspection Ltd. — We're Here to Help!" description="Reach out to our certified inspection experts to ensure compliance, quality, and smooth global trade operations!" />
+        <Heros title="Worldwide Quality Inspection Ltd. — We're Here to Help!" 
+        description="Reach out to our certified inspection experts to ensure compliance, quality, and smooth global trade operations!" />
 
         <div className="bg-gray-900 rounded-3xl ring-1 ring-inset ring-black/20 m-2">
-          <section className="px-4 py-8 sm:px-8 md:px-12 lg:px-16 grid grid-cols-1 xl:grid-cols-2  gap-8 max-w-screen-xl mx-auto text-gray-300">
+          <section className="px-4 py-8 sm:px-8 md:px-12 lg:px-6 grid grid-cols-1 xl:grid-cols-2  gap-8 max-w-screen-xl mx-auto text-gray-300">
             {/* 🔹 Contact Form */}
             <div className="bg-gray-800 p-4 sm:p-12 rounded-lg shadow-lg">
               <h2 className="text-3xl md:text-4xl font-semibold mb-6 text-white">Get in Touch</h2>
@@ -165,25 +193,30 @@ export default function ContactUs() {
             {/* 🔹 Contact Info */}
             <address className="not-italic bg-gray-800 p-4 sm:p-12 rounded-lg shadow-lg space-y-8 text-white">
               <h2 className="text-3xl md:text-4xl font-semibold mb-6">Contact Information</h2>
-              <div className="flex items-center space-x-4">
-                <FaPhone className="text-blue-400 text-2xl md:text-3xl" aria-hidden="true" />
-                <a href="tel:+919123056093" className="text-lg md:text-xl font-normal text-gray-100" aria-label="Call us">
+              <div className="flex items-center flex-nowrap gap-2 sm:gap-4">
+                <FaPhone className="text-blue-400 text-2xl md:text-3xl flex-shrink-0" aria-hidden="true" />
+                <a
+                  href="tel:+919123056093"
+                  className="text-lg md:text-xl font-normal text-gray-100 break-all"
+                  aria-label="Call us"
+                >
                   +91 91230 56093
                 </a>
               </div>
-              <div className="flex items-center space-x-4">
-                <FaEnvelope className="text-blue-400 text-2xl md:text-3xl" aria-hidden="true" />
+              <div className="flex items-center flex-nowrap gap-2 sm:gap-4">
+                <FaEnvelope className="text-blue-400 text-2xl md:text-3xl flex-shrink-0" aria-hidden="true" />
                 <a
                   href="mailto:contact@worldwidequalityinspection.com"
-                  className="text-lg md:text-xl font-normal text-gray-100 "
+                  className="text-lg md:text-xl font-normal text-gray-100 break-all"
                   aria-label="Send us an email"
+                  style={{ wordBreak: "break-all" }}
                 >
                   contact@worldwidequalityinspection.com
                 </a>
               </div>
-              <div className="flex items-center space-x-4">
-                <FaMapMarkerAlt className="text-blue-400 text-2xl md:text-3xl" aria-hidden="true" />
-                <p className="text-lg md:text-xl font-normal text-gray-100">
+              <div className="flex items-center flex-nowrap gap-2 sm:gap-4">
+                <FaMapMarkerAlt className="text-blue-400 text-2xl md:text-3xl flex-shrink-0" aria-hidden="true" />
+                <p className="text-lg md:text-xl font-normal text-gray-100 break-words">
                   27 Old Glouster Street, Royal Borough of Kensington & Chelsea, UK WC1N3AX
                 </p>
               </div>
@@ -192,8 +225,8 @@ export default function ContactUs() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block mt-4 text-black bg-gradient-to-r from-[#5e60ff] via-[#4a90e2] to-[#4fd1c5] 
-                    rounded-full shadow-md transition-all 
-                    duration-300 hover:scale-105 hover:shadow-lg  hover:to-blue-500 px-4 py-2 rounded-lg text-lg font-semibold"
+      rounded-full shadow-md transition-all 
+      duration-300 hover:scale-105 hover:shadow-lg hover:to-blue-500 px-4 py-2 rounded-lg text-lg font-semibold"
                 aria-label="Chat with us on WhatsApp"
               >
                 Chat on WhatsApp

@@ -22,19 +22,57 @@ const Home = () => {
   }, []);
   return (
     <>
+      {/* Skip link for keyboard users */}
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only fixed top-2 left-2 z-50 rounded bg-blue-600 px-3 py-2 text-white"
+      >
+        Skip to main content
+      </a>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Home - Secure Your Shipments with Confidence</title>
+        <title>Home - Secure Your Shipments with Confidence | Worldwide Quality Inspection Ltd.</title>
         <meta
           name="description"
           content="We offer DGFT-approved inspection services ensuring your shipments are safe, compliant, and ready for the global market."
         />
         <meta name="keywords" content="shipment inspection, DGFT-approved services, global trade, compliance, safety" />
         <meta name="robots" content="index, follow" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="canonical" href="https://www.yourwebsite.com" />
+        <html lang="en" />
+
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
         <meta property="og:title" content="Secure Your Shipments with Confidence" />
         <meta property="og:description" content="DGFT-approved inspection services ensuring compliance, safety, and reliability for global trade." />
         <meta property="og:url" content="https://www.yourwebsite.com" />
+        <meta property="og:image" content="https://www.yourwebsite.com/og-image.jpg" />
+
+        {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Secure Your Shipments with Confidence" />
+        <meta name="twitter:description" content="DGFT-approved inspection services ensuring compliance, safety, and reliability for global trade." />
+        <meta name="twitter:image" content="https://www.yourwebsite.com/twitter-image.jpg" />
+
+        {/* Structured Data */}
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "Worldwide Quality Inspection Ltd.",
+              "url": "https://www.yourwebsite.com",
+              "logo": "https://www.yourwebsite.com/logo.png",
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+919123056093",
+                "contactType": "customer service",
+                "availableLanguage": "English"
+              }
+            }
+          `}
+        </script>
       </Helmet>
 
       <div className="text-gray-800 overflow-hidden">
@@ -55,14 +93,15 @@ const Home = () => {
             <Navbar />
           </Suspense>
 
-          <div className="relative px-6 lg:px-12">
-            <div className="mx-auto ">
+          {/* Semantic main */}
+          <main id="main-content" className="relative px-6 lg:px-12">
+            <div className="mx-auto">
               <div className="pb-24 lg:pt-16 sm:pb-32 sm:pt-24 md:pb-16 md:pt-16">
                 <h1 className="font-display text-balance text-4xl sm:text-6xl md:text-8xl font-medium tracking-tight text-gray-950 sm:text-8xl/[0.8] md:text-9xl/[0.8]">
                   Secure Your Shipments with Confidence
                 </h1>
                 <p className="mt-8 max-w-lg text-lg font-medium text-gray-950/75 sm:text-2xl/8">
-                 Worldwide Quality Inspection Ltd., a DGFT-approved agency, ensures your goods are compliant, safe, and ready for seamless global shipment.
+                  Worldwide Quality Inspection Ltd., a DGFT-approved agency, ensures your goods are compliant, safe, and ready for seamless global shipment.
                 </p>
 
                 {/* Buttons */}
@@ -70,9 +109,9 @@ const Home = () => {
                   <a
                     href="https://wa.me/919123056093"
                     className="inline-flex items-center justify-center px-6 py-3 
-                    bg-gradient-to-r from-[#4fd1c5] via-[#4a90e2] to-[#5e60ff] 
-                    text-gray-900 rounded-full shadow-md transition-all 
-                    duration-300 hover:scale-105 hover:shadow-lg"
+                      bg-gradient-to-r from-[#4fd1c5] via-[#4a90e2] to-[#5e60ff] 
+                      text-gray-900 rounded-full shadow-md transition-all 
+                      duration-300 hover:scale-105 hover:shadow-lg"
                     aria-label="Contact us on WhatsApp"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -82,8 +121,8 @@ const Home = () => {
                   <Link
                     to="/contact-us"
                     className="inline-flex items-center justify-center px-6 py-3 bg-gray-50 
-                    text-gray-900 rounded-full border border-gray-300 
-                    shadow-lg transition-all duration-300 hover:bg-gray-200 hover:scale-105"
+                      text-gray-900 rounded-full border border-gray-300 
+                      shadow-lg transition-all duration-300 hover:bg-gray-200 hover:scale-105"
                     aria-label="Leave a message for inquiries"
                   >
                     Leave a Message
@@ -91,7 +130,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </main>
         </div>
 
         {/* Services Section */}

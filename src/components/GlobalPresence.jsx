@@ -4,31 +4,45 @@ import ContinentsSection from "../components/ContinentsSection";
 
 export default function GlobalPresence() {
   return (
-    <section id="continent" className="bg-gray-800 text-white p-4 sm:p-8 rounded-3xl m-2">
-      <h2 className="text-4xl font-bold text-center m-6">Our Global Presence</h2>
-      <div className="grid grid-cols-1  md:grid-cols-3 gap-8 ">
-        {data.map((item, index) => (
-          <motion.div
+    <section
+      id="continent"
+      className="bg-gray-800 text-white p-4 sm:p-8 rounded-3xl m-2"
+      role="region"
+      aria-labelledby="global-presence-heading"
+    >
+      <h2 id="global-presence-heading" className="text-4xl font-bold text-center m-6">
+        Our Global Presence
+      </h2>
+
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {data.map(({ title, description, icon: Icon }, index) => (
+          <motion.article
             key={index}
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.4, ease: "easeInOut" }}
-            className="relative text-center p-4 py-8 rounded-3xl shadow-lg bg-gray-700 transition-all duration-500"
+            tabIndex={0}
+            className="relative group text-center p-4 py-8 rounded-3xl shadow-lg bg-gray-700 transition-all duration-500 focus:outline-none focus:ring-4 focus:ring-blue-400"
+            aria-label={`${title} - ${description}`}
           >
             {/* Gradient Background Effect */}
-            <motion.div
-              className="absolute inset-0 rounded-3xl opacity-0 transition-opacity duration-1000 "
-              whileHover={{ opacity: 1, background: "linear-gradient(135deg, #fff1be, #4fd1c5, #4a90e2, #5e60ff)" }}
+            <div
+              className="absolute inset-0 rounded-3xl opacity-0 bg-gradient-to-br from-yellow-200 via-teal-400 via-blue-500 to-indigo-600 transition-opacity duration-1000 group-hover:opacity-100 pointer-events-none"
+              aria-hidden="true"
             />
 
             {/* Content */}
             <div className="relative z-10">
-              <item.icon className="text-5xl text-blue-500 mb-4 mx-auto transition-all duration-500 group-hover:text-white" />
-              <h3 className="text-2xl font-semibold ">{item.title}</h3>
-              <p className="font-normal mt-4 text-gray-300">{item.description}</p>
+              <Icon
+                className="text-5xl text-blue-500 mb-4 mx-auto transition-colors duration-500 group-hover:text-white"
+                aria-hidden="true"
+              />
+              <h3 className="text-2xl font-semibold">{title}</h3>
+              <p className="font-normal mt-4 text-gray-300">{description}</p>
             </div>
-          </motion.div>
+          </motion.article>
         ))}
       </div>
+
       <ContinentsSection />
     </section>
   );

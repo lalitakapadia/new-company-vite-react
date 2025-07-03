@@ -23,19 +23,58 @@ export default function AboutUs() {
 
   return (
     <>
+    
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only fixed top-2 left-2 z-50 rounded bg-blue-600 px-3 py-2 text-white"
+      >
+        Skip to main content
+      </a>
       {/* 🔹 SEO Meta Tags */}
       <Helmet>
-        <title>About Us - Trusted Inspection Partner</title>
+        <meta charSet="utf-8" />
+        <title>About Us - Trusted Inspection Partner | Worldwide Quality Inspection Ltd.</title>
         <meta
           name="description"
           content="Learn more about our inspection services, global presence, and why we are the trusted partner for ensuring compliance and safety."
         />
         <meta name="keywords" content="inspection, compliance, safety, global presence, trusted partner" />
         <meta name="robots" content="index, follow" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="canonical" href="https://www.yourwebsite.com/about-us" />
+        <html lang="en" />
+
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
         <meta property="og:title" content="About Us - Trusted Inspection Partner" />
         <meta property="og:description" content="We ensure quality and safety with cutting-edge inspections worldwide." />
         <meta property="og:url" content="https://www.yourwebsite.com/about-us" />
+        <meta property="og:image" content="https://www.yourwebsite.com/og-about-us.jpg" />
+
+        {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="About Us - Trusted Inspection Partner" />
+        <meta name="twitter:description" content="We ensure quality and safety with cutting-edge inspections worldwide." />
+        <meta name="twitter:image" content="https://www.yourwebsite.com/twitter-about-us.jpg" />
+
+        {/* Structured Data */}
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "Worldwide Quality Inspection Ltd.",
+              "url": "https://www.yourwebsite.com",
+              "logo": "https://www.yourwebsite.com/logo.png",
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+919123056093",
+                "contactType": "customer service",
+                "availableLanguage": "English"
+              }
+            }
+          `}
+        </script>
       </Helmet>
 
       <div className="text-gray-800">
@@ -59,14 +98,18 @@ export default function AboutUs() {
           description="Worldwide Quality Inspection Ltd. ensures global quality, compliance, and safety through DGFT-approved, industry-leading inspection services."
         />
 
-        <main className="text-white font-sans">
+        <main id="main-content" className="text-white font-sans">
           <AboutUsAccordion />
           <GlobalPresence />
 
-          {/* 🔹 Why Choose Us Section */}
-          <section className="bg-gray-900 container  sm:px-8 px-6 py-12
-          rounded-3xl ring-1 ring-inset ring-black/20 m-2">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">Why Choose Our Company?</h2>
+          {/* Why Choose Us Section */}
+          <section
+            aria-labelledby="why-choose-us"
+            className="bg-gray-900 container sm:px-8 px-6 py-12 rounded-3xl ring-1 ring-inset ring-black/20 m-2"
+          >
+            <h2 id="why-choose-us" className="text-3xl md:text-4xl font-bold text-center mb-8 text-white">
+              Why Choose Our Company?
+            </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
               {[
                 {
@@ -100,6 +143,7 @@ export default function AboutUs() {
 
         {/* 🔹 Call to Action */}
         <section className="bg-gradient-to-r from-[#fff1be] via-[#4fd1c5] via-[#4a90e2] to-[#5e60ff] text-black text-center sm:py-16 ring-1 ring-inset ring-black/20 rounded-3xl m-2 mb-2 p-4 py-12">
+          aria-label="Call to action section"
           <h2 className="text-3xl font-semibold">Ensuring Global Compliance & Safety</h2>
           <p className="m-4 mb-6 text-lg max-w-2xl mx-auto font-medium">
             Partner with <strong>Worldwide Quality Inspection Ltd</strong> for certified, DGFT-approved pre-shipment inspections—ensuring your goods meet international safety and regulatory standards.
