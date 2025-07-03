@@ -6,5 +6,11 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
   base: '/',
   plugins: [react(), tailwindcss()],
+  server: {
+    open: true, // Auto-opens in the browser
+  },
+  build: {
+    outDir: "dist",
+  },
 
-})
+});

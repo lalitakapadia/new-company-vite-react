@@ -7,24 +7,24 @@ import Navbar from "../components/Navbar";
 
 const slides = [
   {
-    image: "./public/images/ourcommitment.jpg",
+    image: "/images/ourcommitment.jpg",
     title: "Our Commitment",
-    description: "We collaborate with top multinational corporations to enhance the social, ethical, and environmental impact of their supply chains.",
+    description: "Worldwide Quality Inspection Ltd. partners with leading multinational corporations to strengthen social responsibility, ethical practices, and environmental stewardship across global supply chains.",
   },
   {
-    image: "./public/images/ourvalues.jpg",
+    image: "/images/ourvalues.jpg",
     title: "Our Values",
-    description: "We emphasize integrity, transparency, and accountability to ensure long-term corporate success and sustainability.",
+    description: "Integrity, transparency, and accountability drive every action at Worldwide Quality Inspection Ltd., ensuring sustainable growth and regulatory excellence.",
   },
   {
-    image: "./public/images/approach.jpg",
+    image: "/images/approach.jpg",
     title: "Our Approach",
-    description: "Integrity is at the core of our business values. We maintain high standards of professional conduct with all stakeholders.",
+    description: "At Worldwide Quality Inspection Ltd., our operations are built on trust and ethical conduct, upholding the highest professional standards in compliance and quality assurance.",
   },
   {
-    image: "./public/images/impact1.jpg",
+    image: "/images/impact1.jpg",
     title: "Our Impact",
-    description: "Our compliance code supports adherence to ethical standards and corporate governance principles.",
+    description: "Our global compliance framework reinforces ethical standards, corporate governance, and risk mitigation—supporting secure, responsible international trade.",
   },
 ];
 
@@ -77,7 +77,7 @@ const HomeSlider = () => {
               </div>
               {/* Progress Bar */}
               <div className="absolute bottom-10 left-0 w-full px-6">
-                <div className="max-w-7xl mx-auto flex gap-6">
+                <div className=" mx-auto flex gap-6">
                   {slides.map((slide, index) => (
                     <div key={index} className="flex-1 flex flex-col items-center">
                       {/* Slide Title */}
